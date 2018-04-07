@@ -1,6 +1,6 @@
 webpackJsonp([0,11],{
 
-/***/ 632:
+/***/ 633:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,26 +8,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_translation_module__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_nga_module__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dashboard_component__ = __webpack_require__(639);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_routing__ = __webpack_require__(653);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__popularApp__ = __webpack_require__(660);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pieChart__ = __webpack_require__(658);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__trafficChart__ = __webpack_require__(664);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__usersMap__ = __webpack_require__(666);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__lineChart__ = __webpack_require__(656);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__feed__ = __webpack_require__(655);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__todo__ = __webpack_require__(662);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar__ = __webpack_require__(652);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__calendar_calendar_service__ = __webpack_require__(638);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__feed_feed_service__ = __webpack_require__(640);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lineChart_lineChart_service__ = __webpack_require__(641);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pieChart_pieChart_service__ = __webpack_require__(642);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__todo_todo_service__ = __webpack_require__(643);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trafficChart_trafficChart_service__ = __webpack_require__(644);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__usersMap_usersMap_service__ = __webpack_require__(645);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__eventlog_routing__ = __webpack_require__(705);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__eventlog_component__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_list_eventloglist_component__ = __webpack_require__(668);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_view_eventlogview_component__ = __webpack_require__(669);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_mydaterangepicker__ = __webpack_require__(756);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EventLogModule", function() { return EventLogModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,56 +32,262 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-var DashboardModule = (function () {
-    function DashboardModule() {
+var EventLogModule = (function () {
+    function EventLogModule() {
     }
-    return DashboardModule;
+    return EventLogModule;
 }());
-DashboardModule = __decorate([
+EventLogModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-            __WEBPACK_IMPORTED_MODULE_3__app_translation_module__["a" /* AppTranslationModule */],
-            __WEBPACK_IMPORTED_MODULE_4__theme_nga_module__["a" /* NgaModule */],
-            __WEBPACK_IMPORTED_MODULE_6__dashboard_routing__["a" /* routing */]
+            __WEBPACK_IMPORTED_MODULE_3__theme_nga_module__["a" /* NgaModule */],
+            __WEBPACK_IMPORTED_MODULE_4_ng2_smart_table__["a" /* Ng2SmartTableModule */],
+            __WEBPACK_IMPORTED_MODULE_5__eventlog_routing__["a" /* routing */],
+            __WEBPACK_IMPORTED_MODULE_9_mydaterangepicker__["MyDateRangePickerModule"]
         ],
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_7__popularApp__["a" /* PopularApp */],
-            __WEBPACK_IMPORTED_MODULE_8__pieChart__["a" /* PieChart */],
-            __WEBPACK_IMPORTED_MODULE_9__trafficChart__["a" /* TrafficChart */],
-            __WEBPACK_IMPORTED_MODULE_10__usersMap__["a" /* UsersMap */],
-            __WEBPACK_IMPORTED_MODULE_11__lineChart__["a" /* LineChart */],
-            __WEBPACK_IMPORTED_MODULE_12__feed__["a" /* Feed */],
-            __WEBPACK_IMPORTED_MODULE_13__todo__["a" /* Todo */],
-            __WEBPACK_IMPORTED_MODULE_14__calendar__["a" /* Calendar */],
-            __WEBPACK_IMPORTED_MODULE_5__dashboard_component__["a" /* Dashboard */]
-        ],
-        providers: [
-            __WEBPACK_IMPORTED_MODULE_15__calendar_calendar_service__["a" /* CalendarService */],
-            __WEBPACK_IMPORTED_MODULE_16__feed_feed_service__["a" /* FeedService */],
-            __WEBPACK_IMPORTED_MODULE_17__lineChart_lineChart_service__["a" /* LineChartService */],
-            __WEBPACK_IMPORTED_MODULE_18__pieChart_pieChart_service__["a" /* PieChartService */],
-            __WEBPACK_IMPORTED_MODULE_19__todo_todo_service__["a" /* TodoService */],
-            __WEBPACK_IMPORTED_MODULE_20__trafficChart_trafficChart_service__["a" /* TrafficChartService */],
-            __WEBPACK_IMPORTED_MODULE_21__usersMap_usersMap_service__["a" /* UsersMapService */]
+            __WEBPACK_IMPORTED_MODULE_6__eventlog_component__["a" /* EventLogComponent */],
+            __WEBPACK_IMPORTED_MODULE_7__components_list_eventloglist_component__["a" /* EventLogListComponent */],
+            __WEBPACK_IMPORTED_MODULE_8__components_view_eventlogview_component__["a" /* EventLogViewComponent */]
         ]
     })
-], DashboardModule);
+], EventLogModule);
 
-//# sourceMappingURL=dashboard.module.js.map
+//# sourceMappingURL=eventlog.module.js.map
+
+/***/ }),
+
+/***/ 637:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__helpers__ = __webpack_require__(646);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__data_set_data_set__ = __webpack_require__(791);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Grid; });
+
+
+
+var Grid = (function () {
+    function Grid(source, settings) {
+        this.createFormShown = false;
+        this.onSelectRowSource = new __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]();
+        this.setSettings(settings);
+        this.setSource(source);
+    }
+    Grid.prototype.showActionColumn = function (position) {
+        return this.isCurrentActionsPosition(position) && this.isActionsVisible();
+    };
+    Grid.prototype.isCurrentActionsPosition = function (position) {
+        return position == this.getSetting('actions.position');
+    };
+    Grid.prototype.isActionsVisible = function () {
+        return this.getSetting('actions.add') || this.getSetting('actions.edit') || this.getSetting('actions.delete');
+    };
+    Grid.prototype.isMultiSelectVisible = function () {
+        return this.getSetting('selectMode') === 'multi';
+    };
+    Grid.prototype.getNewRow = function () {
+        return this.dataSet.newRow;
+    };
+    Grid.prototype.setSettings = function (settings) {
+        this.settings = settings;
+        this.dataSet = new __WEBPACK_IMPORTED_MODULE_2__data_set_data_set__["a" /* DataSet */]([], this.getSetting('columns'));
+        if (this.source) {
+            this.source.refresh();
+        }
+    };
+    Grid.prototype.getDataSet = function () {
+        return this.dataSet;
+    };
+    Grid.prototype.setSource = function (source) {
+        var _this = this;
+        this.source = this.prepareSource(source);
+        this.source.onChanged().subscribe(function (changes) { return _this.processDataChange(changes); });
+        this.source.onUpdated().subscribe(function (data) {
+            var changedRow = _this.dataSet.findRowByData(data);
+            changedRow.setData(data);
+        });
+    };
+    Grid.prototype.getSetting = function (name, defaultValue) {
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* getDeepFromObject */])(this.settings, name, defaultValue);
+    };
+    Grid.prototype.getColumns = function () {
+        return this.dataSet.getColumns();
+    };
+    Grid.prototype.getRows = function () {
+        return this.dataSet.getRows();
+    };
+    Grid.prototype.selectRow = function (row) {
+        this.dataSet.selectRow(row);
+    };
+    Grid.prototype.multipleSelectRow = function (row) {
+        this.dataSet.multipleSelectRow(row);
+    };
+    Grid.prototype.onSelectRow = function () {
+        return this.onSelectRowSource.asObservable();
+    };
+    Grid.prototype.edit = function (row) {
+        row.isInEditing = true;
+    };
+    Grid.prototype.create = function (row, confirmEmitter) {
+        var _this = this;
+        var deferred = new __WEBPACK_IMPORTED_MODULE_1__helpers__["c" /* Deferred */]();
+        deferred.promise.then(function (newData) {
+            newData = newData ? newData : row.getNewData();
+            _this.source.prepend(newData).then(function () {
+                _this.createFormShown = false;
+                _this.dataSet.createNewRow();
+            });
+        }).catch(function (err) {
+            // doing nothing
+        });
+        if (this.getSetting('add.confirmCreate')) {
+            confirmEmitter.emit({
+                newData: row.getNewData(),
+                source: this.source,
+                confirm: deferred,
+            });
+        }
+        else {
+            deferred.resolve();
+        }
+    };
+    Grid.prototype.save = function (row, confirmEmitter) {
+        var _this = this;
+        var deferred = new __WEBPACK_IMPORTED_MODULE_1__helpers__["c" /* Deferred */]();
+        deferred.promise.then(function (newData) {
+            newData = newData ? newData : row.getNewData();
+            _this.source.update(row.getData(), newData).then(function () {
+                row.isInEditing = false;
+            });
+        }).catch(function (err) {
+            // doing nothing
+        });
+        if (this.getSetting('edit.confirmSave')) {
+            confirmEmitter.emit({
+                data: row.getData(),
+                newData: row.getNewData(),
+                source: this.source,
+                confirm: deferred,
+            });
+        }
+        else {
+            deferred.resolve();
+        }
+    };
+    Grid.prototype.delete = function (row, confirmEmitter) {
+        var _this = this;
+        var deferred = new __WEBPACK_IMPORTED_MODULE_1__helpers__["c" /* Deferred */]();
+        deferred.promise.then(function () {
+            _this.source.remove(row.getData());
+        }).catch(function (err) {
+            // doing nothing
+        });
+        if (this.getSetting('delete.confirmDelete')) {
+            confirmEmitter.emit({
+                data: row.getData(),
+                source: this.source,
+                confirm: deferred,
+            });
+        }
+        else {
+            deferred.resolve();
+        }
+    };
+    Grid.prototype.processDataChange = function (changes) {
+        if (this.shouldProcessChange(changes)) {
+            this.dataSet.setData(changes['elements']);
+            if (this.getSetting('selectMode') !== 'multi') {
+                var row = this.determineRowToSelect(changes);
+                if (row) {
+                    this.onSelectRowSource.next(row);
+                }
+            }
+        }
+    };
+    Grid.prototype.shouldProcessChange = function (changes) {
+        if (['filter', 'sort', 'page', 'remove', 'refresh', 'load', 'paging'].indexOf(changes['action']) !== -1) {
+            return true;
+        }
+        else if (['prepend', 'append'].indexOf(changes['action']) !== -1 && !this.getSetting('pager.display')) {
+            return true;
+        }
+        return false;
+    };
+    // TODO: move to selectable? Separate directive
+    Grid.prototype.determineRowToSelect = function (changes) {
+        if (['load', 'page', 'filter', 'sort', 'refresh'].indexOf(changes['action']) !== -1) {
+            return this.dataSet.select();
+        }
+        if (changes['action'] === 'remove') {
+            if (changes['elements'].length === 0) {
+                // we have to store which one to select as the data will be reloaded
+                this.dataSet.willSelectLastRow();
+            }
+            else {
+                return this.dataSet.selectPreviousRow();
+            }
+        }
+        if (changes['action'] === 'append') {
+            // we have to store which one to select as the data will be reloaded
+            this.dataSet.willSelectLastRow();
+        }
+        if (changes['action'] === 'add') {
+            return this.dataSet.selectFirstRow();
+        }
+        if (changes['action'] === 'update') {
+            return this.dataSet.selectFirstRow();
+        }
+        if (changes['action'] === 'prepend') {
+            // we have to store which one to select as the data will be reloaded
+            this.dataSet.willSelectFirstRow();
+        }
+        return null;
+    };
+    Grid.prototype.prepareSource = function (source) {
+        var initialSource = this.getInitialSort();
+        if (initialSource && initialSource['field'] && initialSource['direction']) {
+            source.setSort([initialSource], false);
+        }
+        if (this.getSetting('pager.display') === true) {
+            source.setPaging(1, this.getSetting('pager.perPage'), false);
+        }
+        source.refresh();
+        return source;
+    };
+    Grid.prototype.getInitialSort = function () {
+        var sortConf = {};
+        this.getColumns().forEach(function (column) {
+            if (column.isSortable && column.defaultSortDirection) {
+                sortConf['field'] = column.id;
+                sortConf['direction'] = column.defaultSortDirection;
+                sortConf['compare'] = column.getCompareFunction();
+            }
+        });
+        return sortConf;
+    };
+    Grid.prototype.getSelectedRows = function () {
+        return this.dataSet.getRows()
+            .filter(function (r) { return r.isSelected; });
+    };
+    Grid.prototype.selectAllRows = function (status) {
+        this.dataSet.getRows()
+            .forEach(function (r) { return r.isSelected = status; });
+    };
+    Grid.prototype.getFirstRow = function () {
+        return this.dataSet.getFirstRow();
+    };
+    Grid.prototype.getLastRow = function () {
+        return this.dataSet.getLastRow();
+    };
+    return Grid;
+}());
+
+//# sourceMappingURL=grid.js.map
 
 /***/ }),
 
@@ -101,71 +295,44 @@ DashboardModule = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CalendarService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var CalendarService = (function () {
-    function CalendarService(_baConfig) {
-        this._baConfig = _baConfig;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Cell; });
+var Cell = (function () {
+    function Cell(value, row, column, dataSet) {
+        this.value = value;
+        this.row = row;
+        this.column = column;
+        this.dataSet = dataSet;
+        this.newValue = '';
+        this.newValue = value;
     }
-    CalendarService.prototype.getData = function () {
-        var dashboardColors = this._baConfig.get().colors.dashboard;
-        return {
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-            },
-            defaultDate: '2016-03-08',
-            selectable: true,
-            selectHelper: true,
-            editable: true,
-            eventLimit: true,
-            events: [
-                {
-                    title: 'All Day Event',
-                    start: '2016-03-01',
-                    color: dashboardColors.silverTree
-                },
-                {
-                    title: 'Long Event',
-                    start: '2016-03-07',
-                    end: '2016-03-10',
-                    color: dashboardColors.blueStone
-                },
-                {
-                    title: 'Dinner',
-                    start: '2016-03-14T20:00:00',
-                    color: dashboardColors.surfieGreen
-                },
-                {
-                    title: 'Birthday Party',
-                    start: '2016-04-01T07:00:00',
-                    color: dashboardColors.gossip
-                }
-            ]
-        };
+    Cell.prototype.getColumn = function () {
+        return this.column;
     };
-    return CalendarService;
+    Cell.prototype.getRow = function () {
+        return this.row;
+    };
+    Cell.prototype.getValue = function () {
+        var valid = this.column.getValuePrepareFunction() instanceof Function;
+        var prepare = valid ? this.column.getValuePrepareFunction() : Cell.PREPARE;
+        return prepare.call(null, this.value, this.row.getData());
+    };
+    Cell.prototype.setValue = function (value) {
+        this.newValue = value;
+    };
+    Cell.prototype.getId = function () {
+        return this.getColumn().id;
+    };
+    Cell.prototype.getTitle = function () {
+        return this.getColumn().title;
+    };
+    Cell.prototype.isEditable = function () {
+        return this.getColumn().isEditable;
+    };
+    return Cell;
 }());
-CalendarService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object])
-], CalendarService);
 
-var _a;
-//# sourceMappingURL=calendar.service.js.map
+Cell.PREPARE = function (value) { return value; };
+//# sourceMappingURL=cell.js.map
 
 /***/ }),
 
@@ -174,32 +341,93 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dashboard; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrCompleter; });
 
-var Dashboard = (function () {
-    function Dashboard() {
+var CtrCompleter = (function () {
+    function CtrCompleter() {
+        this.selected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.highlighted = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this._hasHighlited = false;
+        this.hasSelected = false;
+        this._cancelBlur = false;
     }
-    return Dashboard;
+    CtrCompleter.prototype.ngOnInit = function () {
+        //
+    };
+    CtrCompleter.prototype.registerList = function (list) {
+        this.list = list;
+    };
+    CtrCompleter.prototype.registerDropdown = function (dropdown) {
+        this.dropdown = dropdown;
+    };
+    CtrCompleter.prototype.onHighlighted = function (item) {
+        this.highlighted.emit(item);
+        this._hasHighlited = !!item;
+    };
+    CtrCompleter.prototype.onSelected = function (item) {
+        this.selected.emit(item);
+        if (item) {
+            this.hasSelected = true;
+        }
+        this.clear();
+    };
+    CtrCompleter.prototype.search = function (term) {
+        if (this.hasSelected) {
+            this.selected.emit(null);
+            this.hasSelected = false;
+        }
+        if (this.list) {
+            this.list.search(term);
+        }
+    };
+    CtrCompleter.prototype.clear = function () {
+        if (this.dropdown) {
+            this.dropdown.clear();
+        }
+        if (this.list) {
+            this.list.clear();
+        }
+        this._hasHighlited = false;
+    };
+    CtrCompleter.prototype.selectCurrent = function () {
+        if (this.dropdown) {
+            this.dropdown.selectCurrent();
+        }
+    };
+    CtrCompleter.prototype.nextRow = function () {
+        if (this.dropdown) {
+            this.dropdown.nextRow();
+        }
+    };
+    CtrCompleter.prototype.prevRow = function () {
+        if (this.dropdown) {
+            this.dropdown.prevRow();
+        }
+    };
+    CtrCompleter.prototype.hasHighlited = function () {
+        return this._hasHighlited;
+    };
+    CtrCompleter.prototype.cancelBlur = function (cancel) {
+        this._cancelBlur = cancel;
+    };
+    CtrCompleter.prototype.isCancelBlur = function () {
+        return this._cancelBlur;
+    };
+    return CtrCompleter;
 }());
-Dashboard = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'dashboard',
-        styles: [__webpack_require__(694)],
-        template: __webpack_require__(708)
-    }),
-    __metadata("design:paramtypes", [])
-], Dashboard);
 
-//# sourceMappingURL=dashboard.component.js.map
+CtrCompleter.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */], args: [{
+                selector: "[ctrCompleter]",
+            },] },
+];
+/** @nocollapse */
+CtrCompleter.ctorParameters = function () { return []; };
+CtrCompleter.propDecorators = {
+    'selected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+    'highlighted': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+};
+//# sourceMappingURL=ctr-completer.js.map
 
 /***/ }),
 
@@ -208,138 +436,49 @@ Dashboard = __decorate([
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FeedService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultEditor; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
 
-var FeedService = (function () {
-    function FeedService() {
-        this._data = [
-            {
-                type: 'text-message',
-                author: 'Kostya',
-                surname: 'Danovsky',
-                header: 'Posted new message',
-                text: 'Guys, check this out: \nA police officer found a perfect hiding place for watching for speeding motorists. One day, the officer was amazed when everyone was under the speed limit, so he investigated and found the problem. A 10 years old boy was standing on the side of the road with a huge hand painted sign which said "Radar Trap Ahead." A little more investigative work led the officer to the boy\'s accomplice: another boy about 100 yards beyond the radar trap with a sign reading "TIPS" and a bucket at his feet full of change.',
-                time: 'Today 11:55 pm',
-                ago: '25 minutes ago',
-                expanded: false,
-            }, {
-                type: 'video-message',
-                author: 'Andrey',
-                surname: 'Hrabouski',
-                header: 'Added new video',
-                text: '"Vader and Me"',
-                preview: 'app/feed/vader-and-me-preview.png',
-                link: 'https://www.youtube.com/watch?v=IfcpzBbbamk',
-                time: 'Today 9:30 pm',
-                ago: '3 hrs ago',
-                expanded: false,
-            }, {
-                type: 'image-message',
-                author: 'Vlad',
-                surname: 'Lugovsky',
-                header: 'Added new image',
-                text: '"My little kitten"',
-                preview: 'app/feed/my-little-kitten.png',
-                link: 'http://api.ning.com/files/DtcI2O2Ry7A7VhVxeiWfGU9WkHcMy4WSTWZ79oxJq*h0iXvVGndfD7CIYy-Ax-UAFCBCdqXI4GCBw3FOLKTTjQc*2cmpdOXJ/1082127884.jpeg',
-                time: 'Today 2:20 pm',
-                ago: '10 hrs ago',
-                expanded: false,
-            }, {
-                type: 'text-message',
-                author: 'Nasta',
-                surname: 'Linnie',
-                header: 'Posted new message',
-                text: 'Haha lol',
-                time: '11.11.2015',
-                ago: '2 days ago',
-                expanded: false,
-            }, {
-                type: 'geo-message',
-                author: 'Nick',
-                surname: 'Cat',
-                header: 'Posted location',
-                text: '"New York, USA"',
-                preview: 'app/feed/new-york-location.png',
-                link: 'https://www.google.by/maps/place/New+York,+NY,+USA/@40.7201111,-73.9893872,14z',
-                time: '11.11.2015',
-                ago: '2 days ago',
-                expanded: false,
-            }, {
-                type: 'text-message',
-                author: 'Vlad',
-                surname: 'Lugovsky',
-                header: 'Posted new message',
-                text: "First snake: I hope I'm not poisonous. Second snake: Why? First snake: Because I bit my lip!",
-                time: '12.11.2015',
-                ago: '3 days ago',
-                expanded: false,
-            }, {
-                type: 'text-message',
-                author: 'Andrey',
-                surname: 'Hrabouski',
-                header: 'Posted new message',
-                text: 'How do you smuggle an elephant across the border? Put a slice of bread on each side, and call him "lunch".',
-                time: '14.11.2015',
-                ago: '5 days ago',
-                expanded: false,
-            }, {
-                type: 'text-message',
-                author: 'Nasta',
-                surname: 'Linnie',
-                header: 'Posted new message',
-                text: 'When your hammer is C++, everything begins to look like a thumb.',
-                time: '14.11.2015',
-                ago: '5 days ago',
-                expanded: false,
-            }, {
-                type: 'text-message',
-                author: 'Alexander',
-                surname: 'Demeshko',
-                header: 'Posted new message',
-                text: '“I mean, they say you die twice. One time when you stop breathing and a second time, a bit later on, when somebody says your name for the last time." ©',
-                time: '15.11.2015',
-                ago: '6 days ago',
-                expanded: false,
-            }, {
-                type: 'image-message',
-                author: 'Nick',
-                surname: 'Cat',
-                header: 'Posted photo',
-                text: '"Protein Heroes"',
-                preview: 'app/feed/genom.png',
-                link: 'https://dribbble.com/shots/2504810-Protein-Heroes',
-                time: '16.11.2015',
-                ago: '7 days ago',
-                expanded: false,
-            },
-            {
-                type: 'text-message',
-                author: 'Kostya',
-                surname: 'Danovsky',
-                header: 'Posted new message',
-                text: 'Why did the CoffeeScript developer keep getting lost? Because he couldn\'t find his source without a map',
-                time: '18.11.2015',
-                ago: '9 days ago',
-                expanded: false,
-            }
-        ];
+
+var DefaultEditor = (function () {
+    function DefaultEditor() {
+        this.onStopEditing = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.onEdited = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.onClick = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
     }
-    FeedService.prototype.getData = function () {
-        return this._data;
-    };
-    return FeedService;
+    return DefaultEditor;
 }());
-FeedService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])()
-], FeedService);
 
-//# sourceMappingURL=feed.service.js.map
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__["a" /* Cell */])
+], DefaultEditor.prototype, "cell", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], DefaultEditor.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], DefaultEditor.prototype, "onStopEditing", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], DefaultEditor.prototype, "onEdited", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], DefaultEditor.prototype, "onClick", void 0);
+//# sourceMappingURL=default-editor.js.map
 
 /***/ }),
 
@@ -347,136 +486,74 @@ FeedService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LineChartService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var LineChartService = (function () {
-    function LineChartService(_baConfig) {
-        this._baConfig = _baConfig;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Column; });
+var Column = (function () {
+    function Column(id, settings, dataSet) {
+        this.id = id;
+        this.settings = settings;
+        this.dataSet = dataSet;
+        this.title = '';
+        this.type = '';
+        this.class = '';
+        this.isSortable = false;
+        this.isEditable = true;
+        this.isFilterable = false;
+        this.sortDirection = '';
+        this.defaultSortDirection = '';
+        this.editor = { type: '', config: {}, component: null };
+        this.filter = { type: '', config: {} };
+        this.renderComponent = null;
+        this.process();
     }
-    LineChartService.prototype.getData = function () {
-        var layoutColors = this._baConfig.get().colors;
-        var graphColor = this._baConfig.get().colors.custom.dashboardLineChart;
-        return {
-            type: 'serial',
-            theme: 'blur',
-            marginTop: 15,
-            marginRight: 15,
-            responsive: {
-                'enabled': true
-            },
-            dataProvider: [
-                { date: new Date(2012, 11), value: 0, value0: 0 },
-                { date: new Date(2013, 0), value: 15000, value0: 19000 },
-                { date: new Date(2013, 1), value: 30000, value0: 20000 },
-                { date: new Date(2013, 2), value: 25000, value0: 22000 },
-                { date: new Date(2013, 3), value: 21000, value0: 25000 },
-                { date: new Date(2013, 4), value: 24000, value0: 29000 },
-                { date: new Date(2013, 5), value: 31000, value0: 26000 },
-                { date: new Date(2013, 6), value: 40000, value0: 25000 },
-                { date: new Date(2013, 7), value: 37000, value0: 20000 },
-                { date: new Date(2013, 8), value: 18000, value0: 22000 },
-                { date: new Date(2013, 9), value: 5000, value0: 26000 },
-                { date: new Date(2013, 10), value: 40000, value0: 30000 },
-                { date: new Date(2013, 11), value: 20000, value0: 25000 },
-                { date: new Date(2014, 0), value: 5000, value0: 13000 },
-                { date: new Date(2014, 1), value: 3000, value0: 13000 },
-                { date: new Date(2014, 2), value: 1800, value0: 13000 },
-                { date: new Date(2014, 3), value: 10400, value0: 13000 },
-                { date: new Date(2014, 4), value: 25500, value0: 13000 },
-                { date: new Date(2014, 5), value: 2100, value0: 13000 },
-                { date: new Date(2014, 6), value: 6500, value0: 13000 },
-                { date: new Date(2014, 7), value: 1100, value0: 13000 },
-                { date: new Date(2014, 8), value: 17200, value0: 13000 },
-                { date: new Date(2014, 9), value: 26900, value0: 13000 },
-                { date: new Date(2014, 10), value: 14100, value0: 13000 },
-                { date: new Date(2014, 11), value: 35300, value0: 13000 },
-                { date: new Date(2015, 0), value: 54800, value0: 13000 },
-                { date: new Date(2015, 1), value: 49800, value0: 13000 }
-            ],
-            categoryField: 'date',
-            categoryAxis: {
-                parseDates: true,
-                gridAlpha: 0,
-                color: layoutColors.defaultText,
-                axisColor: layoutColors.defaultText
-            },
-            valueAxes: [
-                {
-                    minVerticalGap: 50,
-                    gridAlpha: 0,
-                    color: layoutColors.defaultText,
-                    axisColor: layoutColors.defaultText
-                }
-            ],
-            graphs: [
-                {
-                    id: 'g0',
-                    bullet: 'none',
-                    useLineColorForBulletBorder: true,
-                    lineColor: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].hexToRgbA(graphColor, 0.3),
-                    lineThickness: 1,
-                    negativeLineColor: layoutColors.danger,
-                    type: 'smoothedLine',
-                    valueField: 'value0',
-                    fillAlphas: 1,
-                    fillColorsField: 'lineColor'
-                },
-                {
-                    id: 'g1',
-                    bullet: 'none',
-                    useLineColorForBulletBorder: true,
-                    lineColor: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].hexToRgbA(graphColor, 0.15),
-                    lineThickness: 1,
-                    negativeLineColor: layoutColors.danger,
-                    type: 'smoothedLine',
-                    valueField: 'value',
-                    fillAlphas: 1,
-                    fillColorsField: 'lineColor'
-                }
-            ],
-            chartCursor: {
-                categoryBalloonDateFormat: 'MM YYYY',
-                categoryBalloonColor: '#4285F4',
-                categoryBalloonAlpha: 0.7,
-                cursorAlpha: 0,
-                valueLineEnabled: true,
-                valueLineBalloonEnabled: true,
-                valueLineAlpha: 0.5
-            },
-            dataDateFormat: 'MM YYYY',
-            export: {
-                enabled: true
-            },
-            creditsPosition: 'bottom-right',
-            zoomOutButton: {
-                backgroundColor: '#fff',
-                backgroundAlpha: 0
-            },
-            zoomOutText: '',
-            pathToImages: __WEBPACK_IMPORTED_MODULE_1__theme__["b" /* layoutPaths */].images.amChart
-        };
+    Column.prototype.getCompareFunction = function () {
+        return this.compareFunction;
     };
-    return LineChartService;
+    Column.prototype.getValuePrepareFunction = function () {
+        return this.valuePrepareFunction;
+    };
+    Column.prototype.getFilterFunction = function () {
+        return this.filterFunction;
+    };
+    Column.prototype.getConfig = function () {
+        return this.editor && this.editor.config;
+    };
+    Column.prototype.getFilterType = function () {
+        return this.filter && this.filter.type;
+    };
+    Column.prototype.getFilterConfig = function () {
+        return this.filter && this.filter.config;
+    };
+    Column.prototype.process = function () {
+        this.title = this.settings['title'];
+        this.class = this.settings['class'];
+        this.type = this.prepareType();
+        this.editor = this.settings['editor'];
+        this.filter = this.settings['filter'];
+        this.renderComponent = this.settings['renderComponent'];
+        this.isFilterable = typeof this.settings['filter'] === 'undefined' ? true : !!this.settings['filter'];
+        this.defaultSortDirection = ['asc', 'desc']
+            .indexOf(this.settings['sortDirection']) !== -1 ? this.settings['sortDirection'] : '';
+        this.isSortable = typeof this.settings['sort'] === 'undefined' ? true : !!this.settings['sort'];
+        this.isEditable = typeof this.settings['editable'] === 'undefined' ? true : !!this.settings['editable'];
+        this.sortDirection = this.prepareSortDirection();
+        this.compareFunction = this.settings['compareFunction'];
+        this.valuePrepareFunction = this.settings['valuePrepareFunction'];
+        this.filterFunction = this.settings['filterFunction'];
+    };
+    Column.prototype.prepareType = function () {
+        return this.settings['type'] || this.determineType();
+    };
+    Column.prototype.prepareSortDirection = function () {
+        return this.settings['sort'] === 'desc' ? 'desc' : 'asc';
+    };
+    Column.prototype.determineType = function () {
+        // TODO: determine type by data
+        return 'text';
+    };
+    return Column;
 }());
-LineChartService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object])
-], LineChartService);
 
-var _a;
-//# sourceMappingURL=lineChart.service.js.map
+//# sourceMappingURL=column.js.map
 
 /***/ }),
 
@@ -484,59 +561,56 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PieChartService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Row; });
 
-
-var PieChartService = (function () {
-    function PieChartService(_baConfig) {
-        this._baConfig = _baConfig;
+var Row = (function () {
+    function Row(index, data, _dataSet) {
+        this.index = index;
+        this.data = data;
+        this._dataSet = _dataSet;
+        this.isSelected = false;
+        this.isInEditing = false;
+        this.cells = [];
+        this.process();
     }
-    PieChartService.prototype.getData = function () {
-        var pieColor = this._baConfig.get().colors.custom.dashboardPieChart;
-        return [
-            {
-                color: pieColor,
-                description: 'dashboard.new_visits',
-                stats: '57,820',
-                icon: 'person',
-            }, {
-                color: pieColor,
-                description: 'dashboard.purchases',
-                stats: '$ 89,745',
-                icon: 'money',
-            }, {
-                color: pieColor,
-                description: 'dashboard.active_users',
-                stats: '178,391',
-                icon: 'face',
-            }, {
-                color: pieColor,
-                description: 'dashboard.returned',
-                stats: '32,592',
-                icon: 'refresh',
-            }
-        ];
+    Row.prototype.getCell = function (column) {
+        return this.cells.find(function (el) { return el.getColumn() === column; });
     };
-    return PieChartService;
+    Row.prototype.getCells = function () {
+        return this.cells;
+    };
+    Row.prototype.getData = function () {
+        return this.data;
+    };
+    Row.prototype.getIsSelected = function () {
+        return this.isSelected;
+    };
+    Row.prototype.getNewData = function () {
+        var values = Object.assign({}, this.data);
+        this.getCells().forEach(function (cell) { return values[cell.getColumn().id] = cell.newValue; });
+        return values;
+    };
+    Row.prototype.setData = function (data) {
+        this.data = data;
+        this.process();
+    };
+    Row.prototype.process = function () {
+        var _this = this;
+        this.cells = [];
+        this._dataSet.getColumns().forEach(function (column) {
+            var cell = _this.createCell(column);
+            _this.cells.push(cell);
+        });
+    };
+    Row.prototype.createCell = function (column) {
+        var value = typeof this.data[column.id] === 'undefined' ? '' : this.data[column.id];
+        return new __WEBPACK_IMPORTED_MODULE_0__cell__["a" /* Cell */](value, this, column, this._dataSet);
+    };
+    return Row;
 }());
-PieChartService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object])
-], PieChartService);
 
-var _a;
-//# sourceMappingURL=pieChart.service.js.map
+//# sourceMappingURL=row.js.map
 
 /***/ }),
 
@@ -544,40 +618,113 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TodoService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataSource; });
 
-var TodoService = (function () {
-    function TodoService() {
-        this._todoList = [
-            { text: 'Check me out' },
-            { text: 'Lorem ipsum dolor sit amet, possit denique oportere at his, etiam corpora deseruisse te pro' },
-            { text: 'Ex has semper alterum, expetenda dignissim' },
-            { text: 'Vim an eius ocurreret abhorreant, id nam aeque persius ornatus.' },
-            { text: 'Simul erroribus ad usu' },
-            { text: 'Ei cum solet appareat, ex est graeci mediocritatem' },
-            { text: 'Get in touch with akveo team' },
-            { text: 'Write email to business cat' },
-            { text: 'Have fun with blur admin' },
-            { text: 'What do you think?' },
-        ];
+var DataSource = (function () {
+    function DataSource() {
+        this.onChangedSource = new __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]();
+        this.onAddedSource = new __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]();
+        this.onUpdatedSource = new __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]();
+        this.onRemovedSource = new __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]();
     }
-    TodoService.prototype.getTodoList = function () {
-        return this._todoList;
+    DataSource.prototype.refresh = function () {
+        this.emitOnChanged('refresh');
     };
-    return TodoService;
+    DataSource.prototype.load = function (data) {
+        this.emitOnChanged('load');
+        return Promise.resolve();
+    };
+    DataSource.prototype.onChanged = function () {
+        return this.onChangedSource.asObservable();
+    };
+    DataSource.prototype.onAdded = function () {
+        return this.onAddedSource.asObservable();
+    };
+    DataSource.prototype.onUpdated = function () {
+        return this.onUpdatedSource.asObservable();
+    };
+    DataSource.prototype.onRemoved = function () {
+        return this.onRemovedSource.asObservable();
+    };
+    DataSource.prototype.prepend = function (element) {
+        this.emitOnAdded(element);
+        this.emitOnChanged('prepend');
+        return Promise.resolve();
+    };
+    DataSource.prototype.append = function (element) {
+        this.emitOnAdded(element);
+        this.emitOnChanged('append');
+        return Promise.resolve();
+    };
+    DataSource.prototype.add = function (element) {
+        this.emitOnAdded(element);
+        this.emitOnChanged('add');
+        return Promise.resolve();
+    };
+    DataSource.prototype.remove = function (element) {
+        this.emitOnRemoved(element);
+        this.emitOnChanged('remove');
+        return Promise.resolve();
+    };
+    DataSource.prototype.update = function (element, values) {
+        this.emitOnUpdated(element);
+        this.emitOnChanged('update');
+        return Promise.resolve();
+    };
+    DataSource.prototype.empty = function () {
+        this.emitOnChanged('empty');
+        return Promise.resolve();
+    };
+    DataSource.prototype.setSort = function (conf, doEmit) {
+        if (doEmit) {
+            this.emitOnChanged('sort');
+        }
+    };
+    DataSource.prototype.setFilter = function (conf, andOperator, doEmit) {
+        if (doEmit) {
+            this.emitOnChanged('filter');
+        }
+    };
+    DataSource.prototype.addFilter = function (fieldConf, andOperator, doEmit) {
+        if (doEmit) {
+            this.emitOnChanged('filter');
+        }
+    };
+    DataSource.prototype.setPaging = function (page, perPage, doEmit) {
+        if (doEmit) {
+            this.emitOnChanged('paging');
+        }
+    };
+    DataSource.prototype.setPage = function (page, doEmit) {
+        if (doEmit) {
+            this.emitOnChanged('page');
+        }
+    };
+    DataSource.prototype.emitOnRemoved = function (element) {
+        this.onRemovedSource.next(element);
+    };
+    DataSource.prototype.emitOnUpdated = function (element) {
+        this.onUpdatedSource.next(element);
+    };
+    DataSource.prototype.emitOnAdded = function (element) {
+        this.onAddedSource.next(element);
+    };
+    DataSource.prototype.emitOnChanged = function (action) {
+        var _this = this;
+        this.getElements().then(function (elements) { return _this.onChangedSource.next({
+            action: action,
+            elements: elements,
+            paging: _this.getPaging(),
+            filter: _this.getFilter(),
+            sort: _this.getSort(),
+        }); });
+    };
+    return DataSource;
 }());
-TodoService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])()
-], TodoService);
 
-//# sourceMappingURL=todo.service.js.map
+//# sourceMappingURL=data-source.js.map
 
 /***/ }),
 
@@ -585,74 +732,49 @@ TodoService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrafficChartService; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_completer_module__ = __webpack_require__(757);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__ng2_completer_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_completer_cmp__ = __webpack_require__(676);
+/* unused harmony reexport CompleterCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_completer_list_item_cmp__ = __webpack_require__(677);
+/* unused harmony reexport CompleterListItemCmp */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(651);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__services_completer_service__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_completer_data_factory__ = __webpack_require__(682);
+/* unused harmony reexport localDataFactory */
+/* unused harmony reexport LocalDataFactoryProvider */
+/* unused harmony reexport remoteDataFactory */
+/* unused harmony reexport RemoteDataFactoryProvider */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_local_data__ = __webpack_require__(652);
+/* unused harmony reexport LocalData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_remote_data__ = __webpack_require__(653);
+/* unused harmony reexport RemoteData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_completer_base_data__ = __webpack_require__(650);
+/* unused harmony reexport CompleterBaseData */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_completer__ = __webpack_require__(639);
+/* unused harmony reexport CtrCompleter */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_dropdown__ = __webpack_require__(649);
+/* unused harmony reexport CtrDropdown */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_input__ = __webpack_require__(678);
+/* unused harmony reexport CtrInput */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_list__ = __webpack_require__(679);
+/* unused harmony reexport CtrList */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_ctr_row__ = __webpack_require__(680);
+/* unused harmony reexport CtrRow */
 
 
-var TrafficChartService = (function () {
-    function TrafficChartService(_baConfig) {
-        this._baConfig = _baConfig;
-    }
-    TrafficChartService.prototype.getData = function () {
-        var dashboardColors = this._baConfig.get().colors.dashboard;
-        return [
-            {
-                value: 2000,
-                color: dashboardColors.white,
-                highlight: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].shade(dashboardColors.white, 15),
-                label: 'Other',
-                percentage: 87,
-                order: 1,
-            }, {
-                value: 1500,
-                color: dashboardColors.gossip,
-                highlight: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].shade(dashboardColors.gossip, 15),
-                label: 'Search engines',
-                percentage: 22,
-                order: 4,
-            }, {
-                value: 1000,
-                color: dashboardColors.silverTree,
-                highlight: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].shade(dashboardColors.silverTree, 15),
-                label: 'Referral Traffic',
-                percentage: 70,
-                order: 3,
-            }, {
-                value: 1200,
-                color: dashboardColors.surfieGreen,
-                highlight: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].shade(dashboardColors.surfieGreen, 15),
-                label: 'Direct Traffic',
-                percentage: 38,
-                order: 2,
-            }, {
-                value: 400,
-                color: dashboardColors.blueStone,
-                highlight: __WEBPACK_IMPORTED_MODULE_1__theme__["d" /* colorHelper */].shade(dashboardColors.blueStone, 15),
-                label: 'Ad Campaigns',
-                percentage: 17,
-                order: 0,
-            },
-        ];
-    };
-    return TrafficChartService;
-}());
-TrafficChartService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object])
-], TrafficChartService);
 
-var _a;
-//# sourceMappingURL=trafficChart.service.js.map
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -661,8 +783,8 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersMapService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(641);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultFilter; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -674,107 +796,424 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var UsersMapService = (function () {
-    function UsersMapService(_baConfig) {
-        this._baConfig = _baConfig;
+var DefaultFilter = (function () {
+    function DefaultFilter() {
+        this.delay = 300;
+        this.filter = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
     }
-    UsersMapService.prototype.getData = function () {
-        var layoutColors = this._baConfig.get().colors;
-        return {
-            type: 'map',
-            theme: 'blur',
-            zoomControl: { zoomControlEnabled: false, panControlEnabled: false },
-            dataProvider: {
-                map: 'worldLow',
-                zoomLevel: 3.5,
-                zoomLongitude: 10,
-                zoomLatitude: 52,
-                areas: [
-                    { title: 'Austria', id: 'AT', color: layoutColors.primary, customData: '1 244', groupId: '1' },
-                    { title: 'Ireland', id: 'IE', color: layoutColors.primary, customData: '1 342', groupId: '1' },
-                    { title: 'Denmark', id: 'DK', color: layoutColors.primary, customData: '1 973', groupId: '1' },
-                    { title: 'Finland', id: 'FI', color: layoutColors.primary, customData: '1 573', groupId: '1' },
-                    { title: 'Sweden', id: 'SE', color: layoutColors.primary, customData: '1 084', groupId: '1' },
-                    { title: 'Great Britain', id: 'GB', color: layoutColors.primary, customData: '1 452', groupId: '1' },
-                    { title: 'Italy', id: 'IT', color: layoutColors.primary, customData: '1 321', groupId: '1' },
-                    { title: 'France', id: 'FR', color: layoutColors.primary, customData: '1 112', groupId: '1' },
-                    { title: 'Spain', id: 'ES', color: layoutColors.primary, customData: '1 865', groupId: '1' },
-                    { title: 'Greece', id: 'GR', color: layoutColors.primary, customData: '1 453', groupId: '1' },
-                    { title: 'Germany', id: 'DE', color: layoutColors.primary, customData: '1 957', groupId: '1' },
-                    { title: 'Belgium', id: 'BE', color: layoutColors.primary, customData: '1 011', groupId: '1' },
-                    { title: 'Luxembourg', id: 'LU', color: layoutColors.primary, customData: '1 011', groupId: '1' },
-                    { title: 'Netherlands', id: 'NL', color: layoutColors.primary, customData: '1 213', groupId: '1' },
-                    { title: 'Portugal', id: 'PT', color: layoutColors.primary, customData: '1 291', groupId: '1' },
-                    { title: 'Lithuania', id: 'LT', color: layoutColors.successLight, customData: '567', groupId: '2' },
-                    { title: 'Latvia', id: 'LV', color: layoutColors.successLight, customData: '589', groupId: '2' },
-                    { title: 'Czech Republic ', id: 'CZ', color: layoutColors.successLight, customData: '785', groupId: '2' },
-                    { title: 'Slovakia', id: 'SK', color: layoutColors.successLight, customData: '965', groupId: '2' },
-                    { title: 'Estonia', id: 'EE', color: layoutColors.successLight, customData: '685', groupId: '2' },
-                    { title: 'Hungary', id: 'HU', color: layoutColors.successLight, customData: '854', groupId: '2' },
-                    { title: 'Cyprus', id: 'CY', color: layoutColors.successLight, customData: '754', groupId: '2' },
-                    { title: 'Malta', id: 'MT', color: layoutColors.successLight, customData: '867', groupId: '2' },
-                    { title: 'Poland', id: 'PL', color: layoutColors.successLight, customData: '759', groupId: '2' },
-                    { title: 'Romania', id: 'RO', color: layoutColors.success, customData: '302', groupId: '3' },
-                    { title: 'Bulgaria', id: 'BG', color: layoutColors.success, customData: '102', groupId: '3' },
-                    { title: 'Slovenia', id: 'SI', color: layoutColors.danger, customData: '23', groupId: '4' },
-                    { title: 'Croatia', id: 'HR', color: layoutColors.danger, customData: '96', groupId: '4' }
-                ]
-            },
-            areasSettings: {
-                rollOverOutlineColor: layoutColors.border,
-                rollOverColor: layoutColors.primaryDark,
-                alpha: 0.8,
-                unlistedAreasAlpha: 0.2,
-                unlistedAreasColor: layoutColors.defaultText,
-                balloonText: '[[title]]: [[customData]] users'
-            },
-            legend: {
-                width: '100%',
-                marginRight: 27,
-                marginLeft: 27,
-                equalWidths: false,
-                backgroundAlpha: 0.3,
-                backgroundColor: layoutColors.border,
-                borderColor: layoutColors.border,
-                borderAlpha: 1,
-                top: 362,
-                left: 0,
-                horizontalGap: 10,
-                data: [
-                    {
-                        title: 'over 1 000 users',
-                        color: layoutColors.primary
-                    },
-                    {
-                        title: '500 - 1 000 users',
-                        color: layoutColors.successLight
-                    },
-                    {
-                        title: '100 - 500 users',
-                        color: layoutColors.success
-                    },
-                    {
-                        title: '0 - 100 users',
-                        color: layoutColors.danger
-                    }
-                ]
-            },
-            export: {
-                enabled: true
-            },
-            creditsPosition: 'bottom-right',
-            pathToImages: __WEBPACK_IMPORTED_MODULE_1__theme__["b" /* layoutPaths */].images.amChart
-        };
+    DefaultFilter.prototype.ngOnDestroy = function () {
+        if (this.changesSubscription) {
+            this.changesSubscription.unsubscribe();
+        }
     };
-    return UsersMapService;
+    DefaultFilter.prototype.setFilter = function () {
+        this.filter.emit(this.query);
+    };
+    return DefaultFilter;
 }());
-UsersMapService = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object])
-], UsersMapService);
 
-var _a;
-//# sourceMappingURL=usersMap.service.js.map
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], DefaultFilter.prototype, "query", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], DefaultFilter.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__["a" /* Column */])
+], DefaultFilter.prototype, "column", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], DefaultFilter.prototype, "filter", void 0);
+//# sourceMappingURL=default-filter.js.map
+
+/***/ }),
+
+/***/ 646:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return deepExtend; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Deferred; });
+/* harmony export (immutable) */ __webpack_exports__["a"] = getDeepFromObject;
+
+/**
+ * Extending object that entered in first argument.
+ *
+ * Returns extended object or false if have no target object or incorrect type.
+ *
+ * If you wish to clone source object (without modify it), just use empty new
+ * object as first argument, like this:
+ *   deepExtend({}, yourObj_1, [yourObj_N]);
+ */
+var deepExtend = function () {
+    var objects = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        objects[_i] = arguments[_i];
+    }
+    if (arguments.length < 1 || typeof arguments[0] !== 'object') {
+        return false;
+    }
+    if (arguments.length < 2) {
+        return arguments[0];
+    }
+    var target = arguments[0];
+    // convert arguments to array and cut off target object
+    var args = Array.prototype.slice.call(arguments, 1);
+    var val, src;
+    args.forEach(function (obj) {
+        // skip argument if it is array or isn't object
+        if (typeof obj !== 'object' || Array.isArray(obj)) {
+            return;
+        }
+        Object.keys(obj).forEach(function (key) {
+            src = target[key]; // source value
+            val = obj[key]; // new value
+            // recursion prevention
+            if (val === target) {
+                return;
+                /**
+                 * if new value isn't object then just overwrite by new value
+                 * instead of extending.
+                 */
+            }
+            else if (typeof val !== 'object' || val === null) {
+                target[key] = val;
+                return;
+                // just clone arrays (and recursive clone objects inside)
+            }
+            else if (Array.isArray(val)) {
+                target[key] = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_lodash__["cloneDeep"])(val);
+                return;
+                // overwrite by new value if source isn't object or array
+            }
+            else if (typeof src !== 'object' || src === null || Array.isArray(src)) {
+                target[key] = deepExtend({}, val);
+                return;
+                // source value and new value is objects both, extending...
+            }
+            else {
+                target[key] = deepExtend(src, val);
+                return;
+            }
+        });
+    });
+    return target;
+};
+var Deferred = (function () {
+    function Deferred() {
+        var _this = this;
+        this.promise = new Promise(function (resolve, reject) {
+            _this.resolve = resolve;
+            _this.reject = reject;
+        });
+    }
+    return Deferred;
+}());
+
+// getDeepFromObject({result: {data: 1}}, 'result.data', 2); // returns 1
+function getDeepFromObject(object, name, defaultValue) {
+    if (object === void 0) { object = {}; }
+    var keys = name.split('.');
+    // clone the object
+    var level = deepExtend({}, object);
+    keys.forEach(function (k) {
+        if (level && typeof level[k] !== 'undefined') {
+            level = level[k];
+        }
+    });
+    return typeof level === 'undefined' ? defaultValue : level;
+}
+//# sourceMappingURL=helpers.js.map
+
+/***/ }),
+
+/***/ 647:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(4);
+var catch_1 = __webpack_require__(392);
+Observable_1.Observable.prototype.catch = catch_1._catch;
+Observable_1.Observable.prototype._catch = catch_1._catch;
+//# sourceMappingURL=catch.js.map
+
+/***/ }),
+
+/***/ 648:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(4);
+var debounceTime_1 = __webpack_require__(825);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
+
+/***/ }),
+
+/***/ 649:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_completer__ = __webpack_require__(639);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrRowItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CtrDropdown; });
+
+
+var CtrRowItem = (function () {
+    function CtrRowItem(row, index) {
+        this.row = row;
+        this.index = index;
+    }
+    return CtrRowItem;
+}());
+
+var CtrDropdown = (function () {
+    function CtrDropdown(completer, el) {
+        this.completer = completer;
+        this.el = el;
+        this.rows = [];
+        this.completer.registerDropdown(this);
+    }
+    CtrDropdown.prototype.ngOnInit = function () {
+        var css = getComputedStyle(this.el.nativeElement);
+        this.isScrollOn = css.maxHeight && css.overflowY === "auto";
+    };
+    CtrDropdown.prototype.ngOnDestroy = function () {
+        this.completer.registerDropdown(null);
+    };
+    CtrDropdown.prototype.onMouseDown = function (event) {
+        var _this = this;
+        // Support for canceling blur on IE (issue #158)
+        this.completer.cancelBlur(true);
+        setTimeout(function () {
+            _this.completer.cancelBlur(false);
+        }, 0);
+    };
+    CtrDropdown.prototype.registerRow = function (row) {
+        this.rows.push(row);
+    };
+    CtrDropdown.prototype.highlightRow = function (index) {
+        var highlited = this.rows.find(function (row) { return row.index === index; });
+        if (index < 0) {
+            if (this.currHighlited) {
+                this.currHighlited.row.setHighlited(false);
+            }
+            this.currHighlited = undefined;
+            this.completer.onHighlighted(null);
+            return;
+        }
+        if (!highlited) {
+            return;
+        }
+        if (this.currHighlited) {
+            this.currHighlited.row.setHighlited(false);
+        }
+        this.currHighlited = highlited;
+        this.currHighlited.row.setHighlited(true);
+        this.completer.onHighlighted(this.currHighlited.row.getDataItem());
+    };
+    CtrDropdown.prototype.clear = function () {
+        this.rows = [];
+    };
+    CtrDropdown.prototype.onSelected = function (item) {
+        this.completer.onSelected(item);
+    };
+    CtrDropdown.prototype.selectCurrent = function () {
+        if (this.currHighlited) {
+            this.onSelected(this.currHighlited.row.getDataItem());
+        }
+        else if (this.rows.length > 0) {
+            this.onSelected(this.rows[0].row.getDataItem());
+        }
+    };
+    CtrDropdown.prototype.nextRow = function () {
+        var nextRowIndex = 0;
+        if (this.currHighlited) {
+            nextRowIndex = this.currHighlited.index + 1;
+        }
+        this.highlightRow(nextRowIndex);
+        if (this.isScrollOn && this.currHighlited) {
+            var row = this.currHighlited.row.getNativeElement();
+            if (this.dropdownHeight() < row.getBoundingClientRect().bottom) {
+                this.dropdownScrollTopTo(this.dropdownRowOffsetHeight(row));
+            }
+        }
+    };
+    CtrDropdown.prototype.prevRow = function () {
+        var nextRowIndex = -1;
+        if (this.currHighlited) {
+            nextRowIndex = this.currHighlited.index - 1;
+        }
+        this.highlightRow(nextRowIndex);
+        if (this.isScrollOn && this.currHighlited) {
+            var rowTop = this.dropdownRowTop();
+            if (rowTop < 0) {
+                this.dropdownScrollTopTo(rowTop - 1);
+            }
+        }
+    };
+    CtrDropdown.prototype.dropdownScrollTopTo = function (offset) {
+        this.el.nativeElement.scrollTop = this.el.nativeElement.scrollTop + offset;
+    };
+    CtrDropdown.prototype.dropdownRowTop = function () {
+        return this.currHighlited.row.getNativeElement().getBoundingClientRect().top -
+            (this.el.nativeElement.getBoundingClientRect().top +
+                parseInt(getComputedStyle(this.el.nativeElement).paddingTop, 10));
+    };
+    CtrDropdown.prototype.dropdownHeight = function () {
+        return this.el.nativeElement.getBoundingClientRect().top +
+            parseInt(getComputedStyle(this.el.nativeElement).maxHeight, 10);
+    };
+    CtrDropdown.prototype.dropdownRowOffsetHeight = function (row) {
+        var css = getComputedStyle(row);
+        return row.offsetHeight +
+            parseInt(css.marginTop, 10) + parseInt(css.marginBottom, 10);
+    };
+    return CtrDropdown;
+}());
+
+CtrDropdown.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */], args: [{
+                selector: "[ctrDropdown]",
+            },] },
+];
+/** @nocollapse */
+CtrDropdown.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_1__ctr_completer__["a" /* CtrCompleter */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Host */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */], },
+]; };
+CtrDropdown.propDecorators = {
+    'onMouseDown': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["mousedown", ["$event"],] },],
+};
+//# sourceMappingURL=ctr-dropdown.js.map
+
+/***/ }),
+
+/***/ 650:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterBaseData; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+var CompleterBaseData = (function (_super) {
+    __extends(CompleterBaseData, _super);
+    function CompleterBaseData() {
+        return _super.call(this) || this;
+    }
+    CompleterBaseData.prototype.cancel = function () { };
+    CompleterBaseData.prototype.searchFields = function (searchFields) {
+        this._searchFields = searchFields;
+        return this;
+    };
+    CompleterBaseData.prototype.titleField = function (titleField) {
+        this._titleField = titleField;
+        return this;
+    };
+    CompleterBaseData.prototype.descriptionField = function (descriptionField) {
+        this._descriptionField = descriptionField;
+        return this;
+    };
+    CompleterBaseData.prototype.imageField = function (imageField) {
+        this._imageField = imageField;
+        return this;
+    };
+    CompleterBaseData.prototype.extractMatches = function (data, term) {
+        var _this = this;
+        var matches = [];
+        var searchFields = this._searchFields ? this._searchFields.split(",") : null;
+        if (this._searchFields !== null && this._searchFields !== undefined && term != "") {
+            matches = data.filter(function (item) {
+                var values = searchFields ? searchFields.map(function (searchField) { return _this.extractValue(item, searchField); }).filter(function (value) { return !!value; }) : [item];
+                return values.some(function (value) { return value.toString().toLowerCase().indexOf(term.toString().toLowerCase()) >= 0; });
+            });
+        }
+        else {
+            matches = data;
+        }
+        return matches;
+    };
+    CompleterBaseData.prototype.extractTitle = function (item) {
+        var _this = this;
+        // split title fields and run extractValue for each and join with ' '
+        return this._titleField.split(",")
+            .map(function (field) {
+            return _this.extractValue(item, field);
+        })
+            .join(" ");
+    };
+    CompleterBaseData.prototype.extractValue = function (obj, key) {
+        var keys;
+        var result;
+        if (key) {
+            keys = key.split(".");
+            result = obj;
+            for (var i = 0; i < keys.length; i++) {
+                if (result) {
+                    result = result[keys[i]];
+                }
+            }
+        }
+        else {
+            result = obj;
+        }
+        return result;
+    };
+    CompleterBaseData.prototype.processResults = function (matches) {
+        var i;
+        var description = "";
+        var image = null;
+        var formattedText;
+        var formattedDesc;
+        var results = [];
+        if (matches && matches.length > 0) {
+            for (i = 0; i < matches.length; i++) {
+                if (this._titleField) {
+                    formattedText = this.extractTitle(matches[i]);
+                }
+                else {
+                    formattedText = matches[i];
+                }
+                if (this._descriptionField) {
+                    description = formattedDesc = this.extractValue(matches[i], this._descriptionField);
+                }
+                if (this._imageField) {
+                    image = this.extractValue(matches[i], this._imageField);
+                }
+                results.push({
+                    title: formattedText,
+                    description: formattedDesc,
+                    image: image,
+                    originalObject: matches[i]
+                });
+            }
+        }
+        return results;
+    };
+    return CompleterBaseData;
+}(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__["Subject"]));
+
+//# sourceMappingURL=completer-base-data.js.map
 
 /***/ }),
 
@@ -783,60 +1222,49 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_service__ = __webpack_require__(638);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Calendar; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(652);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(653);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterService; });
 
 
 
-var Calendar = (function () {
-    function Calendar(_calendarService) {
-        var _this = this;
-        this._calendarService = _calendarService;
-        this.calendarConfiguration = this._calendarService.getData();
-        this.calendarConfiguration.select = function (start, end) { return _this._onSelect(start, end); };
+var CompleterService = (function () {
+    function CompleterService(localDataFactory, // Using any instead of () => LocalData because on AoT errors
+        remoteDataFactory // Using any instead of () => LocalData because on AoT errors
+    ) {
+        this.localDataFactory = localDataFactory;
+        this.remoteDataFactory = remoteDataFactory; // Using any instead of () => LocalData because on AoT errors
     }
-    Calendar.prototype.onCalendarReady = function (calendar) {
-        this._calendar = calendar;
+    CompleterService.prototype.local = function (data, searchFields, titleField) {
+        if (searchFields === void 0) { searchFields = ""; }
+        if (titleField === void 0) { titleField = ""; }
+        var localData = this.localDataFactory();
+        return localData
+            .data(data)
+            .searchFields(searchFields)
+            .titleField(titleField);
     };
-    Calendar.prototype._onSelect = function (start, end) {
-        if (this._calendar != null) {
-            var title = prompt('Event Title:');
-            var eventData = void 0;
-            if (title) {
-                eventData = {
-                    title: title,
-                    start: start,
-                    end: end
-                };
-                __WEBPACK_IMPORTED_MODULE_1_jquery__(this._calendar).fullCalendar('renderEvent', eventData, true);
-            }
-            __WEBPACK_IMPORTED_MODULE_1_jquery__(this._calendar).fullCalendar('unselect');
-        }
+    CompleterService.prototype.remote = function (url, searchFields, titleField) {
+        if (searchFields === void 0) { searchFields = ""; }
+        if (titleField === void 0) { titleField = ""; }
+        var remoteData = this.remoteDataFactory();
+        return remoteData
+            .remoteUrl(url)
+            .searchFields(searchFields)
+            .titleField(titleField);
     };
-    return Calendar;
+    return CompleterService;
 }());
-Calendar = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'calendar',
-        template: __webpack_require__(707),
-        styles: [__webpack_require__(693)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__calendar_service__["a" /* CalendarService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__calendar_service__["a" /* CalendarService */]) === "function" && _a || Object])
-], Calendar);
 
-var _a;
-//# sourceMappingURL=calendar.component.js.map
+CompleterService.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */] },
+];
+/** @nocollapse */
+CompleterService.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_1__local_data__["a" /* LocalData */],] },] },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Inject */], args: [__WEBPACK_IMPORTED_MODULE_2__remote_data__["a" /* RemoteData */],] },] },
+]; };
+//# sourceMappingURL=completer-service.js.map
 
 /***/ }),
 
@@ -844,10 +1272,63 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__calendar_component__ = __webpack_require__(651);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__calendar_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__completer_base_data__ = __webpack_require__(650);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalData; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
-//# sourceMappingURL=index.js.map
+
+
+var LocalData = (function (_super) {
+    __extends(LocalData, _super);
+    function LocalData() {
+        return _super.call(this) || this;
+    }
+    LocalData.prototype.data = function (data) {
+        var _this = this;
+        if (data instanceof __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"]) {
+            data.subscribe(function (res) {
+                _this._data = res;
+                if (_this.savedTerm) {
+                    _this.search(_this.savedTerm);
+                }
+            });
+        }
+        else {
+            this._data = data;
+        }
+        return this;
+    };
+    LocalData.prototype.search = function (term) {
+        if (!this._data) {
+            this.savedTerm = term;
+        }
+        else {
+            this.savedTerm = null;
+            var matches = this.extractMatches(this._data, term);
+            this.next(this.processResults(matches));
+        }
+    };
+    return LocalData;
+}(__WEBPACK_IMPORTED_MODULE_2__completer_base_data__["a" /* CompleterBaseData */]));
+
+LocalData.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */] },
+];
+/** @nocollapse */
+LocalData.ctorParameters = function () { return []; };
+//# sourceMappingURL=local-data.js.map
 
 /***/ }),
 
@@ -855,22 +1336,86 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_component__ = __webpack_require__(639);
-/* unused harmony export routes */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__completer_base_data__ = __webpack_require__(650);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RemoteData; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
 
-// noinspection TypeScriptValidateTypes
-var routes = [
-    {
-        path: '',
-        component: __WEBPACK_IMPORTED_MODULE_1__dashboard_component__["a" /* Dashboard */],
-        children: []
+
+
+var RemoteData = (function (_super) {
+    __extends(RemoteData, _super);
+    function RemoteData(http) {
+        var _this = _super.call(this) || this;
+        _this.http = http;
+        _this._urlFormater = null;
+        _this._dataField = null;
+        return _this;
     }
-];
-var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(routes);
-//# sourceMappingURL=dashboard.routing.js.map
+    RemoteData.prototype.remoteUrl = function (remoteUrl) {
+        this._remoteUrl = remoteUrl;
+        return this;
+    };
+    RemoteData.prototype.urlFormater = function (urlFormater) {
+        this._urlFormater = urlFormater;
+    };
+    RemoteData.prototype.dataField = function (dataField) {
+        this._dataField = dataField;
+    };
+    RemoteData.prototype.headers = function (headers) {
+        this._headers = headers;
+    };
+    RemoteData.prototype.search = function (term) {
+        var _this = this;
+        this.cancel();
+        // let params = {};
+        var url = "";
+        if (this._urlFormater) {
+            url = this._urlFormater(term);
+        }
+        else {
+            url = this._remoteUrl + encodeURIComponent(term);
+        }
+        this.remoteSearch = this.http.get(url, { headers: this._headers || new __WEBPACK_IMPORTED_MODULE_0__angular_http__["d" /* Headers */]() })
+            .map(function (res) { return res.json(); })
+            .map(function (data) {
+            var matchaes = _this.extractValue(data, _this._dataField);
+            return _this.extractMatches(matchaes, term);
+        })
+            .map(function (matches) {
+            var results = _this.processResults(matches);
+            _this.next(results);
+            return results;
+        })
+            .catch(function (err) {
+            _this.error(err);
+            return null;
+        })
+            .subscribe();
+    };
+    RemoteData.prototype.cancel = function () {
+        if (this.remoteSearch) {
+            this.remoteSearch.unsubscribe();
+        }
+    };
+    return RemoteData;
+}(__WEBPACK_IMPORTED_MODULE_3__completer_base_data__["a" /* CompleterBaseData */]));
+
+//# sourceMappingURL=remote-data.js.map
 
 /***/ }),
 
@@ -879,45 +1424,73 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__feed_service__ = __webpack_require__(640);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Feed; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_completer__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cell_component__ = __webpack_require__(768);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cell_edit_mode_custom_edit_component__ = __webpack_require__(758);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cell_edit_mode_default_edit_component__ = __webpack_require__(759);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cell_edit_mode_edit_cell_component__ = __webpack_require__(760);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cell_editors_checkbox_editor_component__ = __webpack_require__(761);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cell_editors_completer_editor_component__ = __webpack_require__(762);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cell_editors_input_editor_component__ = __webpack_require__(763);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__cell_editors_select_editor_component__ = __webpack_require__(764);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__cell_editors_textarea_editor_component__ = __webpack_require__(765);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__cell_view_mode_custom_view_component__ = __webpack_require__(766);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__cell_view_mode_view_cell_component__ = __webpack_require__(767);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CellModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
 
-var Feed = (function () {
-    function Feed(_feedService) {
-        this._feedService = _feedService;
+
+
+
+
+
+
+
+
+
+
+
+
+
+var CELL_COMPONENTS = [
+    __WEBPACK_IMPORTED_MODULE_4__cell_component__["a" /* CellComponent */],
+    __WEBPACK_IMPORTED_MODULE_5__cell_edit_mode_custom_edit_component__["a" /* CustomEditComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__cell_edit_mode_default_edit_component__["a" /* DefaultEditComponent */],
+    __WEBPACK_IMPORTED_MODULE_7__cell_edit_mode_edit_cell_component__["a" /* EditCellComponent */],
+    __WEBPACK_IMPORTED_MODULE_8__cell_editors_checkbox_editor_component__["a" /* CheckboxEditorComponent */],
+    __WEBPACK_IMPORTED_MODULE_9__cell_editors_completer_editor_component__["a" /* CompleterEditorComponent */],
+    __WEBPACK_IMPORTED_MODULE_10__cell_editors_input_editor_component__["a" /* InputEditorComponent */],
+    __WEBPACK_IMPORTED_MODULE_11__cell_editors_select_editor_component__["a" /* SelectEditorComponent */],
+    __WEBPACK_IMPORTED_MODULE_12__cell_editors_textarea_editor_component__["a" /* TextareaEditorComponent */],
+    __WEBPACK_IMPORTED_MODULE_13__cell_view_mode_custom_view_component__["a" /* CustomViewComponent */],
+    __WEBPACK_IMPORTED_MODULE_14__cell_view_mode_view_cell_component__["a" /* ViewCellComponent */],
+];
+var CellModule = (function () {
+    function CellModule() {
     }
-    Feed.prototype.ngOnInit = function () {
-        this._loadFeed();
-    };
-    Feed.prototype.expandMessage = function (message) {
-        message.expanded = !message.expanded;
-    };
-    Feed.prototype._loadFeed = function () {
-        this.feed = this._feedService.getData();
-    };
-    return Feed;
+    return CellModule;
 }());
-Feed = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'feed',
-        template: __webpack_require__(709),
-        styles: [__webpack_require__(695)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__feed_service__["a" /* FeedService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__feed_service__["a" /* FeedService */]) === "function" && _a || Object])
-], Feed);
+CellModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3_ng2_completer__["a" /* Ng2CompleterModule */],
+        ],
+        declarations: CELL_COMPONENTS.slice(),
+        exports: CELL_COMPONENTS.slice(),
+    })
+], CellModule);
 
-var _a;
-//# sourceMappingURL=feed.component.js.map
+//# sourceMappingURL=cell.module.js.map
 
 /***/ }),
 
@@ -925,93 +1498,377 @@ var _a;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__feed_component__ = __webpack_require__(654);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__feed_component__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_sorter__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_filter__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__local_pager__ = __webpack_require__(793);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__data_source__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers__ = __webpack_require__(646);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataSource; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 
-//# sourceMappingURL=index.js.map
+
+
+
+
+var LocalDataSource = (function (_super) {
+    __extends(LocalDataSource, _super);
+    function LocalDataSource(data) {
+        if (data === void 0) { data = []; }
+        var _this = _super.call(this) || this;
+        _this.data = [];
+        _this.filteredAndSorted = [];
+        _this.sortConf = [];
+        _this.filterConf = {
+            filters: [],
+            andOperator: true,
+        };
+        _this.pagingConf = {};
+        _this.data = data;
+        return _this;
+    }
+    LocalDataSource.prototype.load = function (data) {
+        this.data = data;
+        return _super.prototype.load.call(this, data);
+    };
+    LocalDataSource.prototype.prepend = function (element) {
+        this.reset(true);
+        this.data.unshift(element);
+        return _super.prototype.prepend.call(this, element);
+    };
+    LocalDataSource.prototype.append = function (element) {
+        this.reset(true);
+        this.data.push(element);
+        return _super.prototype.append.call(this, element);
+    };
+    LocalDataSource.prototype.add = function (element) {
+        this.data.push(element);
+        return _super.prototype.add.call(this, element);
+    };
+    LocalDataSource.prototype.remove = function (element) {
+        this.data = this.data.filter(function (el) { return el !== element; });
+        return _super.prototype.remove.call(this, element);
+    };
+    LocalDataSource.prototype.update = function (element, values) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            _this.find(element).then(function (found) {
+                found = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_4__helpers__["b" /* deepExtend */])(found, values);
+                _super.prototype.update.call(_this, found, values).then(resolve).catch(reject);
+            }).catch(reject);
+        });
+    };
+    LocalDataSource.prototype.find = function (element) {
+        var found = this.data.find(function (el) { return el === element; });
+        if (found) {
+            return Promise.resolve(found);
+        }
+        return Promise.reject(new Error('Element was not found in the dataset'));
+    };
+    LocalDataSource.prototype.getElements = function () {
+        var data = this.data.slice(0);
+        return Promise.resolve(this.prepareData(data));
+    };
+    LocalDataSource.prototype.getFilteredAndSorted = function () {
+        var data = this.data.slice(0);
+        this.prepareData(data);
+        return Promise.resolve(this.filteredAndSorted);
+    };
+    LocalDataSource.prototype.getAll = function () {
+        var data = this.data.slice(0);
+        return Promise.resolve(data);
+    };
+    LocalDataSource.prototype.reset = function (silent) {
+        if (silent === void 0) { silent = false; }
+        if (silent) {
+            this.filterConf = {
+                filters: [],
+                andOperator: true,
+            };
+            this.sortConf = [];
+            this.pagingConf['page'] = 1;
+        }
+        else {
+            this.setFilter([], true, false);
+            this.setSort([], false);
+            this.setPage(1);
+        }
+    };
+    LocalDataSource.prototype.empty = function () {
+        this.data = [];
+        return _super.prototype.empty.call(this);
+    };
+    LocalDataSource.prototype.count = function () {
+        return this.filteredAndSorted.length;
+    };
+    /**
+     *
+     * Array of conf objects
+     * [
+     *  {field: string, direction: asc|desc|null, compare: Function|null},
+     * ]
+     * @param conf
+     * @param doEmit
+     * @returns {LocalDataSource}
+     */
+    LocalDataSource.prototype.setSort = function (conf, doEmit) {
+        if (doEmit === void 0) { doEmit = true; }
+        if (conf !== null) {
+            conf.forEach(function (fieldConf) {
+                if (!fieldConf['field'] || typeof fieldConf['direction'] === 'undefined') {
+                    throw new Error('Sort configuration object is not valid');
+                }
+            });
+            this.sortConf = conf;
+        }
+        _super.prototype.setSort.call(this, conf, doEmit);
+        return this;
+    };
+    /**
+     *
+     * Array of conf objects
+     * [
+     *  {field: string, search: string, filter: Function|null},
+     * ]
+     * @param conf
+     * @param andOperator
+     * @param doEmit
+     * @returns {LocalDataSource}
+     */
+    LocalDataSource.prototype.setFilter = function (conf, andOperator, doEmit) {
+        var _this = this;
+        if (andOperator === void 0) { andOperator = true; }
+        if (doEmit === void 0) { doEmit = true; }
+        if (conf && conf.length > 0) {
+            conf.forEach(function (fieldConf) {
+                _this.addFilter(fieldConf, andOperator, false);
+            });
+        }
+        else {
+            this.filterConf = {
+                filters: [],
+                andOperator: true,
+            };
+        }
+        this.filterConf.andOperator = andOperator;
+        this.pagingConf['page'] = 1;
+        _super.prototype.setFilter.call(this, conf, andOperator, doEmit);
+        return this;
+    };
+    LocalDataSource.prototype.addFilter = function (fieldConf, andOperator, doEmit) {
+        var _this = this;
+        if (andOperator === void 0) { andOperator = true; }
+        if (doEmit === void 0) { doEmit = true; }
+        if (!fieldConf['field'] || typeof fieldConf['search'] === 'undefined') {
+            throw new Error('Filter configuration object is not valid');
+        }
+        var found = false;
+        this.filterConf.filters.forEach(function (currentFieldConf, index) {
+            if (currentFieldConf['field'] === fieldConf['field']) {
+                _this.filterConf.filters[index] = fieldConf;
+                found = true;
+            }
+        });
+        if (!found) {
+            this.filterConf.filters.push(fieldConf);
+        }
+        this.filterConf.andOperator = andOperator;
+        _super.prototype.addFilter.call(this, fieldConf, andOperator, doEmit);
+        return this;
+    };
+    LocalDataSource.prototype.setPaging = function (page, perPage, doEmit) {
+        if (doEmit === void 0) { doEmit = true; }
+        this.pagingConf['page'] = page;
+        this.pagingConf['perPage'] = perPage;
+        _super.prototype.setPaging.call(this, page, perPage, doEmit);
+        return this;
+    };
+    LocalDataSource.prototype.setPage = function (page, doEmit) {
+        if (doEmit === void 0) { doEmit = true; }
+        this.pagingConf['page'] = page;
+        _super.prototype.setPage.call(this, page, doEmit);
+        return this;
+    };
+    LocalDataSource.prototype.getSort = function () {
+        return this.sortConf;
+    };
+    LocalDataSource.prototype.getFilter = function () {
+        return this.filterConf;
+    };
+    LocalDataSource.prototype.getPaging = function () {
+        return this.pagingConf;
+    };
+    LocalDataSource.prototype.prepareData = function (data) {
+        data = this.filter(data);
+        data = this.sort(data);
+        this.filteredAndSorted = data.slice(0);
+        return this.paginate(data);
+    };
+    LocalDataSource.prototype.sort = function (data) {
+        if (this.sortConf) {
+            this.sortConf.forEach(function (fieldConf) {
+                data = __WEBPACK_IMPORTED_MODULE_0__local_sorter__["a" /* LocalSorter */]
+                    .sort(data, fieldConf['field'], fieldConf['direction'], fieldConf['compare']);
+            });
+        }
+        return data;
+    };
+    // TODO: refactor?
+    LocalDataSource.prototype.filter = function (data) {
+        if (this.filterConf.filters) {
+            if (this.filterConf.andOperator) {
+                this.filterConf.filters.forEach(function (fieldConf) {
+                    data = __WEBPACK_IMPORTED_MODULE_1__local_filter__["a" /* LocalFilter */]
+                        .filter(data, fieldConf['field'], fieldConf['search'], fieldConf['filter']);
+                });
+            }
+            else {
+                var mergedData_1 = [];
+                this.filterConf.filters.forEach(function (fieldConf) {
+                    mergedData_1 = mergedData_1.concat(__WEBPACK_IMPORTED_MODULE_1__local_filter__["a" /* LocalFilter */]
+                        .filter(data, fieldConf['field'], fieldConf['search'], fieldConf['filter']));
+                });
+                // remove non unique items
+                data = mergedData_1.filter(function (elem, pos, arr) {
+                    return arr.indexOf(elem) === pos;
+                });
+            }
+        }
+        return data;
+    };
+    LocalDataSource.prototype.paginate = function (data) {
+        if (this.pagingConf && this.pagingConf['page'] && this.pagingConf['perPage']) {
+            data = __WEBPACK_IMPORTED_MODULE_2__local_pager__["a" /* LocalPager */].paginate(data, this.pagingConf['page'], this.pagingConf['perPage']);
+        }
+        return data;
+    };
+    return LocalDataSource;
+}(__WEBPACK_IMPORTED_MODULE_3__data_source__["a" /* DataSource */]));
+
+//# sourceMappingURL=local.data-source.js.map
 
 /***/ }),
 
 /***/ 656:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lineChart_component__ = __webpack_require__(657);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__lineChart_component__["a"]; });
 
-//# sourceMappingURL=index.js.map
+var Observable_1 = __webpack_require__(4);
+var distinctUntilChanged_1 = __webpack_require__(826);
+Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
+//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
 
 /***/ 657:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lineChart_service__ = __webpack_require__(641);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LineChart; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 
-
-var LineChart = (function () {
-    function LineChart(_lineChartService) {
-        this._lineChartService = _lineChartService;
-        this.chartData = this._lineChartService.getData();
-    }
-    LineChart.prototype.initChart = function (chart) {
-        var zoomChart = function () {
-            chart.zoomToDates(new Date(2013, 3), new Date(2014, 0));
-        };
-        chart.addListener('rendered', zoomChart);
-        zoomChart();
-        if (chart.zoomChart) {
-            chart.zoomChart();
-        }
-    };
-    return LineChart;
-}());
-LineChart = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'line-chart',
-        template: __webpack_require__(710),
-        styles: [__webpack_require__(696)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__lineChart_service__["a" /* LineChartService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__lineChart_service__["a" /* LineChartService */]) === "function" && _a || Object])
-], LineChart);
-
-var _a;
-//# sourceMappingURL=lineChart.component.js.map
+var Observable_1 = __webpack_require__(4);
+var toPromise_1 = __webpack_require__(658);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ }),
 
 /***/ 658:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pieChart_component__ = __webpack_require__(659);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__pieChart_component__["a"]; });
 
-//# sourceMappingURL=index.js.map
+var root_1 = __webpack_require__(33);
+/* tslint:enable:max-line-length */
+/**
+ * Converts an Observable sequence to a ES2015 compliant promise.
+ *
+ * @example
+ * // Using normal ES2015
+ * let source = Rx.Observable
+ *   .of(42)
+ *   .toPromise();
+ *
+ * source.then((value) => console.log('Value: %s', value));
+ * // => Value: 42
+ *
+ * // Rejected Promise
+ * // Using normal ES2015
+ * let source = Rx.Observable
+ *   .throw(new Error('woops'))
+ *   .toPromise();
+ *
+ * source
+ *   .then((value) => console.log('Value: %s', value))
+ *   .catch((err) => console.log('Error: %s', err));
+ * // => Error: Error: woops
+ *
+ * // Setting via the config
+ * Rx.config.Promise = RSVP.Promise;
+ *
+ * let source = Rx.Observable
+ *   .of(42)
+ *   .toPromise();
+ *
+ * source.then((value) => console.log('Value: %s', value));
+ * // => Value: 42
+ *
+ * // Setting via the method
+ * let source = Rx.Observable
+ *   .of(42)
+ *   .toPromise(RSVP.Promise);
+ *
+ * source.then((value) => console.log('Value: %s', value));
+ * // => Value: 42
+ *
+ * @param PromiseCtor promise The constructor of the promise. If not provided,
+ * it will look for a constructor first in Rx.config.Promise then fall back to
+ * the native Promise constructor if available.
+ * @return {Promise<T>} An ES2015 compatible promise with the last value from
+ * the observable sequence.
+ * @method toPromise
+ * @owner Observable
+ */
+function toPromise(PromiseCtor) {
+    var _this = this;
+    if (!PromiseCtor) {
+        if (root_1.root.Rx && root_1.root.Rx.config && root_1.root.Rx.config.Promise) {
+            PromiseCtor = root_1.root.Rx.config.Promise;
+        }
+        else if (root_1.root.Promise) {
+            PromiseCtor = root_1.root.Promise;
+        }
+    }
+    if (!PromiseCtor) {
+        throw new Error('no Promise impl found');
+    }
+    return new PromiseCtor(function (resolve, reject) {
+        var value;
+        _this.subscribe(function (x) { return value = x; }, function (err) { return reject(err); }, function () { return resolve(value); });
+    });
+}
+exports.toPromise = toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ }),
 
-/***/ 659:
+/***/ 668:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pieChart_service__ = __webpack_require__(642);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js__ = __webpack_require__(691);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PieChart; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__ = __webpack_require__(685);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventlog_service__ = __webpack_require__(671);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(38);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventLogListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1024,123 +1881,143 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var PieChart = (function () {
-    function PieChart(_pieChartService) {
-        this._pieChartService = _pieChartService;
-        this._init = false;
-        this.charts = this._pieChartService.getData();
-    }
-    PieChart.prototype.ngAfterViewInit = function () {
-        if (!this._init) {
-            this._loadPieCharts();
-            this._updatePieCharts();
-            this._init = true;
-        }
-    };
-    PieChart.prototype._loadPieCharts = function () {
-        jQuery('.chart').each(function () {
-            var chart = jQuery(this);
-            chart.easyPieChart({
-                easing: 'easeOutBounce',
-                onStep: function (from, to, percent) {
-                    jQuery(this.el).find('.percent').text(Math.round(percent));
+
+var EventLogListComponent = (function () {
+    function EventLogListComponent(_eventlogService, router, route) {
+        this._eventlogService = _eventlogService;
+        this.router = router;
+        this.route = route;
+        this.myDateRangePickerOptions = {
+            dateFormat: 'dd/mm/yyyy',
+            height: '24px',
+            width: '200px'
+        };
+        this.source = new __WEBPACK_IMPORTED_MODULE_1_ng2_smart_table__["b" /* LocalDataSource */]();
+        this.errorMessage = '';
+        this.settings = {
+            actions: {
+                add: false,
+                edit: false,
+                delete: false
+            },
+            pager: {
+                display: false,
+                perPage: 15
+            },
+            filter: {
+                filter: false
+            },
+            columns: {
+                timestamp: {
+                    title: 'Timestamp',
+                    width: '5%'
                 },
-                barColor: jQuery(this).attr('data-rel'),
-                trackColor: 'rgba(0,0,0,0)',
-                size: 84,
-                scaleLength: 0,
-                animation: 2000,
-                lineWidth: 9,
-                lineCap: 'round',
-            });
-        });
-    };
-    PieChart.prototype._updatePieCharts = function () {
-        var getRandomArbitrary = function (min, max) { return Math.random() * (max - min) + min; };
-        jQuery('.pie-charts .chart').each(function (index, chart) {
-            jQuery(chart).data('easyPieChart').update(getRandomArbitrary(55, 90));
-        });
-    };
-    return PieChart;
-}());
-PieChart = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'pie-chart',
-        template: __webpack_require__(711),
-        styles: [__webpack_require__(697)]
-    })
-    // TODO: move easypiechart to component
-    ,
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__pieChart_service__["a" /* PieChartService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__pieChart_service__["a" /* PieChartService */]) === "function" && _a || Object])
-], PieChart);
-
-var _a;
-//# sourceMappingURL=pieChart.component.js.map
-
-/***/ }),
-
-/***/ 660:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popularApp_component__ = __webpack_require__(661);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__popularApp_component__["a"]; });
-
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 661:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopularApp; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var PopularApp = (function () {
-    function PopularApp() {
+                playbook: {
+                    title: 'Task Group',
+                    width: '20%'
+                },
+                task: {
+                    title: 'Task',
+                    width: '20%'
+                },
+                // taskid: {
+                //     title: 'Task Id',
+                //     width: '20%'
+                // },
+                user: {
+                    title: 'User',
+                    width: '20%'
+                },
+                host: {
+                    title: 'Hostname',
+                    width: '10%',
+                },
+                status: {
+                    title: 'Status',
+                    width: '20%',
+                    filter: {
+                        type: 'list',
+                        config: {
+                            selectText: 'All',
+                            list: [
+                                { value: 'OK', title: 'OK' },
+                                { value: 'Failed', title: 'Failed' },
+                                { value: 'Unreachable', title: 'Unreachable' }
+                            ]
+                        }
+                    }
+                },
+                msg: {
+                    title: 'Message',
+                    width: '20%'
+                }
+            }
+        };
+        this.getEventLogLines();
     }
-    PopularApp.prototype.ngOnInit = function () {
+    // dateRangeChanged callback function called when the user apply the date range. This is
+    // mandatory callback in this option. There are also optional inputFieldChanged and
+    // calendarViewChanged callbacks.
+    EventLogListComponent.prototype.onDateRangeChanged = function (event) {
+        var _this = this;
+        console.log('onDateRangeChanged(): Begin date: ', event.beginDate, ' End date: ', event.endDate);
+        console.log('onDateRangeChanged(): Formatted: ', event.formatted);
+        console.log('onDateRangeChanged(): BeginEpoc timestamp: ', event.beginEpoc, ' - endEpoc timestamp: ', event.endEpoc);
+        this._eventlogService.getDataByDate(event.beginDate, event.endDate)
+            .then(function (eventLogLines) {
+            _this.source.load(eventLogLines);
+            _this.source.setSort([{ field: 'timestamp', direction: 'desc' }]);
+        })
+            .catch(function (error) { return _this.errorMessage = error; });
     };
-    return PopularApp;
+    EventLogListComponent.prototype.getEventLogLines = function () {
+        var _this = this;
+        this._eventlogService.getData()
+            .then(function (eventLogLines) {
+            _this.source.load(eventLogLines);
+            _this.source.setSort([{ field: 'timestamp', direction: 'desc' }]);
+        })
+            .catch(function (error) { return _this.errorMessage = error; });
+    };
+    EventLogListComponent.prototype.addLogLines = function () {
+        var _this = this;
+        this._eventlogService.setData()
+            .then(function (data) { return data; })
+            .catch(function (error) { return _this.errorMessage = error; });
+    };
+    EventLogListComponent.prototype.refresh = function () {
+        this.getEventLogLines();
+    };
+    EventLogListComponent.prototype.onUserRowSelect = function (event) {
+        console.log(event.data.taskid);
+        console.log(event.data.host);
+        this.router.navigate(['../view'], { relativeTo: this.route });
+    };
+    return EventLogListComponent;
 }());
-PopularApp = __decorate([
+EventLogListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'popular-app',
-        template: __webpack_require__(712),
-        styles: [__webpack_require__(698)]
-    })
-], PopularApp);
+        selector: 'eventloglist',
+        template: __webpack_require__(809),
+        styles: [__webpack_require__(736)],
+        providers: [__WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["c" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* ActivatedRoute */]) === "function" && _c || Object])
+], EventLogListComponent);
 
-//# sourceMappingURL=popularApp.component.js.map
-
-/***/ }),
-
-/***/ 662:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__todo_component__ = __webpack_require__(663);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__todo_component__["a"]; });
-
-//# sourceMappingURL=index.js.map
+var _a, _b, _c;
+//# sourceMappingURL=eventloglist.component.js.map
 
 /***/ }),
 
-/***/ 663:
+/***/ 669:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__(643);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Todo; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__eventlog_service__ = __webpack_require__(671);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventLogViewComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1153,74 +2030,97 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var Todo = (function () {
-    function Todo(_baConfig, _todoService) {
-        var _this = this;
-        this._baConfig = _baConfig;
-        this._todoService = _todoService;
-        this.dashboardColors = this._baConfig.get().colors.dashboard;
-        this.newTodoText = '';
-        this.todoList = this._todoService.getTodoList();
-        this.todoList.forEach(function (item) {
-            item.color = _this._getRandomColor();
-        });
+var EventLogViewComponent = (function () {
+    function EventLogViewComponent(_eventlogService, route) {
+        this._eventlogService = _eventlogService;
+        this.route = route;
+        this.errorMessage = '';
     }
-    Todo.prototype.getNotDeleted = function () {
-        return this.todoList.filter(function (item) {
-            return !item.deleted;
+    EventLogViewComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        //console.log("host --> " + host);
+        this.sub = this.route.params.subscribe(function (params) {
+            _this.taskId = params['taskid'];
+            _this.host = params['host'];
+            _this.getEventLog(_this.taskId, _this.host);
         });
     };
-    Todo.prototype.addToDoItem = function ($event) {
-        if (($event.which === 1 || $event.which === 13) && this.newTodoText.trim() != '') {
-            this.todoList.unshift({
-                text: this.newTodoText,
-                color: this._getRandomColor(),
-            });
-            this.newTodoText = '';
-        }
+    EventLogViewComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
     };
-    Todo.prototype._getRandomColor = function () {
+    EventLogViewComponent.prototype.getEventLog = function (taskId, host) {
         var _this = this;
-        var colors = Object.keys(this.dashboardColors).map(function (key) { return _this.dashboardColors[key]; });
-        var i = Math.floor(Math.random() * (colors.length - 1));
-        return colors[i];
+        this._eventlogService.getEventLog(taskId, host)
+            .then(function (eventLog) { return _this.eventLog = eventLog[0]; })
+            .catch(function (error) { return _this.errorMessage = error; });
     };
-    return Todo;
+    return EventLogViewComponent;
 }());
-Todo = __decorate([
+EventLogViewComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'todo',
-        template: __webpack_require__(713),
-        styles: [__webpack_require__(699)]
+        selector: 'eventlogview',
+        template: __webpack_require__(810),
+        styles: [__webpack_require__(737)],
+        providers: [__WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */]]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__theme__["c" /* BaThemeConfigProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__todo_service__["a" /* TodoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__todo_service__["a" /* TodoService */]) === "function" && _b || Object])
-], Todo);
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__eventlog_service__["a" /* EventLogService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object])
+], EventLogViewComponent);
 
 var _a, _b;
-//# sourceMappingURL=todo.component.js.map
+//# sourceMappingURL=eventlogview.component.js.map
 
 /***/ }),
 
-/***/ 664:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__trafficChart_component__ = __webpack_require__(665);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__trafficChart_component__["a"]; });
-
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ 665:
+/***/ 670:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trafficChart_service__ = __webpack_require__(644);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(690);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_chart_js__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrafficChart; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(38);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventLogComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EventLogComponent = (function () {
+    function EventLogComponent(router, route) {
+        this.router = router;
+        this.route = route;
+        this.router.navigate(['./list'], { relativeTo: this.route });
+    }
+    return EventLogComponent;
+}());
+EventLogComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'eventlog',
+        template: '<router-outlet></router-outlet>'
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === "function" && _b || Object])
+], EventLogComponent);
+
+var _a, _b;
+//# sourceMappingURL=eventlog.component.js.map
+
+/***/ }),
+
+/***/ 671:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__ = __webpack_require__(657);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_toPromise__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EventLogService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1233,58 +2133,1513 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var TrafficChart = (function () {
-    function TrafficChart(trafficChartService) {
-        this.trafficChartService = trafficChartService;
-        this.doughnutData = trafficChartService.getData();
+
+var EventLogService = (function () {
+    function EventLogService(http) {
+        this.http = http;
     }
-    TrafficChart.prototype.ngAfterViewInit = function () {
-        this._loadDoughnutCharts();
+    //eventLogLines = [{"linenumber":0,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"localhost","changed":false,"status":"Ok"},{"linenumber":1,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"loro","msg":"Failed to connect to the host via ssh: ssh: Could not resolve hostname loro: Name or service not known\r\n","changed":false,"status":"Unreachable"},{"linenumber":2,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"periquito","msg":"Failed to connect to the host via ssh: ssh: Could not resolve hostname periquito: Name or service not known\r\n","changed":false,"status":"Unreachable"},{"linenumber":3,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"vdicube-task: get ip address from configuration file-2","taskid":"000c2946-219f-4919-67f6-00000000000c","host":"localhost","msg":"non-zero return code","changed":false,"status":"Failed"}];
+    EventLogService.prototype.getEventLog = function (taskid, host) {
+        //return this.http.get('/api/eventlogs')
+        return this.http.get('https://3359961d-46c9-417a-a384-66e68b949459.mock.pstmn.io/api/eventlog')
+            .toPromise()
+            .then(this.extractData)
+            .catch(this.handleError);
     };
-    TrafficChart.prototype._loadDoughnutCharts = function () {
-        var el = jQuery('.chart-area').get(0);
-        new __WEBPACK_IMPORTED_MODULE_2_chart_js__(el.getContext('2d')).Doughnut(this.doughnutData, {
-            segmentShowStroke: false,
-            percentageInnerCutout: 64,
-            responsive: true
+    EventLogService.prototype.getData = function () {
+        //return this.http.get('/api/eventlogs')
+        return this.http.get('https://3359961d-46c9-417a-a384-66e68b949459.mock.pstmn.io/api/eventlogs')
+            .toPromise()
+            .then(this.extractData)
+            .catch(this.handleError);
+    };
+    EventLogService.prototype.getDataByDate = function (beginDate, endDate) {
+        console.log('getDataByDate');
+        //return this.http.get('/api/eventlogs')
+        return this.http.get('https://3359961d-46c9-417a-a384-66e68b949459.mock.pstmn.io/api/eventlogs')
+            .toPromise()
+            .then(this.extractData)
+            .catch(this.handleError);
+    };
+    EventLogService.prototype.setData = function () {
+        return this.http.post('/api/playbook', '')
+            .toPromise()
+            .then(function (res) { return res.json().error; })
+            .catch(this.handleError);
+    };
+    EventLogService.prototype.extractData = function (res) {
+        var body = res.json();
+        return body.loglines;
+    };
+    EventLogService.prototype.handleError = function (error) {
+        // In a real world app, we might use a remote logging infrastructure
+        // We'd also dig deeper into the error to get a better message
+        var errMsg = (error.message) ? error.message :
+            error.status ? error.status + " - " + error.statusText : 'Server error';
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(errMsg);
+    };
+    return EventLogService;
+}());
+EventLogService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], EventLogService);
+
+var _a;
+//# sourceMappingURL=eventlog.service.js.map
+
+/***/ }),
+
+/***/ 675:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_my_date_range_picker_date_range_util_service__ = __webpack_require__(755);
+/* unused harmony export MYDRP_VALUE_ACCESSOR */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyDateRangePicker; });
+
+
+
+var MYDRP_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* NG_VALUE_ACCESSOR */],
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return MyDateRangePicker; }),
+    multi: true
+};
+var Year;
+(function (Year) {
+    Year[Year["min"] = 1100] = "min";
+    Year[Year["max"] = 9100] = "max";
+})(Year || (Year = {}));
+var InputFocusBlur;
+(function (InputFocusBlur) {
+    InputFocusBlur[InputFocusBlur["focus"] = 1] = "focus";
+    InputFocusBlur[InputFocusBlur["blur"] = 2] = "blur";
+})(InputFocusBlur || (InputFocusBlur = {}));
+var KeyCode;
+(function (KeyCode) {
+    KeyCode[KeyCode["enter"] = 13] = "enter";
+    KeyCode[KeyCode["esc"] = 27] = "esc";
+    KeyCode[KeyCode["space"] = 32] = "space";
+})(KeyCode || (KeyCode = {}));
+var MonthId;
+(function (MonthId) {
+    MonthId[MonthId["prev"] = 1] = "prev";
+    MonthId[MonthId["curr"] = 2] = "curr";
+    MonthId[MonthId["next"] = 3] = "next";
+})(MonthId || (MonthId = {}));
+var MyDateRangePicker = (function () {
+    function MyDateRangePicker(elem, renderer, cdr, drus) {
+        var _this = this;
+        this.elem = elem;
+        this.renderer = renderer;
+        this.cdr = cdr;
+        this.drus = drus;
+        this.dateRangeChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.inputFieldChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.calendarViewChanged = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.inputFocusBlur = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.dateSelected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.onChangeCb = function () { };
+        this.onTouchedCb = function () { };
+        this.showSelector = false;
+        this.visibleMonth = { monthTxt: "", monthNbr: 0, year: 0 };
+        this.selectedMonth = { monthTxt: "", monthNbr: 0, year: 0 };
+        this.weekDays = [];
+        this.dates = [];
+        this.months = [];
+        this.years = [];
+        this.selectionDayTxt = "";
+        this.invalidDateRange = false;
+        this.dateRangeFormat = "";
+        this.dayIdx = 0;
+        this.weekDayOpts = ["su", "mo", "tu", "we", "th", "fr", "sa"];
+        this.selectMonth = false;
+        this.selectYear = false;
+        this.prevMonthDisabled = false;
+        this.nextMonthDisabled = false;
+        this.prevYearDisabled = false;
+        this.nextYearDisabled = false;
+        this.prevYearsDisabled = false;
+        this.nextYearsDisabled = false;
+        this.prevMonthId = MonthId.prev;
+        this.currMonthId = MonthId.curr;
+        this.nextMonthId = MonthId.next;
+        this.beginDate = { year: 0, month: 0, day: 0 };
+        this.endDate = { year: 0, month: 0, day: 0 };
+        this.titleAreaText = "";
+        this.opts = {
+            dayLabels: { su: "Sun", mo: "Mon", tu: "Tue", we: "Wed", th: "Thu", fr: "Fri", sa: "Sat" },
+            monthLabels: { 1: "Jan", 2: "Feb", 3: "Mar", 4: "Apr", 5: "May", 6: "Jun", 7: "Jul", 8: "Aug", 9: "Sep", 10: "Oct", 11: "Nov", 12: "Dec" },
+            dateFormat: "yyyy-mm-dd",
+            showClearBtn: true,
+            showApplyBtn: true,
+            showSelectDateText: true,
+            selectBeginDateTxt: "Select Begin Date",
+            selectEndDateTxt: "Select End Date",
+            firstDayOfWeek: "mo",
+            sunHighlight: true,
+            markCurrentDay: true,
+            markCurrentMonth: true,
+            markCurrentYear: true,
+            height: "34px",
+            width: "262px",
+            selectorHeight: "232px",
+            selectorWidth: "252px",
+            inline: false,
+            showClearDateRangeBtn: true,
+            selectionTxtFontSize: "14px",
+            alignSelectorRight: false,
+            indicateInvalidDateRange: true,
+            editableDateRangeField: true,
+            monthSelector: true,
+            yearSelector: true,
+            disableHeaderButtons: true,
+            showWeekNumbers: false,
+            minYear: Year.min,
+            maxYear: Year.max,
+            disableUntil: { year: 0, month: 0, day: 0 },
+            disableSince: { year: 0, month: 0, day: 0 },
+            disableDates: [],
+            enableDates: [],
+            disableDateRanges: [],
+            componentDisabled: false,
+            showSelectorArrow: true,
+            openSelectorOnInputClick: false,
+            ariaLabelInputField: "Date range input field",
+            ariaLabelClearDateRange: "Clear date range",
+            ariaLabelOpenCalendar: "Open Calendar",
+            ariaLabelPrevMonth: "Previous Month",
+            ariaLabelNextMonth: "Next Month",
+            ariaLabelPrevYear: "Previous Year",
+            ariaLabelNextYear: "Next Year"
+        };
+        this.globalListener = renderer.listenGlobal("document", "click", function (event) {
+            if (_this.showSelector && event.target && _this.elem.nativeElement !== event.target && !_this.elem.nativeElement.contains(event.target)) {
+                _this.showSelector = false;
+            }
+            if (_this.opts.monthSelector || _this.opts.yearSelector) {
+                _this.resetMonthYearSelect();
+            }
+        });
+    }
+    MyDateRangePicker.prototype.resetMonthYearSelect = function () {
+        this.selectMonth = false;
+        this.selectYear = false;
+    };
+    MyDateRangePicker.prototype.onSelectMonthClicked = function (event) {
+        event.stopPropagation();
+        this.selectMonth = !this.selectMonth;
+        this.selectYear = false;
+        this.cdr.detectChanges();
+        if (this.selectMonth) {
+            var today = this.getToday();
+            this.months.length = 0;
+            for (var i = 1; i <= 12; i += 3) {
+                var row = [];
+                for (var j = i; j < i + 3; j++) {
+                    var disabled = this.drus.isMonthDisabledByDisableUntil({ year: this.visibleMonth.year, month: j, day: this.daysInMonth(j, this.visibleMonth.year) }, this.opts.disableUntil)
+                        || this.drus.isMonthDisabledByDisableSince({ year: this.visibleMonth.year, month: j, day: 1 }, this.opts.disableSince);
+                    row.push({ nbr: j, name: this.opts.monthLabels[j], currMonth: j === today.month && this.visibleMonth.year === today.year, selected: j === this.visibleMonth.monthNbr, disabled: disabled });
+                }
+                this.months.push(row);
+            }
+        }
+    };
+    MyDateRangePicker.prototype.onMonthCellClicked = function (cell) {
+        var mc = cell.nbr !== this.visibleMonth.monthNbr;
+        this.visibleMonth = { monthTxt: this.monthText(cell.nbr), monthNbr: cell.nbr, year: this.visibleMonth.year };
+        this.generateCalendar(cell.nbr, this.visibleMonth.year, mc);
+        this.selectMonth = false;
+        this.selectorEl.nativeElement.focus();
+    };
+    MyDateRangePicker.prototype.onMonthCellKeyDown = function (event, cell) {
+        if ((event.keyCode === KeyCode.enter || event.keyCode === KeyCode.space) && !cell.disabled) {
+            event.preventDefault();
+            this.onMonthCellClicked(cell);
+        }
+    };
+    MyDateRangePicker.prototype.onSelectYearClicked = function (event) {
+        event.stopPropagation();
+        this.selectYear = !this.selectYear;
+        this.selectMonth = false;
+        this.cdr.detectChanges();
+        if (this.selectYear) {
+            this.generateYears(this.visibleMonth.year);
+        }
+    };
+    MyDateRangePicker.prototype.onYearCellClicked = function (cell) {
+        var yc = cell.year !== this.visibleMonth.year;
+        this.visibleMonth = { monthTxt: this.visibleMonth.monthTxt, monthNbr: this.visibleMonth.monthNbr, year: cell.year };
+        this.generateCalendar(this.visibleMonth.monthNbr, cell.year, yc);
+        this.selectYear = false;
+        this.selectorEl.nativeElement.focus();
+    };
+    MyDateRangePicker.prototype.onYearCellKeyDown = function (event, cell) {
+        if ((event.keyCode === KeyCode.enter || event.keyCode === KeyCode.space) && !cell.disabled) {
+            event.preventDefault();
+            this.onYearCellClicked(cell);
+        }
+    };
+    MyDateRangePicker.prototype.onPrevYears = function (event, year) {
+        event.stopPropagation();
+        this.generateYears(year - 25);
+    };
+    MyDateRangePicker.prototype.onNextYears = function (event, year) {
+        event.stopPropagation();
+        this.generateYears(year + 25);
+    };
+    MyDateRangePicker.prototype.generateYears = function (year) {
+        this.years.length = 0;
+        var today = this.getToday();
+        for (var i = year; i <= 20 + year; i += 5) {
+            var row = [];
+            for (var j = i; j < i + 5; j++) {
+                var disabled = this.drus.isMonthDisabledByDisableUntil({ year: j, month: this.visibleMonth.monthNbr, day: this.daysInMonth(this.visibleMonth.monthNbr, j) }, this.opts.disableUntil)
+                    || this.drus.isMonthDisabledByDisableSince({ year: j, month: this.visibleMonth.monthNbr, day: 1 }, this.opts.disableSince);
+                var minMax = j < this.opts.minYear || j > this.opts.maxYear;
+                row.push({ year: j, currYear: j === today.year, selected: j === this.visibleMonth.year, disabled: disabled || minMax });
+            }
+            this.years.push(row);
+        }
+        this.prevYearsDisabled = this.years[0][0].year <= this.opts.minYear || this.drus.isMonthDisabledByDisableUntil({ year: this.years[0][0].year - 1, month: this.visibleMonth.monthNbr, day: this.daysInMonth(this.visibleMonth.monthNbr, this.years[0][0].year - 1) }, this.opts.disableUntil);
+        this.nextYearsDisabled = this.years[4][4].year >= this.opts.maxYear || this.drus.isMonthDisabledByDisableSince({ year: this.years[4][4].year + 1, month: this.visibleMonth.monthNbr, day: 1 }, this.opts.disableSince);
+    };
+    MyDateRangePicker.prototype.onUserDateRangeInput = function (value) {
+        this.invalidDateRange = false;
+        if (value.length === 0) {
+            if (this.drus.isInitializedDate(this.beginDate) && this.drus.isInitializedDate(this.endDate)) {
+                this.clearDateRange();
+            }
+            else {
+                this.inputFieldChanged.emit({ value: value, dateRangeFormat: this.dateRangeFormat, valid: false });
+            }
+        }
+        else {
+            var daterange = this.drus.isDateRangeValid(value, this.opts.dateFormat, this.opts.minYear, this.opts.maxYear, this.opts.disableUntil, this.opts.disableSince, this.opts.disableDates, this.opts.disableDateRanges, this.opts.enableDates, this.opts.monthLabels);
+            if (this.drus.isInitializedDate(daterange.beginDate) && this.drus.isInitializedDate(daterange.endDate)) {
+                this.beginDate = daterange.beginDate;
+                this.endDate = daterange.endDate;
+                this.rangeSelected();
+            }
+            else {
+                this.invalidDateRange = true;
+                this.onChangeCb(null);
+                this.onTouchedCb();
+                this.inputFieldChanged.emit({ value: value, dateRangeFormat: this.dateRangeFormat, valid: false });
+            }
+        }
+    };
+    MyDateRangePicker.prototype.onFocusInput = function (event) {
+        this.inputFocusBlur.emit({ reason: InputFocusBlur.focus, value: event.target.value });
+    };
+    MyDateRangePicker.prototype.onBlurInput = function (event) {
+        this.selectionDayTxt = event.target.value;
+        this.onTouchedCb();
+        this.inputFocusBlur.emit({ reason: InputFocusBlur.blur, value: event.target.value });
+    };
+    MyDateRangePicker.prototype.onCloseSelector = function (event) {
+        if (event.keyCode === KeyCode.esc && this.showSelector && !this.opts.inline) {
+            this.showSelector = false;
+        }
+    };
+    MyDateRangePicker.prototype.parseOptions = function () {
+        var _this = this;
+        if (this.options !== undefined) {
+            Object.keys(this.options).forEach(function (k) {
+                _this.opts[k] = _this.options[k];
+            });
+        }
+        if (this.opts.minYear < Year.min) {
+            this.opts.minYear = Year.min;
+        }
+        if (this.opts.maxYear > Year.max) {
+            this.opts.maxYear = Year.max;
+        }
+        this.dateRangeFormat = this.opts.dateFormat + " - " + this.opts.dateFormat;
+        this.dayIdx = this.weekDayOpts.indexOf(this.opts.firstDayOfWeek);
+        if (this.dayIdx !== -1) {
+            var idx = this.dayIdx;
+            for (var i = 0; i < this.weekDayOpts.length; i++) {
+                this.weekDays.push(this.opts.dayLabels[this.weekDayOpts[idx]]);
+                idx = this.weekDayOpts[idx] === "sa" ? 0 : idx + 1;
+            }
+        }
+    };
+    MyDateRangePicker.prototype.writeValue = function (value) {
+        if (value && value["beginDate"] && value["endDate"]) {
+            this.beginDate = this.parseSelectedDate(value["beginDate"]);
+            this.endDate = this.parseSelectedDate(value["endDate"]);
+            var begin = this.formatDate(this.beginDate);
+            var end = this.formatDate(this.endDate);
+            this.selectionDayTxt = begin + " - " + end;
+            this.titleAreaText = this.selectionDayTxt;
+            this.inputFieldChanged.emit({ value: this.selectionDayTxt, dateRangeFormat: this.dateRangeFormat, valid: true });
+        }
+        else if (value === null || value === "") {
+            this.clearRangeValues();
+            this.inputFieldChanged.emit({ value: "", dateRangeFormat: this.dateRangeFormat, valid: false });
+        }
+        this.invalidDateRange = false;
+    };
+    MyDateRangePicker.prototype.setDisabledState = function (disabled) {
+        this.opts.componentDisabled = disabled;
+    };
+    MyDateRangePicker.prototype.registerOnChange = function (fn) {
+        this.onChangeCb = fn;
+    };
+    MyDateRangePicker.prototype.registerOnTouched = function (fn) {
+        this.onTouchedCb = fn;
+    };
+    MyDateRangePicker.prototype.ngOnDestroy = function () {
+        this.globalListener();
+    };
+    MyDateRangePicker.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (changes.hasOwnProperty("placeholder")) {
+            this.placeholder = changes["placeholder"].currentValue;
+        }
+        if (changes.hasOwnProperty("options")) {
+            this.options = changes["options"].currentValue;
+            this.weekDays.length = 0;
+            this.parseOptions();
+        }
+        var dmChange = false;
+        if (changes.hasOwnProperty("defaultMonth")) {
+            var dm = changes["defaultMonth"].currentValue;
+            if (typeof dm === "object") {
+                dm = dm.defMonth;
+            }
+            if (dm !== null && dm !== undefined && dm !== "") {
+                this.selectedMonth = this.parseSelectedMonth(dm);
+            }
+            else {
+                this.selectedMonth = { monthTxt: "", monthNbr: 0, year: 0 };
+            }
+            dmChange = true;
+        }
+        if (changes.hasOwnProperty("selDateRange")) {
+            var sdr = changes["selDateRange"];
+            if (sdr.currentValue !== null && sdr.currentValue !== undefined && sdr.currentValue !== "") {
+                if (typeof sdr.currentValue === "string") {
+                    var split = sdr.currentValue.split(" - ");
+                    this.beginDate = this.parseSelectedDate(split[0]);
+                    this.endDate = this.parseSelectedDate(split[1]);
+                    this.selectionDayTxt = sdr.currentValue;
+                }
+                else if (typeof sdr.currentValue === "object") {
+                    this.beginDate = this.parseSelectedDate(sdr.currentValue["beginDate"]);
+                    this.endDate = this.parseSelectedDate(sdr.currentValue["endDate"]);
+                    this.selectionDayTxt = this.formatDate(this.beginDate) + " - " + this.formatDate(this.endDate);
+                }
+                this.titleAreaText = this.selectionDayTxt;
+                setTimeout(function () {
+                    _this.onChangeCb(_this.getDateRangeModel(_this.beginDate, _this.endDate));
+                });
+                this.toBeginDate();
+            }
+            else {
+                if (!sdr.isFirstChange()) {
+                    this.clearDateRange();
+                }
+            }
+        }
+        if (this.visibleMonth.year === 0 && this.visibleMonth.monthNbr === 0 || dmChange) {
+            this.setVisibleMonth();
+        }
+        else {
+            this.visibleMonth.monthTxt = this.opts.monthLabels[this.visibleMonth.monthNbr];
+            this.generateCalendar(this.visibleMonth.monthNbr, this.visibleMonth.year, false);
+        }
+    };
+    MyDateRangePicker.prototype.removeBtnClicked = function () {
+        this.clearDateRange();
+    };
+    MyDateRangePicker.prototype.openBtnClicked = function () {
+        this.showSelector = !this.showSelector;
+        this.cdr.detectChanges();
+        if (this.showSelector) {
+            this.setVisibleMonth();
+        }
+    };
+    MyDateRangePicker.prototype.setVisibleMonth = function () {
+        if (this.drus.isInitializedDate(this.beginDate)) {
+            this.toBeginDate();
+        }
+        else {
+            var y = 0, m = 0;
+            if (this.selectedMonth.year === 0 && this.selectedMonth.monthNbr === 0) {
+                var today = this.getToday();
+                y = today.year;
+                m = today.month;
+            }
+            else {
+                y = this.selectedMonth.year;
+                m = this.selectedMonth.monthNbr;
+            }
+            this.visibleMonth = { monthTxt: this.opts.monthLabels[m], monthNbr: m, year: y };
+            this.generateCalendar(m, y, true);
+        }
+    };
+    MyDateRangePicker.prototype.onPrevMonth = function () {
+        var d = this.getDate({ year: this.visibleMonth.year, month: this.visibleMonth.monthNbr, day: 1 });
+        d.setMonth(d.getMonth() - 1);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        this.visibleMonth = { monthTxt: this.monthText(m), monthNbr: m, year: y };
+        this.generateCalendar(m, y, true);
+    };
+    MyDateRangePicker.prototype.onNextMonth = function () {
+        var d = this.getDate({ year: this.visibleMonth.year, month: this.visibleMonth.monthNbr, day: 1 });
+        d.setMonth(d.getMonth() + 1);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        this.visibleMonth = { monthTxt: this.monthText(m), monthNbr: m, year: y };
+        this.generateCalendar(m, y, true);
+    };
+    MyDateRangePicker.prototype.onPrevYear = function () {
+        if (this.visibleMonth.year - 1 < this.opts.minYear) {
+            return;
+        }
+        this.visibleMonth.year--;
+        this.generateCalendar(this.visibleMonth.monthNbr, this.visibleMonth.year, true);
+    };
+    MyDateRangePicker.prototype.onNextYear = function () {
+        if (this.visibleMonth.year + 1 > this.opts.maxYear) {
+            return;
+        }
+        this.visibleMonth.year++;
+        this.generateCalendar(this.visibleMonth.monthNbr, this.visibleMonth.year, true);
+    };
+    MyDateRangePicker.prototype.clearRangeValues = function () {
+        this.invalidDateRange = false;
+        this.selectionDayTxt = "";
+        this.beginDate = { year: 0, month: 0, day: 0 };
+        this.endDate = { year: 0, month: 0, day: 0 };
+        this.titleAreaText = this.opts.selectBeginDateTxt;
+        this.generateCalendar(this.visibleMonth.monthNbr, this.visibleMonth.year, false);
+    };
+    MyDateRangePicker.prototype.onCellClicked = function (cell) {
+        var bi = this.drus.isInitializedDate(this.beginDate);
+        var ei = this.drus.isInitializedDate(this.endDate);
+        if (ei) {
+            this.beginDate = { year: 0, month: 0, day: 0 };
+            this.endDate = { year: 0, month: 0, day: 0 };
+            this.titleAreaText = this.opts.selectBeginDateTxt;
+            bi = false;
+            ei = false;
+        }
+        if (!ei) {
+            if (!bi || bi && this.drus.getTimeInMilliseconds(cell.dateObj) < this.drus.getTimeInMilliseconds(this.beginDate)) {
+                this.selectBeginDate(cell.dateObj);
+                this.titleAreaText = this.formatDate(cell.dateObj) + " - " + this.opts.selectEndDateTxt;
+            }
+            else if (this.drus.getTimeInMilliseconds(cell.dateObj) >= this.drus.getTimeInMilliseconds(this.beginDate)) {
+                this.selectEndDate(cell.dateObj);
+                this.rangeSelected();
+                this.titleAreaText = this.formatDate(this.beginDate) + " - " + this.formatDate(cell.dateObj);
+            }
+        }
+    };
+    MyDateRangePicker.prototype.selectBeginDate = function (date) {
+        this.beginDate = date;
+        var formatted = this.formatDate(date);
+        this.titleAreaText = formatted + " - " + this.opts.selectEndDateTxt;
+        this.dateSelected.emit({ type: 1, date: date, formatted: formatted, jsdate: this.getDate(date) });
+    };
+    MyDateRangePicker.prototype.selectEndDate = function (date) {
+        this.endDate = date;
+        var formatted = this.formatDate(date);
+        this.titleAreaText = this.formatDate(this.beginDate) + " - " + formatted;
+        this.dateSelected.emit({ type: 2, date: date, formatted: formatted, jsdate: this.getDate(date) });
+    };
+    MyDateRangePicker.prototype.onCellKeyDown = function (event, cell) {
+        if ((event.keyCode === KeyCode.enter || event.keyCode === KeyCode.space) && !cell.disabled) {
+            event.preventDefault();
+            this.onCellClicked(cell);
+        }
+    };
+    MyDateRangePicker.prototype.onCellMouseEnter = function (cell) {
+        if (this.drus.isInitializedDate(this.beginDate) && !this.drus.isInitializedDate(this.endDate)) {
+            for (var _i = 0, _a = this.dates; _i < _a.length; _i++) {
+                var w = _a[_i];
+                for (var _b = 0, _c = w.week; _b < _c.length; _b++) {
+                    var day = _c[_b];
+                    day.range = this.drus.getTimeInMilliseconds(day.dateObj) >= this.drus.getTimeInMilliseconds(this.beginDate)
+                        && this.drus.getTimeInMilliseconds(day.dateObj) <= this.drus.getTimeInMilliseconds(cell.dateObj);
+                }
+            }
+        }
+    };
+    MyDateRangePicker.prototype.onCellMouseLeave = function () {
+        for (var _i = 0, _a = this.dates; _i < _a.length; _i++) {
+            var w = _a[_i];
+            for (var _b = 0, _c = w.week; _b < _c.length; _b++) {
+                var day = _c[_b];
+                day.range = false;
+            }
+        }
+    };
+    MyDateRangePicker.prototype.toBeginDate = function () {
+        var viewChange = this.beginDate.year !== this.visibleMonth.year || this.beginDate.month !== this.visibleMonth.monthNbr;
+        this.visibleMonth = { monthTxt: this.monthText(this.beginDate.month), monthNbr: this.beginDate.month, year: this.beginDate.year };
+        this.generateCalendar(this.beginDate.month, this.beginDate.year, viewChange);
+    };
+    MyDateRangePicker.prototype.clearDateRange = function () {
+        if (this.drus.isInitializedDate(this.endDate)) {
+            this.dateRangeChanged.emit({ beginDate: { year: 0, month: 0, day: 0 }, beginJsDate: null, endDate: { year: 0, month: 0, day: 0 }, endJsDate: null, formatted: "", beginEpoc: 0, endEpoc: 0 });
+            if (this.selectionDayTxt !== "") {
+                this.inputFieldChanged.emit({ value: "", dateRangeFormat: this.dateRangeFormat, valid: false });
+            }
+            this.onChangeCb(null);
+            this.onTouchedCb();
+        }
+        this.clearRangeValues();
+    };
+    MyDateRangePicker.prototype.rangeSelected = function () {
+        var dateRangeModel = this.getDateRangeModel(this.beginDate, this.endDate);
+        this.selectionDayTxt = this.formatDate(this.beginDate) + " - " + this.formatDate(this.endDate);
+        this.showSelector = false;
+        this.dateRangeChanged.emit(dateRangeModel);
+        this.inputFieldChanged.emit({ value: this.selectionDayTxt, dateRangeFormat: this.dateRangeFormat, valid: true });
+        this.onChangeCb(dateRangeModel);
+        this.onTouchedCb();
+        this.invalidDateRange = false;
+        if (this.opts.monthSelector || this.opts.yearSelector) {
+            this.resetMonthYearSelect();
+        }
+    };
+    MyDateRangePicker.prototype.getDateRangeModel = function (beginDate, endDate) {
+        var bEpoc = this.drus.getTimeInMilliseconds(beginDate) / 1000.0;
+        var eEpoc = this.drus.getTimeInMilliseconds(endDate) / 1000.0;
+        return { beginDate: beginDate, beginJsDate: this.getDate(beginDate), endDate: endDate, endJsDate: this.getDate(endDate), formatted: this.formatDate(beginDate) + " - " + this.formatDate(endDate), beginEpoc: bEpoc, endEpoc: eEpoc };
+    };
+    MyDateRangePicker.prototype.isInRange = function (val) {
+        if (!this.drus.isInitializedDate(this.beginDate) || !this.drus.isInitializedDate(this.endDate)) {
+            return false;
+        }
+        var input = this.drus.getTimeInMilliseconds(val.dateObj);
+        if (input >= this.drus.getTimeInMilliseconds(this.beginDate) && input <= this.drus.getTimeInMilliseconds(this.endDate)) {
+            return true;
+        }
+        return false;
+    };
+    MyDateRangePicker.prototype.isRangeSelected = function () {
+        if (this.drus.isInitializedDate(this.beginDate) && this.drus.isInitializedDate(this.endDate)) {
+            return true;
+        }
+        return false;
+    };
+    MyDateRangePicker.prototype.preZero = function (val) {
+        return parseInt(val) < 10 ? "0" + val : val;
+    };
+    MyDateRangePicker.prototype.formatDate = function (val) {
+        var formatted = this.opts.dateFormat.replace("yyyy", val.year).replace("dd", this.preZero(val.day));
+        return this.opts.dateFormat.indexOf("mmm") !== -1 ? formatted.replace("mmm", this.monthText(val.month)) : formatted.replace("mm", this.preZero(val.month));
+    };
+    MyDateRangePicker.prototype.monthText = function (m) {
+        return this.opts.monthLabels[m];
+    };
+    MyDateRangePicker.prototype.monthStartIdx = function (y, m) {
+        var d = new Date();
+        d.setDate(1);
+        d.setMonth(m - 1);
+        d.setFullYear(y);
+        var idx = d.getDay() + this.sundayIdx();
+        return idx >= 7 ? idx - 7 : idx;
+    };
+    MyDateRangePicker.prototype.daysInMonth = function (m, y) {
+        return new Date(y, m, 0).getDate();
+    };
+    MyDateRangePicker.prototype.daysInPrevMonth = function (m, y) {
+        var d = this.getDate({ year: y, month: m, day: 1 });
+        d.setMonth(d.getMonth() - 1);
+        return this.daysInMonth(d.getMonth() + 1, d.getFullYear());
+    };
+    MyDateRangePicker.prototype.isCurrDay = function (d, m, y, cmo, today) {
+        return d === today.day && m === today.month && y === today.year && cmo === this.currMonthId;
+    };
+    MyDateRangePicker.prototype.getPreviousDate = function (date) {
+        var d = this.getDate(date);
+        d.setDate(d.getDate() - 1);
+        return { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() };
+    };
+    MyDateRangePicker.prototype.getNextDate = function (date) {
+        var d = this.getDate(date);
+        d.setDate(d.getDate() + 1);
+        return { year: d.getFullYear(), month: d.getMonth() + 1, day: d.getDate() };
+    };
+    MyDateRangePicker.prototype.getDayNumber = function (date) {
+        var d = this.getDate(date);
+        return d.getDay();
+    };
+    MyDateRangePicker.prototype.getWeekday = function (date) {
+        return this.weekDayOpts[this.getDayNumber(date)];
+    };
+    MyDateRangePicker.prototype.getDate = function (date) {
+        return new Date(date.year, date.month - 1, date.day, 0, 0, 0, 0);
+    };
+    MyDateRangePicker.prototype.getToday = function () {
+        var date = new Date();
+        return { year: date.getFullYear(), month: date.getMonth() + 1, day: date.getDate() };
+    };
+    MyDateRangePicker.prototype.sundayIdx = function () {
+        return this.dayIdx > 0 ? 7 - this.dayIdx : 0;
+    };
+    MyDateRangePicker.prototype.generateCalendar = function (m, y, viewChange) {
+        this.dates.length = 0;
+        var today = this.getToday();
+        var monthStart = this.monthStartIdx(y, m);
+        var dInThisM = this.daysInMonth(m, y);
+        var dInPrevM = this.daysInPrevMonth(m, y);
+        var dayNbr = 1;
+        var cmo = this.prevMonthId;
+        for (var i = 1; i < 7; i++) {
+            var week = [];
+            if (i === 1) {
+                var pm = dInPrevM - monthStart + 1;
+                for (var j = pm; j <= dInPrevM; j++) {
+                    var date = { year: m === 1 ? y - 1 : y, month: m === 1 ? 12 : m - 1, day: j };
+                    week.push({ dateObj: date,
+                        cmo: cmo, currDay: this.isCurrDay(j, m, y, cmo, today),
+                        dayNbr: this.getDayNumber(date),
+                        disabled: this.drus.isDisabledDay(date, this.opts.minYear, this.opts.maxYear, this.opts.disableUntil, this.opts.disableSince, this.opts.disableDates, this.opts.disableDateRanges, this.opts.enableDates),
+                        range: false });
+                }
+                cmo = this.currMonthId;
+                var daysLeft = 7 - week.length;
+                for (var j = 0; j < daysLeft; j++) {
+                    var date = { year: y, month: m, day: dayNbr };
+                    week.push({ dateObj: date,
+                        cmo: cmo,
+                        currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
+                        dayNbr: this.getDayNumber(date),
+                        disabled: this.drus.isDisabledDay(date, this.opts.minYear, this.opts.maxYear, this.opts.disableUntil, this.opts.disableSince, this.opts.disableDates, this.opts.disableDateRanges, this.opts.enableDates),
+                        range: false });
+                    dayNbr++;
+                }
+            }
+            else {
+                for (var j = 1; j < 8; j++) {
+                    if (dayNbr > dInThisM) {
+                        dayNbr = 1;
+                        cmo = this.nextMonthId;
+                    }
+                    var date = { year: cmo === this.nextMonthId && m === 12 ? y + 1 : y, month: cmo === this.currMonthId ? m : cmo === this.nextMonthId && m < 12 ? m + 1 : 1, day: dayNbr };
+                    week.push({ dateObj: date,
+                        cmo: cmo,
+                        currDay: this.isCurrDay(dayNbr, m, y, cmo, today),
+                        dayNbr: this.getDayNumber(date),
+                        disabled: this.drus.isDisabledDay(date, this.opts.minYear, this.opts.maxYear, this.opts.disableUntil, this.opts.disableSince, this.opts.disableDates, this.opts.disableDateRanges, this.opts.enableDates),
+                        range: false });
+                    dayNbr++;
+                }
+            }
+            var weekNbr = this.opts.showWeekNumbers && this.opts.firstDayOfWeek === "mo" ? this.drus.getWeekNumber(week[0].dateObj) : 0;
+            this.dates.push({ week: week, weekNbr: weekNbr });
+        }
+        this.setHeaderBtnDisabledState(m, y);
+        if (viewChange) {
+            this.calendarViewChanged.emit({ year: y, month: m, first: { number: 1, weekday: this.getWeekday({ year: y, month: m, day: 1 }) }, last: { number: dInThisM, weekday: this.getWeekday({ year: y, month: m, day: dInThisM }) } });
+        }
+    };
+    MyDateRangePicker.prototype.setHeaderBtnDisabledState = function (m, y) {
+        var dpm = false;
+        var dpy = false;
+        var dnm = false;
+        var dny = false;
+        if (this.opts.disableHeaderButtons) {
+            dpm = this.drus.isMonthDisabledByDisableUntil({ year: m === 1 ? y - 1 : y, month: m === 1 ? 12 : m - 1, day: this.daysInMonth(m === 1 ? 12 : m - 1, m === 1 ? y - 1 : y) }, this.opts.disableUntil);
+            dpy = this.drus.isMonthDisabledByDisableUntil({ year: y - 1, month: m, day: this.daysInMonth(m, y - 1) }, this.opts.disableUntil);
+            dnm = this.drus.isMonthDisabledByDisableSince({ year: m === 12 ? y + 1 : y, month: m === 12 ? 1 : m + 1, day: 1 }, this.opts.disableSince);
+            dny = this.drus.isMonthDisabledByDisableSince({ year: y + 1, month: m, day: 1 }, this.opts.disableSince);
+        }
+        this.prevMonthDisabled = m === 1 && y === this.opts.minYear || dpm;
+        this.prevYearDisabled = y - 1 < this.opts.minYear || dpy;
+        this.nextMonthDisabled = m === 12 && y === this.opts.maxYear || dnm;
+        this.nextYearDisabled = y + 1 > this.opts.maxYear || dny;
+    };
+    MyDateRangePicker.prototype.parseSelectedDate = function (selDate) {
+        var date = { day: 0, month: 0, year: 0 };
+        if (typeof selDate === "string") {
+            var sd = selDate;
+            date.day = this.drus.parseDatePartNumber(this.opts.dateFormat, sd, "dd");
+            date.month = this.opts.dateFormat.indexOf("mmm") !== -1
+                ? this.drus.parseDatePartMonthName(this.opts.dateFormat, sd, "mmm", this.opts.monthLabels)
+                : this.drus.parseDatePartNumber(this.opts.dateFormat, sd, "mm");
+            date.year = this.drus.parseDatePartNumber(this.opts.dateFormat, sd, "yyyy");
+        }
+        else if (typeof selDate === "object") {
+            date = selDate;
+        }
+        return date;
+    };
+    MyDateRangePicker.prototype.parseSelectedMonth = function (ms) {
+        return this.drus.parseDefaultMonth(ms);
+    };
+    MyDateRangePicker.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */], args: [{
+                    selector: "my-date-range-picker",
+                    exportAs: "mydaterangepicker",
+                    styles: [".mydrp .monthcell,.mydrp .selection,.mydrp .weekdaytitle{overflow:hidden;white-space:nowrap}.mydrp{line-height:1;display:inline-block;position:relative}.mydrp *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;padding:0;margin:0}.mydrp,.mydrp .headertodaybtn,.mydrp .selection,.mydrp .selectiongroup,.mydrp .selector{border-radius:4px}.mydrp .header,.mydrp .titlearea,.mydrp .titleareatxt{border-radius:4px 4px 0 0}.mydrp .caltable,.mydrp .monthtable,.mydrp .yeartable{border-radius:0 0 4px 4px}.mydrp .caltable tbody tr:nth-child(6) td:first-child,.mydrp .monthtable tbody tr:nth-child(4) td:first-child,.mydrp .yeartable tbody tr:nth-child(7) td:first-child{border-bottom-left-radius:4px}.mydrp .caltable tbody tr:nth-child(6) td:last-child,.mydrp .monthtable tbody tr:nth-child(4) td:last-child,.mydrp .yeartable tbody tr:nth-child(7) td:last-child{border-bottom-right-radius:4px}.mydrp .btnpicker{border-radius:0 4px 4px 0}.mydrp .selector{margin-top:2px;margin-left:-1px;position:absolute;padding:0;border:1px solid #CCC;z-index:100;animation:selectorfadein 60ms}.mydrp .selector:focus{border:1px solid #ADD8E6;outline:0}@keyframes selectorfadein{from{opacity:0}to{opacity:1}}.mydrp .selectorarrow{background:#FFF;border:1px solid #CCC;margin-top:12px;padding:0}.mydrp .selectorarrow:after,.mydrp .selectorarrow:before{bottom:100%;border:solid transparent;content:\" \";height:0;width:0;position:absolute}.mydrp .selectorarrow:after{border-color:rgba(250,250,250,0);border-bottom-color:#FFF;border-width:10px;margin-left:-10px}.mydrp .selectorarrow:before{border-color:rgba(204,204,204,0);border-bottom-color:#CCC;border-width:11px;margin-left:-11px}.mydrp .selectorarrow:focus:before{border-bottom-color:#ADD8E6}.mydrp .selectorarrowleft:after,.mydrp .selectorarrowleft:before{left:24px}.mydrp .selectorarrowright:after,.mydrp .selectorarrowright:before{left:224px}.mydrp .alignselectorright{right:-1px}.mydrp .selectiongroup{position:relative;display:table;border:none;border-spacing:0;background-color:#FFF}.mydrp .selection{outline:0;background-color:#FFF;display:table-cell;position:absolute;width:100%;padding:0 64px 0 6px;text-overflow:ellipsis;border:none;color:#555}.mydrp .invaliddaterange{background-color:#F1DEDE}.mydrp ::-ms-clear{display:none}.mydrp .selbtngroup{position:relative;vertical-align:middle;white-space:nowrap;width:1%;display:table-cell;font-size:0}.mydrp .btnclear,.mydrp .btnpicker{height:100%;width:26px;border:none;padding:0;outline:0;font:inherit;-moz-user-select:none}.mydrp .headerclearbtn,.mydrp .headerokbtn{border-radius:2px;cursor:pointer;font-size:11px;height:20px;width:28px;outline:0}.mydrp .btnclearenabled,.mydrp .btnpickerenabled,.mydrp .headerbtnenabled,.mydrp .yearchangebtnenabled{cursor:pointer}.mydrp .btncleardisabled,.mydrp .btnpickerdisabled,.mydrp .clearbtndisabled,.mydrp .headerbtndisabled,.mydrp .okbtndisabled,.mydrp .selectiondisabled,.mydrp .yearchangebtndisabled{cursor:not-allowed;opacity:.65}.mydrp .selectiondisabled{background-color:#EEE}.mydrp .btnclear,.mydrp .btnpicker,.mydrp .headerclearbtn,.mydrp .headerokbtn{background:#FFF}.mydrp .header{width:100%;height:30px;background-color:#FFF}.mydrp .header td{vertical-align:middle;border:none;line-height:0}.mydrp .header td:nth-child(1){padding-left:4px}.mydrp .header td:nth-child(2){text-align:center}.mydrp .header td:nth-child(3){padding-right:4px}.mydrp .titlearea{text-align:center;background-color:#FFF}.mydrp .titleareatxt{height:24px;line-height:24px;font-size:12px;border-bottom:1px solid #EEE}.mydrp .inline{position:relative;margin-top:-1px}.mydrp .caltable,.mydrp .monthtable,.mydrp .yeartable{table-layout:fixed;width:100%;background-color:#FFF;font-size:14px}.mydrp .caltable,.mydrp .daycell,.mydrp .monthcell,.mydrp .monthtable,.mydrp .weekdaytitle,.mydrp .yearcell,.mydrp .yeartable{border-collapse:collapse;color:#036;line-height:1.1}.mydrp .daycell,.mydrp .monthcell,.mydrp .weekdaytitle,.mydrp .yearcell{padding:4px;text-align:center}.mydrp .weekdaytitle{background-color:#DDD;font-size:11px;font-weight:400;vertical-align:middle;max-width:36px}.mydrp .weekdaytitleweeknbr{width:20px;border-right:1px solid #BBB}.mydrp .monthcell{background-color:#FAFAFA}.mydrp .yearcell{background-color:#FAFAFA;width:20%}.mydrp .daycellweeknbr{font-size:10px;border-right:1px solid #CCC;cursor:default;color:#000}.mydrp .nextmonth,.mydrp .prevmonth{color:#444}.mydrp .disabled{cursor:default!important;color:#444!important;background:#FBEFEF!important}.mydrp .sunday{color:#C30000}.mydrp .sundayDim{opacity:.5}.mydrp .currmonth{background-color:#F6F6F6;font-weight:400}.mydrp .range{background-color:#D9F2E6}.mydrp .markcurrday,.mydrp .markcurrmonth,.mydrp .markcurryear{text-decoration:underline}.mydrp .datevalue{background-color:inherit}.mydrp .selecteddaybegin,.mydrp .selecteddayend,.mydrp .selectedmonth .monthvalue,.mydrp .selectedyear .yearvalue{border:none;background-color:#8EBFFF;border-radius:2px}.mydrp .headerbtncell{background-color:#FFF;cursor:pointer;display:table-cell;vertical-align:middle}.mydrp .yearchangebtncell{text-align:center;background-color:#FAFAFA}.mydrp .headerbtn,.mydrp .headerlabelbtn,.mydrp .yearchangebtn{background:#FFF;border:none;height:22px}.mydrp .headerbtn{width:16px}.mydrp .headerlabelbtn{font-size:14px;outline:0;cursor:default}.mydrp,.mydrp .headerclearbtn,.mydrp .headerokbtn{border:1px solid #CCC}.mydrp .btnclear,.mydrp .btnpicker,.mydrp .headerbtn,.mydrp .headerclearbtn,.mydrp .headermonthtxt,.mydrp .headerokbtn,.mydrp .headeryeartxt,.mydrp .yearchangebtn{color:#000}.mydrp button::-moz-focus-inner{border:0}.mydrp .headermonthtxt,.mydrp .headeryeartxt{text-align:center;display:table-cell;vertical-align:middle;font-size:14px;height:26px;width:40px;max-width:40px;overflow:hidden;white-space:nowrap}.mydrp .btnclear:focus,.mydrp .btnpicker:focus,.mydrp .headerclearbtn:focus,.mydrp .headerokbtn:focus{background:#ADD8E6}.mydrp .headerbtn:focus,.mydrp .monthlabel:focus,.mydrp .yearchangebtn:focus,.mydrp .yearlabel:focus{color:#ADD8E6;outline:0}.mydrp .daycell:focus,.mydrp .monthcell:focus,.mydrp .yearcell:focus{outline:#CCC solid 1px}.mydrp .icon-mydrpcalendar,.mydrp .icon-mydrpok,.mydrp .icon-mydrpremove{font-size:16px}.mydrp .icon-mydrpdown,.mydrp .icon-mydrpleft,.mydrp .icon-mydrpright,.mydrp .icon-mydrpup{color:#222;font-size:20px}.mydrp table{display:table;border-spacing:0}.mydrp table td{padding:0}.mydrp table,.mydrp td,.mydrp th{border:none}.mydrp .btnclearenabled:hover,.mydrp .btnpickerenabled:hover,.mydrp .headerclearbtnenabled:hover,.mydrp .headerokbtnenabled:hover{background-color:#E6E6E6}.mydrp .daycell:hover,.mydrp .monthcell:hover,.mydrp .yearcell:hover{background-color:#DDD}.mydrp .daycell,.mydrp .inputnoteditable,.mydrp .monthcell,.mydrp .monthlabel,.mydrp .yearcell,.mydrp .yearlabel{cursor:pointer}.mydrp .headerbtnenabled:hover,.mydrp .monthlabel:hover,.mydrp .yearchangebtnenabled:hover,.mydrp .yearlabel:hover{color:#777}@font-face{font-family:mydaterangepicker;src:url(data:application/octet-stream;base64,AAEAAAAPAIAAAwBwR1NVQiCMJXkAAAD8AAAAVE9TLzI+IEhNAAABUAAAAFZjbWFw6UKcfwAAAagAAAHEY3Z0IAbV/wQAAAvwAAAAIGZwZ22KkZBZAAAMEAAAC3BnYXNwAAAAEAAAC+gAAAAIZ2x5ZlJhR0YAAANsAAAEEGhlYWQNZzg7AAAHfAAAADZoaGVhBzwDWQAAB7QAAAAkaG10eBXB//8AAAfYAAAAIGxvY2EEIAKgAAAH+AAAABJtYXhwAXgMOgAACAwAAAAgbmFtZclNJHcAAAgsAAADOXBvc3RN1RmgAAALaAAAAH5wcmVw5UErvAAAF4AAAACGAAEAAAAKADAAPgACbGF0bgAOREZMVAAaAAQAAAAAAAAAAQAAAAQAAAAAAAAAAQAAAAFsaWdhAAgAAAABAAAAAQAEAAQAAAABAAgAAQAGAAAAAQAAAAECuAGQAAUAAAJ6ArwAAACMAnoCvAAAAeAAMQECAAACAAUDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFBmRWQAQOgA6AYDUv9qAFoDUgCWAAAAAQAAAAAAAAAAAAUAAAADAAAALAAAAAQAAAFgAAEAAAAAAFoAAwABAAAALAADAAoAAAFgAAQALgAAAAQABAABAADoBv//AADoAP//AAAAAQAEAAAAAQACAAMABAAFAAYABwAAAQYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAZAAAAAAAAAAHAADoAAAA6AAAAAABAADoAQAA6AEAAAACAADoAgAA6AIAAAADAADoAwAA6AMAAAAEAADoBAAA6AQAAAAFAADoBQAA6AUAAAAGAADoBgAA6AYAAAAHAAEAAAAAAUECfQAOAAq3AAAAZhQBBRUrARQPAQYiJjURND4BHwEWAUEK+gscFhYcC/oKAV4OC/oLFg4B9A8UAgz6CgAAAQAAAAABZwJ8AA0AF0AUAAEAAQFHAAEAAW8AAABmFxMCBRYrAREUBiIvASY0PwE2MhYBZRQgCfoKCvoLHBgCWP4MDhYL+gscC/oLFgAAAAAB//8AAAI7AckADgARQA4AAQABbwAAAGYVMgIFFislFAYnISIuAT8BNjIfARYCOxQP/gwPFAIM+goeCvoKqw4WARQeC/oKCvoLAAAAAQAAAAACPAHtAA4AF0AUAAEAAQFHAAEAAW8AAABmNRQCBRYrARQPAQYiLwEmNDYzITIWAjsK+gscC/oLFg4B9A4WAckOC/oLC/oLHBYWAAAPAAD/agOhA1IAAwAHAAsADwATABcAGwAfACMAMwA3ADsAPwBPAHMAmECVQSUCHRJJLSQDEx0CRyEfAh0TCR1UGwETGRcNAwkIEwlfGBYMAwgVEQcDBQQIBV4UEAYDBA8LAwMBAAQBXhoBEhIeWCABHh4MSA4KAgMAABxYABwcDRxJcnBtamdmY2BdW1ZTTUxFRD8+PTw7Ojk4NzY1NDEvKScjIiEgHx4dHBsaGRgXFhUUExIRERERERERERAiBR0rFzM1IxczNSMnMzUjFzM1IyczNSMBMzUjJzM1IwEzNSMnMzUjAzU0JicjIgYHFRQWNzMyNgEzNSMnMzUjFzM1Izc1NCYnIyIGFxUUFjczMjY3ERQGIyEiJjURNDY7ATU0NjsBMhYdATM1NDY7ATIWBxUzMhZHoaHFsrLFoaHFsrLFoaEBm7Oz1rKyAayhodazs8QMBiQHCgEMBiQHCgGboaHWs7PWoaESCggjBwwBCggjCArXLBz87h0qKh1INCUkJTTWNiQjJTYBRx0qT6GhoSSysrIkof3Eofqh/cShJLIBMKEHCgEMBqEHDAEK/iayJKGhoWuhBwoBDAahBwwBCiz9NR0qKh0Cyx0qNiU0NCU2NiU0NCU2KgAAAAEAAAAAA6UCmAAVAB1AGg8BAAEBRwACAQJvAAEAAW8AAABmFBcUAwUXKwEUBwEGIicBJjQ/ATYyHwEBNjIfARYDpRD+IBAsEP7qDw9MECwQpAFuECwQTBACFhYQ/iAPDwEWECwQTBAQpQFvEBBMDwABAAD/7wLUAoYAJAAeQBsiGRAHBAACAUcDAQIAAm8BAQAAZhQcFBQEBRgrJRQPAQYiLwEHBiIvASY0PwEnJjQ/ATYyHwE3NjIfARYUDwEXFgLUD0wQLBCkpBAsEEwQEKSkEBBMECwQpKQQLBBMDw+kpA9wFhBMDw+lpQ8PTBAsEKSkECwQTBAQpKQQEEwPLg+kpA8AAQAAAAEAAAxTlYlfDzz1AAsD6AAAAADVMHpNAAAAANUwek3///9qA+gDUgAAAAgAAgAAAAAAAAABAAADUv9qAAAD6P////4D6AABAAAAAAAAAAAAAAAAAAAACAPoAAABZQAAAWUAAAI7//8COwAAA6AAAAPoAAADEQAAAAAAAAAiAEoAcACYAYYBvgIIAAAAAQAAAAgAdAAPAAAAAAACAEQAVABzAAAAqQtwAAAAAAAAABIA3gABAAAAAAAAADUAAAABAAAAAAABABEANQABAAAAAAACAAcARgABAAAAAAADABEATQABAAAAAAAEABEAXgABAAAAAAAFAAsAbwABAAAAAAAGABEAegABAAAAAAAKACsAiwABAAAAAAALABMAtgADAAEECQAAAGoAyQADAAEECQABACIBMwADAAEECQACAA4BVQADAAEECQADACIBYwADAAEECQAEACIBhQADAAEECQAFABYBpwADAAEECQAGACIBvQADAAEECQAKAFYB3wADAAEECQALACYCNUNvcHlyaWdodCAoQykgMjAxNyBieSBvcmlnaW5hbCBhdXRob3JzIEAgZm9udGVsbG8uY29tbXlkYXRlcmFuZ2VwaWNrZXJSZWd1bGFybXlkYXRlcmFuZ2VwaWNrZXJteWRhdGVyYW5nZXBpY2tlclZlcnNpb24gMS4wbXlkYXRlcmFuZ2VwaWNrZXJHZW5lcmF0ZWQgYnkgc3ZnMnR0ZiBmcm9tIEZvbnRlbGxvIHByb2plY3QuaHR0cDovL2ZvbnRlbGxvLmNvbQBDAG8AcAB5AHIAaQBnAGgAdAAgACgAQwApACAAMgAwADEANwAgAGIAeQAgAG8AcgBpAGcAaQBuAGEAbAAgAGEAdQB0AGgAbwByAHMAIABAACAAZgBvAG4AdABlAGwAbABvAC4AYwBvAG0AbQB5AGQAYQB0AGUAcgBhAG4AZwBlAHAAaQBjAGsAZQByAFIAZQBnAHUAbABhAHIAbQB5AGQAYQB0AGUAcgBhAG4AZwBlAHAAaQBjAGsAZQByAG0AeQBkAGEAdABlAHIAYQBuAGcAZQBwAGkAYwBrAGUAcgBWAGUAcgBzAGkAbwBuACAAMQAuADAAbQB5AGQAYQB0AGUAcgBhAG4AZwBlAHAAaQBjAGsAZQByAEcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAAcwB2AGcAMgB0AHQAZgAgAGYAcgBvAG0AIABGAG8AbgB0AGUAbABsAG8AIABwAHIAbwBqAGUAYwB0AC4AaAB0AHQAcAA6AC8ALwBmAG8AbgB0AGUAbABsAG8ALgBjAG8AbQAAAAACAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAgEDAQQBBQEGAQcBCAEJAApteWRycHJpZ2h0CW15ZHJwbGVmdAdteWRycHVwCW15ZHJwZG93bg1teWRycGNhbGVuZGFyB215ZHJwb2sLbXlkcnByZW1vdmUAAAAAAAEAAf//AA8AAAAAAAAAAAAAAAAAAAAAABgAGAAYABgDUv9qA1L/arAALCCwAFVYRVkgIEu4AA5RS7AGU1pYsDQbsChZYGYgilVYsAIlYbkIAAgAY2MjYhshIbAAWbAAQyNEsgABAENgQi2wASywIGBmLbACLCBkILDAULAEJlqyKAEKQ0VjRVJbWCEjIRuKWCCwUFBYIbBAWRsgsDhQWCGwOFlZILEBCkNFY0VhZLAoUFghsQEKQ0VjRSCwMFBYIbAwWRsgsMBQWCBmIIqKYSCwClBYYBsgsCBQWCGwCmAbILA2UFghsDZgG2BZWVkbsAErWVkjsABQWGVZWS2wAywgRSCwBCVhZCCwBUNQWLAFI0KwBiNCGyEhWbABYC2wBCwjISMhIGSxBWJCILAGI0KxAQpDRWOxAQpDsAFgRWOwAyohILAGQyCKIIqwASuxMAUlsAQmUVhgUBthUllYI1khILBAU1iwASsbIbBAWSOwAFBYZVktsAUssAdDK7IAAgBDYEItsAYssAcjQiMgsAAjQmGwAmJmsAFjsAFgsAUqLbAHLCAgRSCwC0NjuAQAYiCwAFBYsEBgWWawAWNgRLABYC2wCCyyBwsAQ0VCKiGyAAEAQ2BCLbAJLLAAQyNEsgABAENgQi2wCiwgIEUgsAErI7AAQ7AEJWAgRYojYSBkILAgUFghsAAbsDBQWLAgG7BAWVkjsABQWGVZsAMlI2FERLABYC2wCywgIEUgsAErI7AAQ7AEJWAgRYojYSBksCRQWLAAG7BAWSOwAFBYZVmwAyUjYUREsAFgLbAMLCCwACNCsgsKA0VYIRsjIVkqIS2wDSyxAgJFsGRhRC2wDiywAWAgILAMQ0qwAFBYILAMI0JZsA1DSrAAUlggsA0jQlktsA8sILAQYmawAWMguAQAY4ojYbAOQ2AgimAgsA4jQiMtsBAsS1RYsQRkRFkksA1lI3gtsBEsS1FYS1NYsQRkRFkbIVkksBNlI3gtsBIssQAPQ1VYsQ8PQ7ABYUKwDytZsABDsAIlQrEMAiVCsQ0CJUKwARYjILADJVBYsQEAQ2CwBCVCioogiiNhsA4qISOwAWEgiiNhsA4qIRuxAQBDYLACJUKwAiVhsA4qIVmwDENHsA1DR2CwAmIgsABQWLBAYFlmsAFjILALQ2O4BABiILAAUFiwQGBZZrABY2CxAAATI0SwAUOwAD6yAQEBQ2BCLbATLACxAAJFVFiwDyNCIEWwCyNCsAojsAFgQiBgsAFhtRAQAQAOAEJCimCxEgYrsHIrGyJZLbAULLEAEystsBUssQETKy2wFiyxAhMrLbAXLLEDEystsBgssQQTKy2wGSyxBRMrLbAaLLEGEystsBsssQcTKy2wHCyxCBMrLbAdLLEJEystsB4sALANK7EAAkVUWLAPI0IgRbALI0KwCiOwAWBCIGCwAWG1EBABAA4AQkKKYLESBiuwcisbIlktsB8ssQAeKy2wICyxAR4rLbAhLLECHistsCIssQMeKy2wIyyxBB4rLbAkLLEFHistsCUssQYeKy2wJiyxBx4rLbAnLLEIHistsCgssQkeKy2wKSwgPLABYC2wKiwgYLAQYCBDI7ABYEOwAiVhsAFgsCkqIS2wKyywKiuwKiotsCwsICBHICCwC0NjuAQAYiCwAFBYsEBgWWawAWNgI2E4IyCKVVggRyAgsAtDY7gEAGIgsABQWLBAYFlmsAFjYCNhOBshWS2wLSwAsQACRVRYsAEWsCwqsAEVMBsiWS2wLiwAsA0rsQACRVRYsAEWsCwqsAEVMBsiWS2wLywgNbABYC2wMCwAsAFFY7gEAGIgsABQWLBAYFlmsAFjsAErsAtDY7gEAGIgsABQWLBAYFlmsAFjsAErsAAWtAAAAAAARD4jOLEvARUqLbAxLCA8IEcgsAtDY7gEAGIgsABQWLBAYFlmsAFjYLAAQ2E4LbAyLC4XPC2wMywgPCBHILALQ2O4BABiILAAUFiwQGBZZrABY2CwAENhsAFDYzgtsDQssQIAFiUgLiBHsAAjQrACJUmKikcjRyNhIFhiGyFZsAEjQrIzAQEVFCotsDUssAAWsAQlsAQlRyNHI2GwCUMrZYouIyAgPIo4LbA2LLAAFrAEJbAEJSAuRyNHI2EgsAQjQrAJQysgsGBQWCCwQFFYswIgAyAbswImAxpZQkIjILAIQyCKI0cjRyNhI0ZgsARDsAJiILAAUFiwQGBZZrABY2AgsAErIIqKYSCwAkNgZCOwA0NhZFBYsAJDYRuwA0NgWbADJbACYiCwAFBYsEBgWWawAWNhIyAgsAQmI0ZhOBsjsAhDRrACJbAIQ0cjRyNhYCCwBEOwAmIgsABQWLBAYFlmsAFjYCMgsAErI7AEQ2CwASuwBSVhsAUlsAJiILAAUFiwQGBZZrABY7AEJmEgsAQlYGQjsAMlYGRQWCEbIyFZIyAgsAQmI0ZhOFktsDcssAAWICAgsAUmIC5HI0cjYSM8OC2wOCywABYgsAgjQiAgIEYjR7ABKyNhOC2wOSywABawAyWwAiVHI0cjYbAAVFguIDwjIRuwAiWwAiVHI0cjYSCwBSWwBCVHI0cjYbAGJbAFJUmwAiVhuQgACABjYyMgWGIbIVljuAQAYiCwAFBYsEBgWWawAWNgIy4jICA8ijgjIVktsDossAAWILAIQyAuRyNHI2EgYLAgYGawAmIgsABQWLBAYFlmsAFjIyAgPIo4LbA7LCMgLkawAiVGUlggPFkusSsBFCstsDwsIyAuRrACJUZQWCA8WS6xKwEUKy2wPSwjIC5GsAIlRlJYIDxZIyAuRrACJUZQWCA8WS6xKwEUKy2wPiywNSsjIC5GsAIlRlJYIDxZLrErARQrLbA/LLA2K4ogIDywBCNCijgjIC5GsAIlRlJYIDxZLrErARQrsARDLrArKy2wQCywABawBCWwBCYgLkcjRyNhsAlDKyMgPCAuIzixKwEUKy2wQSyxCAQlQrAAFrAEJbAEJSAuRyNHI2EgsAQjQrAJQysgsGBQWCCwQFFYswIgAyAbswImAxpZQkIjIEewBEOwAmIgsABQWLBAYFlmsAFjYCCwASsgiophILACQ2BkI7ADQ2FkUFiwAkNhG7ADQ2BZsAMlsAJiILAAUFiwQGBZZrABY2GwAiVGYTgjIDwjOBshICBGI0ewASsjYTghWbErARQrLbBCLLA1Ky6xKwEUKy2wQyywNishIyAgPLAEI0IjOLErARQrsARDLrArKy2wRCywABUgR7AAI0KyAAEBFRQTLrAxKi2wRSywABUgR7AAI0KyAAEBFRQTLrAxKi2wRiyxAAEUE7AyKi2wRyywNCotsEgssAAWRSMgLiBGiiNhOLErARQrLbBJLLAII0KwSCstsEossgAAQSstsEsssgABQSstsEwssgEAQSstsE0ssgEBQSstsE4ssgAAQistsE8ssgABQistsFAssgEAQistsFEssgEBQistsFIssgAAPistsFMssgABPistsFQssgEAPistsFUssgEBPistsFYssgAAQCstsFcssgABQCstsFgssgEAQCstsFkssgEBQCstsFossgAAQystsFsssgABQystsFwssgEAQystsF0ssgEBQystsF4ssgAAPystsF8ssgABPystsGAssgEAPystsGEssgEBPystsGIssDcrLrErARQrLbBjLLA3K7A7Ky2wZCywNyuwPCstsGUssAAWsDcrsD0rLbBmLLA4Ky6xKwEUKy2wZyywOCuwOystsGgssDgrsDwrLbBpLLA4K7A9Ky2waiywOSsusSsBFCstsGsssDkrsDsrLbBsLLA5K7A8Ky2wbSywOSuwPSstsG4ssDorLrErARQrLbBvLLA6K7A7Ky2wcCywOiuwPCstsHEssDorsD0rLbByLLMJBAIDRVghGyMhWUIrsAhlsAMkUHiwARUwLQBLuADIUlixAQGOWbABuQgACABjcLEABUKyAAEAKrEABUKzCgIBCCqxAAVCsw4AAQgqsQAGQroCwAABAAkqsQAHQroAQAABAAkqsQMARLEkAYhRWLBAiFixA2REsSYBiFFYugiAAAEEQIhjVFixAwBEWVlZWbMMAgEMKrgB/4WwBI2xAgBEAAA=) format('truetype');font-weight:400;font-style:normal}.mydrp .mydrpicon{font-family:mydaterangepicker;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.mydrp .icon-mydrpright:before{content:\"\\e800\"}.mydrp .icon-mydrpleft:before{content:\"\\e801\"}.mydrp .icon-mydrpup:before{content:\"\\e802\"}.mydrp .icon-mydrpdown:before{content:\"\\e803\"}.mydrp .icon-mydrpcalendar:before{content:\"\\e804\"}.mydrp .icon-mydrpok:before{content:\"\\e805\"}.mydrp .icon-mydrpremove:before{content:\"\\e806\"}"],
+                    template: "<div class=\"mydrp\" [ngStyle]=\"{'width': opts.width, 'border': opts.inline ? 'none' : null}\"><div class=\"selectiongroup\" *ngIf=\"!opts.inline\"><input type=\"text\" class=\"selection\" [attr.aria-label]=\"opts.ariaLabelInputField\" (click)=\"opts.openSelectorOnInputClick&&!opts.editableDateRangeField&&openBtnClicked()\" [attr.maxlength]=\"dateRangeFormat.length\" [ngClass]=\"{'invaliddaterange': invalidDateRange&&opts.indicateInvalidDateRange, 'inputnoteditable': opts.openSelectorOnInputClick&&!opts.editableDateRangeField, 'selectiondisabled': opts.componentDisabled}\" placeholder=\"{{placeholder}}\" [ngStyle]=\"{'height': opts.height, 'font-size': opts.selectionTxtFontSize}\" [ngModel]=\"selectionDayTxt\" (ngModelChange)=\"onUserDateRangeInput($event)\" (keyup)=\"onCloseSelector($event)\" (focus)=\"opts.editableDateRangeField&&onFocusInput($event)\" (blur)=\"opts.editableDateRangeField&&onBlurInput($event)\" [value]=\"selectionDayTxt\" [disabled]=\"opts.componentDisabled\" [readonly]=\"!opts.editableDateRangeField\" autocomplete=\"off\" spellcheck=\"false\" autocorrect=\"off\"> <span class=\"selbtngroup\" [style.height]=\"opts.height\"><button type=\"button\" class=\"btnclear\" [attr.aria-label]=\"opts.ariaLabelClearDateRange\" *ngIf=\"selectionDayTxt.length>0&&opts.showClearDateRangeBtn\" (click)=\"removeBtnClicked();$event.stopPropagation()\" [ngClass]=\"{'btnclearenabled': !opts.componentDisabled, 'btncleardisabled': opts.componentDisabled}\" [disabled]=\"opts.componentDisabled\"><span class=\"mydrpicon icon-mydrpremove\"></span></button> <button type=\"button\" class=\"btnpicker\" [attr.aria-label]=\"opts.ariaLabelOpenCalendar\" (click)=\"openBtnClicked()\" [ngClass]=\"{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}\" [disabled]=\"opts.componentDisabled\"><span class=\"mydrpicon icon-mydrpcalendar\"></span></button></span></div><div class=\"selector\" #selectorEl *ngIf=\"showSelector||opts.inline\" [ngStyle]=\"{'width': opts.selectorWidth, 'height' : opts.selectorHeight}\" [mydrpfocus]=\"opts.inline?'0':'1'\" [ngClass]=\"{'inline': opts.inline, 'alignselectorright': opts.alignSelectorRight, 'selectorarrow': opts.showSelectorArrow&&!opts.inline, 'selectorarrowleft': opts.showSelectorArrow&&!opts.alignSelectorRight&&!opts.inline, 'selectorarrowright': opts.showSelectorArrow&&opts.alignSelectorRight&&!opts.inline}\" (keyup)=\"onCloseSelector($event)\" tabindex=\"0\"><div class=\"titlearea\" *ngIf=\"opts.showSelectDateText\"><div class=\"titleareatxt\">{{titleAreaText!==''?titleAreaText:opts.selectBeginDateTxt}}</div></div><table class=\"header\"><tr><td><div style=\"float:left\"><div class=\"headerbtncell\"><button type=\"button\" class=\"headerbtn mydrpicon icon-mydrpleft\" [attr.aria-label]=\"opts.ariaLabelPrevMonth\" (click)=\"onPrevMonth()\" [disabled]=\"prevMonthDisabled\" [ngClass]=\"{'headerbtnenabled': !prevMonthDisabled, 'headerbtndisabled': prevMonthDisabled}\"></button></div><div class=\"headermonthtxt\"><button class=\"headerlabelbtn\" type=\"button\" [ngClass]=\"{'monthlabel': opts.monthSelector}\" (click)=\"opts.monthSelector&&onSelectMonthClicked($event)\" tabindex=\"{{opts.monthSelector?'0':'-1'}}\">{{visibleMonth.monthTxt}}</button></div><div class=\"headerbtncell\"><button type=\"button\" class=\"headerbtn mydrpicon icon-mydrpright\" [attr.aria-label]=\"opts.ariaLabelNextMonth\" (click)=\"onNextMonth()\" [disabled]=\"nextMonthDisabled\" [ngClass]=\"{'headerbtnenabled': !nextMonthDisabled, 'headerbtndisabled': nextMonthDisabled}\"></button></div></div></td><td><button type=\"button\" class=\"headerclearbtn\" *ngIf=\"opts.showClearBtn\" [disabled]=\"beginDate.year===0&&endDate.year===0\" [ngClass]=\"{'clearbtndisabled':beginDate.year===0&&endDate.year===0, 'headerclearbtnenabled':beginDate.year!==0||endDate.year!==0}\" (click)=\"clearDateRange()\"><span class=\"mydrpicon icon-mydrpremove\"></span></button> <button type=\"button\" class=\"headerokbtn\" *ngIf=\"opts.showApplyBtn\" [disabled]=\"endDate.year===0\" [ngClass]=\"{'okbtndisabled':endDate.year===0, 'headerokbtnenabled':endDate.year!==0}\" (click)=\"rangeSelected()\"><span class=\"mydrpicon icon-mydrpok\"></span></button></td><td><div style=\"float:right\"><div class=\"headerbtncell\"><button type=\"button\" class=\"headerbtn mydrpicon icon-mydrpleft\" [attr.aria-label]=\"opts.ariaLabelPrevYear\" (click)=\"onPrevYear()\" [disabled]=\"prevYearDisabled\" [ngClass]=\"{'headerbtnenabled': !prevYearDisabled, 'headerbtndisabled': prevYearDisabled}\"></button></div><div class=\"headeryeartxt\"><button class=\"headerlabelbtn\" type=\"button\" [ngClass]=\"{'yearlabel': opts.yearSelector}\" (click)=\"opts.yearSelector&&onSelectYearClicked($event)\" tabindex=\"{{opts.yearSelector?'0':'-1'}}\">{{visibleMonth.year}}</button></div><div class=\"headerbtncell\"><button type=\"button\" class=\"headerbtn mydrpicon icon-mydrpright\" [attr.aria-label]=\"opts.ariaLabelNextYear\" (click)=\"onNextYear()\" [disabled]=\"nextYearDisabled\" [ngClass]=\"{'headerbtnenabled': !nextYearDisabled, 'headerbtndisabled': nextYearDisabled}\"></button></div></div></td></tr></table><table class=\"caltable\" *ngIf=\"!selectMonth&&!selectYear\" [ngStyle]=\"{'height': opts.showSelectDateText?'calc(100% - 54px)':'calc(100% - 30px)'}\"><thead><tr><th class=\"weekdaytitle weekdaytitleweeknbr\" *ngIf=\"opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'\">#</th><th class=\"weekdaytitle\" scope=\"col\" *ngFor=\"let d of weekDays\">{{d}}</th></tr></thead><tbody><tr *ngFor=\"let w of dates\"><td class=\"daycell daycellweeknbr\" *ngIf=\"opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'\">{{w.weekNbr}}</td><td class=\"daycell\" *ngFor=\"let d of w.week\" [ngClass]=\"{'currmonth':d.cmo===currMonthId&&!d.disabled, 'range': isInRange(d)||d.range, 'disabled': d.disabled}\" (click)=\"!d.disabled && onCellClicked(d);$event.stopPropagation()\" (keydown)=\"onCellKeyDown($event, d)\" (mouseenter)=\"onCellMouseEnter(d)\" (mouseleave)=\"onCellMouseLeave()\" tabindex=\"0\"><div class=\"datevalue\" [ngClass]=\"{'prevmonth':d.cmo===prevMonthId, 'selecteddaybegin':beginDate.day===d.dateObj.day&&beginDate.month===d.dateObj.month&&beginDate.year===d.dateObj.year, 'selecteddayend':endDate.day===d.dateObj.day&&endDate.month===d.dateObj.month&&endDate.year===d.dateObj.year, 'currmonth':d.cmo===currMonthId, 'nextmonth':d.cmo===nextMonthId, 'sunday':d.dayNbr===0&&opts.sunHighlight}\"><span [ngClass]=\"{'markcurrday':d.currDay&&opts.markCurrentDay, 'sundayDim': opts.sunHighlight && d.dayNbr === 0 && (d.cmo===prevMonthId || d.cmo===nextMonthId || d.disabled)}\">{{d.dateObj.day}}</span></div></td></tr></tbody></table><table class=\"monthtable\" *ngIf=\"selectMonth\" [ngStyle]=\"{'height': opts.showSelectDateText?'calc(100% - 54px)':'calc(100% - 30px)'}\"><tbody><tr *ngFor=\"let mr of months\"><td class=\"monthcell tablesinglemonth\" [ngClass]=\"{'selectedmonth': m.selected, 'disabled': m.disabled}\" *ngFor=\"let m of mr\" (click)=\"!m.disabled&&onMonthCellClicked(m);$event.stopPropagation()\" (keydown)=\"onMonthCellKeyDown($event, m)\" tabindex=\"0\"><div class=\"monthvalue\" [ngClass]=\"{'markcurrmonth':m.currMonth&&opts.markCurrentMonth}\">{{m.name}}</div></td></tr></tbody></table><table class=\"yeartable\" *ngIf=\"selectYear\" [ngStyle]=\"{'height': opts.showSelectDateText?'calc(100% - 54px)':'calc(100% - 30px)'}\"><tbody><tr><td colspan=\"5\" class=\"yearchangebtncell\" (click)=\"$event.stopPropagation()\"><button type=\"button\" class=\"yearchangebtn mydrpicon icon-mydrpup\" (click)=\"onPrevYears($event, years[0][0].year)\" [disabled]=\"prevYearsDisabled\" [ngClass]=\"{'yearchangebtnenabled': !prevYearsDisabled, 'yearchangebtndisabled': prevYearsDisabled}\"></button></td></tr><tr *ngFor=\"let yr of years\"><td class=\"yearcell tablesingleyear\" [ngClass]=\"{'selectedyear': y.selected, 'disabled': y.disabled}\" *ngFor=\"let y of yr\" (click)=\"!y.disabled&&onYearCellClicked(y);$event.stopPropagation()\" (keydown)=\"onYearCellKeyDown($event, y)\" tabindex=\"0\"><div class=\"yearvalue\" [ngClass]=\"{'markcurryear':y.currYear&&opts.markCurrentYear}\">{{y.year}}</div></td></tr><tr><td colspan=\"5\" class=\"yearchangebtncell\" (click)=\"$event.stopPropagation()\"><button type=\"button\" class=\"yearchangebtn mydrpicon icon-mydrpdown\" (click)=\"onNextYears($event, years[0][0].year)\" [disabled]=\"nextYearsDisabled\" [ngClass]=\"{'yearchangebtnenabled': !nextYearsDisabled, 'yearchangebtndisabled': nextYearsDisabled}\"></button></td></tr></tbody></table></div></div>",
+                    providers: [__WEBPACK_IMPORTED_MODULE_2__services_my_date_range_picker_date_range_util_service__["a" /* DateRangeUtilService */], MYDRP_VALUE_ACCESSOR],
+                    encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* ViewEncapsulation */].None
+                },] },
+    ];
+    MyDateRangePicker.ctorParameters = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Renderer */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["r" /* ChangeDetectorRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_2__services_my_date_range_picker_date_range_util_service__["a" /* DateRangeUtilService */], },
+    ];
+    MyDateRangePicker.propDecorators = {
+        'options': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+        'defaultMonth': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+        'selDateRange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+        'placeholder': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+        'dateRangeChanged': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+        'inputFieldChanged': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+        'calendarViewChanged': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+        'inputFocusBlur': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+        'dateSelected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+        'selectorEl': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */], args: ["selectorEl",] },],
+    };
+    return MyDateRangePicker;
+}());
+//# sourceMappingURL=my-date-range-picker.component.js.map
+
+/***/ }),
+
+/***/ 676:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_ctr_completer__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_completer_service__ = __webpack_require__(651);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(647);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterCmp; });
+
+
+
+
+
+
+
+var noop = function () { };
+var COMPLETER_CONTROL_VALUE_ACCESSOR = {
+    provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* NG_VALUE_ACCESSOR */],
+    useExisting: __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return CompleterCmp; }),
+    multi: true
+};
+var CompleterCmp = (function () {
+    function CompleterCmp(completerService) {
+        this.completerService = completerService;
+        this.inputName = "";
+        this.inputId = "";
+        this.pause = __WEBPACK_IMPORTED_MODULE_4__globals__["b" /* PAUSE */];
+        this.minSearchLength = __WEBPACK_IMPORTED_MODULE_4__globals__["a" /* MIN_SEARCH_LENGTH */];
+        this.maxChars = __WEBPACK_IMPORTED_MODULE_4__globals__["d" /* MAX_CHARS */];
+        this.overrideSuggested = false;
+        this.clearSelected = false;
+        this.fillHighlighted = true;
+        this.placeholder = "";
+        this.textSearching = __WEBPACK_IMPORTED_MODULE_4__globals__["e" /* TEXT_SEARCHING */];
+        this.textNoResults = __WEBPACK_IMPORTED_MODULE_4__globals__["f" /* TEXT_NORESULTS */];
+        this.autoMatch = false;
+        this.disableInput = false;
+        this.autofocus = false;
+        this.selected = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.highlighted = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.blur = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.focusEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.searchStr = "";
+        this.control = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormControl */]("");
+        this.displaySearching = true;
+        this._onTouchedCallback = noop;
+        this._onChangeCallback = noop;
+        this._focus = false;
+    }
+    Object.defineProperty(CompleterCmp.prototype, "value", {
+        get: function () { return this.searchStr; },
+        set: function (v) {
+            if (v !== this.searchStr) {
+                this.searchStr = v;
+            }
+            // Propagate the change in any case
+            this._onChangeCallback(v);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    ;
+    CompleterCmp.prototype.ngAfterViewInit = function () {
+        if (this.autofocus) {
+            this._focus = true;
+        }
+    };
+    CompleterCmp.prototype.ngAfterViewChecked = function () {
+        if (this._focus) {
+            this.ctrInput.nativeElement.focus();
+            this._focus = false;
+        }
+    };
+    CompleterCmp.prototype.onTouched = function () {
+        this._onTouchedCallback();
+    };
+    CompleterCmp.prototype.writeValue = function (value) {
+        this.searchStr = value;
+    };
+    CompleterCmp.prototype.registerOnChange = function (fn) {
+        this._onChangeCallback = fn;
+    };
+    CompleterCmp.prototype.registerOnTouched = function (fn) {
+        this._onTouchedCallback = fn;
+    };
+    CompleterCmp.prototype.ngOnInit = function () {
+        var _this = this;
+        if (this.datasource) {
+            if (this.datasource instanceof Array) {
+                this.dataService = this.completerService.local(this.datasource);
+            }
+            else if (typeof (this.datasource) === "string") {
+                this.dataService = this.completerService.remote(this.datasource);
+            }
+            else {
+                this.dataService = this.datasource;
+            }
+        }
+        this.completer.selected.subscribe(function (item) {
+            var title = item ? item.title : "";
+            _this.selected.emit(item);
+            _this._onChangeCallback(title);
+        });
+        this.completer.highlighted.subscribe(function (item) {
+            _this.highlighted.emit(item);
+        });
+        if (this.textSearching === "false") {
+            this.displaySearching = false;
+        }
+    };
+    CompleterCmp.prototype.onBlur = function () {
+        this.blur.emit();
+        this.onTouched();
+    };
+    CompleterCmp.prototype.onFocus = function () {
+        this.focusEvent.emit();
+        this.onTouched();
+    };
+    CompleterCmp.prototype.onChange = function (value) {
+        this.value = value;
+    };
+    CompleterCmp.prototype.open = function (searchValue) {
+        if (searchValue === void 0) { searchValue = ""; }
+        this.completer.search(searchValue);
+    };
+    CompleterCmp.prototype.close = function () {
+        this.completer.clear();
+    };
+    CompleterCmp.prototype.focus = function () {
+        if (this.ctrInput) {
+            this.ctrInput.nativeElement.focus();
+        }
+        else {
+            this._focus = true;
+        }
+    };
+    return CompleterCmp;
+}());
+
+CompleterCmp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */], args: [{
+                selector: "ng2-completer",
+                template: "\n        <div class=\"completer-holder\" ctrCompleter>\n            <input #ctrInput [attr.id]=\"inputId.length > 0 ? inputId : null\" type=\"search\" class=\"completer-input\" ctrInput [ngClass]=\"inputClass\" [(ngModel)]=\"searchStr\" (ngModelChange)=\"onChange($event)\" [attr.name]=\"inputName\" [placeholder]=\"placeholder\"\n                [attr.maxlength]=\"maxChars\" [tabindex]=\"fieldTabindex\" [disabled]=\"disableInput\" [clearSelected]=\"clearSelected\" [overrideSuggested]=\"overrideSuggested\" \n                [fillHighlighted]=\"fillHighlighted\" (blur)=\"onBlur()\" (focus)=\"onFocus()\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\" />\n\n            <div class=\"completer-dropdown-holder\" *ctrList=\"dataService; minSearchLength: minSearchLength; pause: pause; autoMatch: autoMatch; let items = results; let searchActive = searching; let isInitialized = searchInitialized;\">\n                <div class=\"completer-dropdown\" ctrDropdown *ngIf=\"isInitialized\">\n                    <div *ngIf=\"searchActive && displaySearching\" class=\"completer-searching\">{{textSearching}}</div>\n                    <div *ngIf=\"!searchActive && (!items || items.length === 0)\" class=\"completer-no-results\">{{textNoResults}}</div>\n                    <div class=\"completer-row-wrapper\" *ngFor=\"let item of items; let rowIndex=index\">\n                        <div class=\"completer-row\" [ctrRow]=\"rowIndex\" [dataItem]=\"item\">\n                            <div *ngIf=\"item.image || item.image === ''\" class=\"completer-image-holder\">\n                                <img *ngIf=\"item.image != ''\" src=\"{{item.image}}\" class=\"completer-image\" />\n                                <div *ngIf=\"item.image === ''\" class=\"completer-image-default\"></div>\n                            </div>\n                            <div class=\"completer-item-text\" [ngClass]=\"{'completer-item-text-image': item.image || item.image === '' }\">\n                                <completer-list-item class=\"completer-title\" [text]=\"item.title\" [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'title'\"></completer-list-item>\n                                <completer-list-item *ngIf=\"item.description && item.description != ''\" class=\"completer-description\" [text]=\"item.description\"\n                                    [matchClass]=\"matchClass\" [searchStr]=\"searchStr\" [type]=\"'description'\">\n                                </completer-list-item>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    ",
+                styles: ["\n    .completer-dropdown {\n        border-color: #ececec;\n        border-width: 1px;\n        border-style: solid;\n        border-radius: 2px;\n        width: 250px;\n        padding: 6px;\n        cursor: pointer;\n        z-index: 9999;\n        position: absolute;\n        margin-top: -6px;\n        background-color: #ffffff;\n    }\n\n    .completer-row {\n        padding: 5px;\n        color: #000000;\n        margin-bottom: 4px;\n        clear: both;\n        display: inline-block;\n        width: 103%;\n    }\n\n    .completer-selected-row {\n        background-color: lightblue;\n        color: #ffffff;\n    }\n\n    .completer-description {\n        font-size: 14px;\n    }\n\n    .completer-image-default {\n        width: 16px; \n        height: 16px;\n        background-image: url(\"demo/res/img/default.png\");\n    }\n\n    .completer-image-holder {\n        float: left;\n        width: 10%;\n    }\n    .completer-item-text-image {\n        float: right;\n        width: 90%;\n    }\n    "],
+                providers: [COMPLETER_CONTROL_VALUE_ACCESSOR]
+            },] },
+];
+/** @nocollapse */
+CompleterCmp.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_3__services_completer_service__["a" /* CompleterService */], },
+]; };
+CompleterCmp.propDecorators = {
+    'dataService': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'datasource': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'inputName': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'inputId': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'pause': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'minSearchLength': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'maxChars': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'overrideSuggested': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'clearSelected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'fillHighlighted': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'placeholder': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'matchClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'textSearching': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'textNoResults': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'fieldTabindex': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'autoMatch': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'disableInput': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'inputClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'autofocus': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'selected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+    'highlighted': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+    'blur': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+    'focusEvent': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */], args: ["focus",] },],
+    'completer': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */], args: [__WEBPACK_IMPORTED_MODULE_2__directives_ctr_completer__["a" /* CtrCompleter */],] },],
+    'ctrInput': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */], args: ["ctrInput",] },],
+};
+//# sourceMappingURL=completer-cmp.js.map
+
+/***/ }),
+
+/***/ 677:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterListItemCmp; });
+
+
+var CompleterListItemCmp = (function () {
+    function CompleterListItemCmp() {
+        this.parts = [];
+    }
+    CompleterListItemCmp.prototype.ngOnInit = function () {
+        if (!this.searchStr) {
+            this.parts.push({ isMatch: false, text: this.text });
+            return;
+        }
+        var matchStr = this.text.toLowerCase();
+        var matchPos = matchStr.indexOf(this.searchStr.toLowerCase());
+        var startIndex = 0;
+        while (matchPos >= 0) {
+            var matchText = this.text.slice(matchPos, matchPos + this.searchStr.length);
+            if (matchPos === 0) {
+                this.parts.push({ isMatch: true, text: matchText });
+                startIndex += this.searchStr.length;
+            }
+            else if (matchPos > 0) {
+                var matchPart = this.text.slice(startIndex, matchPos);
+                this.parts.push({ isMatch: false, text: matchPart });
+                this.parts.push({ isMatch: true, text: matchText });
+                startIndex += this.searchStr.length + matchPart.length;
+            }
+            matchPos = matchStr.indexOf(this.searchStr.toLowerCase(), startIndex);
+        }
+        if (startIndex < this.text.length) {
+            this.parts.push({ isMatch: false, text: this.text.slice(startIndex, this.text.length) });
+        }
+    };
+    return CompleterListItemCmp;
+}());
+
+CompleterListItemCmp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */], args: [{
+                selector: "completer-list-item",
+                template: "\n    <span class=\"completer-list-item-holder\" [ngClass]=\"{'completer-title': type === 'title', 'completer-description': type === 'description'}\" >\n        <span class=\"completer-list-item\" *ngFor=\"let part of parts\" [ngClass]=\"part.isMatch ? matchClass : null\">{{part.text}}</span>\n    </span>\n    "
+            },] },
+];
+/** @nocollapse */
+CompleterListItemCmp.ctorParameters = function () { return []; };
+CompleterListItemCmp.propDecorators = {
+    'text': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'searchStr': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'matchClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'type': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+};
+//# sourceMappingURL=completer-list-item-cmp.js.map
+
+/***/ }),
+
+/***/ 678:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ctr_completer__ = __webpack_require__(639);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrInput; });
+
+
+
+// keyboard events
+var KEY_DW = 40;
+var KEY_RT = 39;
+var KEY_UP = 38;
+var KEY_LF = 37;
+var KEY_ES = 27;
+var KEY_EN = 13;
+var KEY_TAB = 9;
+var CtrInput = (function () {
+    function CtrInput(completer, ngModel, el) {
+        var _this = this;
+        this.completer = completer;
+        this.ngModel = ngModel;
+        this.el = el;
+        this.clearSelected = false;
+        this.overrideSuggested = false;
+        this.fillHighlighted = true;
+        this.ngModelChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this._searchStr = "";
+        this._displayStr = "";
+        this.completer.selected.subscribe(function (item) {
+            if (!item) {
+                return;
+            }
+            if (_this.clearSelected) {
+                _this.searchStr = "";
+            }
+            else {
+                _this.searchStr = item.title;
+            }
+            _this.ngModelChange.emit(_this.searchStr);
+        });
+        this.completer.highlighted.subscribe(function (item) {
+            if (_this.fillHighlighted) {
+                if (item) {
+                    _this._displayStr = item.title;
+                    _this.ngModelChange.emit(item.title);
+                }
+                else {
+                    _this._displayStr = _this.searchStr;
+                    _this.ngModelChange.emit(_this.searchStr);
+                }
+            }
+        });
+        this.ngModel.valueChanges.subscribe(function (value) {
+            if (_this._displayStr != value) {
+                _this.searchStr = value;
+            }
+        });
+    }
+    CtrInput.prototype.keyupHandler = function (event) {
+        if (event.keyCode === KEY_LF || event.keyCode === KEY_RT || event.keyCode === KEY_TAB) {
+            // do nothing
+            return;
+        }
+        if (event.keyCode === KEY_UP || event.keyCode === KEY_EN) {
+            event.preventDefault();
+        }
+        else if (event.keyCode === KEY_DW) {
+            event.preventDefault();
+            this.completer.search(this.searchStr);
+        }
+        else if (event.keyCode === KEY_ES) {
+            this.restoreSearchValue();
+            this.completer.clear();
+        }
+        else {
+            this.completer.search(this.searchStr);
+        }
+    };
+    CtrInput.prototype.keydownHandler = function (event) {
+        if (event.keyCode === KEY_EN) {
+            if (this.completer.hasHighlited()) {
+                event.preventDefault();
+            }
+            this.handleSelection();
+        }
+        else if (event.keyCode === KEY_DW) {
+            event.preventDefault();
+            this.completer.nextRow();
+        }
+        else if (event.keyCode === KEY_UP) {
+            event.preventDefault();
+            this.completer.prevRow();
+        }
+        else if (event.keyCode === KEY_TAB) {
+            this.handleSelection();
+        }
+        else if (event.keyCode === KEY_ES) {
+            // This is very specific to IE10/11 #272
+            // without this, IE clears the input text
+            event.preventDefault();
+        }
+    };
+    CtrInput.prototype.onBlur = function (event) {
+        var _this = this;
+        // Check if we need to cancel Blur for IE
+        if (this.completer.isCancelBlur()) {
+            setTimeout(function () {
+                // get the focus back
+                _this.el.nativeElement.focus();
+            }, 0);
+            return;
+        }
+        setTimeout(function () {
+            if (_this.overrideSuggested) {
+                _this.completer.onSelected({ title: _this.searchStr, originalObject: null });
+            }
+            else {
+                _this.restoreSearchValue();
+            }
+            _this.completer.clear();
+        }, 200);
+    };
+    Object.defineProperty(CtrInput.prototype, "searchStr", {
+        get: function () {
+            return this._searchStr;
+        },
+        set: function (term) {
+            this._searchStr = term;
+            this._displayStr = term;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CtrInput.prototype.handleSelection = function () {
+        if (this.overrideSuggested) {
+            this.completer.onSelected({ title: this.searchStr, originalObject: null });
+        }
+        else if (this.completer.hasHighlited()) {
+            this.completer.selectCurrent();
+        }
+        else {
+            this.completer.clear();
+        }
+    };
+    CtrInput.prototype.restoreSearchValue = function () {
+        if (this.fillHighlighted) {
+            // Restore searched value if there is no overrideSuggested
+            if (this._displayStr != this.searchStr) {
+                this._displayStr = this.searchStr;
+                this.ngModelChange.emit(this.searchStr);
+            }
+        }
+    };
+    return CtrInput;
+}());
+
+CtrInput.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */], args: [{
+                selector: "[ctrInput]",
+            },] },
+];
+/** @nocollapse */
+CtrInput.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_2__ctr_completer__["a" /* CtrCompleter */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Host */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* NgModel */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */], },
+]; };
+CtrInput.propDecorators = {
+    'clearSelected': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */], args: ["clearSelected",] },],
+    'overrideSuggested': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */], args: ["overrideSuggested",] },],
+    'fillHighlighted': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */], args: ["fillHighlighted",] },],
+    'ngModelChange': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */] },],
+    'keyupHandler': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["keyup", ["$event"],] },],
+    'keydownHandler': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["keydown", ["$event"],] },],
+    'onBlur': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["blur", ["$event"],] },],
+};
+//# sourceMappingURL=ctr-input.js.map
+
+/***/ }),
+
+/***/ 679:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_add_observable_timer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ctr_completer__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(681);
+/* unused harmony export CtrListContext */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrList; });
+
+
+
+
+
+var CtrListContext = (function () {
+    function CtrListContext(results, searching, searchInitialized) {
+        this.results = results;
+        this.searching = searching;
+        this.searchInitialized = searchInitialized;
+    }
+    return CtrListContext;
+}());
+
+var CtrList = (function () {
+    function CtrList(completer, templateRef, viewContainer, cd) {
+        this.completer = completer;
+        this.templateRef = templateRef;
+        this.viewContainer = viewContainer;
+        this.cd = cd;
+        this.ctrListMinSearchLength = __WEBPACK_IMPORTED_MODULE_4__globals__["a" /* MIN_SEARCH_LENGTH */];
+        this.ctrListPause = __WEBPACK_IMPORTED_MODULE_4__globals__["b" /* PAUSE */];
+        this.ctrListAutoMatch = false;
+        // private results: CompleterItem[] = [];
+        this.term = null;
+        // private searching = false;
+        this.searchTimer = null;
+        this.clearTimer = null;
+        this.ctx = new CtrListContext([], false, false);
+    }
+    CtrList.hasTerm = function (term) {
+        return term || term === "";
+    };
+    CtrList.prototype.ngOnInit = function () {
+        this.completer.registerList(this);
+        this.viewContainer.createEmbeddedView(this.templateRef, new CtrListContext([], false, false));
+    };
+    Object.defineProperty(CtrList.prototype, "dataService", {
+        set: function (newService) {
+            var _this = this;
+            this._dataService = newService;
+            if (this._dataService) {
+                this._dataService
+                    .catch(function (err) { return _this.handleError(err); })
+                    .subscribe(function (results) {
+                    _this.ctx.searchInitialized = true;
+                    _this.ctx.searching = false;
+                    _this.ctx.results = results;
+                    if (_this.ctrListAutoMatch && results.length === 1 && results[0].title && CtrList.hasTerm(_this.term) &&
+                        results[0].title.toLocaleLowerCase() === _this.term.toLocaleLowerCase()) {
+                        // Do automatch
+                        _this.completer.onSelected(results[0]);
+                    }
+                    _this.refreshTemplate();
+                });
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CtrList.prototype.search = function (term) {
+        var _this = this;
+        if (CtrList.hasTerm(term) && term.length >= this.ctrListMinSearchLength && this.term !== term) {
+            if (this.searchTimer) {
+                this.searchTimer.unsubscribe();
+                this.searchTimer = null;
+            }
+            if (!this.ctx.searching) {
+                this.ctx.results = [];
+                this.ctx.searching = true;
+                this.ctx.searchInitialized = true;
+                this.refreshTemplate();
+            }
+            if (this.clearTimer) {
+                this.clearTimer.unsubscribe();
+            }
+            this.searchTimer = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].timer(this.ctrListPause).subscribe(function () {
+                _this.searchTimerComplete(term);
+            });
+        }
+    };
+    CtrList.prototype.clear = function () {
+        var _this = this;
+        if (this.searchTimer) {
+            this.searchTimer.unsubscribe();
+        }
+        this.clearTimer = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].timer(__WEBPACK_IMPORTED_MODULE_4__globals__["c" /* CLEAR_TIMEOUT */]).subscribe(function () {
+            _this._clear();
         });
     };
-    return TrafficChart;
+    CtrList.prototype._clear = function () {
+        if (this.searchTimer) {
+            this.searchTimer.unsubscribe();
+            this.searchTimer = null;
+        }
+        if (this.dataService) {
+            this.dataService.cancel();
+        }
+        this.ctx.results = [];
+        this.ctx.searchInitialized = false;
+        this.term = null;
+        this.viewContainer.clear();
+    };
+    CtrList.prototype.searchTimerComplete = function (term) {
+        // Begin the search
+        if (!CtrList.hasTerm(term) || term.length < this.ctrListMinSearchLength) {
+            this.ctx.searching = false;
+            return;
+        }
+        this.term = term;
+        this._dataService.search(term);
+    };
+    CtrList.prototype.handleError = function (error) {
+        this.ctx.searching = false;
+        var errMsg = "search error";
+        if (error) {
+            errMsg = (error.message) ? error.message :
+                error.status ? error.status + " - " + error.statusText : "Server error";
+        }
+        if (console && console.error) {
+            console.error(errMsg); // log to console
+        }
+        this.refreshTemplate();
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(errMsg);
+    };
+    CtrList.prototype.refreshTemplate = function () {
+        // Recreate the template
+        this.viewContainer.clear();
+        this.viewContainer.createEmbeddedView(this.templateRef, this.ctx);
+        this.cd.markForCheck();
+    };
+    return CtrList;
 }());
-TrafficChart = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'traffic-chart',
-        template: __webpack_require__(714),
-        styles: [__webpack_require__(700)]
-    })
-    // TODO: move chart.js to it's own component
-    ,
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__trafficChart_service__["a" /* TrafficChartService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__trafficChart_service__["a" /* TrafficChartService */]) === "function" && _a || Object])
-], TrafficChart);
 
-var _a;
-//# sourceMappingURL=trafficChart.component.js.map
-
-/***/ }),
-
-/***/ 666:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__usersMap_component__ = __webpack_require__(667);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__usersMap_component__["a"]; });
-
-//# sourceMappingURL=index.js.map
+CtrList.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Directive */], args: [{
+                selector: "[ctrList]",
+            },] },
+];
+/** @nocollapse */
+CtrList.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_3__ctr_completer__["a" /* CtrCompleter */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["R" /* Host */] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["Q" /* TemplateRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ViewContainerRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["r" /* ChangeDetectorRef */], },
+]; };
+CtrList.propDecorators = {
+    'ctrListMinSearchLength': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Input */] },],
+    'ctrListPause': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Input */] },],
+    'ctrListAutoMatch': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Input */] },],
+    'dataService': [{ type: __WEBPACK_IMPORTED_MODULE_1__angular_core__["o" /* Input */], args: ["ctrList",] },],
+};
+//# sourceMappingURL=ctr-list.js.map
 
 /***/ }),
 
-/***/ 667:
+/***/ 680:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__usersMap_service__ = __webpack_require__(645);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersMap; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ctr_dropdown__ = __webpack_require__(649);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CtrRow; });
+
+
+var CtrRow = (function () {
+    function CtrRow(el, renderer, dropdown) {
+        this.el = el;
+        this.renderer = renderer;
+        this.dropdown = dropdown;
+        this.selected = false;
+    }
+    CtrRow.prototype.ngOnInit = function () {
+        this.dropdown.registerRow(new __WEBPACK_IMPORTED_MODULE_1__ctr_dropdown__["a" /* CtrRowItem */](this, this._rowIndex));
+    };
+    Object.defineProperty(CtrRow.prototype, "ctrRow", {
+        set: function (index) {
+            this._rowIndex = index;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CtrRow.prototype, "dataItem", {
+        set: function (item) {
+            this._item = item;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    CtrRow.prototype.onClick = function (event) {
+        this.dropdown.onSelected(this._item);
+    };
+    CtrRow.prototype.onMouseEnter = function (event) {
+        this.dropdown.highlightRow(this._rowIndex);
+    };
+    CtrRow.prototype.setHighlited = function (selected) {
+        this.selected = selected;
+        this.renderer.setElementClass(this.el.nativeElement, "completer-selected-row", this.selected);
+    };
+    CtrRow.prototype.getNativeElement = function () {
+        return this.el.nativeElement;
+    };
+    CtrRow.prototype.getDataItem = function () {
+        return this._item;
+    };
+    return CtrRow;
+}());
+
+CtrRow.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */], args: [{
+                selector: "[ctrRow]",
+            },] },
+];
+/** @nocollapse */
+CtrRow.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Renderer */], },
+    { type: __WEBPACK_IMPORTED_MODULE_1__ctr_dropdown__["b" /* CtrDropdown */], decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Host */] },] },
+]; };
+CtrRow.propDecorators = {
+    'ctrRow': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'dataItem': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */] },],
+    'onClick': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["click", ["$event"],] },],
+    'onMouseEnter': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["p" /* HostListener */], args: ["mouseenter", ["$event"],] },],
+};
+//# sourceMappingURL=ctr-row.js.map
+
+/***/ }),
+
+/***/ 681:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return MAX_CHARS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MIN_SEARCH_LENGTH; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return PAUSE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return TEXT_SEARCHING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return TEXT_NORESULTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CLEAR_TIMEOUT; });
+var MAX_CHARS = 524288; // the default max length per the html maxlength attribute
+// the default max length per the html maxlength attribute
+var MIN_SEARCH_LENGTH = 3;
+var PAUSE = 250;
+var TEXT_SEARCHING = "Searching...";
+var TEXT_NORESULTS = "No results found";
+var CLEAR_TIMEOUT = 100;
+//# sourceMappingURL=globals.js.map
+
+/***/ }),
+
+/***/ 682:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__local_data__ = __webpack_require__(652);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__remote_data__ = __webpack_require__(653);
+/* unused harmony export localDataFactory */
+/* unused harmony export remoteDataFactory */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalDataFactoryProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return RemoteDataFactoryProvider; });
+
+
+
+function localDataFactory() {
+    return function () {
+        return new __WEBPACK_IMPORTED_MODULE_1__local_data__["a" /* LocalData */]();
+    };
+}
+function remoteDataFactory(http) {
+    return function () {
+        return new __WEBPACK_IMPORTED_MODULE_2__remote_data__["a" /* RemoteData */](http);
+    };
+}
+var LocalDataFactoryProvider = { provide: __WEBPACK_IMPORTED_MODULE_1__local_data__["a" /* LocalData */], useFactory: localDataFactory };
+var RemoteDataFactoryProvider = { provide: __WEBPACK_IMPORTED_MODULE_2__remote_data__["a" /* RemoteData */], useFactory: remoteDataFactory, deps: [__WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */]] };
+//# sourceMappingURL=completer-data-factory.js.map
+
+/***/ }),
+
+/***/ 683:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellDefault; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1296,4375 +3651,4162 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var UsersMap = (function () {
-    function UsersMap(_usersMapService) {
-        this._usersMapService = _usersMapService;
-        this.mapData = this._usersMapService.getData();
+var EditCellDefault = (function () {
+    function EditCellDefault() {
+        this.inputClass = '';
+        this.edited = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
     }
-    return UsersMap;
+    EditCellDefault.prototype.onEdited = function (event) {
+        this.edited.next(event);
+        return false;
+    };
+    EditCellDefault.prototype.onStopEditing = function () {
+        this.cell.getRow().isInEditing = false;
+        return false;
+    };
+    EditCellDefault.prototype.onClick = function (event) {
+        event.stopPropagation();
+    };
+    return EditCellDefault;
 }());
-UsersMap = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
-        selector: 'users-map',
-        template: __webpack_require__(715),
-        styles: [__webpack_require__(701)]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__usersMap_service__["a" /* UsersMapService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__usersMap_service__["a" /* UsersMapService */]) === "function" && _a || Object])
-], UsersMap);
 
-var _a;
-//# sourceMappingURL=usersMap.component.js.map
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__["a" /* Cell */])
+], EditCellDefault.prototype, "cell", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], EditCellDefault.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], EditCellDefault.prototype, "edited", void 0);
+//# sourceMappingURL=edit-cell-default.js.map
 
 /***/ }),
 
-/***/ 690:
+/***/ 684:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_completer__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter_component__ = __webpack_require__(773);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter_types_checkbox_filter_component__ = __webpack_require__(769);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filter_types_completer_filter_component__ = __webpack_require__(770);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__filter_types_input_filter_component__ = __webpack_require__(771);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__filter_types_select_filter_component__ = __webpack_require__(772);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+var FILTER_COMPONENTS = [
+    __WEBPACK_IMPORTED_MODULE_4__filter_component__["a" /* FilterComponent */],
+    __WEBPACK_IMPORTED_MODULE_5__filter_types_checkbox_filter_component__["a" /* CheckboxFilterComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__filter_types_completer_filter_component__["a" /* CompleterFilterComponent */],
+    __WEBPACK_IMPORTED_MODULE_7__filter_types_input_filter_component__["a" /* InputFilterComponent */],
+    __WEBPACK_IMPORTED_MODULE_8__filter_types_select_filter_component__["a" /* SelectFilterComponent */],
+];
+var FilterModule = (function () {
+    function FilterModule() {
+    }
+    return FilterModule;
+}());
+FilterModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3_ng2_completer__["a" /* Ng2CompleterModule */],
+        ],
+        declarations: FILTER_COMPONENTS.slice(),
+        exports: FILTER_COMPONENTS.slice(),
+    })
+], FilterModule);
+
+//# sourceMappingURL=filter.module.js.map
+
+/***/ }),
+
+/***/ 685:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_module__ = __webpack_require__(798);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__ng2_smart_table_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_cell_cell_editors_default_editor__ = __webpack_require__(640);
+/* unused harmony reexport DefaultEditor */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(638);
+/* unused harmony reexport Cell */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_source_local_local_data_source__ = __webpack_require__(655);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__lib_data_source_local_local_data_source__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_server_server_data_source__ = __webpack_require__(796);
+/* unused harmony reexport ServerDataSource */
+
+
+
+
+
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ 686:
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * Chart.js
- * http://chartjs.org/
- * Version: 1.1.1
+"use strict";
+
+var AsyncAction_1 = __webpack_require__(828);
+var AsyncScheduler_1 = __webpack_require__(829);
+/**
  *
- * Copyright 2015 Nick Downie
- * Released under the MIT license
- * https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
+ * Async Scheduler
+ *
+ * <span class="informal">Schedule task as if you used setTimeout(task, duration)</span>
+ *
+ * `async` scheduler schedules tasks asynchronously, by putting them on the JavaScript
+ * event loop queue. It is best used to delay tasks in time or to schedule tasks repeating
+ * in intervals.
+ *
+ * If you just want to "defer" task, that is to perform it right after currently
+ * executing synchronous code ends (commonly achieved by `setTimeout(deferredTask, 0)`),
+ * better choice will be the {@link asap} scheduler.
+ *
+ * @example <caption>Use async scheduler to delay task</caption>
+ * const task = () => console.log('it works!');
+ *
+ * Rx.Scheduler.async.schedule(task, 2000);
+ *
+ * // After 2 seconds logs:
+ * // "it works!"
+ *
+ *
+ * @example <caption>Use async scheduler to repeat task in intervals</caption>
+ * function task(state) {
+ *   console.log(state);
+ *   this.schedule(state + 1, 1000); // `this` references currently executing Action,
+ *                                   // which we reschedule with new state and delay
+ * }
+ *
+ * Rx.Scheduler.async.schedule(task, 3000, 0);
+ *
+ * // Logs:
+ * // 0 after 3s
+ * // 1 after 4s
+ * // 2 after 5s
+ * // 3 after 6s
+ *
+ * @static true
+ * @name async
+ * @owner Scheduler
  */
+exports.async = new AsyncScheduler_1.AsyncScheduler(AsyncAction_1.AsyncAction);
+//# sourceMappingURL=async.js.map
 
+/***/ }),
 
-(function(){
+/***/ 705:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-	"use strict";
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__eventlog_component__ = __webpack_require__(670);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_list_eventloglist_component__ = __webpack_require__(668);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_view_eventlogview_component__ = __webpack_require__(669);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
-	//Declare root variable - window in the browser, global on the server
-	var root = this,
-		previous = root.Chart;
 
-	//Occupy the global variable of Chart, and create a simple base class
-	var Chart = function(context){
-		var chart = this;
-		this.canvas = context.canvas;
 
-		this.ctx = context;
 
-		//Variables global to the chart
-		var computeDimension = function(element,dimension)
-		{
-			if (element['offset'+dimension])
-			{
-				return element['offset'+dimension];
-			}
-			else
-			{
-				return document.defaultView.getComputedStyle(element).getPropertyValue(dimension);
-			}
-		};
+var routes = [
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_1__eventlog_component__["a" /* EventLogComponent */] },
+    { path: 'list', component: __WEBPACK_IMPORTED_MODULE_2__components_list_eventloglist_component__["a" /* EventLogListComponent */] },
+    { path: 'view', component: __WEBPACK_IMPORTED_MODULE_3__components_view_eventlogview_component__["a" /* EventLogViewComponent */] },
+];
+var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forChild(routes);
+//# sourceMappingURL=eventlog.routing.js.map
 
-		var width = this.width = computeDimension(context.canvas,'Width') || context.canvas.width;
-		var height = this.height = computeDimension(context.canvas,'Height') || context.canvas.height;
+/***/ }),
 
-		this.aspectRatio = this.width / this.height;
-		//High pixel density displays - multiply the size of the canvas height/width by the device pixel ratio, then scale.
-		helpers.retinaScale(this);
+/***/ 736:
+/***/ (function(module, exports, __webpack_require__) {
 
-		return this;
-	};
-	//Globally expose the defaults to allow for user updating/changing
-	Chart.defaults = {
-		global: {
-			// Boolean - Whether to animate the chart
-			animation: true,
+exports = module.exports = __webpack_require__(3)(false);
+// imports
 
-			// Number - Number of animation steps
-			animationSteps: 60,
 
-			// String - Animation easing effect
-			animationEasing: "easeOutQuart",
+// module
+exports.push([module.i, ":host /deep/ .widgets .smart-table-container {\n  width: 100%; }\n\n:host /deep/ ng2-smart-table {\n  color: #ffffff; }\n  :host /deep/ ng2-smart-table th, :host /deep/ ng2-smart-table td {\n    border: 1px solid rgba(255, 255, 255, 0.2) !important;\n    line-height: 25px;\n    vertical-align: middle;\n    font-size: 13px !important; }\n  :host /deep/ ng2-smart-table table tr td {\n    padding: 0 8px; }\n  :host /deep/ ng2-smart-table input {\n    line-height: 1.5 !important; }\n  :host /deep/ ng2-smart-table ng2-smart-table-cell {\n    color: #ffffff;\n    line-height: 25px; }\n  :host /deep/ ng2-smart-table tbody tr {\n    color: #ffffff; }\n  :host /deep/ ng2-smart-table tbody tr:hover {\n    background: rgba(0, 0, 0, 0.03); }\n  :host /deep/ ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #ffffff;\n    font-weight: 500; }\n    :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 500 !important; }\n      :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #ffffff !important; }\n  :host /deep/ ng2-smart-table .ng2-smart-actions {\n    width: 70px;\n    text-align: center; }\n    :host /deep/ ng2-smart-table .ng2-smart-actions .actions {\n      float: none;\n      text-align: center; }\n  :host /deep/ ng2-smart-table .ng2-smart-actions-title-add {\n    text-align: center; }\n  :host /deep/ ng2-smart-table a.ng2-smart-action, :host /deep/ ng2-smart-table .ng2-smart-title {\n    font-size: 14px !important;\n    color: #ffffff;\n    padding: 0 5px;\n    display: inline-block; }\n    :host /deep/ ng2-smart-table a.ng2-smart-action.ng2-smart-action-add-add, :host /deep/ ng2-smart-table .ng2-smart-title.ng2-smart-action-add-add {\n      font-size: 25px !important; }\n  :host /deep/ ng2-smart-table nav.ng2-smart-pagination-nav {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n", ""]);
 
-			// Boolean - If we should show the scale at all
-			showScale: true,
+// exports
 
-			// Boolean - If we want to override with a hard coded scale
-			scaleOverride: false,
 
-			// ** Required if scaleOverride is true **
-			// Number - The number of steps in a hard coded scale
-			scaleSteps: null,
-			// Number - The value jump in the hard coded scale
-			scaleStepWidth: null,
-			// Number - The scale starting value
-			scaleStartValue: null,
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
-			// String - Colour of the scale line
-			scaleLineColor: "rgba(0,0,0,.1)",
+/***/ }),
 
-			// Number - Pixel width of the scale line
-			scaleLineWidth: 1,
+/***/ 737:
+/***/ (function(module, exports, __webpack_require__) {
 
-			// Boolean - Whether to show labels on the scale
-			scaleShowLabels: true,
+exports = module.exports = __webpack_require__(3)(false);
+// imports
 
-			// Interpolated JS string - can access value
-			scaleLabel: "<%=value%>",
 
-			// Boolean - Whether the scale should stick to integers, and not show any floats even if drawing space is there
-			scaleIntegersOnly: true,
+// module
+exports.push([module.i, "", ""]);
 
-			// Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-			scaleBeginAtZero: false,
+// exports
 
-			// String - Scale label font declaration for the scale label
-			scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
 
-			// Number - Scale label font size in pixels
-			scaleFontSize: 12,
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
-			// String - Scale label font weight style
-			scaleFontStyle: "normal",
+/***/ }),
 
-			// String - Scale label font colour
-			scaleFontColor: "#666",
+/***/ 741:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-			// Boolean - whether or not the chart should be responsive and resize when the browser does.
-			responsive: false,
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FocusDirective; });
 
-			// Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-			maintainAspectRatio: true,
+var FocusDirective = (function () {
+    function FocusDirective(el, renderer) {
+        this.el = el;
+        this.renderer = renderer;
+    }
+    FocusDirective.prototype.ngAfterViewInit = function () {
+        if (this.value === "0") {
+            return;
+        }
+        this.renderer.invokeElementMethod(this.el.nativeElement, "focus", []);
+    };
+    FocusDirective.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["k" /* Directive */], args: [{
+                    selector: "[mydrpfocus]"
+                },] },
+    ];
+    FocusDirective.ctorParameters = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */], },
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Renderer */], },
+    ];
+    FocusDirective.propDecorators = {
+        'value': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */], args: ["mydrpfocus",] },],
+    };
+    return FocusDirective;
+}());
+//# sourceMappingURL=my-date-range-picker.focus.directive.js.map
 
-			// Boolean - Determines whether to draw tooltips on the canvas or not - attaches events to touchmove & mousemove
-			showTooltips: true,
+/***/ }),
 
-			// Boolean - Determines whether to draw built-in tooltip or call custom tooltip function
-			customTooltips: false,
+/***/ 742:
+/***/ (function(module, exports) {
 
-			// Array - Array of string names to attach tooltip events
-			tooltipEvents: ["mousemove", "touchstart", "touchmove", "mouseout"],
+//# sourceMappingURL=my-calendar-view-changed.interface.js.map
 
-			// String - Tooltip background colour
-			tooltipFillColor: "rgba(0,0,0,0.8)",
+/***/ }),
 
-			// String - Tooltip label font declaration for the scale label
-			tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+/***/ 743:
+/***/ (function(module, exports) {
 
-			// Number - Tooltip label font size in pixels
-			tooltipFontSize: 14,
-
-			// String - Tooltip font weight style
-			tooltipFontStyle: "normal",
-
-			// String - Tooltip label font colour
-			tooltipFontColor: "#fff",
-
-			// String - Tooltip title font declaration for the scale label
-			tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-
-			// Number - Tooltip title font size in pixels
-			tooltipTitleFontSize: 14,
-
-			// String - Tooltip title font weight style
-			tooltipTitleFontStyle: "bold",
-
-			// String - Tooltip title font colour
-			tooltipTitleFontColor: "#fff",
-
-			// String - Tooltip title template
-			tooltipTitleTemplate: "<%= label%>",
-
-			// Number - pixel width of padding around tooltip text
-			tooltipYPadding: 6,
-
-			// Number - pixel width of padding around tooltip text
-			tooltipXPadding: 6,
-
-			// Number - Size of the caret on the tooltip
-			tooltipCaretSize: 8,
-
-			// Number - Pixel radius of the tooltip border
-			tooltipCornerRadius: 6,
-
-			// Number - Pixel offset from point x to tooltip edge
-			tooltipXOffset: 10,
-
-			// String - Template string for single tooltips
-			tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
-
-			// String - Template string for single tooltips
-			multiTooltipTemplate: "<%= datasetLabel %>: <%= value %>",
-
-			// String - Colour behind the legend colour block
-			multiTooltipKeyBackground: '#fff',
-
-			// Array - A list of colors to use as the defaults
-			segmentColorDefault: ["#A6CEE3", "#1F78B4", "#B2DF8A", "#33A02C", "#FB9A99", "#E31A1C", "#FDBF6F", "#FF7F00", "#CAB2D6", "#6A3D9A", "#B4B482", "#B15928" ],
-
-			// Array - A list of highlight colors to use as the defaults
-			segmentHighlightColorDefaults: [ "#CEF6FF", "#47A0DC", "#DAFFB2", "#5BC854", "#FFC2C1", "#FF4244", "#FFE797", "#FFA728", "#F2DAFE", "#9265C2", "#DCDCAA", "#D98150" ],
-
-			// Function - Will fire on animation progression.
-			onAnimationProgress: function(){},
-
-			// Function - Will fire on animation completion.
-			onAnimationComplete: function(){}
-
-		}
-	};
-
-	//Create a dictionary of chart types, to allow for extension of existing types
-	Chart.types = {};
-
-	//Global Chart helpers object for utility methods and classes
-	var helpers = Chart.helpers = {};
-
-		//-- Basic js utility methods
-	var each = helpers.each = function(loopable,callback,self){
-			var additionalArgs = Array.prototype.slice.call(arguments, 3);
-			// Check to see if null or undefined firstly.
-			if (loopable){
-				if (loopable.length === +loopable.length){
-					var i;
-					for (i=0; i<loopable.length; i++){
-						callback.apply(self,[loopable[i], i].concat(additionalArgs));
-					}
-				}
-				else{
-					for (var item in loopable){
-						callback.apply(self,[loopable[item],item].concat(additionalArgs));
-					}
-				}
-			}
-		},
-		clone = helpers.clone = function(obj){
-			var objClone = {};
-			each(obj,function(value,key){
-				if (obj.hasOwnProperty(key)){
-					objClone[key] = value;
-				}
-			});
-			return objClone;
-		},
-		extend = helpers.extend = function(base){
-			each(Array.prototype.slice.call(arguments,1), function(extensionObject) {
-				each(extensionObject,function(value,key){
-					if (extensionObject.hasOwnProperty(key)){
-						base[key] = value;
-					}
-				});
-			});
-			return base;
-		},
-		merge = helpers.merge = function(base,master){
-			//Merge properties in left object over to a shallow clone of object right.
-			var args = Array.prototype.slice.call(arguments,0);
-			args.unshift({});
-			return extend.apply(null, args);
-		},
-		indexOf = helpers.indexOf = function(arrayToSearch, item){
-			if (Array.prototype.indexOf) {
-				return arrayToSearch.indexOf(item);
-			}
-			else{
-				for (var i = 0; i < arrayToSearch.length; i++) {
-					if (arrayToSearch[i] === item) return i;
-				}
-				return -1;
-			}
-		},
-		where = helpers.where = function(collection, filterCallback){
-			var filtered = [];
-
-			helpers.each(collection, function(item){
-				if (filterCallback(item)){
-					filtered.push(item);
-				}
-			});
-
-			return filtered;
-		},
-		findNextWhere = helpers.findNextWhere = function(arrayToSearch, filterCallback, startIndex){
-			// Default to start of the array
-			if (!startIndex){
-				startIndex = -1;
-			}
-			for (var i = startIndex + 1; i < arrayToSearch.length; i++) {
-				var currentItem = arrayToSearch[i];
-				if (filterCallback(currentItem)){
-					return currentItem;
-				}
-			}
-		},
-		findPreviousWhere = helpers.findPreviousWhere = function(arrayToSearch, filterCallback, startIndex){
-			// Default to end of the array
-			if (!startIndex){
-				startIndex = arrayToSearch.length;
-			}
-			for (var i = startIndex - 1; i >= 0; i--) {
-				var currentItem = arrayToSearch[i];
-				if (filterCallback(currentItem)){
-					return currentItem;
-				}
-			}
-		},
-		inherits = helpers.inherits = function(extensions){
-			//Basic javascript inheritance based on the model created in Backbone.js
-			var parent = this;
-			var ChartElement = (extensions && extensions.hasOwnProperty("constructor")) ? extensions.constructor : function(){ return parent.apply(this, arguments); };
-
-			var Surrogate = function(){ this.constructor = ChartElement;};
-			Surrogate.prototype = parent.prototype;
-			ChartElement.prototype = new Surrogate();
-
-			ChartElement.extend = inherits;
-
-			if (extensions) extend(ChartElement.prototype, extensions);
-
-			ChartElement.__super__ = parent.prototype;
-
-			return ChartElement;
-		},
-		noop = helpers.noop = function(){},
-		uid = helpers.uid = (function(){
-			var id=0;
-			return function(){
-				return "chart-" + id++;
-			};
-		})(),
-		warn = helpers.warn = function(str){
-			//Method for warning of errors
-			if (window.console && typeof window.console.warn === "function") console.warn(str);
-		},
-		amd = helpers.amd = ("function" === 'function' && __webpack_require__(731)),
-		//-- Math methods
-		isNumber = helpers.isNumber = function(n){
-			return !isNaN(parseFloat(n)) && isFinite(n);
-		},
-		max = helpers.max = function(array){
-			return Math.max.apply( Math, array );
-		},
-		min = helpers.min = function(array){
-			return Math.min.apply( Math, array );
-		},
-		cap = helpers.cap = function(valueToCap,maxValue,minValue){
-			if(isNumber(maxValue)) {
-				if( valueToCap > maxValue ) {
-					return maxValue;
-				}
-			}
-			else if(isNumber(minValue)){
-				if ( valueToCap < minValue ){
-					return minValue;
-				}
-			}
-			return valueToCap;
-		},
-		getDecimalPlaces = helpers.getDecimalPlaces = function(num){
-			if (num%1!==0 && isNumber(num)){
-				var s = num.toString();
-				if(s.indexOf("e-") < 0){
-					// no exponent, e.g. 0.01
-					return s.split(".")[1].length;
-				}
-				else if(s.indexOf(".") < 0) {
-					// no decimal point, e.g. 1e-9
-					return parseInt(s.split("e-")[1]);
-				}
-				else {
-					// exponent and decimal point, e.g. 1.23e-9
-					var parts = s.split(".")[1].split("e-");
-					return parts[0].length + parseInt(parts[1]);
-				}
-			}
-			else {
-				return 0;
-			}
-		},
-		toRadians = helpers.radians = function(degrees){
-			return degrees * (Math.PI/180);
-		},
-		// Gets the angle from vertical upright to the point about a centre.
-		getAngleFromPoint = helpers.getAngleFromPoint = function(centrePoint, anglePoint){
-			var distanceFromXCenter = anglePoint.x - centrePoint.x,
-				distanceFromYCenter = anglePoint.y - centrePoint.y,
-				radialDistanceFromCenter = Math.sqrt( distanceFromXCenter * distanceFromXCenter + distanceFromYCenter * distanceFromYCenter);
-
-
-			var angle = Math.PI * 2 + Math.atan2(distanceFromYCenter, distanceFromXCenter);
-
-			//If the segment is in the top left quadrant, we need to add another rotation to the angle
-			if (distanceFromXCenter < 0 && distanceFromYCenter < 0){
-				angle += Math.PI*2;
-			}
-
-			return {
-				angle: angle,
-				distance: radialDistanceFromCenter
-			};
-		},
-		aliasPixel = helpers.aliasPixel = function(pixelWidth){
-			return (pixelWidth % 2 === 0) ? 0 : 0.5;
-		},
-		splineCurve = helpers.splineCurve = function(FirstPoint,MiddlePoint,AfterPoint,t){
-			//Props to Rob Spencer at scaled innovation for his post on splining between points
-			//http://scaledinnovation.com/analytics/splines/aboutSplines.html
-			var d01=Math.sqrt(Math.pow(MiddlePoint.x-FirstPoint.x,2)+Math.pow(MiddlePoint.y-FirstPoint.y,2)),
-				d12=Math.sqrt(Math.pow(AfterPoint.x-MiddlePoint.x,2)+Math.pow(AfterPoint.y-MiddlePoint.y,2)),
-				fa=t*d01/(d01+d12),// scaling factor for triangle Ta
-				fb=t*d12/(d01+d12);
-			return {
-				inner : {
-					x : MiddlePoint.x-fa*(AfterPoint.x-FirstPoint.x),
-					y : MiddlePoint.y-fa*(AfterPoint.y-FirstPoint.y)
-				},
-				outer : {
-					x: MiddlePoint.x+fb*(AfterPoint.x-FirstPoint.x),
-					y : MiddlePoint.y+fb*(AfterPoint.y-FirstPoint.y)
-				}
-			};
-		},
-		calculateOrderOfMagnitude = helpers.calculateOrderOfMagnitude = function(val){
-			return Math.floor(Math.log(val) / Math.LN10);
-		},
-		calculateScaleRange = helpers.calculateScaleRange = function(valuesArray, drawingSize, textSize, startFromZero, integersOnly){
-
-			//Set a minimum step of two - a point at the top of the graph, and a point at the base
-			var minSteps = 2,
-				maxSteps = Math.floor(drawingSize/(textSize * 1.5)),
-				skipFitting = (minSteps >= maxSteps);
-
-			// Filter out null values since these would min() to zero
-			var values = [];
-			each(valuesArray, function( v ){
-				v == null || values.push( v );
-			});
-			var minValue = min(values),
-			    maxValue = max(values);
-
-			// We need some degree of separation here to calculate the scales if all the values are the same
-			// Adding/minusing 0.5 will give us a range of 1.
-			if (maxValue === minValue){
-				maxValue += 0.5;
-				// So we don't end up with a graph with a negative start value if we've said always start from zero
-				if (minValue >= 0.5 && !startFromZero){
-					minValue -= 0.5;
-				}
-				else{
-					// Make up a whole number above the values
-					maxValue += 0.5;
-				}
-			}
-
-			var	valueRange = Math.abs(maxValue - minValue),
-				rangeOrderOfMagnitude = calculateOrderOfMagnitude(valueRange),
-				graphMax = Math.ceil(maxValue / (1 * Math.pow(10, rangeOrderOfMagnitude))) * Math.pow(10, rangeOrderOfMagnitude),
-				graphMin = (startFromZero) ? 0 : Math.floor(minValue / (1 * Math.pow(10, rangeOrderOfMagnitude))) * Math.pow(10, rangeOrderOfMagnitude),
-				graphRange = graphMax - graphMin,
-				stepValue = Math.pow(10, rangeOrderOfMagnitude),
-				numberOfSteps = Math.round(graphRange / stepValue);
-
-			//If we have more space on the graph we'll use it to give more definition to the data
-			while((numberOfSteps > maxSteps || (numberOfSteps * 2) < maxSteps) && !skipFitting) {
-				if(numberOfSteps > maxSteps){
-					stepValue *=2;
-					numberOfSteps = Math.round(graphRange/stepValue);
-					// Don't ever deal with a decimal number of steps - cancel fitting and just use the minimum number of steps.
-					if (numberOfSteps % 1 !== 0){
-						skipFitting = true;
-					}
-				}
-				//We can fit in double the amount of scale points on the scale
-				else{
-					//If user has declared ints only, and the step value isn't a decimal
-					if (integersOnly && rangeOrderOfMagnitude >= 0){
-						//If the user has said integers only, we need to check that making the scale more granular wouldn't make it a float
-						if(stepValue/2 % 1 === 0){
-							stepValue /=2;
-							numberOfSteps = Math.round(graphRange/stepValue);
-						}
-						//If it would make it a float break out of the loop
-						else{
-							break;
-						}
-					}
-					//If the scale doesn't have to be an int, make the scale more granular anyway.
-					else{
-						stepValue /=2;
-						numberOfSteps = Math.round(graphRange/stepValue);
-					}
-
-				}
-			}
-
-			if (skipFitting){
-				numberOfSteps = minSteps;
-				stepValue = graphRange / numberOfSteps;
-			}
-
-			return {
-				steps : numberOfSteps,
-				stepValue : stepValue,
-				min : graphMin,
-				max	: graphMin + (numberOfSteps * stepValue)
-			};
-
-		},
-		/* jshint ignore:start */
-		// Blows up jshint errors based on the new Function constructor
-		//Templating methods
-		//Javascript micro templating by John Resig - source at http://ejohn.org/blog/javascript-micro-templating/
-		template = helpers.template = function(templateString, valuesObject){
-
-			// If templateString is function rather than string-template - call the function for valuesObject
-
-			if(templateString instanceof Function){
-			 	return templateString(valuesObject);
-		 	}
-
-			var cache = {};
-			function tmpl(str, data){
-				// Figure out if we're getting a template, or if we need to
-				// load the template - and be sure to cache the result.
-				var fn = !/\W/.test(str) ?
-				cache[str] = cache[str] :
-
-				// Generate a reusable function that will serve as a template
-				// generator (and which will be cached).
-				new Function("obj",
-					"var p=[],print=function(){p.push.apply(p,arguments);};" +
-
-					// Introduce the data as local variables using with(){}
-					"with(obj){p.push('" +
-
-					// Convert the template into pure JavaScript
-					str
-						.replace(/[\r\t\n]/g, " ")
-						.split("<%").join("\t")
-						.replace(/((^|%>)[^\t]*)'/g, "$1\r")
-						.replace(/\t=(.*?)%>/g, "',$1,'")
-						.split("\t").join("');")
-						.split("%>").join("p.push('")
-						.split("\r").join("\\'") +
-					"');}return p.join('');"
-				);
-
-				// Provide some basic currying to the user
-				return data ? fn( data ) : fn;
-			}
-			return tmpl(templateString,valuesObject);
-		},
-		/* jshint ignore:end */
-		generateLabels = helpers.generateLabels = function(templateString,numberOfSteps,graphMin,stepValue){
-			var labelsArray = new Array(numberOfSteps);
-			if (templateString){
-				each(labelsArray,function(val,index){
-					labelsArray[index] = template(templateString,{value: (graphMin + (stepValue*(index+1)))});
-				});
-			}
-			return labelsArray;
-		},
-		//--Animation methods
-		//Easing functions adapted from Robert Penner's easing equations
-		//http://www.robertpenner.com/easing/
-		easingEffects = helpers.easingEffects = {
-			linear: function (t) {
-				return t;
-			},
-			easeInQuad: function (t) {
-				return t * t;
-			},
-			easeOutQuad: function (t) {
-				return -1 * t * (t - 2);
-			},
-			easeInOutQuad: function (t) {
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * t * t;
-				}
-				return -1 / 2 * ((--t) * (t - 2) - 1);
-			},
-			easeInCubic: function (t) {
-				return t * t * t;
-			},
-			easeOutCubic: function (t) {
-				return 1 * ((t = t / 1 - 1) * t * t + 1);
-			},
-			easeInOutCubic: function (t) {
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * t * t * t;
-				}
-				return 1 / 2 * ((t -= 2) * t * t + 2);
-			},
-			easeInQuart: function (t) {
-				return t * t * t * t;
-			},
-			easeOutQuart: function (t) {
-				return -1 * ((t = t / 1 - 1) * t * t * t - 1);
-			},
-			easeInOutQuart: function (t) {
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * t * t * t * t;
-				}
-				return -1 / 2 * ((t -= 2) * t * t * t - 2);
-			},
-			easeInQuint: function (t) {
-				return 1 * (t /= 1) * t * t * t * t;
-			},
-			easeOutQuint: function (t) {
-				return 1 * ((t = t / 1 - 1) * t * t * t * t + 1);
-			},
-			easeInOutQuint: function (t) {
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * t * t * t * t * t;
-				}
-				return 1 / 2 * ((t -= 2) * t * t * t * t + 2);
-			},
-			easeInSine: function (t) {
-				return -1 * Math.cos(t / 1 * (Math.PI / 2)) + 1;
-			},
-			easeOutSine: function (t) {
-				return 1 * Math.sin(t / 1 * (Math.PI / 2));
-			},
-			easeInOutSine: function (t) {
-				return -1 / 2 * (Math.cos(Math.PI * t / 1) - 1);
-			},
-			easeInExpo: function (t) {
-				return (t === 0) ? 1 : 1 * Math.pow(2, 10 * (t / 1 - 1));
-			},
-			easeOutExpo: function (t) {
-				return (t === 1) ? 1 : 1 * (-Math.pow(2, -10 * t / 1) + 1);
-			},
-			easeInOutExpo: function (t) {
-				if (t === 0){
-					return 0;
-				}
-				if (t === 1){
-					return 1;
-				}
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * Math.pow(2, 10 * (t - 1));
-				}
-				return 1 / 2 * (-Math.pow(2, -10 * --t) + 2);
-			},
-			easeInCirc: function (t) {
-				if (t >= 1){
-					return t;
-				}
-				return -1 * (Math.sqrt(1 - (t /= 1) * t) - 1);
-			},
-			easeOutCirc: function (t) {
-				return 1 * Math.sqrt(1 - (t = t / 1 - 1) * t);
-			},
-			easeInOutCirc: function (t) {
-				if ((t /= 1 / 2) < 1){
-					return -1 / 2 * (Math.sqrt(1 - t * t) - 1);
-				}
-				return 1 / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1);
-			},
-			easeInElastic: function (t) {
-				var s = 1.70158;
-				var p = 0;
-				var a = 1;
-				if (t === 0){
-					return 0;
-				}
-				if ((t /= 1) == 1){
-					return 1;
-				}
-				if (!p){
-					p = 1 * 0.3;
-				}
-				if (a < Math.abs(1)) {
-					a = 1;
-					s = p / 4;
-				} else{
-					s = p / (2 * Math.PI) * Math.asin(1 / a);
-				}
-				return -(a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * 1 - s) * (2 * Math.PI) / p));
-			},
-			easeOutElastic: function (t) {
-				var s = 1.70158;
-				var p = 0;
-				var a = 1;
-				if (t === 0){
-					return 0;
-				}
-				if ((t /= 1) == 1){
-					return 1;
-				}
-				if (!p){
-					p = 1 * 0.3;
-				}
-				if (a < Math.abs(1)) {
-					a = 1;
-					s = p / 4;
-				} else{
-					s = p / (2 * Math.PI) * Math.asin(1 / a);
-				}
-				return a * Math.pow(2, -10 * t) * Math.sin((t * 1 - s) * (2 * Math.PI) / p) + 1;
-			},
-			easeInOutElastic: function (t) {
-				var s = 1.70158;
-				var p = 0;
-				var a = 1;
-				if (t === 0){
-					return 0;
-				}
-				if ((t /= 1 / 2) == 2){
-					return 1;
-				}
-				if (!p){
-					p = 1 * (0.3 * 1.5);
-				}
-				if (a < Math.abs(1)) {
-					a = 1;
-					s = p / 4;
-				} else {
-					s = p / (2 * Math.PI) * Math.asin(1 / a);
-				}
-				if (t < 1){
-					return -0.5 * (a * Math.pow(2, 10 * (t -= 1)) * Math.sin((t * 1 - s) * (2 * Math.PI) / p));}
-				return a * Math.pow(2, -10 * (t -= 1)) * Math.sin((t * 1 - s) * (2 * Math.PI) / p) * 0.5 + 1;
-			},
-			easeInBack: function (t) {
-				var s = 1.70158;
-				return 1 * (t /= 1) * t * ((s + 1) * t - s);
-			},
-			easeOutBack: function (t) {
-				var s = 1.70158;
-				return 1 * ((t = t / 1 - 1) * t * ((s + 1) * t + s) + 1);
-			},
-			easeInOutBack: function (t) {
-				var s = 1.70158;
-				if ((t /= 1 / 2) < 1){
-					return 1 / 2 * (t * t * (((s *= (1.525)) + 1) * t - s));
-				}
-				return 1 / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2);
-			},
-			easeInBounce: function (t) {
-				return 1 - easingEffects.easeOutBounce(1 - t);
-			},
-			easeOutBounce: function (t) {
-				if ((t /= 1) < (1 / 2.75)) {
-					return 1 * (7.5625 * t * t);
-				} else if (t < (2 / 2.75)) {
-					return 1 * (7.5625 * (t -= (1.5 / 2.75)) * t + 0.75);
-				} else if (t < (2.5 / 2.75)) {
-					return 1 * (7.5625 * (t -= (2.25 / 2.75)) * t + 0.9375);
-				} else {
-					return 1 * (7.5625 * (t -= (2.625 / 2.75)) * t + 0.984375);
-				}
-			},
-			easeInOutBounce: function (t) {
-				if (t < 1 / 2){
-					return easingEffects.easeInBounce(t * 2) * 0.5;
-				}
-				return easingEffects.easeOutBounce(t * 2 - 1) * 0.5 + 1 * 0.5;
-			}
-		},
-		//Request animation polyfill - http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
-		requestAnimFrame = helpers.requestAnimFrame = (function(){
-			return window.requestAnimationFrame ||
-				window.webkitRequestAnimationFrame ||
-				window.mozRequestAnimationFrame ||
-				window.oRequestAnimationFrame ||
-				window.msRequestAnimationFrame ||
-				function(callback) {
-					return window.setTimeout(callback, 1000 / 60);
-				};
-		})(),
-		cancelAnimFrame = helpers.cancelAnimFrame = (function(){
-			return window.cancelAnimationFrame ||
-				window.webkitCancelAnimationFrame ||
-				window.mozCancelAnimationFrame ||
-				window.oCancelAnimationFrame ||
-				window.msCancelAnimationFrame ||
-				function(callback) {
-					return window.clearTimeout(callback, 1000 / 60);
-				};
-		})(),
-		animationLoop = helpers.animationLoop = function(callback,totalSteps,easingString,onProgress,onComplete,chartInstance){
-
-			var currentStep = 0,
-				easingFunction = easingEffects[easingString] || easingEffects.linear;
-
-			var animationFrame = function(){
-				currentStep++;
-				var stepDecimal = currentStep/totalSteps;
-				var easeDecimal = easingFunction(stepDecimal);
-
-				callback.call(chartInstance,easeDecimal,stepDecimal, currentStep);
-				onProgress.call(chartInstance,easeDecimal,stepDecimal);
-				if (currentStep < totalSteps){
-					chartInstance.animationFrame = requestAnimFrame(animationFrame);
-				} else{
-					onComplete.apply(chartInstance);
-				}
-			};
-			requestAnimFrame(animationFrame);
-		},
-		//-- DOM methods
-		getRelativePosition = helpers.getRelativePosition = function(evt){
-			var mouseX, mouseY;
-			var e = evt.originalEvent || evt,
-				canvas = evt.currentTarget || evt.srcElement,
-				boundingRect = canvas.getBoundingClientRect();
-
-			if (e.touches){
-				mouseX = e.touches[0].clientX - boundingRect.left;
-				mouseY = e.touches[0].clientY - boundingRect.top;
-
-			}
-			else{
-				mouseX = e.clientX - boundingRect.left;
-				mouseY = e.clientY - boundingRect.top;
-			}
-
-			return {
-				x : mouseX,
-				y : mouseY
-			};
-
-		},
-		addEvent = helpers.addEvent = function(node,eventType,method){
-			if (node.addEventListener){
-				node.addEventListener(eventType,method);
-			} else if (node.attachEvent){
-				node.attachEvent("on"+eventType, method);
-			} else {
-				node["on"+eventType] = method;
-			}
-		},
-		removeEvent = helpers.removeEvent = function(node, eventType, handler){
-			if (node.removeEventListener){
-				node.removeEventListener(eventType, handler, false);
-			} else if (node.detachEvent){
-				node.detachEvent("on"+eventType,handler);
-			} else{
-				node["on" + eventType] = noop;
-			}
-		},
-		bindEvents = helpers.bindEvents = function(chartInstance, arrayOfEvents, handler){
-			// Create the events object if it's not already present
-			if (!chartInstance.events) chartInstance.events = {};
-
-			each(arrayOfEvents,function(eventName){
-				chartInstance.events[eventName] = function(){
-					handler.apply(chartInstance, arguments);
-				};
-				addEvent(chartInstance.chart.canvas,eventName,chartInstance.events[eventName]);
-			});
-		},
-		unbindEvents = helpers.unbindEvents = function (chartInstance, arrayOfEvents) {
-			each(arrayOfEvents, function(handler,eventName){
-				removeEvent(chartInstance.chart.canvas, eventName, handler);
-			});
-		},
-		getMaximumWidth = helpers.getMaximumWidth = function(domNode){
-			var container = domNode.parentNode,
-			    padding = parseInt(getStyle(container, 'padding-left')) + parseInt(getStyle(container, 'padding-right'));
-			// TODO = check cross browser stuff with this.
-			return container ? container.clientWidth - padding : 0;
-		},
-		getMaximumHeight = helpers.getMaximumHeight = function(domNode){
-			var container = domNode.parentNode,
-			    padding = parseInt(getStyle(container, 'padding-bottom')) + parseInt(getStyle(container, 'padding-top'));
-			// TODO = check cross browser stuff with this.
-			return container ? container.clientHeight - padding : 0;
-		},
-		getStyle = helpers.getStyle = function (el, property) {
-			return el.currentStyle ?
-				el.currentStyle[property] :
-				document.defaultView.getComputedStyle(el, null).getPropertyValue(property);
-		},
-		getMaximumSize = helpers.getMaximumSize = helpers.getMaximumWidth, // legacy support
-		retinaScale = helpers.retinaScale = function(chart){
-			var ctx = chart.ctx,
-				width = chart.canvas.width,
-				height = chart.canvas.height;
-
-			if (window.devicePixelRatio) {
-				ctx.canvas.style.width = width + "px";
-				ctx.canvas.style.height = height + "px";
-				ctx.canvas.height = height * window.devicePixelRatio;
-				ctx.canvas.width = width * window.devicePixelRatio;
-				ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
-			}
-		},
-		//-- Canvas methods
-		clear = helpers.clear = function(chart){
-			chart.ctx.clearRect(0,0,chart.width,chart.height);
-		},
-		fontString = helpers.fontString = function(pixelSize,fontStyle,fontFamily){
-			return fontStyle + " " + pixelSize+"px " + fontFamily;
-		},
-		longestText = helpers.longestText = function(ctx,font,arrayOfStrings){
-			ctx.font = font;
-			var longest = 0;
-			each(arrayOfStrings,function(string){
-				var textWidth = ctx.measureText(string).width;
-				longest = (textWidth > longest) ? textWidth : longest;
-			});
-			return longest;
-		},
-		drawRoundedRectangle = helpers.drawRoundedRectangle = function(ctx,x,y,width,height,radius){
-			ctx.beginPath();
-			ctx.moveTo(x + radius, y);
-			ctx.lineTo(x + width - radius, y);
-			ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
-			ctx.lineTo(x + width, y + height - radius);
-			ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-			ctx.lineTo(x + radius, y + height);
-			ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
-			ctx.lineTo(x, y + radius);
-			ctx.quadraticCurveTo(x, y, x + radius, y);
-			ctx.closePath();
-		};
-
-
-	//Store a reference to each instance - allowing us to globally resize chart instances on window resize.
-	//Destroy method on the chart will remove the instance of the chart from this reference.
-	Chart.instances = {};
-
-	Chart.Type = function(data,options,chart){
-		this.options = options;
-		this.chart = chart;
-		this.id = uid();
-		//Add the chart instance to the global namespace
-		Chart.instances[this.id] = this;
-
-		// Initialize is always called when a chart type is created
-		// By default it is a no op, but it should be extended
-		if (options.responsive){
-			this.resize();
-		}
-		this.initialize.call(this,data);
-	};
-
-	//Core methods that'll be a part of every chart type
-	extend(Chart.Type.prototype,{
-		initialize : function(){return this;},
-		clear : function(){
-			clear(this.chart);
-			return this;
-		},
-		stop : function(){
-			// Stops any current animation loop occuring
-			Chart.animationService.cancelAnimation(this);
-			return this;
-		},
-		resize : function(callback){
-			this.stop();
-			var canvas = this.chart.canvas,
-				newWidth = getMaximumWidth(this.chart.canvas),
-				newHeight = this.options.maintainAspectRatio ? newWidth / this.chart.aspectRatio : getMaximumHeight(this.chart.canvas);
-
-			canvas.width = this.chart.width = newWidth;
-			canvas.height = this.chart.height = newHeight;
-
-			retinaScale(this.chart);
-
-			if (typeof callback === "function"){
-				callback.apply(this, Array.prototype.slice.call(arguments, 1));
-			}
-			return this;
-		},
-		reflow : noop,
-		render : function(reflow){
-			if (reflow){
-				this.reflow();
-			}
-			
-			if (this.options.animation && !reflow){
-				var animation = new Chart.Animation();
-				animation.numSteps = this.options.animationSteps;
-				animation.easing = this.options.animationEasing;
-				
-				// render function
-				animation.render = function(chartInstance, animationObject) {
-					var easingFunction = helpers.easingEffects[animationObject.easing];
-					var stepDecimal = animationObject.currentStep / animationObject.numSteps;
-					var easeDecimal = easingFunction(stepDecimal);
-					
-					chartInstance.draw(easeDecimal, stepDecimal, animationObject.currentStep);
-				};
-				
-				// user events
-				animation.onAnimationProgress = this.options.onAnimationProgress;
-				animation.onAnimationComplete = this.options.onAnimationComplete;
-				
-				Chart.animationService.addAnimation(this, animation);
-			}
-			else{
-				this.draw();
-				this.options.onAnimationComplete.call(this);
-			}
-			return this;
-		},
-		generateLegend : function(){
-			return helpers.template(this.options.legendTemplate, this);
-		},
-		destroy : function(){
-			this.stop();
-			this.clear();
-			unbindEvents(this, this.events);
-			var canvas = this.chart.canvas;
-
-			// Reset canvas height/width attributes starts a fresh with the canvas context
-			canvas.width = this.chart.width;
-			canvas.height = this.chart.height;
-
-			// < IE9 doesn't support removeProperty
-			if (canvas.style.removeProperty) {
-				canvas.style.removeProperty('width');
-				canvas.style.removeProperty('height');
-			} else {
-				canvas.style.removeAttribute('width');
-				canvas.style.removeAttribute('height');
-			}
-
-			delete Chart.instances[this.id];
-		},
-		showTooltip : function(ChartElements, forceRedraw){
-			// Only redraw the chart if we've actually changed what we're hovering on.
-			if (typeof this.activeElements === 'undefined') this.activeElements = [];
-
-			var isChanged = (function(Elements){
-				var changed = false;
-
-				if (Elements.length !== this.activeElements.length){
-					changed = true;
-					return changed;
-				}
-
-				each(Elements, function(element, index){
-					if (element !== this.activeElements[index]){
-						changed = true;
-					}
-				}, this);
-				return changed;
-			}).call(this, ChartElements);
-
-			if (!isChanged && !forceRedraw){
-				return;
-			}
-			else{
-				this.activeElements = ChartElements;
-			}
-			this.draw();
-			if(this.options.customTooltips){
-				this.options.customTooltips(false);
-			}
-			if (ChartElements.length > 0){
-				// If we have multiple datasets, show a MultiTooltip for all of the data points at that index
-				if (this.datasets && this.datasets.length > 1) {
-					var dataArray,
-						dataIndex;
-
-					for (var i = this.datasets.length - 1; i >= 0; i--) {
-						dataArray = this.datasets[i].points || this.datasets[i].bars || this.datasets[i].segments;
-						dataIndex = indexOf(dataArray, ChartElements[0]);
-						if (dataIndex !== -1){
-							break;
-						}
-					}
-					var tooltipLabels = [],
-						tooltipColors = [],
-						medianPosition = (function(index) {
-
-							// Get all the points at that particular index
-							var Elements = [],
-								dataCollection,
-								xPositions = [],
-								yPositions = [],
-								xMax,
-								yMax,
-								xMin,
-								yMin;
-							helpers.each(this.datasets, function(dataset){
-								dataCollection = dataset.points || dataset.bars || dataset.segments;
-								if (dataCollection[dataIndex] && dataCollection[dataIndex].hasValue()){
-									Elements.push(dataCollection[dataIndex]);
-								}
-							});
-
-							helpers.each(Elements, function(element) {
-								xPositions.push(element.x);
-								yPositions.push(element.y);
-
-
-								//Include any colour information about the element
-								tooltipLabels.push(helpers.template(this.options.multiTooltipTemplate, element));
-								tooltipColors.push({
-									fill: element._saved.fillColor || element.fillColor,
-									stroke: element._saved.strokeColor || element.strokeColor
-								});
-
-							}, this);
-
-							yMin = min(yPositions);
-							yMax = max(yPositions);
-
-							xMin = min(xPositions);
-							xMax = max(xPositions);
-
-							return {
-								x: (xMin > this.chart.width/2) ? xMin : xMax,
-								y: (yMin + yMax)/2
-							};
-						}).call(this, dataIndex);
-
-					new Chart.MultiTooltip({
-						x: medianPosition.x,
-						y: medianPosition.y,
-						xPadding: this.options.tooltipXPadding,
-						yPadding: this.options.tooltipYPadding,
-						xOffset: this.options.tooltipXOffset,
-						fillColor: this.options.tooltipFillColor,
-						textColor: this.options.tooltipFontColor,
-						fontFamily: this.options.tooltipFontFamily,
-						fontStyle: this.options.tooltipFontStyle,
-						fontSize: this.options.tooltipFontSize,
-						titleTextColor: this.options.tooltipTitleFontColor,
-						titleFontFamily: this.options.tooltipTitleFontFamily,
-						titleFontStyle: this.options.tooltipTitleFontStyle,
-						titleFontSize: this.options.tooltipTitleFontSize,
-						cornerRadius: this.options.tooltipCornerRadius,
-						labels: tooltipLabels,
-						legendColors: tooltipColors,
-						legendColorBackground : this.options.multiTooltipKeyBackground,
-						title: template(this.options.tooltipTitleTemplate,ChartElements[0]),
-						chart: this.chart,
-						ctx: this.chart.ctx,
-						custom: this.options.customTooltips
-					}).draw();
-
-				} else {
-					each(ChartElements, function(Element) {
-						var tooltipPosition = Element.tooltipPosition();
-						new Chart.Tooltip({
-							x: Math.round(tooltipPosition.x),
-							y: Math.round(tooltipPosition.y),
-							xPadding: this.options.tooltipXPadding,
-							yPadding: this.options.tooltipYPadding,
-							fillColor: this.options.tooltipFillColor,
-							textColor: this.options.tooltipFontColor,
-							fontFamily: this.options.tooltipFontFamily,
-							fontStyle: this.options.tooltipFontStyle,
-							fontSize: this.options.tooltipFontSize,
-							caretHeight: this.options.tooltipCaretSize,
-							cornerRadius: this.options.tooltipCornerRadius,
-							text: template(this.options.tooltipTemplate, Element),
-							chart: this.chart,
-							custom: this.options.customTooltips
-						}).draw();
-					}, this);
-				}
-			}
-			return this;
-		},
-		toBase64Image : function(){
-			return this.chart.canvas.toDataURL.apply(this.chart.canvas, arguments);
-		}
-	});
-
-	Chart.Type.extend = function(extensions){
-
-		var parent = this;
-
-		var ChartType = function(){
-			return parent.apply(this,arguments);
-		};
-
-		//Copy the prototype object of the this class
-		ChartType.prototype = clone(parent.prototype);
-		//Now overwrite some of the properties in the base class with the new extensions
-		extend(ChartType.prototype, extensions);
-
-		ChartType.extend = Chart.Type.extend;
-
-		if (extensions.name || parent.prototype.name){
-
-			var chartName = extensions.name || parent.prototype.name;
-			//Assign any potential default values of the new chart type
-
-			//If none are defined, we'll use a clone of the chart type this is being extended from.
-			//I.e. if we extend a line chart, we'll use the defaults from the line chart if our new chart
-			//doesn't define some defaults of their own.
-
-			var baseDefaults = (Chart.defaults[parent.prototype.name]) ? clone(Chart.defaults[parent.prototype.name]) : {};
-
-			Chart.defaults[chartName] = extend(baseDefaults,extensions.defaults);
-
-			Chart.types[chartName] = ChartType;
-
-			//Register this new chart type in the Chart prototype
-			Chart.prototype[chartName] = function(data,options){
-				var config = merge(Chart.defaults.global, Chart.defaults[chartName], options || {});
-				return new ChartType(data,config,this);
-			};
-		} else{
-			warn("Name not provided for this chart, so it hasn't been registered");
-		}
-		return parent;
-	};
-
-	Chart.Element = function(configuration){
-		extend(this,configuration);
-		this.initialize.apply(this,arguments);
-		this.save();
-	};
-	extend(Chart.Element.prototype,{
-		initialize : function(){},
-		restore : function(props){
-			if (!props){
-				extend(this,this._saved);
-			} else {
-				each(props,function(key){
-					this[key] = this._saved[key];
-				},this);
-			}
-			return this;
-		},
-		save : function(){
-			this._saved = clone(this);
-			delete this._saved._saved;
-			return this;
-		},
-		update : function(newProps){
-			each(newProps,function(value,key){
-				this._saved[key] = this[key];
-				this[key] = value;
-			},this);
-			return this;
-		},
-		transition : function(props,ease){
-			each(props,function(value,key){
-				this[key] = ((value - this._saved[key]) * ease) + this._saved[key];
-			},this);
-			return this;
-		},
-		tooltipPosition : function(){
-			return {
-				x : this.x,
-				y : this.y
-			};
-		},
-		hasValue: function(){
-			return isNumber(this.value);
-		}
-	});
-
-	Chart.Element.extend = inherits;
-
-
-	Chart.Point = Chart.Element.extend({
-		display: true,
-		inRange: function(chartX,chartY){
-			var hitDetectionRange = this.hitDetectionRadius + this.radius;
-			return ((Math.pow(chartX-this.x, 2)+Math.pow(chartY-this.y, 2)) < Math.pow(hitDetectionRange,2));
-		},
-		draw : function(){
-			if (this.display){
-				var ctx = this.ctx;
-				ctx.beginPath();
-
-				ctx.arc(this.x, this.y, this.radius, 0, Math.PI*2);
-				ctx.closePath();
-
-				ctx.strokeStyle = this.strokeColor;
-				ctx.lineWidth = this.strokeWidth;
-
-				ctx.fillStyle = this.fillColor;
-
-				ctx.fill();
-				ctx.stroke();
-			}
-
-
-			//Quick debug for bezier curve splining
-			//Highlights control points and the line between them.
-			//Handy for dev - stripped in the min version.
-
-			// ctx.save();
-			// ctx.fillStyle = "black";
-			// ctx.strokeStyle = "black"
-			// ctx.beginPath();
-			// ctx.arc(this.controlPoints.inner.x,this.controlPoints.inner.y, 2, 0, Math.PI*2);
-			// ctx.fill();
-
-			// ctx.beginPath();
-			// ctx.arc(this.controlPoints.outer.x,this.controlPoints.outer.y, 2, 0, Math.PI*2);
-			// ctx.fill();
-
-			// ctx.moveTo(this.controlPoints.inner.x,this.controlPoints.inner.y);
-			// ctx.lineTo(this.x, this.y);
-			// ctx.lineTo(this.controlPoints.outer.x,this.controlPoints.outer.y);
-			// ctx.stroke();
-
-			// ctx.restore();
-
-
-
-		}
-	});
-
-	Chart.Arc = Chart.Element.extend({
-		inRange : function(chartX,chartY){
-
-			var pointRelativePosition = helpers.getAngleFromPoint(this, {
-				x: chartX,
-				y: chartY
-			});
-
-			// Normalize all angles to 0 - 2*PI (0 - 360°)
-			var pointRelativeAngle = pointRelativePosition.angle % (Math.PI * 2),
-			    startAngle = (Math.PI * 2 + this.startAngle) % (Math.PI * 2),
-			    endAngle = (Math.PI * 2 + this.endAngle) % (Math.PI * 2) || 360;
-
-			// Calculate wether the pointRelativeAngle is between the start and the end angle
-			var betweenAngles = (endAngle < startAngle) ?
-				pointRelativeAngle <= endAngle || pointRelativeAngle >= startAngle:
-				pointRelativeAngle >= startAngle && pointRelativeAngle <= endAngle;
-
-			//Check if within the range of the open/close angle
-			var withinRadius = (pointRelativePosition.distance >= this.innerRadius && pointRelativePosition.distance <= this.outerRadius);
-
-			return (betweenAngles && withinRadius);
-			//Ensure within the outside of the arc centre, but inside arc outer
-		},
-		tooltipPosition : function(){
-			var centreAngle = this.startAngle + ((this.endAngle - this.startAngle) / 2),
-				rangeFromCentre = (this.outerRadius - this.innerRadius) / 2 + this.innerRadius;
-			return {
-				x : this.x + (Math.cos(centreAngle) * rangeFromCentre),
-				y : this.y + (Math.sin(centreAngle) * rangeFromCentre)
-			};
-		},
-		draw : function(animationPercent){
-
-			var easingDecimal = animationPercent || 1;
-
-			var ctx = this.ctx;
-
-			ctx.beginPath();
-
-			ctx.arc(this.x, this.y, this.outerRadius < 0 ? 0 : this.outerRadius, this.startAngle, this.endAngle);
-
-            ctx.arc(this.x, this.y, this.innerRadius < 0 ? 0 : this.innerRadius, this.endAngle, this.startAngle, true);
-
-			ctx.closePath();
-			ctx.strokeStyle = this.strokeColor;
-			ctx.lineWidth = this.strokeWidth;
-
-			ctx.fillStyle = this.fillColor;
-
-			ctx.fill();
-			ctx.lineJoin = 'bevel';
-
-			if (this.showStroke){
-				ctx.stroke();
-			}
-		}
-	});
-
-	Chart.Rectangle = Chart.Element.extend({
-		draw : function(){
-			var ctx = this.ctx,
-				halfWidth = this.width/2,
-				leftX = this.x - halfWidth,
-				rightX = this.x + halfWidth,
-				top = this.base - (this.base - this.y),
-				halfStroke = this.strokeWidth / 2;
-
-			// Canvas doesn't allow us to stroke inside the width so we can
-			// adjust the sizes to fit if we're setting a stroke on the line
-			if (this.showStroke){
-				leftX += halfStroke;
-				rightX -= halfStroke;
-				top += halfStroke;
-			}
-
-			ctx.beginPath();
-
-			ctx.fillStyle = this.fillColor;
-			ctx.strokeStyle = this.strokeColor;
-			ctx.lineWidth = this.strokeWidth;
-
-			// It'd be nice to keep this class totally generic to any rectangle
-			// and simply specify which border to miss out.
-			ctx.moveTo(leftX, this.base);
-			ctx.lineTo(leftX, top);
-			ctx.lineTo(rightX, top);
-			ctx.lineTo(rightX, this.base);
-			ctx.fill();
-			if (this.showStroke){
-				ctx.stroke();
-			}
-		},
-		height : function(){
-			return this.base - this.y;
-		},
-		inRange : function(chartX,chartY){
-			return (chartX >= this.x - this.width/2 && chartX <= this.x + this.width/2) && (chartY >= this.y && chartY <= this.base);
-		}
-	});
-
-	Chart.Animation = Chart.Element.extend({
-		currentStep: null, // the current animation step
-		numSteps: 60, // default number of steps
-		easing: "", // the easing to use for this animation
-		render: null, // render function used by the animation service
-		
-		onAnimationProgress: null, // user specified callback to fire on each step of the animation 
-		onAnimationComplete: null, // user specified callback to fire when the animation finishes
-	});
-	
-	Chart.Tooltip = Chart.Element.extend({
-		draw : function(){
-
-			var ctx = this.chart.ctx;
-
-			ctx.font = fontString(this.fontSize,this.fontStyle,this.fontFamily);
-
-			this.xAlign = "center";
-			this.yAlign = "above";
-
-			//Distance between the actual element.y position and the start of the tooltip caret
-			var caretPadding = this.caretPadding = 2;
-
-			var tooltipWidth = ctx.measureText(this.text).width + 2*this.xPadding,
-				tooltipRectHeight = this.fontSize + 2*this.yPadding,
-				tooltipHeight = tooltipRectHeight + this.caretHeight + caretPadding;
-
-			if (this.x + tooltipWidth/2 >this.chart.width){
-				this.xAlign = "left";
-			} else if (this.x - tooltipWidth/2 < 0){
-				this.xAlign = "right";
-			}
-
-			if (this.y - tooltipHeight < 0){
-				this.yAlign = "below";
-			}
-
-
-			var tooltipX = this.x - tooltipWidth/2,
-				tooltipY = this.y - tooltipHeight;
-
-			ctx.fillStyle = this.fillColor;
-
-			// Custom Tooltips
-			if(this.custom){
-				this.custom(this);
-			}
-			else{
-				switch(this.yAlign)
-				{
-				case "above":
-					//Draw a caret above the x/y
-					ctx.beginPath();
-					ctx.moveTo(this.x,this.y - caretPadding);
-					ctx.lineTo(this.x + this.caretHeight, this.y - (caretPadding + this.caretHeight));
-					ctx.lineTo(this.x - this.caretHeight, this.y - (caretPadding + this.caretHeight));
-					ctx.closePath();
-					ctx.fill();
-					break;
-				case "below":
-					tooltipY = this.y + caretPadding + this.caretHeight;
-					//Draw a caret below the x/y
-					ctx.beginPath();
-					ctx.moveTo(this.x, this.y + caretPadding);
-					ctx.lineTo(this.x + this.caretHeight, this.y + caretPadding + this.caretHeight);
-					ctx.lineTo(this.x - this.caretHeight, this.y + caretPadding + this.caretHeight);
-					ctx.closePath();
-					ctx.fill();
-					break;
-				}
-
-				switch(this.xAlign)
-				{
-				case "left":
-					tooltipX = this.x - tooltipWidth + (this.cornerRadius + this.caretHeight);
-					break;
-				case "right":
-					tooltipX = this.x - (this.cornerRadius + this.caretHeight);
-					break;
-				}
-
-				drawRoundedRectangle(ctx,tooltipX,tooltipY,tooltipWidth,tooltipRectHeight,this.cornerRadius);
-
-				ctx.fill();
-
-				ctx.fillStyle = this.textColor;
-				ctx.textAlign = "center";
-				ctx.textBaseline = "middle";
-				ctx.fillText(this.text, tooltipX + tooltipWidth/2, tooltipY + tooltipRectHeight/2);
-			}
-		}
-	});
-
-	Chart.MultiTooltip = Chart.Element.extend({
-		initialize : function(){
-			this.font = fontString(this.fontSize,this.fontStyle,this.fontFamily);
-
-			this.titleFont = fontString(this.titleFontSize,this.titleFontStyle,this.titleFontFamily);
-
-			this.titleHeight = this.title ? this.titleFontSize * 1.5 : 0;
-			this.height = (this.labels.length * this.fontSize) + ((this.labels.length-1) * (this.fontSize/2)) + (this.yPadding*2) + this.titleHeight;
-
-			this.ctx.font = this.titleFont;
-
-			var titleWidth = this.ctx.measureText(this.title).width,
-				//Label has a legend square as well so account for this.
-				labelWidth = longestText(this.ctx,this.font,this.labels) + this.fontSize + 3,
-				longestTextWidth = max([labelWidth,titleWidth]);
-
-			this.width = longestTextWidth + (this.xPadding*2);
-
-
-			var halfHeight = this.height/2;
-
-			//Check to ensure the height will fit on the canvas
-			if (this.y - halfHeight < 0 ){
-				this.y = halfHeight;
-			} else if (this.y + halfHeight > this.chart.height){
-				this.y = this.chart.height - halfHeight;
-			}
-
-			//Decide whether to align left or right based on position on canvas
-			if (this.x > this.chart.width/2){
-				this.x -= this.xOffset + this.width;
-			} else {
-				this.x += this.xOffset;
-			}
-
-
-		},
-		getLineHeight : function(index){
-			var baseLineHeight = this.y - (this.height/2) + this.yPadding,
-				afterTitleIndex = index-1;
-
-			//If the index is zero, we're getting the title
-			if (index === 0){
-				return baseLineHeight + this.titleHeight / 3;
-			} else{
-				return baseLineHeight + ((this.fontSize * 1.5 * afterTitleIndex) + this.fontSize / 2) + this.titleHeight;
-			}
-
-		},
-		draw : function(){
-			// Custom Tooltips
-			if(this.custom){
-				this.custom(this);
-			}
-			else{
-				drawRoundedRectangle(this.ctx,this.x,this.y - this.height/2,this.width,this.height,this.cornerRadius);
-				var ctx = this.ctx;
-				ctx.fillStyle = this.fillColor;
-				ctx.fill();
-				ctx.closePath();
-
-				ctx.textAlign = "left";
-				ctx.textBaseline = "middle";
-				ctx.fillStyle = this.titleTextColor;
-				ctx.font = this.titleFont;
-
-				ctx.fillText(this.title,this.x + this.xPadding, this.getLineHeight(0));
-
-				ctx.font = this.font;
-				helpers.each(this.labels,function(label,index){
-					ctx.fillStyle = this.textColor;
-					ctx.fillText(label,this.x + this.xPadding + this.fontSize + 3, this.getLineHeight(index + 1));
-
-					//A bit gnarly, but clearing this rectangle breaks when using explorercanvas (clears whole canvas)
-					//ctx.clearRect(this.x + this.xPadding, this.getLineHeight(index + 1) - this.fontSize/2, this.fontSize, this.fontSize);
-					//Instead we'll make a white filled block to put the legendColour palette over.
-
-					ctx.fillStyle = this.legendColorBackground;
-					ctx.fillRect(this.x + this.xPadding, this.getLineHeight(index + 1) - this.fontSize/2, this.fontSize, this.fontSize);
-
-					ctx.fillStyle = this.legendColors[index].fill;
-					ctx.fillRect(this.x + this.xPadding, this.getLineHeight(index + 1) - this.fontSize/2, this.fontSize, this.fontSize);
-
-
-				},this);
-			}
-		}
-	});
-
-	Chart.Scale = Chart.Element.extend({
-		initialize : function(){
-			this.fit();
-		},
-		buildYLabels : function(){
-			this.yLabels = [];
-
-			var stepDecimalPlaces = getDecimalPlaces(this.stepValue);
-
-			for (var i=0; i<=this.steps; i++){
-				this.yLabels.push(template(this.templateString,{value:(this.min + (i * this.stepValue)).toFixed(stepDecimalPlaces)}));
-			}
-			this.yLabelWidth = (this.display && this.showLabels) ? longestText(this.ctx,this.font,this.yLabels) + 10 : 0;
-		},
-		addXLabel : function(label){
-			this.xLabels.push(label);
-			this.valuesCount++;
-			this.fit();
-		},
-		removeXLabel : function(){
-			this.xLabels.shift();
-			this.valuesCount--;
-			this.fit();
-		},
-		// Fitting loop to rotate x Labels and figure out what fits there, and also calculate how many Y steps to use
-		fit: function(){
-			// First we need the width of the yLabels, assuming the xLabels aren't rotated
-
-			// To do that we need the base line at the top and base of the chart, assuming there is no x label rotation
-			this.startPoint = (this.display) ? this.fontSize : 0;
-			this.endPoint = (this.display) ? this.height - (this.fontSize * 1.5) - 5 : this.height; // -5 to pad labels
-
-			// Apply padding settings to the start and end point.
-			this.startPoint += this.padding;
-			this.endPoint -= this.padding;
-
-			// Cache the starting endpoint, excluding the space for x labels
-			var cachedEndPoint = this.endPoint;
-
-			// Cache the starting height, so can determine if we need to recalculate the scale yAxis
-			var cachedHeight = this.endPoint - this.startPoint,
-				cachedYLabelWidth;
-
-			// Build the current yLabels so we have an idea of what size they'll be to start
-			/*
-			 *	This sets what is returned from calculateScaleRange as static properties of this class:
-			 *
-				this.steps;
-				this.stepValue;
-				this.min;
-				this.max;
-			 *
-			 */
-			this.calculateYRange(cachedHeight);
-
-			// With these properties set we can now build the array of yLabels
-			// and also the width of the largest yLabel
-			this.buildYLabels();
-
-			this.calculateXLabelRotation();
-
-			while((cachedHeight > this.endPoint - this.startPoint)){
-				cachedHeight = this.endPoint - this.startPoint;
-				cachedYLabelWidth = this.yLabelWidth;
-
-				this.calculateYRange(cachedHeight);
-				this.buildYLabels();
-
-				// Only go through the xLabel loop again if the yLabel width has changed
-				if (cachedYLabelWidth < this.yLabelWidth){
-					this.endPoint = cachedEndPoint;
-					this.calculateXLabelRotation();
-				}
-			}
-
-		},
-		calculateXLabelRotation : function(){
-			//Get the width of each grid by calculating the difference
-			//between x offsets between 0 and 1.
-
-			this.ctx.font = this.font;
-
-			var firstWidth = this.ctx.measureText(this.xLabels[0]).width,
-				lastWidth = this.ctx.measureText(this.xLabels[this.xLabels.length - 1]).width,
-				firstRotated,
-				lastRotated;
-
-
-			this.xScalePaddingRight = lastWidth/2 + 3;
-			this.xScalePaddingLeft = (firstWidth/2 > this.yLabelWidth) ? firstWidth/2 : this.yLabelWidth;
-
-			this.xLabelRotation = 0;
-			if (this.display){
-				var originalLabelWidth = longestText(this.ctx,this.font,this.xLabels),
-					cosRotation,
-					firstRotatedWidth;
-				this.xLabelWidth = originalLabelWidth;
-				//Allow 3 pixels x2 padding either side for label readability
-				var xGridWidth = Math.floor(this.calculateX(1) - this.calculateX(0)) - 6;
-
-				//Max label rotate should be 90 - also act as a loop counter
-				while ((this.xLabelWidth > xGridWidth && this.xLabelRotation === 0) || (this.xLabelWidth > xGridWidth && this.xLabelRotation <= 90 && this.xLabelRotation > 0)){
-					cosRotation = Math.cos(toRadians(this.xLabelRotation));
-
-					firstRotated = cosRotation * firstWidth;
-					lastRotated = cosRotation * lastWidth;
-
-					// We're right aligning the text now.
-					if (firstRotated + this.fontSize / 2 > this.yLabelWidth){
-						this.xScalePaddingLeft = firstRotated + this.fontSize / 2;
-					}
-					this.xScalePaddingRight = this.fontSize/2;
-
-
-					this.xLabelRotation++;
-					this.xLabelWidth = cosRotation * originalLabelWidth;
-
-				}
-				if (this.xLabelRotation > 0){
-					this.endPoint -= Math.sin(toRadians(this.xLabelRotation))*originalLabelWidth + 3;
-				}
-			}
-			else{
-				this.xLabelWidth = 0;
-				this.xScalePaddingRight = this.padding;
-				this.xScalePaddingLeft = this.padding;
-			}
-
-		},
-		// Needs to be overidden in each Chart type
-		// Otherwise we need to pass all the data into the scale class
-		calculateYRange: noop,
-		drawingArea: function(){
-			return this.startPoint - this.endPoint;
-		},
-		calculateY : function(value){
-			var scalingFactor = this.drawingArea() / (this.min - this.max);
-			return this.endPoint - (scalingFactor * (value - this.min));
-		},
-		calculateX : function(index){
-			var isRotated = (this.xLabelRotation > 0),
-				// innerWidth = (this.offsetGridLines) ? this.width - offsetLeft - this.padding : this.width - (offsetLeft + halfLabelWidth * 2) - this.padding,
-				innerWidth = this.width - (this.xScalePaddingLeft + this.xScalePaddingRight),
-				valueWidth = innerWidth/Math.max((this.valuesCount - ((this.offsetGridLines) ? 0 : 1)), 1),
-				valueOffset = (valueWidth * index) + this.xScalePaddingLeft;
-
-			if (this.offsetGridLines){
-				valueOffset += (valueWidth/2);
-			}
-
-			return Math.round(valueOffset);
-		},
-		update : function(newProps){
-			helpers.extend(this, newProps);
-			this.fit();
-		},
-		draw : function(){
-			var ctx = this.ctx,
-				yLabelGap = (this.endPoint - this.startPoint) / this.steps,
-				xStart = Math.round(this.xScalePaddingLeft);
-			if (this.display){
-				ctx.fillStyle = this.textColor;
-				ctx.font = this.font;
-				each(this.yLabels,function(labelString,index){
-					var yLabelCenter = this.endPoint - (yLabelGap * index),
-						linePositionY = Math.round(yLabelCenter),
-						drawHorizontalLine = this.showHorizontalLines;
-
-					ctx.textAlign = "right";
-					ctx.textBaseline = "middle";
-					if (this.showLabels){
-						ctx.fillText(labelString,xStart - 10,yLabelCenter);
-					}
-
-					// This is X axis, so draw it
-					if (index === 0 && !drawHorizontalLine){
-						drawHorizontalLine = true;
-					}
-
-					if (drawHorizontalLine){
-						ctx.beginPath();
-					}
-
-					if (index > 0){
-						// This is a grid line in the centre, so drop that
-						ctx.lineWidth = this.gridLineWidth;
-						ctx.strokeStyle = this.gridLineColor;
-					} else {
-						// This is the first line on the scale
-						ctx.lineWidth = this.lineWidth;
-						ctx.strokeStyle = this.lineColor;
-					}
-
-					linePositionY += helpers.aliasPixel(ctx.lineWidth);
-
-					if(drawHorizontalLine){
-						ctx.moveTo(xStart, linePositionY);
-						ctx.lineTo(this.width, linePositionY);
-						ctx.stroke();
-						ctx.closePath();
-					}
-
-					ctx.lineWidth = this.lineWidth;
-					ctx.strokeStyle = this.lineColor;
-					ctx.beginPath();
-					ctx.moveTo(xStart - 5, linePositionY);
-					ctx.lineTo(xStart, linePositionY);
-					ctx.stroke();
-					ctx.closePath();
-
-				},this);
-
-				each(this.xLabels,function(label,index){
-					var xPos = this.calculateX(index) + aliasPixel(this.lineWidth),
-						// Check to see if line/bar here and decide where to place the line
-						linePos = this.calculateX(index - (this.offsetGridLines ? 0.5 : 0)) + aliasPixel(this.lineWidth),
-						isRotated = (this.xLabelRotation > 0),
-						drawVerticalLine = this.showVerticalLines;
-
-					// This is Y axis, so draw it
-					if (index === 0 && !drawVerticalLine){
-						drawVerticalLine = true;
-					}
-
-					if (drawVerticalLine){
-						ctx.beginPath();
-					}
-
-					if (index > 0){
-						// This is a grid line in the centre, so drop that
-						ctx.lineWidth = this.gridLineWidth;
-						ctx.strokeStyle = this.gridLineColor;
-					} else {
-						// This is the first line on the scale
-						ctx.lineWidth = this.lineWidth;
-						ctx.strokeStyle = this.lineColor;
-					}
-
-					if (drawVerticalLine){
-						ctx.moveTo(linePos,this.endPoint);
-						ctx.lineTo(linePos,this.startPoint - 3);
-						ctx.stroke();
-						ctx.closePath();
-					}
-
-
-					ctx.lineWidth = this.lineWidth;
-					ctx.strokeStyle = this.lineColor;
-
-
-					// Small lines at the bottom of the base grid line
-					ctx.beginPath();
-					ctx.moveTo(linePos,this.endPoint);
-					ctx.lineTo(linePos,this.endPoint + 5);
-					ctx.stroke();
-					ctx.closePath();
-
-					ctx.save();
-					ctx.translate(xPos,(isRotated) ? this.endPoint + 12 : this.endPoint + 8);
-					ctx.rotate(toRadians(this.xLabelRotation)*-1);
-					ctx.font = this.font;
-					ctx.textAlign = (isRotated) ? "right" : "center";
-					ctx.textBaseline = (isRotated) ? "middle" : "top";
-					ctx.fillText(label, 0, 0);
-					ctx.restore();
-				},this);
-
-			}
-		}
-
-	});
-
-	Chart.RadialScale = Chart.Element.extend({
-		initialize: function(){
-			this.size = min([this.height, this.width]);
-			this.drawingArea = (this.display) ? (this.size/2) - (this.fontSize/2 + this.backdropPaddingY) : (this.size/2);
-		},
-		calculateCenterOffset: function(value){
-			// Take into account half font size + the yPadding of the top value
-			var scalingFactor = this.drawingArea / (this.max - this.min);
-
-			return (value - this.min) * scalingFactor;
-		},
-		update : function(){
-			if (!this.lineArc){
-				this.setScaleSize();
-			} else {
-				this.drawingArea = (this.display) ? (this.size/2) - (this.fontSize/2 + this.backdropPaddingY) : (this.size/2);
-			}
-			this.buildYLabels();
-		},
-		buildYLabels: function(){
-			this.yLabels = [];
-
-			var stepDecimalPlaces = getDecimalPlaces(this.stepValue);
-
-			for (var i=0; i<=this.steps; i++){
-				this.yLabels.push(template(this.templateString,{value:(this.min + (i * this.stepValue)).toFixed(stepDecimalPlaces)}));
-			}
-		},
-		getCircumference : function(){
-			return ((Math.PI*2) / this.valuesCount);
-		},
-		setScaleSize: function(){
-			/*
-			 * Right, this is really confusing and there is a lot of maths going on here
-			 * The gist of the problem is here: https://gist.github.com/nnnick/696cc9c55f4b0beb8fe9
-			 *
-			 * Reaction: https://dl.dropboxusercontent.com/u/34601363/toomuchscience.gif
-			 *
-			 * Solution:
-			 *
-			 * We assume the radius of the polygon is half the size of the canvas at first
-			 * at each index we check if the text overlaps.
-			 *
-			 * Where it does, we store that angle and that index.
-			 *
-			 * After finding the largest index and angle we calculate how much we need to remove
-			 * from the shape radius to move the point inwards by that x.
-			 *
-			 * We average the left and right distances to get the maximum shape radius that can fit in the box
-			 * along with labels.
-			 *
-			 * Once we have that, we can find the centre point for the chart, by taking the x text protrusion
-			 * on each side, removing that from the size, halving it and adding the left x protrusion width.
-			 *
-			 * This will mean we have a shape fitted to the canvas, as large as it can be with the labels
-			 * and position it in the most space efficient manner
-			 *
-			 * https://dl.dropboxusercontent.com/u/34601363/yeahscience.gif
-			 */
-
-
-			// Get maximum radius of the polygon. Either half the height (minus the text width) or half the width.
-			// Use this to calculate the offset + change. - Make sure L/R protrusion is at least 0 to stop issues with centre points
-			var largestPossibleRadius = min([(this.height/2 - this.pointLabelFontSize - 5), this.width/2]),
-				pointPosition,
-				i,
-				textWidth,
-				halfTextWidth,
-				furthestRight = this.width,
-				furthestRightIndex,
-				furthestRightAngle,
-				furthestLeft = 0,
-				furthestLeftIndex,
-				furthestLeftAngle,
-				xProtrusionLeft,
-				xProtrusionRight,
-				radiusReductionRight,
-				radiusReductionLeft,
-				maxWidthRadius;
-			this.ctx.font = fontString(this.pointLabelFontSize,this.pointLabelFontStyle,this.pointLabelFontFamily);
-			for (i=0;i<this.valuesCount;i++){
-				// 5px to space the text slightly out - similar to what we do in the draw function.
-				pointPosition = this.getPointPosition(i, largestPossibleRadius);
-				textWidth = this.ctx.measureText(template(this.templateString, { value: this.labels[i] })).width + 5;
-				if (i === 0 || i === this.valuesCount/2){
-					// If we're at index zero, or exactly the middle, we're at exactly the top/bottom
-					// of the radar chart, so text will be aligned centrally, so we'll half it and compare
-					// w/left and right text sizes
-					halfTextWidth = textWidth/2;
-					if (pointPosition.x + halfTextWidth > furthestRight) {
-						furthestRight = pointPosition.x + halfTextWidth;
-						furthestRightIndex = i;
-					}
-					if (pointPosition.x - halfTextWidth < furthestLeft) {
-						furthestLeft = pointPosition.x - halfTextWidth;
-						furthestLeftIndex = i;
-					}
-				}
-				else if (i < this.valuesCount/2) {
-					// Less than half the values means we'll left align the text
-					if (pointPosition.x + textWidth > furthestRight) {
-						furthestRight = pointPosition.x + textWidth;
-						furthestRightIndex = i;
-					}
-				}
-				else if (i > this.valuesCount/2){
-					// More than half the values means we'll right align the text
-					if (pointPosition.x - textWidth < furthestLeft) {
-						furthestLeft = pointPosition.x - textWidth;
-						furthestLeftIndex = i;
-					}
-				}
-			}
-
-			xProtrusionLeft = furthestLeft;
-
-			xProtrusionRight = Math.ceil(furthestRight - this.width);
-
-			furthestRightAngle = this.getIndexAngle(furthestRightIndex);
-
-			furthestLeftAngle = this.getIndexAngle(furthestLeftIndex);
-
-			radiusReductionRight = xProtrusionRight / Math.sin(furthestRightAngle + Math.PI/2);
-
-			radiusReductionLeft = xProtrusionLeft / Math.sin(furthestLeftAngle + Math.PI/2);
-
-			// Ensure we actually need to reduce the size of the chart
-			radiusReductionRight = (isNumber(radiusReductionRight)) ? radiusReductionRight : 0;
-			radiusReductionLeft = (isNumber(radiusReductionLeft)) ? radiusReductionLeft : 0;
-
-			this.drawingArea = largestPossibleRadius - (radiusReductionLeft + radiusReductionRight)/2;
-
-			//this.drawingArea = min([maxWidthRadius, (this.height - (2 * (this.pointLabelFontSize + 5)))/2])
-			this.setCenterPoint(radiusReductionLeft, radiusReductionRight);
-
-		},
-		setCenterPoint: function(leftMovement, rightMovement){
-
-			var maxRight = this.width - rightMovement - this.drawingArea,
-				maxLeft = leftMovement + this.drawingArea;
-
-			this.xCenter = (maxLeft + maxRight)/2;
-			// Always vertically in the centre as the text height doesn't change
-			this.yCenter = (this.height/2);
-		},
-
-		getIndexAngle : function(index){
-			var angleMultiplier = (Math.PI * 2) / this.valuesCount;
-			// Start from the top instead of right, so remove a quarter of the circle
-
-			return index * angleMultiplier - (Math.PI/2);
-		},
-		getPointPosition : function(index, distanceFromCenter){
-			var thisAngle = this.getIndexAngle(index);
-			return {
-				x : (Math.cos(thisAngle) * distanceFromCenter) + this.xCenter,
-				y : (Math.sin(thisAngle) * distanceFromCenter) + this.yCenter
-			};
-		},
-		draw: function(){
-			if (this.display){
-				var ctx = this.ctx;
-				each(this.yLabels, function(label, index){
-					// Don't draw a centre value
-					if (index > 0){
-						var yCenterOffset = index * (this.drawingArea/this.steps),
-							yHeight = this.yCenter - yCenterOffset,
-							pointPosition;
-
-						// Draw circular lines around the scale
-						if (this.lineWidth > 0){
-							ctx.strokeStyle = this.lineColor;
-							ctx.lineWidth = this.lineWidth;
-
-							if(this.lineArc){
-								ctx.beginPath();
-								ctx.arc(this.xCenter, this.yCenter, yCenterOffset, 0, Math.PI*2);
-								ctx.closePath();
-								ctx.stroke();
-							} else{
-								ctx.beginPath();
-								for (var i=0;i<this.valuesCount;i++)
-								{
-									pointPosition = this.getPointPosition(i, this.calculateCenterOffset(this.min + (index * this.stepValue)));
-									if (i === 0){
-										ctx.moveTo(pointPosition.x, pointPosition.y);
-									} else {
-										ctx.lineTo(pointPosition.x, pointPosition.y);
-									}
-								}
-								ctx.closePath();
-								ctx.stroke();
-							}
-						}
-						if(this.showLabels){
-							ctx.font = fontString(this.fontSize,this.fontStyle,this.fontFamily);
-							if (this.showLabelBackdrop){
-								var labelWidth = ctx.measureText(label).width;
-								ctx.fillStyle = this.backdropColor;
-								ctx.fillRect(
-									this.xCenter - labelWidth/2 - this.backdropPaddingX,
-									yHeight - this.fontSize/2 - this.backdropPaddingY,
-									labelWidth + this.backdropPaddingX*2,
-									this.fontSize + this.backdropPaddingY*2
-								);
-							}
-							ctx.textAlign = 'center';
-							ctx.textBaseline = "middle";
-							ctx.fillStyle = this.fontColor;
-							ctx.fillText(label, this.xCenter, yHeight);
-						}
-					}
-				}, this);
-
-				if (!this.lineArc){
-					ctx.lineWidth = this.angleLineWidth;
-					ctx.strokeStyle = this.angleLineColor;
-					for (var i = this.valuesCount - 1; i >= 0; i--) {
-						var centerOffset = null, outerPosition = null;
-
-						if (this.angleLineWidth > 0 && (i % this.angleLineInterval === 0)){
-							centerOffset = this.calculateCenterOffset(this.max);
-							outerPosition = this.getPointPosition(i, centerOffset);
-							ctx.beginPath();
-							ctx.moveTo(this.xCenter, this.yCenter);
-							ctx.lineTo(outerPosition.x, outerPosition.y);
-							ctx.stroke();
-							ctx.closePath();
-						}
-
-						if (this.backgroundColors && this.backgroundColors.length == this.valuesCount) {
-							if (centerOffset == null)
-								centerOffset = this.calculateCenterOffset(this.max);
-
-							if (outerPosition == null)
-								outerPosition = this.getPointPosition(i, centerOffset);
-
-							var previousOuterPosition = this.getPointPosition(i === 0 ? this.valuesCount - 1 : i - 1, centerOffset);
-							var nextOuterPosition = this.getPointPosition(i === this.valuesCount - 1 ? 0 : i + 1, centerOffset);
-
-							var previousOuterHalfway = { x: (previousOuterPosition.x + outerPosition.x) / 2, y: (previousOuterPosition.y + outerPosition.y) / 2 };
-							var nextOuterHalfway = { x: (outerPosition.x + nextOuterPosition.x) / 2, y: (outerPosition.y + nextOuterPosition.y) / 2 };
-
-							ctx.beginPath();
-							ctx.moveTo(this.xCenter, this.yCenter);
-							ctx.lineTo(previousOuterHalfway.x, previousOuterHalfway.y);
-							ctx.lineTo(outerPosition.x, outerPosition.y);
-							ctx.lineTo(nextOuterHalfway.x, nextOuterHalfway.y);
-							ctx.fillStyle = this.backgroundColors[i];
-							ctx.fill();
-							ctx.closePath();
-						}
-						// Extra 3px out for some label spacing
-						var pointLabelPosition = this.getPointPosition(i, this.calculateCenterOffset(this.max) + 5);
-						ctx.font = fontString(this.pointLabelFontSize,this.pointLabelFontStyle,this.pointLabelFontFamily);
-						ctx.fillStyle = this.pointLabelFontColor;
-
-						var labelsCount = this.labels.length,
-							halfLabelsCount = this.labels.length/2,
-							quarterLabelsCount = halfLabelsCount/2,
-							upperHalf = (i < quarterLabelsCount || i > labelsCount - quarterLabelsCount),
-							exactQuarter = (i === quarterLabelsCount || i === labelsCount - quarterLabelsCount);
-						if (i === 0){
-							ctx.textAlign = 'center';
-						} else if(i === halfLabelsCount){
-							ctx.textAlign = 'center';
-						} else if (i < halfLabelsCount){
-							ctx.textAlign = 'left';
-						} else {
-							ctx.textAlign = 'right';
-						}
-
-						// Set the correct text baseline based on outer positioning
-						if (exactQuarter){
-							ctx.textBaseline = 'middle';
-						} else if (upperHalf){
-							ctx.textBaseline = 'bottom';
-						} else {
-							ctx.textBaseline = 'top';
-						}
-
-						ctx.fillText(this.labels[i], pointLabelPosition.x, pointLabelPosition.y);
-					}
-				}
-			}
-		}
-	});
-
-	Chart.animationService = {
-		frameDuration: 17,
-		animations: [],
-		dropFrames: 0,
-		addAnimation: function(chartInstance, animationObject) {
-			for (var index = 0; index < this.animations.length; ++ index){
-				if (this.animations[index].chartInstance === chartInstance){
-					// replacing an in progress animation
-					this.animations[index].animationObject = animationObject;
-					return;
-				}
-			}
-			
-			this.animations.push({
-				chartInstance: chartInstance,
-				animationObject: animationObject
-			});
-
-			// If there are no animations queued, manually kickstart a digest, for lack of a better word
-			if (this.animations.length == 1) {
-				helpers.requestAnimFrame.call(window, this.digestWrapper);
-			}
-		},
-		// Cancel the animation for a given chart instance
-		cancelAnimation: function(chartInstance) {
-			var index = helpers.findNextWhere(this.animations, function(animationWrapper) {
-				return animationWrapper.chartInstance === chartInstance;
-			});
-			
-			if (index)
-			{
-				this.animations.splice(index, 1);
-			}
-		},
-		// calls startDigest with the proper context
-		digestWrapper: function() {
-			Chart.animationService.startDigest.call(Chart.animationService);
-		},
-		startDigest: function() {
-
-			var startTime = Date.now();
-			var framesToDrop = 0;
-
-			if(this.dropFrames > 1){
-				framesToDrop = Math.floor(this.dropFrames);
-				this.dropFrames -= framesToDrop;
-			}
-
-			for (var i = 0; i < this.animations.length; i++) {
-
-				if (this.animations[i].animationObject.currentStep === null){
-					this.animations[i].animationObject.currentStep = 0;
-				}
-
-				this.animations[i].animationObject.currentStep += 1 + framesToDrop;
-				if(this.animations[i].animationObject.currentStep > this.animations[i].animationObject.numSteps){
-					this.animations[i].animationObject.currentStep = this.animations[i].animationObject.numSteps;
-				}
-				
-				this.animations[i].animationObject.render(this.animations[i].chartInstance, this.animations[i].animationObject);
-				
-				// Check if executed the last frame.
-				if (this.animations[i].animationObject.currentStep == this.animations[i].animationObject.numSteps){
-					// Call onAnimationComplete
-					this.animations[i].animationObject.onAnimationComplete.call(this.animations[i].chartInstance);
-					// Remove the animation.
-					this.animations.splice(i, 1);
-					// Keep the index in place to offset the splice
-					i--;
-				}
-			}
-
-			var endTime = Date.now();
-			var delay = endTime - startTime - this.frameDuration;
-			var frameDelay = delay / this.frameDuration;
-
-			if(frameDelay > 1){
-				this.dropFrames += frameDelay;
-			}
-
-			// Do we have more stuff to animate?
-			if (this.animations.length > 0){
-				helpers.requestAnimFrame.call(window, this.digestWrapper);
-			}
-		}
-	};
-
-	// Attach global event to resize each chart instance when the browser resizes
-	helpers.addEvent(window, "resize", (function(){
-		// Basic debounce of resize function so it doesn't hurt performance when resizing browser.
-		var timeout;
-		return function(){
-			clearTimeout(timeout);
-			timeout = setTimeout(function(){
-				each(Chart.instances,function(instance){
-					// If the responsive flag is set in the chart instance config
-					// Cascade the resize event down to the chart.
-					if (instance.options.responsive){
-						instance.resize(instance.render, true);
-					}
-				});
-			}, 50);
-		};
-	})());
-
-
-	if (amd) {
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function(){
-			return Chart;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else if (typeof module === 'object' && module.exports) {
-		module.exports = Chart;
-	}
-
-	root.Chart = Chart;
-
-	Chart.noConflict = function(){
-		root.Chart = previous;
-		return Chart;
-	};
-
-}).call(this);
-
-(function(){
-	"use strict";
-
-	var root = this,
-		Chart = root.Chart,
-		helpers = Chart.helpers;
-
-
-	var defaultConfig = {
-		//Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-		scaleBeginAtZero : true,
-
-		//Boolean - Whether grid lines are shown across the chart
-		scaleShowGridLines : true,
-
-		//String - Colour of the grid lines
-		scaleGridLineColor : "rgba(0,0,0,.05)",
-
-		//Number - Width of the grid lines
-		scaleGridLineWidth : 1,
-
-		//Boolean - Whether to show horizontal lines (except X axis)
-		scaleShowHorizontalLines: true,
-
-		//Boolean - Whether to show vertical lines (except Y axis)
-		scaleShowVerticalLines: true,
-
-		//Boolean - If there is a stroke on each bar
-		barShowStroke : true,
-
-		//Number - Pixel width of the bar stroke
-		barStrokeWidth : 2,
-
-		//Number - Spacing between each of the X value sets
-		barValueSpacing : 5,
-
-		//Number - Spacing between data sets within X values
-		barDatasetSpacing : 1,
-
-		//String - A legend template
-		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span class=\"<%=name.toLowerCase()%>-legend-icon\" style=\"background-color:<%=datasets[i].fillColor%>\"></span><span class=\"<%=name.toLowerCase()%>-legend-text\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></span></li><%}%></ul>"
-
-	};
-
-
-	Chart.Type.extend({
-		name: "Bar",
-		defaults : defaultConfig,
-		initialize:  function(data){
-
-			//Expose options as a scope variable here so we can access it in the ScaleClass
-			var options = this.options;
-
-			this.ScaleClass = Chart.Scale.extend({
-				offsetGridLines : true,
-				calculateBarX : function(datasetCount, datasetIndex, barIndex){
-					//Reusable method for calculating the xPosition of a given bar based on datasetIndex & width of the bar
-					var xWidth = this.calculateBaseWidth(),
-						xAbsolute = this.calculateX(barIndex) - (xWidth/2),
-						barWidth = this.calculateBarWidth(datasetCount);
-
-					return xAbsolute + (barWidth * datasetIndex) + (datasetIndex * options.barDatasetSpacing) + barWidth/2;
-				},
-				calculateBaseWidth : function(){
-					return (this.calculateX(1) - this.calculateX(0)) - (2*options.barValueSpacing);
-				},
-				calculateBarWidth : function(datasetCount){
-					//The padding between datasets is to the right of each bar, providing that there are more than 1 dataset
-					var baseWidth = this.calculateBaseWidth() - ((datasetCount - 1) * options.barDatasetSpacing);
-
-					return (baseWidth / datasetCount);
-				}
-			});
-
-			this.datasets = [];
-
-			//Set up tooltip events on the chart
-			if (this.options.showTooltips){
-				helpers.bindEvents(this, this.options.tooltipEvents, function(evt){
-					var activeBars = (evt.type !== 'mouseout') ? this.getBarsAtEvent(evt) : [];
-
-					this.eachBars(function(bar){
-						bar.restore(['fillColor', 'strokeColor']);
-					});
-					helpers.each(activeBars, function(activeBar){
-						if (activeBar) {
-							activeBar.fillColor = activeBar.highlightFill;
-							activeBar.strokeColor = activeBar.highlightStroke;
-						}
-					});
-					this.showTooltip(activeBars);
-				});
-			}
-
-			//Declare the extension of the default point, to cater for the options passed in to the constructor
-			this.BarClass = Chart.Rectangle.extend({
-				strokeWidth : this.options.barStrokeWidth,
-				showStroke : this.options.barShowStroke,
-				ctx : this.chart.ctx
-			});
-
-			//Iterate through each of the datasets, and build this into a property of the chart
-			helpers.each(data.datasets,function(dataset,datasetIndex){
-
-				var datasetObject = {
-					label : dataset.label || null,
-					fillColor : dataset.fillColor,
-					strokeColor : dataset.strokeColor,
-					bars : []
-				};
-
-				this.datasets.push(datasetObject);
-
-				helpers.each(dataset.data,function(dataPoint,index){
-					//Add a new point for each piece of data, passing any required data to draw.
-					datasetObject.bars.push(new this.BarClass({
-						value : dataPoint,
-						label : data.labels[index],
-						datasetLabel: dataset.label,
-						strokeColor : (typeof dataset.strokeColor == 'object') ? dataset.strokeColor[index] : dataset.strokeColor,
-						fillColor : (typeof dataset.fillColor == 'object') ? dataset.fillColor[index] : dataset.fillColor,
-						highlightFill : (dataset.highlightFill) ? (typeof dataset.highlightFill == 'object') ? dataset.highlightFill[index] : dataset.highlightFill : (typeof dataset.fillColor == 'object') ? dataset.fillColor[index] : dataset.fillColor,
-						highlightStroke : (dataset.highlightStroke) ? (typeof dataset.highlightStroke == 'object') ? dataset.highlightStroke[index] : dataset.highlightStroke : (typeof dataset.strokeColor == 'object') ? dataset.strokeColor[index] : dataset.strokeColor
-					}));
-				},this);
-
-			},this);
-
-			this.buildScale(data.labels);
-
-			this.BarClass.prototype.base = this.scale.endPoint;
-
-			this.eachBars(function(bar, index, datasetIndex){
-				helpers.extend(bar, {
-					width : this.scale.calculateBarWidth(this.datasets.length),
-					x: this.scale.calculateBarX(this.datasets.length, datasetIndex, index),
-					y: this.scale.endPoint
-				});
-				bar.save();
-			}, this);
-
-			this.render();
-		},
-		update : function(){
-			this.scale.update();
-			// Reset any highlight colours before updating.
-			helpers.each(this.activeElements, function(activeElement){
-				activeElement.restore(['fillColor', 'strokeColor']);
-			});
-
-			this.eachBars(function(bar){
-				bar.save();
-			});
-			this.render();
-		},
-		eachBars : function(callback){
-			helpers.each(this.datasets,function(dataset, datasetIndex){
-				helpers.each(dataset.bars, callback, this, datasetIndex);
-			},this);
-		},
-		getBarsAtEvent : function(e){
-			var barsArray = [],
-				eventPosition = helpers.getRelativePosition(e),
-				datasetIterator = function(dataset){
-					barsArray.push(dataset.bars[barIndex]);
-				},
-				barIndex;
-
-			for (var datasetIndex = 0; datasetIndex < this.datasets.length; datasetIndex++) {
-				for (barIndex = 0; barIndex < this.datasets[datasetIndex].bars.length; barIndex++) {
-					if (this.datasets[datasetIndex].bars[barIndex].inRange(eventPosition.x,eventPosition.y)){
-						helpers.each(this.datasets, datasetIterator);
-						return barsArray;
-					}
-				}
-			}
-
-			return barsArray;
-		},
-		buildScale : function(labels){
-			var self = this;
-
-			var dataTotal = function(){
-				var values = [];
-				self.eachBars(function(bar){
-					values.push(bar.value);
-				});
-				return values;
-			};
-
-			var scaleOptions = {
-				templateString : this.options.scaleLabel,
-				height : this.chart.height,
-				width : this.chart.width,
-				ctx : this.chart.ctx,
-				textColor : this.options.scaleFontColor,
-				fontSize : this.options.scaleFontSize,
-				fontStyle : this.options.scaleFontStyle,
-				fontFamily : this.options.scaleFontFamily,
-				valuesCount : labels.length,
-				beginAtZero : this.options.scaleBeginAtZero,
-				integersOnly : this.options.scaleIntegersOnly,
-				calculateYRange: function(currentHeight){
-					var updatedRanges = helpers.calculateScaleRange(
-						dataTotal(),
-						currentHeight,
-						this.fontSize,
-						this.beginAtZero,
-						this.integersOnly
-					);
-					helpers.extend(this, updatedRanges);
-				},
-				xLabels : labels,
-				font : helpers.fontString(this.options.scaleFontSize, this.options.scaleFontStyle, this.options.scaleFontFamily),
-				lineWidth : this.options.scaleLineWidth,
-				lineColor : this.options.scaleLineColor,
-				showHorizontalLines : this.options.scaleShowHorizontalLines,
-				showVerticalLines : this.options.scaleShowVerticalLines,
-				gridLineWidth : (this.options.scaleShowGridLines) ? this.options.scaleGridLineWidth : 0,
-				gridLineColor : (this.options.scaleShowGridLines) ? this.options.scaleGridLineColor : "rgba(0,0,0,0)",
-				padding : (this.options.showScale) ? 0 : (this.options.barShowStroke) ? this.options.barStrokeWidth : 0,
-				showLabels : this.options.scaleShowLabels,
-				display : this.options.showScale
-			};
-
-			if (this.options.scaleOverride){
-				helpers.extend(scaleOptions, {
-					calculateYRange: helpers.noop,
-					steps: this.options.scaleSteps,
-					stepValue: this.options.scaleStepWidth,
-					min: this.options.scaleStartValue,
-					max: this.options.scaleStartValue + (this.options.scaleSteps * this.options.scaleStepWidth)
-				});
-			}
-
-			this.scale = new this.ScaleClass(scaleOptions);
-		},
-		addData : function(valuesArray,label){
-			//Map the values array for each of the datasets
-			helpers.each(valuesArray,function(value,datasetIndex){
-				//Add a new point for each piece of data, passing any required data to draw.
-				this.datasets[datasetIndex].bars.push(new this.BarClass({
-					value : value,
-					label : label,
-					datasetLabel: this.datasets[datasetIndex].label,
-					x: this.scale.calculateBarX(this.datasets.length, datasetIndex, this.scale.valuesCount+1),
-					y: this.scale.endPoint,
-					width : this.scale.calculateBarWidth(this.datasets.length),
-					base : this.scale.endPoint,
-					strokeColor : this.datasets[datasetIndex].strokeColor,
-					fillColor : this.datasets[datasetIndex].fillColor
-				}));
-			},this);
-
-			this.scale.addXLabel(label);
-			//Then re-render the chart.
-			this.update();
-		},
-		removeData : function(){
-			this.scale.removeXLabel();
-			//Then re-render the chart.
-			helpers.each(this.datasets,function(dataset){
-				dataset.bars.shift();
-			},this);
-			this.update();
-		},
-		reflow : function(){
-			helpers.extend(this.BarClass.prototype,{
-				y: this.scale.endPoint,
-				base : this.scale.endPoint
-			});
-			var newScaleProps = helpers.extend({
-				height : this.chart.height,
-				width : this.chart.width
-			});
-			this.scale.update(newScaleProps);
-		},
-		draw : function(ease){
-			var easingDecimal = ease || 1;
-			this.clear();
-
-			var ctx = this.chart.ctx;
-
-			this.scale.draw(easingDecimal);
-
-			//Draw all the bars for each dataset
-			helpers.each(this.datasets,function(dataset,datasetIndex){
-				helpers.each(dataset.bars,function(bar,index){
-					if (bar.hasValue()){
-						bar.base = this.scale.endPoint;
-						//Transition then draw
-						bar.transition({
-							x : this.scale.calculateBarX(this.datasets.length, datasetIndex, index),
-							y : this.scale.calculateY(bar.value),
-							width : this.scale.calculateBarWidth(this.datasets.length)
-						}, easingDecimal).draw();
-					}
-				},this);
-
-			},this);
-		}
-	});
-
-
-}).call(this);
-
-(function(){
-	"use strict";
-
-	var root = this,
-		Chart = root.Chart,
-		//Cache a local reference to Chart.helpers
-		helpers = Chart.helpers;
-
-	var defaultConfig = {
-		//Boolean - Whether we should show a stroke on each segment
-		segmentShowStroke : true,
-
-		//String - The colour of each segment stroke
-		segmentStrokeColor : "#fff",
-
-		//Number - The width of each segment stroke
-		segmentStrokeWidth : 2,
-
-		//The percentage of the chart that we cut out of the middle.
-		percentageInnerCutout : 50,
-
-		//Number - Amount of animation steps
-		animationSteps : 100,
-
-		//String - Animation easing effect
-		animationEasing : "easeOutBounce",
-
-		//Boolean - Whether we animate the rotation of the Doughnut
-		animateRotate : true,
-
-		//Boolean - Whether we animate scaling the Doughnut from the centre
-		animateScale : false,
-
-		//String - A legend template
-		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span class=\"<%=name.toLowerCase()%>-legend-icon\" style=\"background-color:<%=segments[i].fillColor%>\"></span><span class=\"<%=name.toLowerCase()%>-legend-text\"><%if(segments[i].label){%><%=segments[i].label%><%}%></span></li><%}%></ul>"
-
-	};
-
-	Chart.Type.extend({
-		//Passing in a name registers this chart in the Chart namespace
-		name: "Doughnut",
-		//Providing a defaults will also register the defaults in the chart namespace
-		defaults : defaultConfig,
-		//Initialize is fired when the chart is initialized - Data is passed in as a parameter
-		//Config is automatically merged by the core of Chart.js, and is available at this.options
-		initialize:  function(data){
-
-			//Declare segments as a static property to prevent inheriting across the Chart type prototype
-			this.segments = [];
-			this.outerRadius = (helpers.min([this.chart.width,this.chart.height]) -	this.options.segmentStrokeWidth/2)/2;
-
-			this.SegmentArc = Chart.Arc.extend({
-				ctx : this.chart.ctx,
-				x : this.chart.width/2,
-				y : this.chart.height/2
-			});
-
-			//Set up tooltip events on the chart
-			if (this.options.showTooltips){
-				helpers.bindEvents(this, this.options.tooltipEvents, function(evt){
-					var activeSegments = (evt.type !== 'mouseout') ? this.getSegmentsAtEvent(evt) : [];
-
-					helpers.each(this.segments,function(segment){
-						segment.restore(["fillColor"]);
-					});
-					helpers.each(activeSegments,function(activeSegment){
-						activeSegment.fillColor = activeSegment.highlightColor;
-					});
-					this.showTooltip(activeSegments);
-				});
-			}
-			this.calculateTotal(data);
-
-			helpers.each(data,function(datapoint, index){
-				if (!datapoint.color) {
-					datapoint.color = 'hsl(' + (360 * index / data.length) + ', 100%, 50%)';
-				}
-				this.addData(datapoint, index, true);
-			},this);
-
-			this.render();
-		},
-		getSegmentsAtEvent : function(e){
-			var segmentsArray = [];
-
-			var location = helpers.getRelativePosition(e);
-
-			helpers.each(this.segments,function(segment){
-				if (segment.inRange(location.x,location.y)) segmentsArray.push(segment);
-			},this);
-			return segmentsArray;
-		},
-		addData : function(segment, atIndex, silent){
-			var index = atIndex !== undefined ? atIndex : this.segments.length;
-			if ( typeof(segment.color) === "undefined" ) {
-				segment.color = Chart.defaults.global.segmentColorDefault[index % Chart.defaults.global.segmentColorDefault.length];
-				segment.highlight = Chart.defaults.global.segmentHighlightColorDefaults[index % Chart.defaults.global.segmentHighlightColorDefaults.length];				
-			}
-			this.segments.splice(index, 0, new this.SegmentArc({
-				value : segment.value,
-				outerRadius : (this.options.animateScale) ? 0 : this.outerRadius,
-				innerRadius : (this.options.animateScale) ? 0 : (this.outerRadius/100) * this.options.percentageInnerCutout,
-				fillColor : segment.color,
-				highlightColor : segment.highlight || segment.color,
-				showStroke : this.options.segmentShowStroke,
-				strokeWidth : this.options.segmentStrokeWidth,
-				strokeColor : this.options.segmentStrokeColor,
-				startAngle : Math.PI * 1.5,
-				circumference : (this.options.animateRotate) ? 0 : this.calculateCircumference(segment.value),
-				label : segment.label
-			}));
-			if (!silent){
-				this.reflow();
-				this.update();
-			}
-		},
-		calculateCircumference : function(value) {
-			if ( this.total > 0 ) {
-				return (Math.PI*2)*(value / this.total);
-			} else {
-				return 0;
-			}
-		},
-		calculateTotal : function(data){
-			this.total = 0;
-			helpers.each(data,function(segment){
-				this.total += Math.abs(segment.value);
-			},this);
-		},
-		update : function(){
-			this.calculateTotal(this.segments);
-
-			// Reset any highlight colours before updating.
-			helpers.each(this.activeElements, function(activeElement){
-				activeElement.restore(['fillColor']);
-			});
-
-			helpers.each(this.segments,function(segment){
-				segment.save();
-			});
-			this.render();
-		},
-
-		removeData: function(atIndex){
-			var indexToDelete = (helpers.isNumber(atIndex)) ? atIndex : this.segments.length-1;
-			this.segments.splice(indexToDelete, 1);
-			this.reflow();
-			this.update();
-		},
-
-		reflow : function(){
-			helpers.extend(this.SegmentArc.prototype,{
-				x : this.chart.width/2,
-				y : this.chart.height/2
-			});
-			this.outerRadius = (helpers.min([this.chart.width,this.chart.height]) -	this.options.segmentStrokeWidth/2)/2;
-			helpers.each(this.segments, function(segment){
-				segment.update({
-					outerRadius : this.outerRadius,
-					innerRadius : (this.outerRadius/100) * this.options.percentageInnerCutout
-				});
-			}, this);
-		},
-		draw : function(easeDecimal){
-			var animDecimal = (easeDecimal) ? easeDecimal : 1;
-			this.clear();
-			helpers.each(this.segments,function(segment,index){
-				segment.transition({
-					circumference : this.calculateCircumference(segment.value),
-					outerRadius : this.outerRadius,
-					innerRadius : (this.outerRadius/100) * this.options.percentageInnerCutout
-				},animDecimal);
-
-				segment.endAngle = segment.startAngle + segment.circumference;
-
-				segment.draw();
-				if (index === 0){
-					segment.startAngle = Math.PI * 1.5;
-				}
-				//Check to see if it's the last segment, if not get the next and update the start angle
-				if (index < this.segments.length-1){
-					this.segments[index+1].startAngle = segment.endAngle;
-				}
-			},this);
-
-		}
-	});
-
-	Chart.types.Doughnut.extend({
-		name : "Pie",
-		defaults : helpers.merge(defaultConfig,{percentageInnerCutout : 0})
-	});
-
-}).call(this);
-
-(function(){
-	"use strict";
-
-	var root = this,
-		Chart = root.Chart,
-		helpers = Chart.helpers;
-
-	var defaultConfig = {
-
-		///Boolean - Whether grid lines are shown across the chart
-		scaleShowGridLines : true,
-
-		//String - Colour of the grid lines
-		scaleGridLineColor : "rgba(0,0,0,.05)",
-
-		//Number - Width of the grid lines
-		scaleGridLineWidth : 1,
-
-		//Boolean - Whether to show horizontal lines (except X axis)
-		scaleShowHorizontalLines: true,
-
-		//Boolean - Whether to show vertical lines (except Y axis)
-		scaleShowVerticalLines: true,
-
-		//Boolean - Whether the line is curved between points
-		bezierCurve : true,
-
-		//Number - Tension of the bezier curve between points
-		bezierCurveTension : 0.4,
-
-		//Boolean - Whether to show a dot for each point
-		pointDot : true,
-
-		//Number - Radius of each point dot in pixels
-		pointDotRadius : 4,
-
-		//Number - Pixel width of point dot stroke
-		pointDotStrokeWidth : 1,
-
-		//Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-		pointHitDetectionRadius : 20,
-
-		//Boolean - Whether to show a stroke for datasets
-		datasetStroke : true,
-
-		//Number - Pixel width of dataset stroke
-		datasetStrokeWidth : 2,
-
-		//Boolean - Whether to fill the dataset with a colour
-		datasetFill : true,
-
-		//String - A legend template
-		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span class=\"<%=name.toLowerCase()%>-legend-icon\" style=\"background-color:<%=datasets[i].strokeColor%>\"></span><span class=\"<%=name.toLowerCase()%>-legend-text\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></span></li><%}%></ul>",
-
-		//Boolean - Whether to horizontally center the label and point dot inside the grid
-		offsetGridLines : false
-
-	};
-
-
-	Chart.Type.extend({
-		name: "Line",
-		defaults : defaultConfig,
-		initialize:  function(data){
-			//Declare the extension of the default point, to cater for the options passed in to the constructor
-			this.PointClass = Chart.Point.extend({
-				offsetGridLines : this.options.offsetGridLines,
-				strokeWidth : this.options.pointDotStrokeWidth,
-				radius : this.options.pointDotRadius,
-				display: this.options.pointDot,
-				hitDetectionRadius : this.options.pointHitDetectionRadius,
-				ctx : this.chart.ctx,
-				inRange : function(mouseX){
-					return (Math.pow(mouseX-this.x, 2) < Math.pow(this.radius + this.hitDetectionRadius,2));
-				}
-			});
-
-			this.datasets = [];
-
-			//Set up tooltip events on the chart
-			if (this.options.showTooltips){
-				helpers.bindEvents(this, this.options.tooltipEvents, function(evt){
-					var activePoints = (evt.type !== 'mouseout') ? this.getPointsAtEvent(evt) : [];
-					this.eachPoints(function(point){
-						point.restore(['fillColor', 'strokeColor']);
-					});
-					helpers.each(activePoints, function(activePoint){
-						activePoint.fillColor = activePoint.highlightFill;
-						activePoint.strokeColor = activePoint.highlightStroke;
-					});
-					this.showTooltip(activePoints);
-				});
-			}
-
-			//Iterate through each of the datasets, and build this into a property of the chart
-			helpers.each(data.datasets,function(dataset){
-
-				var datasetObject = {
-					label : dataset.label || null,
-					fillColor : dataset.fillColor,
-					strokeColor : dataset.strokeColor,
-					pointColor : dataset.pointColor,
-					pointStrokeColor : dataset.pointStrokeColor,
-					points : []
-				};
-
-				this.datasets.push(datasetObject);
-
-
-				helpers.each(dataset.data,function(dataPoint,index){
-					//Add a new point for each piece of data, passing any required data to draw.
-					datasetObject.points.push(new this.PointClass({
-						value : dataPoint,
-						label : data.labels[index],
-						datasetLabel: dataset.label,
-						strokeColor : dataset.pointStrokeColor,
-						fillColor : dataset.pointColor,
-						highlightFill : dataset.pointHighlightFill || dataset.pointColor,
-						highlightStroke : dataset.pointHighlightStroke || dataset.pointStrokeColor
-					}));
-				},this);
-
-				this.buildScale(data.labels);
-
-
-				this.eachPoints(function(point, index){
-					helpers.extend(point, {
-						x: this.scale.calculateX(index),
-						y: this.scale.endPoint
-					});
-					point.save();
-				}, this);
-
-			},this);
-
-
-			this.render();
-		},
-		update : function(){
-			this.scale.update();
-			// Reset any highlight colours before updating.
-			helpers.each(this.activeElements, function(activeElement){
-				activeElement.restore(['fillColor', 'strokeColor']);
-			});
-			this.eachPoints(function(point){
-				point.save();
-			});
-			this.render();
-		},
-		eachPoints : function(callback){
-			helpers.each(this.datasets,function(dataset){
-				helpers.each(dataset.points,callback,this);
-			},this);
-		},
-		getPointsAtEvent : function(e){
-			var pointsArray = [],
-				eventPosition = helpers.getRelativePosition(e);
-			helpers.each(this.datasets,function(dataset){
-				helpers.each(dataset.points,function(point){
-					if (point.inRange(eventPosition.x,eventPosition.y)) pointsArray.push(point);
-				});
-			},this);
-			return pointsArray;
-		},
-		buildScale : function(labels){
-			var self = this;
-
-			var dataTotal = function(){
-				var values = [];
-				self.eachPoints(function(point){
-					values.push(point.value);
-				});
-
-				return values;
-			};
-
-			var scaleOptions = {
-				templateString : this.options.scaleLabel,
-				height : this.chart.height,
-				width : this.chart.width,
-				ctx : this.chart.ctx,
-				textColor : this.options.scaleFontColor,
-				offsetGridLines : this.options.offsetGridLines,
-				fontSize : this.options.scaleFontSize,
-				fontStyle : this.options.scaleFontStyle,
-				fontFamily : this.options.scaleFontFamily,
-				valuesCount : labels.length,
-				beginAtZero : this.options.scaleBeginAtZero,
-				integersOnly : this.options.scaleIntegersOnly,
-				calculateYRange : function(currentHeight){
-					var updatedRanges = helpers.calculateScaleRange(
-						dataTotal(),
-						currentHeight,
-						this.fontSize,
-						this.beginAtZero,
-						this.integersOnly
-					);
-					helpers.extend(this, updatedRanges);
-				},
-				xLabels : labels,
-				font : helpers.fontString(this.options.scaleFontSize, this.options.scaleFontStyle, this.options.scaleFontFamily),
-				lineWidth : this.options.scaleLineWidth,
-				lineColor : this.options.scaleLineColor,
-				showHorizontalLines : this.options.scaleShowHorizontalLines,
-				showVerticalLines : this.options.scaleShowVerticalLines,
-				gridLineWidth : (this.options.scaleShowGridLines) ? this.options.scaleGridLineWidth : 0,
-				gridLineColor : (this.options.scaleShowGridLines) ? this.options.scaleGridLineColor : "rgba(0,0,0,0)",
-				padding: (this.options.showScale) ? 0 : this.options.pointDotRadius + this.options.pointDotStrokeWidth,
-				showLabels : this.options.scaleShowLabels,
-				display : this.options.showScale
-			};
-
-			if (this.options.scaleOverride){
-				helpers.extend(scaleOptions, {
-					calculateYRange: helpers.noop,
-					steps: this.options.scaleSteps,
-					stepValue: this.options.scaleStepWidth,
-					min: this.options.scaleStartValue,
-					max: this.options.scaleStartValue + (this.options.scaleSteps * this.options.scaleStepWidth)
-				});
-			}
-
-
-			this.scale = new Chart.Scale(scaleOptions);
-		},
-		addData : function(valuesArray,label){
-			//Map the values array for each of the datasets
-
-			helpers.each(valuesArray,function(value,datasetIndex){
-				//Add a new point for each piece of data, passing any required data to draw.
-				this.datasets[datasetIndex].points.push(new this.PointClass({
-					value : value,
-					label : label,
-					datasetLabel: this.datasets[datasetIndex].label,
-					x: this.scale.calculateX(this.scale.valuesCount+1),
-					y: this.scale.endPoint,
-					strokeColor : this.datasets[datasetIndex].pointStrokeColor,
-					fillColor : this.datasets[datasetIndex].pointColor
-				}));
-			},this);
-
-			this.scale.addXLabel(label);
-			//Then re-render the chart.
-			this.update();
-		},
-		removeData : function(){
-			this.scale.removeXLabel();
-			//Then re-render the chart.
-			helpers.each(this.datasets,function(dataset){
-				dataset.points.shift();
-			},this);
-			this.update();
-		},
-		reflow : function(){
-			var newScaleProps = helpers.extend({
-				height : this.chart.height,
-				width : this.chart.width
-			});
-			this.scale.update(newScaleProps);
-		},
-		draw : function(ease){
-			var easingDecimal = ease || 1;
-			this.clear();
-
-			var ctx = this.chart.ctx;
-
-			// Some helper methods for getting the next/prev points
-			var hasValue = function(item){
-				return item.value !== null;
-			},
-			nextPoint = function(point, collection, index){
-				return helpers.findNextWhere(collection, hasValue, index) || point;
-			},
-			previousPoint = function(point, collection, index){
-				return helpers.findPreviousWhere(collection, hasValue, index) || point;
-			};
-
-			if (!this.scale) return;
-			this.scale.draw(easingDecimal);
-
-
-			helpers.each(this.datasets,function(dataset){
-				var pointsWithValues = helpers.where(dataset.points, hasValue);
-
-				//Transition each point first so that the line and point drawing isn't out of sync
-				//We can use this extra loop to calculate the control points of this dataset also in this loop
-
-				helpers.each(dataset.points, function(point, index){
-					if (point.hasValue()){
-						point.transition({
-							y : this.scale.calculateY(point.value),
-							x : this.scale.calculateX(index)
-						}, easingDecimal);
-					}
-				},this);
-
-
-				// Control points need to be calculated in a separate loop, because we need to know the current x/y of the point
-				// This would cause issues when there is no animation, because the y of the next point would be 0, so beziers would be skewed
-				if (this.options.bezierCurve){
-					helpers.each(pointsWithValues, function(point, index){
-						var tension = (index > 0 && index < pointsWithValues.length - 1) ? this.options.bezierCurveTension : 0;
-						point.controlPoints = helpers.splineCurve(
-							previousPoint(point, pointsWithValues, index),
-							point,
-							nextPoint(point, pointsWithValues, index),
-							tension
-						);
-
-						// Prevent the bezier going outside of the bounds of the graph
-
-						// Cap puter bezier handles to the upper/lower scale bounds
-						if (point.controlPoints.outer.y > this.scale.endPoint){
-							point.controlPoints.outer.y = this.scale.endPoint;
-						}
-						else if (point.controlPoints.outer.y < this.scale.startPoint){
-							point.controlPoints.outer.y = this.scale.startPoint;
-						}
-
-						// Cap inner bezier handles to the upper/lower scale bounds
-						if (point.controlPoints.inner.y > this.scale.endPoint){
-							point.controlPoints.inner.y = this.scale.endPoint;
-						}
-						else if (point.controlPoints.inner.y < this.scale.startPoint){
-							point.controlPoints.inner.y = this.scale.startPoint;
-						}
-					},this);
-				}
-
-
-				//Draw the line between all the points
-				ctx.lineWidth = this.options.datasetStrokeWidth;
-				ctx.strokeStyle = dataset.strokeColor;
-				ctx.beginPath();
-
-				helpers.each(pointsWithValues, function(point, index){
-					if (index === 0){
-						ctx.moveTo(point.x, point.y);
-					}
-					else{
-						if(this.options.bezierCurve){
-							var previous = previousPoint(point, pointsWithValues, index);
-
-							ctx.bezierCurveTo(
-								previous.controlPoints.outer.x,
-								previous.controlPoints.outer.y,
-								point.controlPoints.inner.x,
-								point.controlPoints.inner.y,
-								point.x,
-								point.y
-							);
-						}
-						else{
-							ctx.lineTo(point.x,point.y);
-						}
-					}
-				}, this);
-
-				if (this.options.datasetStroke) {
-					ctx.stroke();
-				}
-
-				if (this.options.datasetFill && pointsWithValues.length > 0){
-					//Round off the line by going to the base of the chart, back to the start, then fill.
-					ctx.lineTo(pointsWithValues[pointsWithValues.length - 1].x, this.scale.endPoint);
-					ctx.lineTo(pointsWithValues[0].x, this.scale.endPoint);
-					ctx.fillStyle = dataset.fillColor;
-					ctx.closePath();
-					ctx.fill();
-				}
-
-				//Now draw the points over the line
-				//A little inefficient double looping, but better than the line
-				//lagging behind the point positions
-				helpers.each(pointsWithValues,function(point){
-					point.draw();
-				});
-			},this);
-		}
-	});
-
-
-}).call(this);
-
-(function(){
-	"use strict";
-
-	var root = this,
-		Chart = root.Chart,
-		//Cache a local reference to Chart.helpers
-		helpers = Chart.helpers;
-
-	var defaultConfig = {
-		//Boolean - Show a backdrop to the scale label
-		scaleShowLabelBackdrop : true,
-
-		//String - The colour of the label backdrop
-		scaleBackdropColor : "rgba(255,255,255,0.75)",
-
-		// Boolean - Whether the scale should begin at zero
-		scaleBeginAtZero : true,
-
-		//Number - The backdrop padding above & below the label in pixels
-		scaleBackdropPaddingY : 2,
-
-		//Number - The backdrop padding to the side of the label in pixels
-		scaleBackdropPaddingX : 2,
-
-		//Boolean - Show line for each value in the scale
-		scaleShowLine : true,
-
-		//Boolean - Stroke a line around each segment in the chart
-		segmentShowStroke : true,
-
-		//String - The colour of the stroke on each segment.
-		segmentStrokeColor : "#fff",
-
-		//Number - The width of the stroke value in pixels
-		segmentStrokeWidth : 2,
-
-		//Number - Amount of animation steps
-		animationSteps : 100,
-
-		//String - Animation easing effect.
-		animationEasing : "easeOutBounce",
-
-		//Boolean - Whether to animate the rotation of the chart
-		animateRotate : true,
-
-		//Boolean - Whether to animate scaling the chart from the centre
-		animateScale : false,
-
-		//String - A legend template
-		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span class=\"<%=name.toLowerCase()%>-legend-icon\" style=\"background-color:<%=segments[i].fillColor%>\"></span><span class=\"<%=name.toLowerCase()%>-legend-text\"><%if(segments[i].label){%><%=segments[i].label%><%}%></span></li><%}%></ul>"
-	};
-
-
-	Chart.Type.extend({
-		//Passing in a name registers this chart in the Chart namespace
-		name: "PolarArea",
-		//Providing a defaults will also register the defaults in the chart namespace
-		defaults : defaultConfig,
-		//Initialize is fired when the chart is initialized - Data is passed in as a parameter
-		//Config is automatically merged by the core of Chart.js, and is available at this.options
-		initialize:  function(data){
-			this.segments = [];
-			//Declare segment class as a chart instance specific class, so it can share props for this instance
-			this.SegmentArc = Chart.Arc.extend({
-				showStroke : this.options.segmentShowStroke,
-				strokeWidth : this.options.segmentStrokeWidth,
-				strokeColor : this.options.segmentStrokeColor,
-				ctx : this.chart.ctx,
-				innerRadius : 0,
-				x : this.chart.width/2,
-				y : this.chart.height/2
-			});
-			this.scale = new Chart.RadialScale({
-				display: this.options.showScale,
-				fontStyle: this.options.scaleFontStyle,
-				fontSize: this.options.scaleFontSize,
-				fontFamily: this.options.scaleFontFamily,
-				fontColor: this.options.scaleFontColor,
-				showLabels: this.options.scaleShowLabels,
-				showLabelBackdrop: this.options.scaleShowLabelBackdrop,
-				backdropColor: this.options.scaleBackdropColor,
-				backdropPaddingY : this.options.scaleBackdropPaddingY,
-				backdropPaddingX: this.options.scaleBackdropPaddingX,
-				lineWidth: (this.options.scaleShowLine) ? this.options.scaleLineWidth : 0,
-				lineColor: this.options.scaleLineColor,
-				lineArc: true,
-				width: this.chart.width,
-				height: this.chart.height,
-				xCenter: this.chart.width/2,
-				yCenter: this.chart.height/2,
-				ctx : this.chart.ctx,
-				templateString: this.options.scaleLabel,
-				valuesCount: data.length
-			});
-
-			this.updateScaleRange(data);
-
-			this.scale.update();
-
-			helpers.each(data,function(segment,index){
-				this.addData(segment,index,true);
-			},this);
-
-			//Set up tooltip events on the chart
-			if (this.options.showTooltips){
-				helpers.bindEvents(this, this.options.tooltipEvents, function(evt){
-					var activeSegments = (evt.type !== 'mouseout') ? this.getSegmentsAtEvent(evt) : [];
-					helpers.each(this.segments,function(segment){
-						segment.restore(["fillColor"]);
-					});
-					helpers.each(activeSegments,function(activeSegment){
-						activeSegment.fillColor = activeSegment.highlightColor;
-					});
-					this.showTooltip(activeSegments);
-				});
-			}
-
-			this.render();
-		},
-		getSegmentsAtEvent : function(e){
-			var segmentsArray = [];
-
-			var location = helpers.getRelativePosition(e);
-
-			helpers.each(this.segments,function(segment){
-				if (segment.inRange(location.x,location.y)) segmentsArray.push(segment);
-			},this);
-			return segmentsArray;
-		},
-		addData : function(segment, atIndex, silent){
-			var index = atIndex || this.segments.length;
-
-			this.segments.splice(index, 0, new this.SegmentArc({
-				fillColor: segment.color,
-				highlightColor: segment.highlight || segment.color,
-				label: segment.label,
-				value: segment.value,
-				outerRadius: (this.options.animateScale) ? 0 : this.scale.calculateCenterOffset(segment.value),
-				circumference: (this.options.animateRotate) ? 0 : this.scale.getCircumference(),
-				startAngle: Math.PI * 1.5
-			}));
-			if (!silent){
-				this.reflow();
-				this.update();
-			}
-		},
-		removeData: function(atIndex){
-			var indexToDelete = (helpers.isNumber(atIndex)) ? atIndex : this.segments.length-1;
-			this.segments.splice(indexToDelete, 1);
-			this.reflow();
-			this.update();
-		},
-		calculateTotal: function(data){
-			this.total = 0;
-			helpers.each(data,function(segment){
-				this.total += segment.value;
-			},this);
-			this.scale.valuesCount = this.segments.length;
-		},
-		updateScaleRange: function(datapoints){
-			var valuesArray = [];
-			helpers.each(datapoints,function(segment){
-				valuesArray.push(segment.value);
-			});
-
-			var scaleSizes = (this.options.scaleOverride) ?
-				{
-					steps: this.options.scaleSteps,
-					stepValue: this.options.scaleStepWidth,
-					min: this.options.scaleStartValue,
-					max: this.options.scaleStartValue + (this.options.scaleSteps * this.options.scaleStepWidth)
-				} :
-				helpers.calculateScaleRange(
-					valuesArray,
-					helpers.min([this.chart.width, this.chart.height])/2,
-					this.options.scaleFontSize,
-					this.options.scaleBeginAtZero,
-					this.options.scaleIntegersOnly
-				);
-
-			helpers.extend(
-				this.scale,
-				scaleSizes,
-				{
-					size: helpers.min([this.chart.width, this.chart.height]),
-					xCenter: this.chart.width/2,
-					yCenter: this.chart.height/2
-				}
-			);
-
-		},
-		update : function(){
-			this.calculateTotal(this.segments);
-
-			helpers.each(this.segments,function(segment){
-				segment.save();
-			});
-			
-			this.reflow();
-			this.render();
-		},
-		reflow : function(){
-			helpers.extend(this.SegmentArc.prototype,{
-				x : this.chart.width/2,
-				y : this.chart.height/2
-			});
-			this.updateScaleRange(this.segments);
-			this.scale.update();
-
-			helpers.extend(this.scale,{
-				xCenter: this.chart.width/2,
-				yCenter: this.chart.height/2
-			});
-
-			helpers.each(this.segments, function(segment){
-				segment.update({
-					outerRadius : this.scale.calculateCenterOffset(segment.value)
-				});
-			}, this);
-
-		},
-		draw : function(ease){
-			var easingDecimal = ease || 1;
-			//Clear & draw the canvas
-			this.clear();
-			helpers.each(this.segments,function(segment, index){
-				segment.transition({
-					circumference : this.scale.getCircumference(),
-					outerRadius : this.scale.calculateCenterOffset(segment.value)
-				},easingDecimal);
-
-				segment.endAngle = segment.startAngle + segment.circumference;
-
-				// If we've removed the first segment we need to set the first one to
-				// start at the top.
-				if (index === 0){
-					segment.startAngle = Math.PI * 1.5;
-				}
-
-				//Check to see if it's the last segment, if not get the next and update the start angle
-				if (index < this.segments.length - 1){
-					this.segments[index+1].startAngle = segment.endAngle;
-				}
-				segment.draw();
-			}, this);
-			this.scale.draw();
-		}
-	});
-
-}).call(this);
-
-(function(){
-	"use strict";
-
-	var root = this,
-		Chart = root.Chart,
-		helpers = Chart.helpers;
-
-
-
-	Chart.Type.extend({
-		name: "Radar",
-		defaults:{
-			//Boolean - Whether to show lines for each scale point
-			scaleShowLine : true,
-
-			//Boolean - Whether we show the angle lines out of the radar
-			angleShowLineOut : true,
-
-			//Boolean - Whether to show labels on the scale
-			scaleShowLabels : false,
-
-			// Boolean - Whether the scale should begin at zero
-			scaleBeginAtZero : true,
-
-			//String - Colour of the angle line
-			angleLineColor : "rgba(0,0,0,.1)",
-
-			//Number - Pixel width of the angle line
-			angleLineWidth : 1,
-
-			//Number - Interval at which to draw angle lines ("every Nth point")
-			angleLineInterval: 1,
-
-			//String - Point label font declaration
-			pointLabelFontFamily : "'Arial'",
-
-			//String - Point label font weight
-			pointLabelFontStyle : "normal",
-
-			//Number - Point label font size in pixels
-			pointLabelFontSize : 10,
-
-			//String - Point label font colour
-			pointLabelFontColor : "#666",
-
-			//Boolean - Whether to show a dot for each point
-			pointDot : true,
-
-			//Number - Radius of each point dot in pixels
-			pointDotRadius : 3,
-
-			//Number - Pixel width of point dot stroke
-			pointDotStrokeWidth : 1,
-
-			//Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-			pointHitDetectionRadius : 20,
-
-			//Boolean - Whether to show a stroke for datasets
-			datasetStroke : true,
-
-			//Number - Pixel width of dataset stroke
-			datasetStrokeWidth : 2,
-
-			//Boolean - Whether to fill the dataset with a colour
-			datasetFill : true,
-
-			//String - A legend template
-			legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span class=\"<%=name.toLowerCase()%>-legend-icon\" style=\"background-color:<%=datasets[i].strokeColor%>\"></span><span class=\"<%=name.toLowerCase()%>-legend-text\"><%if(datasets[i].label){%><%=datasets[i].label%><%}%></span></li><%}%></ul>"
-
-		},
-
-		initialize: function(data){
-			this.PointClass = Chart.Point.extend({
-				strokeWidth : this.options.pointDotStrokeWidth,
-				radius : this.options.pointDotRadius,
-				display: this.options.pointDot,
-				hitDetectionRadius : this.options.pointHitDetectionRadius,
-				ctx : this.chart.ctx
-			});
-
-			this.datasets = [];
-
-			this.buildScale(data);
-
-			//Set up tooltip events on the chart
-			if (this.options.showTooltips){
-				helpers.bindEvents(this, this.options.tooltipEvents, function(evt){
-					var activePointsCollection = (evt.type !== 'mouseout') ? this.getPointsAtEvent(evt) : [];
-
-					this.eachPoints(function(point){
-						point.restore(['fillColor', 'strokeColor']);
-					});
-					helpers.each(activePointsCollection, function(activePoint){
-						activePoint.fillColor = activePoint.highlightFill;
-						activePoint.strokeColor = activePoint.highlightStroke;
-					});
-
-					this.showTooltip(activePointsCollection);
-				});
-			}
-
-			//Iterate through each of the datasets, and build this into a property of the chart
-			helpers.each(data.datasets,function(dataset){
-
-				var datasetObject = {
-					label: dataset.label || null,
-					fillColor : dataset.fillColor,
-					strokeColor : dataset.strokeColor,
-					pointColor : dataset.pointColor,
-					pointStrokeColor : dataset.pointStrokeColor,
-					points : []
-				};
-
-				this.datasets.push(datasetObject);
-
-				helpers.each(dataset.data,function(dataPoint,index){
-					//Add a new point for each piece of data, passing any required data to draw.
-					var pointPosition;
-					if (!this.scale.animation){
-						pointPosition = this.scale.getPointPosition(index, this.scale.calculateCenterOffset(dataPoint));
-					}
-					datasetObject.points.push(new this.PointClass({
-						value : dataPoint,
-						label : data.labels[index],
-						datasetLabel: dataset.label,
-						x: (this.options.animation) ? this.scale.xCenter : pointPosition.x,
-						y: (this.options.animation) ? this.scale.yCenter : pointPosition.y,
-						strokeColor : dataset.pointStrokeColor,
-						fillColor : dataset.pointColor,
-						highlightFill : dataset.pointHighlightFill || dataset.pointColor,
-						highlightStroke : dataset.pointHighlightStroke || dataset.pointStrokeColor
-					}));
-				},this);
-
-			},this);
-
-			this.render();
-		},
-		eachPoints : function(callback){
-			helpers.each(this.datasets,function(dataset){
-				helpers.each(dataset.points,callback,this);
-			},this);
-		},
-
-		getPointsAtEvent : function(evt){
-			var mousePosition = helpers.getRelativePosition(evt),
-				fromCenter = helpers.getAngleFromPoint({
-					x: this.scale.xCenter,
-					y: this.scale.yCenter
-				}, mousePosition);
-
-			var anglePerIndex = (Math.PI * 2) /this.scale.valuesCount,
-				pointIndex = Math.round((fromCenter.angle - Math.PI * 1.5) / anglePerIndex),
-				activePointsCollection = [];
-
-			// If we're at the top, make the pointIndex 0 to get the first of the array.
-			if (pointIndex >= this.scale.valuesCount || pointIndex < 0){
-				pointIndex = 0;
-			}
-
-			if (fromCenter.distance <= this.scale.drawingArea){
-				helpers.each(this.datasets, function(dataset){
-					activePointsCollection.push(dataset.points[pointIndex]);
-				});
-			}
-
-			return activePointsCollection;
-		},
-
-		buildScale : function(data){
-			this.scale = new Chart.RadialScale({
-				display: this.options.showScale,
-				fontStyle: this.options.scaleFontStyle,
-				fontSize: this.options.scaleFontSize,
-				fontFamily: this.options.scaleFontFamily,
-				fontColor: this.options.scaleFontColor,
-				showLabels: this.options.scaleShowLabels,
-				showLabelBackdrop: this.options.scaleShowLabelBackdrop,
-				backdropColor: this.options.scaleBackdropColor,
-				backgroundColors: this.options.scaleBackgroundColors,
-				backdropPaddingY : this.options.scaleBackdropPaddingY,
-				backdropPaddingX: this.options.scaleBackdropPaddingX,
-				lineWidth: (this.options.scaleShowLine) ? this.options.scaleLineWidth : 0,
-				lineColor: this.options.scaleLineColor,
-				angleLineColor : this.options.angleLineColor,
-				angleLineWidth : (this.options.angleShowLineOut) ? this.options.angleLineWidth : 0,
-        angleLineInterval: (this.options.angleLineInterval) ? this.options.angleLineInterval : 1,
-				// Point labels at the edge of each line
-				pointLabelFontColor : this.options.pointLabelFontColor,
-				pointLabelFontSize : this.options.pointLabelFontSize,
-				pointLabelFontFamily : this.options.pointLabelFontFamily,
-				pointLabelFontStyle : this.options.pointLabelFontStyle,
-				height : this.chart.height,
-				width: this.chart.width,
-				xCenter: this.chart.width/2,
-				yCenter: this.chart.height/2,
-				ctx : this.chart.ctx,
-				templateString: this.options.scaleLabel,
-				labels: data.labels,
-				valuesCount: data.datasets[0].data.length
-			});
-
-			this.scale.setScaleSize();
-			this.updateScaleRange(data.datasets);
-			this.scale.buildYLabels();
-		},
-		updateScaleRange: function(datasets){
-			var valuesArray = (function(){
-				var totalDataArray = [];
-				helpers.each(datasets,function(dataset){
-					if (dataset.data){
-						totalDataArray = totalDataArray.concat(dataset.data);
-					}
-					else {
-						helpers.each(dataset.points, function(point){
-							totalDataArray.push(point.value);
-						});
-					}
-				});
-				return totalDataArray;
-			})();
-
-
-			var scaleSizes = (this.options.scaleOverride) ?
-				{
-					steps: this.options.scaleSteps,
-					stepValue: this.options.scaleStepWidth,
-					min: this.options.scaleStartValue,
-					max: this.options.scaleStartValue + (this.options.scaleSteps * this.options.scaleStepWidth)
-				} :
-				helpers.calculateScaleRange(
-					valuesArray,
-					helpers.min([this.chart.width, this.chart.height])/2,
-					this.options.scaleFontSize,
-					this.options.scaleBeginAtZero,
-					this.options.scaleIntegersOnly
-				);
-
-			helpers.extend(
-				this.scale,
-				scaleSizes
-			);
-
-		},
-		addData : function(valuesArray,label){
-			//Map the values array for each of the datasets
-			this.scale.valuesCount++;
-			helpers.each(valuesArray,function(value,datasetIndex){
-				var pointPosition = this.scale.getPointPosition(this.scale.valuesCount, this.scale.calculateCenterOffset(value));
-				this.datasets[datasetIndex].points.push(new this.PointClass({
-					value : value,
-					label : label,
-					datasetLabel: this.datasets[datasetIndex].label,
-					x: pointPosition.x,
-					y: pointPosition.y,
-					strokeColor : this.datasets[datasetIndex].pointStrokeColor,
-					fillColor : this.datasets[datasetIndex].pointColor
-				}));
-			},this);
-
-			this.scale.labels.push(label);
-
-			this.reflow();
-
-			this.update();
-		},
-		removeData : function(){
-			this.scale.valuesCount--;
-			this.scale.labels.shift();
-			helpers.each(this.datasets,function(dataset){
-				dataset.points.shift();
-			},this);
-			this.reflow();
-			this.update();
-		},
-		update : function(){
-			this.eachPoints(function(point){
-				point.save();
-			});
-			this.reflow();
-			this.render();
-		},
-		reflow: function(){
-			helpers.extend(this.scale, {
-				width : this.chart.width,
-				height: this.chart.height,
-				size : helpers.min([this.chart.width, this.chart.height]),
-				xCenter: this.chart.width/2,
-				yCenter: this.chart.height/2
-			});
-			this.updateScaleRange(this.datasets);
-			this.scale.setScaleSize();
-			this.scale.buildYLabels();
-		},
-		draw : function(ease){
-			var easeDecimal = ease || 1,
-				ctx = this.chart.ctx;
-			this.clear();
-			this.scale.draw();
-
-			helpers.each(this.datasets,function(dataset){
-
-				//Transition each point first so that the line and point drawing isn't out of sync
-				helpers.each(dataset.points,function(point,index){
-					if (point.hasValue()){
-						point.transition(this.scale.getPointPosition(index, this.scale.calculateCenterOffset(point.value)), easeDecimal);
-					}
-				},this);
-
-
-
-				//Draw the line between all the points
-				ctx.lineWidth = this.options.datasetStrokeWidth;
-				ctx.strokeStyle = dataset.strokeColor;
-				ctx.beginPath();
-				helpers.each(dataset.points,function(point,index){
-					if (index === 0){
-						ctx.moveTo(point.x,point.y);
-					}
-					else{
-						ctx.lineTo(point.x,point.y);
-					}
-				},this);
-				ctx.closePath();
-				ctx.stroke();
-
-				ctx.fillStyle = dataset.fillColor;
-				if(this.options.datasetFill){
-					ctx.fill();
-				}
-				//Now draw the points over the line
-				//A little inefficient double looping, but better than the line
-				//lagging behind the point positions
-				helpers.each(dataset.points,function(point){
-					if (point.hasValue()){
-						point.draw();
-					}
-				});
-
-			},this);
-
-		}
-
-	});
-
-
-
-
-
-}).call(this);
+//# sourceMappingURL=my-date-range-model.interface.js.map
+
+/***/ }),
+
+/***/ 744:
+/***/ (function(module, exports) {
+
+;
+//# sourceMappingURL=my-date-range.interface.js.map
+
+/***/ }),
+
+/***/ 745:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-date-selected.interface.js.map
+
+/***/ }),
+
+/***/ 746:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-date.interface.js.map
+
+/***/ }),
+
+/***/ 747:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-day-labels.interface.js.map
+
+/***/ }),
+
+/***/ 748:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-default-month.interface.js.map
+
+/***/ }),
+
+/***/ 749:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-input-field-changed.interface.js.map
+
+/***/ }),
+
+/***/ 750:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-input-focus-blur.interface.js.map
+
+/***/ }),
+
+/***/ 751:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-month-labels.interface.js.map
+
+/***/ }),
+
+/***/ 752:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-options.interface.js.map
+
+/***/ }),
+
+/***/ 753:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=my-weekday.interface.js.map
+
+/***/ }),
+
+/***/ 754:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__my_date_range_picker_component__ = __webpack_require__(675);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directives_my_date_range_picker_focus_directive__ = __webpack_require__(741);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyDateRangePickerModule; });
+
+
+
+
+
+var MyDateRangePickerModule = (function () {
+    function MyDateRangePickerModule() {
+    }
+    MyDateRangePickerModule.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_2__angular_core__["b" /* NgModule */], args: [{
+                    imports: [__WEBPACK_IMPORTED_MODULE_0__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormsModule */]],
+                    declarations: [__WEBPACK_IMPORTED_MODULE_3__my_date_range_picker_component__["a" /* MyDateRangePicker */], __WEBPACK_IMPORTED_MODULE_4__directives_my_date_range_picker_focus_directive__["a" /* FocusDirective */]],
+                    exports: [__WEBPACK_IMPORTED_MODULE_3__my_date_range_picker_component__["a" /* MyDateRangePicker */], __WEBPACK_IMPORTED_MODULE_4__directives_my_date_range_picker_focus_directive__["a" /* FocusDirective */]]
+                },] },
+    ];
+    MyDateRangePickerModule.ctorParameters = [];
+    return MyDateRangePickerModule;
+}());
+//# sourceMappingURL=my-date-range-picker.module.js.map
+
+/***/ }),
+
+/***/ 755:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DateRangeUtilService; });
+
+var DateRangeUtilService = (function () {
+    function DateRangeUtilService() {
+    }
+    DateRangeUtilService.prototype.isDateRangeValid = function (daterange, dateFormat, minYear, maxYear, disableUntil, disableSince, disableDates, disableDateRanges, enableDates, monthLabels) {
+        var invalidDateRange = {
+            beginDate: { day: 0, month: 0, year: 0 },
+            endDate: { day: 0, month: 0, year: 0 }
+        };
+        var isMonthStr = dateFormat.indexOf("mmm") !== -1;
+        if (daterange.length !== 23 && !isMonthStr || daterange.length !== 25 && isMonthStr) {
+            return invalidDateRange;
+        }
+        var dates = daterange.split(" - ");
+        if (dates.length !== 2) {
+            return invalidDateRange;
+        }
+        var validDates = [];
+        for (var i in dates) {
+            var date = this.isDateValid(dates[i], dateFormat, minYear, maxYear, monthLabels, isMonthStr);
+            if (date.day === 0 && date.month === 0 && date.year === 0) {
+                return invalidDateRange;
+            }
+            if (this.isDisabledDay(date, minYear, maxYear, disableUntil, disableSince, disableDates, disableDateRanges, enableDates)) {
+                return invalidDateRange;
+            }
+            validDates.push(date);
+        }
+        if (this.getTimeInMilliseconds(validDates[1]) < this.getTimeInMilliseconds(validDates[0])) {
+            return invalidDateRange;
+        }
+        return {
+            beginDate: { day: validDates[0].day, month: validDates[0].month, year: validDates[0].year },
+            endDate: { day: validDates[1].day, month: validDates[1].month, year: validDates[1].year }
+        };
+    };
+    DateRangeUtilService.prototype.isMonthLabelValid = function (monthLabel, monthLabels) {
+        for (var key = 1; key <= 12; key++) {
+            if (monthLabel.toLowerCase() === monthLabels[key].toLowerCase()) {
+                return key;
+            }
+        }
+        return -1;
+    };
+    DateRangeUtilService.prototype.isYearLabelValid = function (yearLabel, minYear, maxYear) {
+        if (yearLabel >= minYear && yearLabel <= maxYear) {
+            return yearLabel;
+        }
+        return -1;
+    };
+    DateRangeUtilService.prototype.parseDatePartNumber = function (dateFormat, dateString, datePart) {
+        var pos = dateFormat.indexOf(datePart);
+        if (pos !== -1) {
+            var value = dateString.substring(pos, pos + datePart.length);
+            if (!/^\d+$/.test(value)) {
+                return -1;
+            }
+            return parseInt(value);
+        }
+        return -1;
+    };
+    DateRangeUtilService.prototype.parseDatePartMonthName = function (dateFormat, dateString, datePart, monthLabels) {
+        var pos = dateFormat.indexOf(datePart);
+        if (pos !== -1) {
+            return this.isMonthLabelValid(dateString.substring(pos, pos + datePart.length), monthLabels);
+        }
+        return -1;
+    };
+    DateRangeUtilService.prototype.parseDefaultMonth = function (monthString) {
+        var month = { monthTxt: "", monthNbr: 0, year: 0 };
+        if (monthString !== "") {
+            var split = monthString.split(monthString.match(/[^0-9]/)[0]);
+            month.monthNbr = split[0].length === 2 ? parseInt(split[0]) : parseInt(split[1]);
+            month.year = split[0].length === 2 ? parseInt(split[1]) : parseInt(split[0]);
+        }
+        return month;
+    };
+    DateRangeUtilService.prototype.isDisabledDay = function (date, minYear, maxYear, disableUntil, disableSince, disableDates, disableDateRanges, enableDates) {
+        var dateMs = this.getTimeInMilliseconds(date);
+        for (var _i = 0, enableDates_1 = enableDates; _i < enableDates_1.length; _i++) {
+            var d = enableDates_1[_i];
+            if (d.year === date.year && d.month === date.month && d.day === date.day) {
+                return false;
+            }
+        }
+        if (date.year < minYear && date.month === 12 || date.year > maxYear && date.month === 1) {
+            return true;
+        }
+        if (this.isInitializedDate(disableUntil) && dateMs <= this.getTimeInMilliseconds(disableUntil)) {
+            return true;
+        }
+        if (this.isInitializedDate(disableSince) && dateMs >= this.getTimeInMilliseconds(disableSince)) {
+            return true;
+        }
+        for (var _a = 0, disableDates_1 = disableDates; _a < disableDates_1.length; _a++) {
+            var d = disableDates_1[_a];
+            if (d.year === date.year && d.month === date.month && d.day === date.day) {
+                return true;
+            }
+        }
+        for (var _b = 0, disableDateRanges_1 = disableDateRanges; _b < disableDateRanges_1.length; _b++) {
+            var d = disableDateRanges_1[_b];
+            if (this.isInitializedDate(d.beginDate) && this.isInitializedDate(d.endDate) && dateMs >= this.getTimeInMilliseconds(d.beginDate) && dateMs <= this.getTimeInMilliseconds(d.endDate)) {
+                return true;
+            }
+        }
+        return false;
+    };
+    DateRangeUtilService.prototype.isMonthDisabledByDisableUntil = function (date, disableUntil) {
+        return this.isInitializedDate(disableUntil) && this.getTimeInMilliseconds(date) <= this.getTimeInMilliseconds(disableUntil);
+    };
+    DateRangeUtilService.prototype.isMonthDisabledByDisableSince = function (date, disableSince) {
+        return this.isInitializedDate(disableSince) && this.getTimeInMilliseconds(date) >= this.getTimeInMilliseconds(disableSince);
+    };
+    DateRangeUtilService.prototype.isInitializedDate = function (date) {
+        return date.year !== 0 && date.month !== 0 && date.day !== 0;
+    };
+    DateRangeUtilService.prototype.getTimeInMilliseconds = function (date) {
+        return new Date(date.year, date.month - 1, date.day, 0, 0, 0, 0).getTime();
+    };
+    DateRangeUtilService.prototype.getWeekNumber = function (date) {
+        var d = new Date(date.year, date.month - 1, date.day, 0, 0, 0, 0);
+        d.setDate(d.getDate() + (d.getDay() === 0 ? -3 : 4 - d.getDay()));
+        return Math.round(((d.getTime() - new Date(d.getFullYear(), 0, 4).getTime()) / 86400000) / 7) + 1;
+    };
+    DateRangeUtilService.prototype.isDateValid = function (date, dateFormat, minYear, maxYear, monthLabels, isMonthStr) {
+        var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        var invalidDate = { day: 0, month: 0, year: 0 };
+        if (date.length !== 10 && !isMonthStr || date.length !== 11 && isMonthStr) {
+            return invalidDate;
+        }
+        var separator = dateFormat.replace(/[dmy]/g, "")[0];
+        var parts = date.split(separator);
+        if (parts.length !== 3) {
+            return invalidDate;
+        }
+        var day = this.parseDatePartNumber(dateFormat, date, "dd");
+        var month = isMonthStr ? this.parseDatePartMonthName(dateFormat, date, "mmm", monthLabels) : this.parseDatePartNumber(dateFormat, date, "mm");
+        var year = this.parseDatePartNumber(dateFormat, date, "yyyy");
+        if (day !== -1 && month !== -1 && year !== -1) {
+            if (year < minYear || year > maxYear || month < 1 || month > 12) {
+                return invalidDate;
+            }
+            if (year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0)) {
+                daysInMonth[1] = 29;
+            }
+            if (day < 1 || day > daysInMonth[month - 1]) {
+                return invalidDate;
+            }
+            return { day: day, month: month, year: year };
+        }
+        return invalidDate;
+    };
+    DateRangeUtilService.decorators = [
+        { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Injectable */] },
+    ];
+    DateRangeUtilService.ctorParameters = [];
+    return DateRangeUtilService;
+}());
+//# sourceMappingURL=my-date-range-picker.date.range.util.service.js.map
+
+/***/ }),
+
+/***/ 756:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dist_my_date_range_picker_module__ = __webpack_require__(754);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "MyDateRangePickerModule", function() { return __WEBPACK_IMPORTED_MODULE_0__dist_my_date_range_picker_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dist_my_date_range_picker_component__ = __webpack_require__(675);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dist_interfaces_my_date_interface__ = __webpack_require__(746);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dist_interfaces_my_date_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__dist_interfaces_my_date_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dist_interfaces_my_date_range_model_interface__ = __webpack_require__(743);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dist_interfaces_my_date_range_model_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__dist_interfaces_my_date_range_model_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dist_interfaces_my_input_field_changed_interface__ = __webpack_require__(749);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dist_interfaces_my_input_field_changed_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__dist_interfaces_my_input_field_changed_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dist_interfaces_my_calendar_view_changed_interface__ = __webpack_require__(742);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dist_interfaces_my_calendar_view_changed_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__dist_interfaces_my_calendar_view_changed_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dist_interfaces_my_input_focus_blur_interface__ = __webpack_require__(750);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dist_interfaces_my_input_focus_blur_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__dist_interfaces_my_input_focus_blur_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dist_interfaces_my_date_selected_interface__ = __webpack_require__(745);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dist_interfaces_my_date_selected_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__dist_interfaces_my_date_selected_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dist_interfaces_my_date_range_interface__ = __webpack_require__(744);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dist_interfaces_my_date_range_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__dist_interfaces_my_date_range_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dist_interfaces_my_day_labels_interface__ = __webpack_require__(747);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__dist_interfaces_my_day_labels_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__dist_interfaces_my_day_labels_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dist_interfaces_my_month_labels_interface__ = __webpack_require__(751);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dist_interfaces_my_month_labels_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10__dist_interfaces_my_month_labels_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dist_interfaces_my_options_interface__ = __webpack_require__(752);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dist_interfaces_my_options_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__dist_interfaces_my_options_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dist_interfaces_my_weekday_interface__ = __webpack_require__(753);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dist_interfaces_my_weekday_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__dist_interfaces_my_weekday_interface__);
+/* unused harmony namespace reexport */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dist_interfaces_my_default_month_interface__ = __webpack_require__(748);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dist_interfaces_my_default_month_interface___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13__dist_interfaces_my_default_month_interface__);
+/* unused harmony namespace reexport */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***/ }),
 
-/***/ 691:
+/***/ 757:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_completer_cmp__ = __webpack_require__(676);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_completer_list_item_cmp__ = __webpack_require__(677);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_completer_service__ = __webpack_require__(651);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_completer_data_factory__ = __webpack_require__(682);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__directives_ctr_completer__ = __webpack_require__(639);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__directives_ctr_dropdown__ = __webpack_require__(649);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__directives_ctr_input__ = __webpack_require__(678);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__directives_ctr_list__ = __webpack_require__(679);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__directives_ctr_row__ = __webpack_require__(680);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common__ = __webpack_require__(6);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2CompleterModule; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Ng2CompleterModule = (function () {
+    function Ng2CompleterModule() {
+    }
+    return Ng2CompleterModule;
+}());
+
+Ng2CompleterModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */], args: [{
+                imports: [
+                    __WEBPACK_IMPORTED_MODULE_12__angular_common__["a" /* CommonModule */],
+                    __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormsModule */],
+                    __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* HttpModule */]
+                ],
+                declarations: [
+                    __WEBPACK_IMPORTED_MODULE_4__components_completer_list_item_cmp__["a" /* CompleterListItemCmp */],
+                    __WEBPACK_IMPORTED_MODULE_7__directives_ctr_completer__["a" /* CtrCompleter */],
+                    __WEBPACK_IMPORTED_MODULE_8__directives_ctr_dropdown__["b" /* CtrDropdown */],
+                    __WEBPACK_IMPORTED_MODULE_9__directives_ctr_input__["a" /* CtrInput */],
+                    __WEBPACK_IMPORTED_MODULE_10__directives_ctr_list__["a" /* CtrList */],
+                    __WEBPACK_IMPORTED_MODULE_11__directives_ctr_row__["a" /* CtrRow */],
+                    __WEBPACK_IMPORTED_MODULE_3__components_completer_cmp__["a" /* CompleterCmp */]
+                ],
+                exports: [
+                    __WEBPACK_IMPORTED_MODULE_3__components_completer_cmp__["a" /* CompleterCmp */],
+                    __WEBPACK_IMPORTED_MODULE_4__components_completer_list_item_cmp__["a" /* CompleterListItemCmp */],
+                    __WEBPACK_IMPORTED_MODULE_7__directives_ctr_completer__["a" /* CtrCompleter */],
+                    __WEBPACK_IMPORTED_MODULE_8__directives_ctr_dropdown__["b" /* CtrDropdown */],
+                    __WEBPACK_IMPORTED_MODULE_9__directives_ctr_input__["a" /* CtrInput */],
+                    __WEBPACK_IMPORTED_MODULE_10__directives_ctr_list__["a" /* CtrList */],
+                    __WEBPACK_IMPORTED_MODULE_11__directives_ctr_row__["a" /* CtrRow */]
+                ],
+                providers: [
+                    __WEBPACK_IMPORTED_MODULE_5__services_completer_service__["a" /* CompleterService */],
+                    __WEBPACK_IMPORTED_MODULE_6__services_completer_data_factory__["a" /* LocalDataFactoryProvider */],
+                    __WEBPACK_IMPORTED_MODULE_6__services_completer_data_factory__["b" /* RemoteDataFactoryProvider */]
+                ]
+            },] },
+];
+/** @nocollapse */
+Ng2CompleterModule.ctorParameters = function () { return []; };
+//# sourceMappingURL=ng2-completer.module.js.map
+
+/***/ }),
+
+/***/ 758:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(683);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomEditComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CustomEditComponent = (function (_super) {
+    __extends(CustomEditComponent, _super);
+    function CustomEditComponent(resolver) {
+        var _this = _super.call(this) || this;
+        _this.resolver = resolver;
+        return _this;
+    }
+    CustomEditComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (this.cell && !this.customComponent) {
+            var componentFactory = this.resolver.resolveComponentFactory(this.cell.getColumn().editor.component);
+            this.customComponent = this.dynamicTarget.createComponent(componentFactory);
+            // set @Inputs and @Outputs of custom component
+            this.customComponent.instance.cell = this.cell;
+            this.customComponent.instance.inputClass = this.inputClass;
+            this.customComponent.instance.onStopEditing.subscribe(function () { return _this.onStopEditing(); });
+            this.customComponent.instance.onEdited.subscribe(function (event) { return _this.onEdited(event); });
+            this.customComponent.instance.onClick.subscribe(function (event) { return _this.onClick(event); });
+        }
+    };
+    CustomEditComponent.prototype.ngOnDestroy = function () {
+        if (this.customComponent) {
+            this.customComponent.destroy();
+        }
+    };
+    return CustomEditComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__edit_cell_default__["a" /* EditCellDefault */]));
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('dynamicTarget', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ViewContainerRef */] }),
+    __metadata("design:type", Object)
+], CustomEditComponent.prototype, "dynamicTarget", void 0);
+CustomEditComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'table-cell-custom-editor',
+        template: "\n    <ng-template #dynamicTarget></ng-template>\n  ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* ComponentFactoryResolver */]])
+], CustomEditComponent);
+
+//# sourceMappingURL=custom-edit.component.js.map
+
+/***/ }),
+
+/***/ 759:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__edit_cell_default__ = __webpack_require__(683);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DefaultEditComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DefaultEditComponent = (function (_super) {
+    __extends(DefaultEditComponent, _super);
+    function DefaultEditComponent() {
+        return _super.call(this) || this;
+    }
+    DefaultEditComponent.prototype.getEditorType = function () {
+        return this.cell.getColumn().editor && this.cell.getColumn().editor.type;
+    };
+    return DefaultEditComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__edit_cell_default__["a" /* EditCellDefault */]));
+DefaultEditComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'table-cell-default-editor',
+        template: "<div [ngSwitch]=\"getEditorType()\"><select-editor *ngSwitchCase=\"'list'\" [cell]=\"cell\" [inputClass]=\"inputClass\" (onClick)=\"onClick($event)\" (onEdited)=\"onEdited($event)\" (onStopEditing)=\"onStopEditing()\"></select-editor><textarea-editor *ngSwitchCase=\"'textarea'\" [cell]=\"cell\" [inputClass]=\"inputClass\" (onClick)=\"onClick($event)\" (onEdited)=\"onEdited($event)\" (onStopEditing)=\"onStopEditing()\"></textarea-editor><checkbox-editor *ngSwitchCase=\"'checkbox'\" [cell]=\"cell\" [inputClass]=\"inputClass\" (onClick)=\"onClick($event)\"></checkbox-editor><completer-editor *ngSwitchCase=\"'completer'\" [cell]=\"cell\"></completer-editor><input-editor *ngSwitchDefault [cell]=\"cell\" [inputClass]=\"inputClass\" (onClick)=\"onClick($event)\" (onEdited)=\"onEdited($event)\" (onStopEditing)=\"onStopEditing()\"></input-editor></div>",
+    }),
+    __metadata("design:paramtypes", [])
+], DefaultEditComponent);
+
+//# sourceMappingURL=default-edit.component.js.map
+
+/***/ }),
+
+/***/ 760:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditCellComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EditCellComponent = (function () {
+    function EditCellComponent() {
+        this.inputClass = '';
+        this.edited = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    EditCellComponent.prototype.onEdited = function (event) {
+        this.edited.next(event);
+        return false;
+    };
+    EditCellComponent.prototype.getEditorType = function () {
+        return this.cell.getColumn().editor && this.cell.getColumn().editor.type;
+    };
+    return EditCellComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__["a" /* Cell */])
+], EditCellComponent.prototype, "cell", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], EditCellComponent.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], EditCellComponent.prototype, "edited", void 0);
+EditCellComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'table-cell-edit-mode',
+        template: "\n      <div [ngSwitch]=\"getEditorType()\">\n        <table-cell-custom-editor *ngSwitchCase=\"'custom'\"\n                                  [cell]=\"cell\"\n                                  [inputClass]=\"inputClass\"\n                                  (edited)=\"onEdited($event)\">\n        </table-cell-custom-editor>\n        <table-cell-default-editor *ngSwitchDefault\n                                  [cell]=\"cell\"\n                                  [inputClass]=\"inputClass\"\n                                  (edited)=\"onEdited($event)\">\n        </table-cell-default-editor>\n      </div>\n    ",
+    })
+], EditCellComponent);
+
+//# sourceMappingURL=edit-cell.component.js.map
+
+/***/ }),
+
+/***/ 761:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(640);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxEditorComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CheckboxEditorComponent = (function (_super) {
+    __extends(CheckboxEditorComponent, _super);
+    function CheckboxEditorComponent() {
+        return _super.call(this) || this;
+    }
+    CheckboxEditorComponent.prototype.onChange = function (event) {
+        var trueVal = (this.cell.getColumn().getConfig() && this.cell.getColumn().getConfig().true) || true;
+        var falseVal = (this.cell.getColumn().getConfig() && this.cell.getColumn().getConfig().false) || false;
+        this.cell.newValue = event.target.checked ? trueVal : falseVal;
+    };
+    return CheckboxEditorComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__default_editor__["a" /* DefaultEditor */]));
+CheckboxEditorComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'checkbox-editor',
+        styles: [":host input,:host textarea{width:100%;line-height:normal;padding:.375rem .75rem} /*# sourceMappingURL=editor.component.css.map */ "],
+        template: "\n    <input [ngClass]=\"inputClass\"\n           type=\"checkbox\"\n           class=\"form-control\"\n           [name]=\"cell.getId()\"\n           [disabled]=\"!cell.isEditable()\"\n           [checked]=\"cell.getValue() == (cell.getColumn().getConfig()?.true || true)\"\n           (click)=\"onClick.emit($event)\"\n           (change)=\"onChange($event)\">\n    ",
+    }),
+    __metadata("design:paramtypes", [])
+], CheckboxEditorComponent);
+
+//# sourceMappingURL=checkbox-editor.component.js.map
+
+/***/ }),
+
+/***/ 762:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_completer__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_editor__ = __webpack_require__(640);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterEditorComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var CompleterEditorComponent = (function (_super) {
+    __extends(CompleterEditorComponent, _super);
+    function CompleterEditorComponent(completerService) {
+        var _this = _super.call(this) || this;
+        _this.completerService = completerService;
+        _this.completerStr = '';
+        return _this;
+    }
+    CompleterEditorComponent.prototype.ngOnInit = function () {
+        if (this.cell.getColumn().editor && this.cell.getColumn().editor.type === 'completer') {
+            var config = this.cell.getColumn().getConfig().completer;
+            config.dataService = this.completerService.local(config.data, config.searchFields, config.titleField);
+            config.dataService.descriptionField(config.descriptionField);
+        }
+    };
+    CompleterEditorComponent.prototype.onEditedCompleter = function (event) {
+        this.cell.newValue = event.title;
+        return false;
+    };
+    return CompleterEditorComponent;
+}(__WEBPACK_IMPORTED_MODULE_2__default_editor__["a" /* DefaultEditor */]));
+CompleterEditorComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'completer-editor',
+        template: "\n    <ng2-completer [(ngModel)]=\"completerStr\"\n                   [dataService]=\"cell.getColumn().getConfig().completer.dataService\"\n                   [minSearchLength]=\"cell.getColumn().getConfig().completer.minSearchLength || 0\"\n                   [pause]=\"cell.getColumn().getConfig().completer.pause || 0\"\n                   [placeholder]=\"cell.getColumn().getConfig().completer.placeholder || 'Start typing...'\"\n                   (selected)=\"onEditedCompleter($event)\">\n    </ng2-completer>\n    ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ng2_completer__["b" /* CompleterService */]])
+], CompleterEditorComponent);
+
+//# sourceMappingURL=completer-editor.component.js.map
+
+/***/ }),
+
+/***/ 763:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(640);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputEditorComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var InputEditorComponent = (function (_super) {
+    __extends(InputEditorComponent, _super);
+    function InputEditorComponent() {
+        return _super.call(this) || this;
+    }
+    return InputEditorComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__default_editor__["a" /* DefaultEditor */]));
+InputEditorComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'input-editor',
+        styles: [":host input,:host textarea{width:100%;line-height:normal;padding:.375rem .75rem} /*# sourceMappingURL=editor.component.css.map */ "],
+        template: "\n    <input [ngClass]=\"inputClass\"\n           class=\"form-control\"\n           [(ngModel)]=\"cell.newValue\"\n           [name]=\"cell.getId()\"\n           [placeholder]=\"cell.getTitle()\"\n           [disabled]=\"!cell.isEditable()\"\n           (click)=\"onClick.emit($event)\"\n           (keydown.enter)=\"onEdited.emit($event)\"\n           (keydown.esc)=\"onStopEditing.emit()\">\n    ",
+    }),
+    __metadata("design:paramtypes", [])
+], InputEditorComponent);
+
+//# sourceMappingURL=input-editor.component.js.map
+
+/***/ }),
+
+/***/ 764:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(640);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectEditorComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SelectEditorComponent = (function (_super) {
+    __extends(SelectEditorComponent, _super);
+    function SelectEditorComponent() {
+        return _super.call(this) || this;
+    }
+    return SelectEditorComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__default_editor__["a" /* DefaultEditor */]));
+SelectEditorComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'select-editor',
+        template: "\n    <select [ngClass]=\"inputClass\"\n            class=\"form-control\"\n            [(ngModel)]=\"cell.newValue\"\n            [name]=\"cell.getId()\"\n            [disabled]=\"!cell.isEditable()\"\n            (click)=\"onClick.emit($event)\"\n            (keydown.enter)=\"onEdited.emit($event)\"\n            (keydown.esc)=\"onStopEditing.emit()\">\n\n        <option *ngFor=\"let option of cell.getColumn().getConfig()?.list\" [value]=\"option.value\"\n                [selected]=\"option.value === cell.getValue()\">{{ option.title }}\n        </option>\n    </select>\n    ",
+    }),
+    __metadata("design:paramtypes", [])
+], SelectEditorComponent);
+
+//# sourceMappingURL=select-editor.component.js.map
+
+/***/ }),
+
+/***/ 765:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__default_editor__ = __webpack_require__(640);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextareaEditorComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TextareaEditorComponent = (function (_super) {
+    __extends(TextareaEditorComponent, _super);
+    function TextareaEditorComponent() {
+        return _super.call(this) || this;
+    }
+    return TextareaEditorComponent;
+}(__WEBPACK_IMPORTED_MODULE_1__default_editor__["a" /* DefaultEditor */]));
+TextareaEditorComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'textarea-editor',
+        styles: [":host input,:host textarea{width:100%;line-height:normal;padding:.375rem .75rem} /*# sourceMappingURL=editor.component.css.map */ "],
+        template: "\n    <textarea [ngClass]=\"inputClass\"\n              class=\"form-control\"\n              [(ngModel)]=\"cell.newValue\"\n              [name]=\"cell.getId()\"\n              [disabled]=\"!cell.isEditable()\"\n              [placeholder]=\"cell.getTitle()\"\n              (click)=\"onClick.emit($event)\"\n              (keydown.enter)=\"onEdited.emit($event)\"\n              (keydown.esc)=\"onStopEditing.emit()\">\n    </textarea>\n    ",
+    }),
+    __metadata("design:paramtypes", [])
+], TextareaEditorComponent);
+
+//# sourceMappingURL=textarea-editor.component.js.map
+
+/***/ }),
+
+/***/ 766:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomViewComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CustomViewComponent = (function () {
+    function CustomViewComponent(resolver) {
+        this.resolver = resolver;
+    }
+    CustomViewComponent.prototype.ngOnInit = function () {
+        if (this.cell && !this.customComponent) {
+            var componentFactory = this.resolver.resolveComponentFactory(this.cell.getColumn().renderComponent);
+            this.customComponent = this.dynamicTarget.createComponent(componentFactory);
+            // set @Inputs and @Outputs of custom component
+            this.customComponent.instance.value = this.cell.getValue();
+        }
+    };
+    CustomViewComponent.prototype.ngOnDestroy = function () {
+        if (this.customComponent) {
+            this.customComponent.destroy();
+        }
+    };
+    return CustomViewComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__["a" /* Cell */])
+], CustomViewComponent.prototype, "cell", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_15" /* ViewChild */])('dynamicTarget', { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ViewContainerRef */] }),
+    __metadata("design:type", Object)
+], CustomViewComponent.prototype, "dynamicTarget", void 0);
+CustomViewComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'custom-view-component',
+        template: "\n    <ng-template #dynamicTarget></ng-template>\n  ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* ComponentFactoryResolver */]])
+], CustomViewComponent);
+
+//# sourceMappingURL=custom-view.component.js.map
+
+/***/ }),
+
+/***/ 767:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewCellComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ViewCellComponent = (function () {
+    function ViewCellComponent() {
+    }
+    return ViewCellComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_cell__["a" /* Cell */])
+], ViewCellComponent.prototype, "cell", void 0);
+ViewCellComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'table-cell-view-mode',
+        template: "\n    <div [ngSwitch]=\"cell.getColumn().type\">\n        <custom-view-component *ngSwitchCase=\"'custom'\" [cell]=\"cell\"></custom-view-component>\n        <div *ngSwitchCase=\"'html'\" [innerHTML]=\"cell.getValue()\"></div>\n        <div *ngSwitchDefault>{{ cell.getValue() }}</div>\n    </div>\n    ",
+    })
+], ViewCellComponent);
+
+//# sourceMappingURL=view-cell.component.js.map
+
+/***/ }),
+
+/***/ 768:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__ = __webpack_require__(638);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__ = __webpack_require__(642);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CellComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CellComponent = (function () {
+    function CellComponent() {
+        this.inputClass = '';
+        this.mode = 'inline';
+        this.isInEditing = false;
+        this.edited = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    CellComponent.prototype.onEdited = function (event) {
+        if (this.isNew) {
+            this.grid.create(this.grid.getNewRow(), this.createConfirm);
+        }
+        else {
+            this.grid.save(this.row, this.editConfirm);
+        }
+    };
+    return CellComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], CellComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_3__lib_data_set_row__["a" /* Row */])
+], CellComponent.prototype, "row", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], CellComponent.prototype, "editConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], CellComponent.prototype, "createConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Boolean)
+], CellComponent.prototype, "isNew", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_cell__["a" /* Cell */])
+], CellComponent.prototype, "cell", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], CellComponent.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], CellComponent.prototype, "mode", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Boolean)
+], CellComponent.prototype, "isInEditing", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], CellComponent.prototype, "edited", void 0);
+CellComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-smart-table-cell',
+        template: "\n    <table-cell-view-mode *ngIf=\"!isInEditing\" [cell]=\"cell\"></table-cell-view-mode>\n    <table-cell-edit-mode *ngIf=\"isInEditing\" [cell]=\"cell\"\n                          [inputClass]=\"inputClass\"\n                          (edited)=\"onEdited($event)\">\n    </table-cell-edit-mode>\n  ",
+    })
+], CellComponent);
+
+//# sourceMappingURL=cell.component.js.map
+
+/***/ }),
+
+/***/ 769:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_debounceTime__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxFilterComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CheckboxFilterComponent = (function (_super) {
+    __extends(CheckboxFilterComponent, _super);
+    function CheckboxFilterComponent() {
+        var _this = _super.call(this) || this;
+        _this.filterActive = false;
+        _this.inputControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormControl */]();
+        return _this;
+    }
+    CheckboxFilterComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.changesSubscription = this.inputControl.valueChanges
+            .debounceTime(this.delay)
+            .subscribe(function (checked) {
+            _this.filterActive = true;
+            var trueVal = (_this.column.getFilterConfig() && _this.column.getFilterConfig().true) || true;
+            var falseVal = (_this.column.getFilterConfig() && _this.column.getFilterConfig().false) || false;
+            _this.query = checked ? trueVal : falseVal;
+            _this.setFilter();
+        });
+    };
+    CheckboxFilterComponent.prototype.resetFilter = function (event) {
+        event.preventDefault();
+        this.query = '';
+        this.inputControl.setValue(false, { emitEvent: false });
+        this.filterActive = false;
+        this.setFilter();
+    };
+    return CheckboxFilterComponent;
+}(__WEBPACK_IMPORTED_MODULE_2__default_filter__["a" /* DefaultFilter */]));
+CheckboxFilterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'checkbox-filter',
+        template: "\n    <input type=\"checkbox\" [formControl]=\"inputControl\" [ngClass]=\"inputClass\" class=\"form-control\">\n    <a href=\"#\" *ngIf=\"filterActive\"\n                (click)=\"resetFilter($event)\">{{column.getFilterConfig()?.resetText || 'reset'}}</a>\n  ",
+    }),
+    __metadata("design:paramtypes", [])
+], CheckboxFilterComponent);
+
+//# sourceMappingURL=checkbox-filter.component.js.map
+
+/***/ }),
+
+/***/ 770:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_completer__ = __webpack_require__(644);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__default_filter__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(656);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_debounceTime__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CompleterFilterComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var CompleterFilterComponent = (function (_super) {
+    __extends(CompleterFilterComponent, _super);
+    function CompleterFilterComponent(completerService) {
+        var _this = _super.call(this) || this;
+        _this.completerService = completerService;
+        _this.completerContent = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__["Subject"]();
+        return _this;
+    }
+    CompleterFilterComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        var config = this.column.getFilterConfig().completer;
+        config.dataService = this.completerService.local(config.data, config.searchFields, config.titleField);
+        config.dataService.descriptionField(config.descriptionField);
+        this.changesSubscription = this.completerContent
+            .map(function (ev) { return (ev && ev.title) || ev || ''; })
+            .distinctUntilChanged()
+            .debounceTime(this.delay)
+            .subscribe(function (search) {
+            _this.query = search;
+            _this.setFilter();
+        });
+    };
+    CompleterFilterComponent.prototype.inputTextChanged = function (event) {
+        // workaround to trigger the search event when the home/end buttons are clicked
+        // when this happens the [(ngModel)]="query" is set to "" but the (selected) method is not called
+        // so here it gets called manually
+        if (event === '') {
+            this.completerContent.next(event);
+        }
+    };
+    return CompleterFilterComponent;
+}(__WEBPACK_IMPORTED_MODULE_3__default_filter__["a" /* DefaultFilter */]));
+CompleterFilterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'completer-filter',
+        template: "\n    <ng2-completer [(ngModel)]=\"query\"\n                   (ngModelChange)=\"inputTextChanged($event)\"\n                   [dataService]=\"column.getFilterConfig().completer.dataService\"\n                   [minSearchLength]=\"column.getFilterConfig().completer.minSearchLength || 0\"\n                   [pause]=\"column.getFilterConfig().completer.pause || 0\"\n                   [placeholder]=\"column.getFilterConfig().completer.placeholder || 'Start typing...'\"\n                   (selected)=\"completerContent.next($event)\">\n    </ng2-completer>\n  ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ng2_completer__["b" /* CompleterService */]])
+], CompleterFilterComponent);
+
+//# sourceMappingURL=completer-filter.component.js.map
+
+/***/ }),
+
+/***/ 771:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(656);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InputFilterComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var InputFilterComponent = (function (_super) {
+    __extends(InputFilterComponent, _super);
+    function InputFilterComponent() {
+        var _this = _super.call(this) || this;
+        _this.inputControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormControl */]();
+        return _this;
+    }
+    InputFilterComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.inputControl.valueChanges
+            .distinctUntilChanged()
+            .debounceTime(this.delay)
+            .subscribe(function (value) { return _this.setFilter(); });
+    };
+    return InputFilterComponent;
+}(__WEBPACK_IMPORTED_MODULE_2__default_filter__["a" /* DefaultFilter */]));
+InputFilterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'input-filter',
+        template: "\n    <input [(ngModel)]=\"query\"\n           [ngClass]=\"inputClass\"\n           [formControl]=\"inputControl\"\n           class=\"form-control\"\n           type=\"text\"\n           placeholder=\"{{ column.title }}\" />\n  ",
+    }),
+    __metadata("design:paramtypes", [])
+], InputFilterComponent);
+
+//# sourceMappingURL=input-filter.component.js.map
+
+/***/ }),
+
+/***/ 772:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__default_filter__ = __webpack_require__(645);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__(656);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__ = __webpack_require__(648);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_debounceTime__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectFilterComponent; });
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var SelectFilterComponent = (function (_super) {
+    __extends(SelectFilterComponent, _super);
+    function SelectFilterComponent() {
+        var _this = _super.call(this) || this;
+        _this.inputControl = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormControl */]();
+        return _this;
+    }
+    SelectFilterComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.inputControl.valueChanges
+            .distinctUntilChanged()
+            .debounceTime(this.delay)
+            .subscribe(function (value) { return _this.setFilter(); });
+    };
+    return SelectFilterComponent;
+}(__WEBPACK_IMPORTED_MODULE_2__default_filter__["a" /* DefaultFilter */]));
+SelectFilterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'select-filter',
+        template: "\n    <select [ngClass]=\"inputClass\"\n            class=\"form-control\"\n            [(ngModel)]=\"query\"\n            [formControl]=\"inputControl\">\n\n        <option value=\"\">{{ column.getFilterConfig().selectText }}</option>\n        <option *ngFor=\"let option of column.getFilterConfig().list\" [value]=\"option.value\">\n          {{ option.title }}\n        </option>\n    </select>\n  ",
+    }),
+    __metadata("design:paramtypes", [])
+], SelectFilterComponent);
+
+//# sourceMappingURL=select-filter.component.js.map
+
+/***/ }),
+
+/***/ 773:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(641);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var FilterComponent = (function () {
+    function FilterComponent() {
+        this.inputClass = '';
+        this.filter = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.query = '';
+    }
+    FilterComponent.prototype.ngAfterViewInit = function () {
+        var _this = this;
+        this.source.onChanged().subscribe(function (elements) {
+            var filterConf = _this.source.getFilter();
+            if (filterConf && filterConf.filters && filterConf.filters.length === 0) {
+                _this.query = '';
+                // add a check for existing filters an set the query if one exists for this column
+                // this covers instances where the filter is set by user code while maintaining existing functionality
+            }
+            else if (filterConf && filterConf.filters && filterConf.filters.length > 0) {
+                filterConf.filters.forEach(function (k, v) {
+                    if (k.field == _this.column.id) {
+                        _this.query = k.search;
+                    }
+                });
+            }
+        });
+    };
+    FilterComponent.prototype.onFilter = function (query) {
+        this.source.addFilter({
+            field: this.column.id,
+            search: query,
+            filter: this.column.getFilterFunction(),
+        });
+    };
+    return FilterComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__["a" /* Column */])
+], FilterComponent.prototype, "column", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__["a" /* DataSource */])
+], FilterComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", String)
+], FilterComponent.prototype, "inputClass", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], FilterComponent.prototype, "filter", void 0);
+FilterComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-smart-table-filter',
+        styles: [":host .ng2-smart-filter /deep/ input,:host .ng2-smart-filter /deep/ select{width:100%;line-height:normal;padding:.375rem .75rem;font-weight:400}:host .ng2-smart-filter /deep/ input[type=search]{box-sizing:inherit}:host .ng2-smart-filter /deep/ .completer-dropdown-holder{font-weight:400}:host .ng2-smart-filter /deep/ a{font-weight:400} /*# sourceMappingURL=filter.component.css.map */ "],
+        template: "\n    <div class=\"ng2-smart-filter\" *ngIf=\"column.isFilterable\" [ngSwitch]=\"column.getFilterType()\">\n      <select-filter *ngSwitchCase=\"'list'\"\n                     [query]=\"query\"\n                     [ngClass]=\"inputClass\"\n                     [column]=\"column\"\n                     (filter)=\"onFilter($event)\">\n      </select-filter>\n      <checkbox-filter *ngSwitchCase=\"'checkbox'\"\n                       [query]=\"query\"\n                       [ngClass]=\"inputClass\"\n                       [column]=\"column\"\n                       (filter)=\"onFilter($event)\">\n      </checkbox-filter>\n      <completer-filter *ngSwitchCase=\"'completer'\"\n                        [query]=\"query\"\n                        [ngClass]=\"inputClass\"\n                        [column]=\"column\"\n                        (filter)=\"onFilter($event)\">\n      </completer-filter>\n      <input-filter *ngSwitchDefault\n                    [query]=\"query\"\n                    [ngClass]=\"inputClass\"\n                    [column]=\"column\"\n                    (filter)=\"onFilter($event)\">\n      </input-filter>\n    </div>\n  ",
+    })
+], FilterComponent);
+
+//# sourceMappingURL=filter.component.js.map
+
+/***/ }),
+
+/***/ 774:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(643);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagerComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var PagerComponent = (function () {
+    function PagerComponent() {
+        this.changePage = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.count = 0;
+    }
+    PagerComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.source.onChanged().subscribe(function (changes) {
+            _this.page = _this.source.getPaging().page;
+            _this.perPage = _this.source.getPaging().perPage;
+            _this.count = _this.source.count();
+            if (_this.isPageOutOfBounce()) {
+                _this.source.setPage(--_this.page);
+            }
+            _this.processPageChange(changes);
+            _this.initPages();
+        });
+    };
+    /**
+     * We change the page here depending on the action performed against data source
+     * if a new element was added to the end of the table - then change the page to the last
+     * if a new element was added to the beginning of the table - then to the first page
+     * @param changes
+     */
+    PagerComponent.prototype.processPageChange = function (changes) {
+        if (changes['action'] === 'prepend') {
+            this.source.setPage(1);
+        }
+        if (changes['action'] === 'append') {
+            this.source.setPage(this.getLast());
+        }
+    };
+    PagerComponent.prototype.shouldShow = function () {
+        return this.source.count() > this.perPage;
+    };
+    PagerComponent.prototype.paginate = function (page) {
+        this.source.setPage(page);
+        this.page = page;
+        this.changePage.emit({ page: page });
+        return false;
+    };
+    PagerComponent.prototype.getPage = function () {
+        return this.page;
+    };
+    PagerComponent.prototype.getPages = function () {
+        return this.pages;
+    };
+    PagerComponent.prototype.getLast = function () {
+        return Math.ceil(this.count / this.perPage);
+    };
+    PagerComponent.prototype.isPageOutOfBounce = function () {
+        return (this.page * this.perPage) >= (this.count + this.perPage) && this.page > 1;
+    };
+    PagerComponent.prototype.initPages = function () {
+        var pagesCount = this.getLast();
+        var showPagesCount = 4;
+        showPagesCount = pagesCount < showPagesCount ? pagesCount : showPagesCount;
+        this.pages = [];
+        if (this.shouldShow()) {
+            var middleOne = Math.ceil(showPagesCount / 2);
+            middleOne = this.page >= middleOne ? this.page : middleOne;
+            var lastOne = middleOne + Math.floor(showPagesCount / 2);
+            lastOne = lastOne >= pagesCount ? pagesCount : lastOne;
+            var firstOne = lastOne - showPagesCount + 1;
+            for (var i = firstOne; i <= lastOne; i++) {
+                this.pages.push(i);
+            }
+        }
+    };
+    return PagerComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__["a" /* DataSource */])
+], PagerComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], PagerComponent.prototype, "changePage", void 0);
+PagerComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-smart-table-pager',
+        styles: [".ng2-smart-pagination{display:inline-block;font-size:.875rem;padding:0}.ng2-smart-pagination .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.ng2-smart-pagination .ng2-smart-page-item{display:inline} /*# sourceMappingURL=pager.component.css.map */ "],
+        template: "\n    <nav *ngIf=\"shouldShow()\" class=\"ng2-smart-pagination-nav\">\n      <ul class=\"ng2-smart-pagination pagination\">\n        <li class=\"ng2-smart-page-item page-item\" [ngClass]=\"{disabled: getPage() == 1}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\"\n          (click)=\"getPage() == 1 ? false : paginate(1)\" aria-label=\"First\">\n            <span aria-hidden=\"true\">&laquo;</span>\n            <span class=\"sr-only\">First</span>\n          </a>\n        </li>\n        <li class=\"ng2-smart-page-item page-item\"\n        [ngClass]=\"{active: getPage() == page}\" *ngFor=\"let page of getPages()\">\n          <span class=\"ng2-smart-page-link page-link\"\n          *ngIf=\"getPage() == page\">{{ page }} <span class=\"sr-only\">(current)</span></span>\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\"\n          (click)=\"paginate(page)\" *ngIf=\"getPage() != page\">{{ page }}</a>\n        </li>\n\n        <li class=\"ng2-smart-page-item page-item\"\n        [ngClass]=\"{disabled: getPage() == getLast()}\">\n          <a class=\"ng2-smart-page-link page-link\" href=\"#\"\n          (click)=\"getPage() == getLast() ? false : paginate(getLast())\" aria-label=\"Last\">\n            <span aria-hidden=\"true\">&raquo;</span>\n            <span class=\"sr-only\">Last</span>\n          </a>\n        </li>\n      </ul>\n    </nav>\n  ",
+    })
+], PagerComponent);
+
+//# sourceMappingURL=pager.component.js.map
+
+/***/ }),
+
+/***/ 775:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pager_component__ = __webpack_require__(774);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PagerModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var PagerModule = (function () {
+    function PagerModule() {
+    }
+    return PagerModule;
+}());
+PagerModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+        ],
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__pager_component__["a" /* PagerComponent */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__pager_component__["a" /* PagerComponent */],
+        ],
+    })
+], PagerModule);
+
+//# sourceMappingURL=pager.module.js.map
+
+/***/ }),
+
+/***/ 776:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(642);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyCreateCancelComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TbodyCreateCancelComponent = (function () {
+    function TbodyCreateCancelComponent() {
+    }
+    TbodyCreateCancelComponent.prototype.onSave = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.grid.save(this.row, this.editConfirm);
+    };
+    TbodyCreateCancelComponent.prototype.onCancelEdit = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.row.isInEditing = false;
+    };
+    return TbodyCreateCancelComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], TbodyCreateCancelComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__["a" /* Row */])
+], TbodyCreateCancelComponent.prototype, "row", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], TbodyCreateCancelComponent.prototype, "editConfirm", void 0);
+TbodyCreateCancelComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-st-tbody-create-cancel',
+        template: "\n    <a href=\"#\" class=\"ng2-smart-action ng2-smart-action-edit-save\"\n        [innerHTML]=\"grid.getSetting('edit.saveButtonContent')\" (click)=\"onSave($event)\"></a>\n    <a href=\"#\" class=\"ng2-smart-action ng2-smart-action-edit-cancel\"\n        [innerHTML]=\"grid.getSetting('edit.cancelButtonContent')\" (click)=\"onCancelEdit($event)\"></a>\n  ",
+    })
+], TbodyCreateCancelComponent);
+
+//# sourceMappingURL=create-cancel.component.js.map
+
+/***/ }),
+
+/***/ 777:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(642);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TbodyEditDeleteComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TbodyEditDeleteComponent = (function () {
+    function TbodyEditDeleteComponent() {
+        this.edit = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.delete = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.editRowSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    TbodyEditDeleteComponent.prototype.onEdit = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        this.editRowSelect.emit(this.row);
+        if (this.grid.getSetting('mode') === 'external') {
+            this.edit.emit({
+                data: this.row.getData(),
+                source: this.source,
+            });
+        }
+        else {
+            this.grid.edit(this.row);
+        }
+    };
+    TbodyEditDeleteComponent.prototype.onDelete = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (this.grid.getSetting('mode') === 'external') {
+            this.delete.emit({
+                data: this.row.getData(),
+                source: this.source,
+            });
+        }
+        else {
+            this.grid.delete(this.row, this.deleteConfirm);
+        }
+    };
+    return TbodyEditDeleteComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], TbodyEditDeleteComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__["a" /* Row */])
+], TbodyEditDeleteComponent.prototype, "row", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], TbodyEditDeleteComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], TbodyEditDeleteComponent.prototype, "deleteConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], TbodyEditDeleteComponent.prototype, "editConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TbodyEditDeleteComponent.prototype, "edit", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TbodyEditDeleteComponent.prototype, "delete", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TbodyEditDeleteComponent.prototype, "editRowSelect", void 0);
+TbodyEditDeleteComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-st-tbody-edit-delete',
+        template: "\n    <a href=\"#\" *ngIf=\"grid.getSetting('actions.edit')\" class=\"ng2-smart-action ng2-smart-action-edit-edit\"\n        [innerHTML]=\"grid.getSetting('edit.editButtonContent')\" (click)=\"onEdit($event)\"></a>\n    <a href=\"#\" *ngIf=\"grid.getSetting('actions.delete')\" class=\"ng2-smart-action ng2-smart-action-delete-delete\"\n        [innerHTML]=\"grid.getSetting('delete.deleteButtonContent')\" (click)=\"onDelete($event)\"></a>\n  ",
+    })
+], TbodyEditDeleteComponent);
+
+//# sourceMappingURL=edit-delete.component.js.map
+
+/***/ }),
+
+/***/ 778:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTbodyComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Ng2SmartTableTbodyComponent = (function () {
+    function Ng2SmartTableTbodyComponent() {
+        this.save = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.cancel = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.edit = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.delete = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.edited = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.userSelectRow = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.editRowSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.multipleSelectRow = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.rowHover = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return Ng2SmartTableTbodyComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], Ng2SmartTableTbodyComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], Ng2SmartTableTbodyComponent.prototype, "deleteConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], Ng2SmartTableTbodyComponent.prototype, "editConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "save", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "cancel", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "edit", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "delete", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "edited", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "userSelectRow", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "editRowSelect", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "multipleSelectRow", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTbodyComponent.prototype, "rowHover", void 0);
+Ng2SmartTableTbodyComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-tbody]',
+        styles: [":host .ng2-smart-row.selected{background:rgba(0,0,0,.05)}:host .ng2-smart-row .ng2-smart-actions.ng2-smart-action-multiple-select{text-align:center} /*# sourceMappingURL=tbody.component.css.map */ "],
+        template: "<tr *ngFor=\"let row of grid.getRows()\" (click)=\"userSelectRow.emit(row)\" (mouseover)=\"rowHover.emit(row)\" class=\"ng2-smart-row\" [ngClass]=\"{selected: row.isSelected}\"><td *ngIf=\"grid.isMultiSelectVisible()\" class=\"ng2-smart-actions ng2-smart-action-multiple-select\" (click)=\"multipleSelectRow.emit(row)\"><input type=\"checkbox\" class=\"form-control\" [ngModel]=\"row.isSelected\"></td><td *ngIf=\"!row.isInEditing && grid.showActionColumn('left')\" class=\"ng2-smart-actions\"><ng2-st-tbody-edit-delete [grid]=\"grid\" [deleteConfirm]=\"deleteConfirm\" [editConfirm]=\"editConfirm\" (edit)=\"edit.emit(row)\" (delete)=\"delete.emit(row)\" (editRowSelect)=\"editRowSelect.emit($event)\" [row]=\"row\" [source]=\"source\"></ng2-st-tbody-edit-delete></td><td *ngIf=\"row.isInEditing && grid.showActionColumn('left')\" class=\"ng2-smart-actions\"><ng2-st-tbody-create-cancel [grid]=\"grid\" [row]=\"row\" [editConfirm]=\"editConfirm\"></ng2-st-tbody-create-cancel></td><td *ngFor=\"let cell of row.getCells()\"><ng2-smart-table-cell [cell]=\"cell\" [grid]=\"grid\" [row]=\"row\" [isNew]=\"false\" [mode]=\"grid.getSetting('mode')\" [editConfirm]=\"editConfirm\" [inputClass]=\"grid.getSetting('edit.inputClass')\" [isInEditing]=\"row.isInEditing\"></ng2-smart-table-cell></td><td *ngIf=\"row.isInEditing && grid.showActionColumn('right')\" class=\"ng2-smart-actions\"><ng2-st-tbody-create-cancel [grid]=\"grid\" [row]=\"row\" [editConfirm]=\"editConfirm\"></ng2-st-tbody-create-cancel></td><td *ngIf=\"!row.isInEditing && grid.showActionColumn('right')\" class=\"ng2-smart-actions\"><ng2-st-tbody-edit-delete [grid]=\"grid\" [deleteConfirm]=\"deleteConfirm\" [editConfirm]=\"editConfirm\" [row]=\"row\" [source]=\"source\" (edit)=\"edit.emit(row)\" (delete)=\"delete.emit(row)\" (editRowSelect)=\"editRowSelect.emit($event)\"></ng2-st-tbody-edit-delete></td></tr><tr *ngIf=\"grid.getRows().length == 0\"><td [attr.colspan]=\"grid.getColumns().length + (grid.getSetting('actions.add') || grid.getSetting('actions.edit') || grid.getSetting('actions.delete'))\">{{ grid.getSetting('noDataMessage') }}</td></tr>",
+    })
+], Ng2SmartTableTbodyComponent);
+
+//# sourceMappingURL=tbody.component.js.map
+
+/***/ }),
+
+/***/ 779:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cell_cell_module__ = __webpack_require__(654);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__tbody_component__ = __webpack_require__(778);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cells_create_cancel_component__ = __webpack_require__(776);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cells_edit_delete_component__ = __webpack_require__(777);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TBodyModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+var TBODY_COMPONENTS = [
+    __WEBPACK_IMPORTED_MODULE_5__cells_create_cancel_component__["a" /* TbodyCreateCancelComponent */],
+    __WEBPACK_IMPORTED_MODULE_6__cells_edit_delete_component__["a" /* TbodyEditDeleteComponent */],
+    __WEBPACK_IMPORTED_MODULE_4__tbody_component__["a" /* Ng2SmartTableTbodyComponent */],
+];
+var TBodyModule = (function () {
+    function TBodyModule() {
+    }
+    return TBodyModule;
+}());
+TBodyModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__cell_cell_module__["a" /* CellModule */],
+        ],
+        declarations: TBODY_COMPONENTS.slice(),
+        exports: TBODY_COMPONENTS.slice(),
+    })
+], TBodyModule);
+
+//# sourceMappingURL=tbody.module.js.map
+
+/***/ }),
+
+/***/ 780:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsTitleComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ActionsTitleComponent = (function () {
+    function ActionsTitleComponent(ref) {
+        this.ref = ref;
+    }
+    ActionsTitleComponent.prototype.ngAfterViewInit = function () {
+        this.ref.nativeElement.classList.add('ng2-smart-actions');
+    };
+    return ActionsTitleComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], ActionsTitleComponent.prototype, "grid", void 0);
+ActionsTitleComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-actions-title]',
+        template: "\n    <div class=\"ng2-smart-title\">{{ grid.getSetting('actions.columnTitle') }}</div>\n  ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */]])
+], ActionsTitleComponent);
+
+//# sourceMappingURL=actions-title.component.js.map
+
+/***/ }),
+
+/***/ 781:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ActionsComponent = (function () {
+    function ActionsComponent() {
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return ActionsComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], ActionsComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], ActionsComponent.prototype, "create", void 0);
+ActionsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-st-actions',
+        template: "\n    <a href=\"#\" class=\"ng2-smart-action ng2-smart-action-add-create\"\n        [innerHTML]=\"grid.getSetting('add.createButtonContent')\"\n        (click)=\"$event.preventDefault();create.emit($event)\"></a>\n    <a href=\"#\" class=\"ng2-smart-action ng2-smart-action-add-cancel\"\n        [innerHTML]=\"grid.getSetting('add.cancelButtonContent')\"\n        (click)=\"$event.preventDefault();grid.createFormShown = false;\"></a>\n  ",
+    })
+], ActionsComponent);
+
+//# sourceMappingURL=actions.component.js.map
+
+/***/ }),
+
+/***/ 782:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddButtonComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AddButtonComponent = (function () {
+    function AddButtonComponent(ref) {
+        this.ref = ref;
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    AddButtonComponent.prototype.ngAfterViewInit = function () {
+        this.ref.nativeElement.classList.add('ng2-smart-actions-title', 'ng2-smart-actions-title-add');
+    };
+    AddButtonComponent.prototype.onAdd = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (this.grid.getSetting('mode') === 'external') {
+            this.create.emit({
+                source: this.source,
+            });
+        }
+        else {
+            this.grid.createFormShown = true;
+        }
+    };
+    return AddButtonComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], AddButtonComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], AddButtonComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], AddButtonComponent.prototype, "create", void 0);
+AddButtonComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-add-button]',
+        template: "\n    <a *ngIf=\"grid.getSetting('actions.add')\" href=\"#\" class=\"ng2-smart-action ng2-smart-action-add-add\"\n        [innerHTML]=\"grid.getSetting('add.addButtonContent')\" (click)=\"onAdd($event)\"></a>\n  ",
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* ElementRef */]])
+], AddButtonComponent);
+
+//# sourceMappingURL=add-button.component.js.map
+
+/***/ }),
+
+/***/ 783:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxSelectAllComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CheckboxSelectAllComponent = (function () {
+    function CheckboxSelectAllComponent() {
+    }
+    return CheckboxSelectAllComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], CheckboxSelectAllComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], CheckboxSelectAllComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Boolean)
+], CheckboxSelectAllComponent.prototype, "isAllSelected", void 0);
+CheckboxSelectAllComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-checkbox-select-all]',
+        template: "\n    <input type=\"checkbox\" [ngModel]=\"isAllSelected\">\n  ",
+    })
+], CheckboxSelectAllComponent);
+
+//# sourceMappingURL=checkbox-select-all.component.js.map
+
+/***/ }),
+
+/***/ 784:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__ = __webpack_require__(641);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColumnTitleComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ColumnTitleComponent = (function () {
+    function ColumnTitleComponent() {
+        this.sort = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return ColumnTitleComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_set_column__["a" /* Column */])
+], ColumnTitleComponent.prototype, "column", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], ColumnTitleComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], ColumnTitleComponent.prototype, "sort", void 0);
+ColumnTitleComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-st-column-title',
+        template: "\n    <div class=\"ng2-smart-title\">\n      <ng2-smart-table-title [source]=\"source\" [column]=\"column\" (sort)=\"sort.emit($event)\"></ng2-smart-table-title>\n    </div>\n  ",
+    })
+], ColumnTitleComponent);
+
+//# sourceMappingURL=column-title.component.js.map
+
+/***/ }),
+
+/***/ 785:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__ = __webpack_require__(641);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TitleComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TitleComponent = (function () {
+    function TitleComponent() {
+        this.currentDirection = '';
+        this.sort = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    TitleComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.source.onChanged().subscribe(function (elements) {
+            var sortConf = _this.source.getSort();
+            if (sortConf.length > 0 && sortConf[0]['field'] === _this.column.id) {
+                _this.currentDirection = sortConf[0]['direction'];
+            }
+            else {
+                _this.currentDirection = '';
+            }
+            sortConf.forEach(function (fieldConf) {
+            });
+        });
+    };
+    TitleComponent.prototype._sort = function (event) {
+        event.preventDefault();
+        this.changeSortDirection();
+        this.source.setSort([
+            {
+                field: this.column.id,
+                direction: this.currentDirection,
+                compare: this.column.getCompareFunction(),
+            },
+        ]);
+        this.sort.emit(null);
+    };
+    TitleComponent.prototype.changeSortDirection = function () {
+        if (this.currentDirection) {
+            var newDirection = this.currentDirection === 'asc' ? 'desc' : 'asc';
+            this.currentDirection = newDirection;
+        }
+        else {
+            this.currentDirection = this.column.sortDirection;
+        }
+        return this.currentDirection;
+    };
+    return TitleComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_column__["a" /* Column */])
+], TitleComponent.prototype, "column", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_data_source_data_source__["a" /* DataSource */])
+], TitleComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TitleComponent.prototype, "sort", void 0);
+TitleComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-smart-table-title',
+        styles: ["a.sort.asc,a.sort.desc{font-weight:700}a.sort.asc::after,a.sort.desc::after{content:'';display:inline-block;width:0;height:0;border-bottom:4px solid rgba(0,0,0,.3);border-top:4px solid transparent;border-left:4px solid transparent;border-right:4px solid transparent;margin-bottom:2px}a.sort.desc::after{-webkit-transform:rotate(-180deg);transform:rotate(-180deg);margin-bottom:-2px} /*# sourceMappingURL=title.component.css.map */ "],
+        template: "\n    <a href=\"#\" *ngIf=\"column.isSortable\"\n                (click)=\"_sort($event, column)\"\n                class=\"ng2-smart-sort-link sort\"\n                [ngClass]=\"currentDirection\">\n      {{ column.title }}\n    </a>\n    <span class=\"ng2-smart-sort\" *ngIf=\"!column.isSortable\">{{ column.title }}</span>\n  ",
+    })
+], TitleComponent);
+
+//# sourceMappingURL=title.component.js.map
+
+/***/ }),
+
+/***/ 786:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFitlersRowComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TheadFitlersRowComponent = (function () {
+    function TheadFitlersRowComponent() {
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.filter = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return TheadFitlersRowComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], TheadFitlersRowComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], TheadFitlersRowComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TheadFitlersRowComponent.prototype, "create", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TheadFitlersRowComponent.prototype, "filter", void 0);
+TheadFitlersRowComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-thead-filters-row]',
+        template: "\n    <th *ngIf=\"grid.isMultiSelectVisible()\"></th>\n    <th ng2-st-add-button *ngIf=\"grid.showActionColumn('left')\"\n                          [grid]=\"grid\"\n                          (create)=\"create.emit($event)\">\n    </th>\n    <th *ngFor=\"let column of grid.getColumns()\" class=\"ng2-smart-th {{ column.id }}\">\n      <ng2-smart-table-filter [source]=\"source\"\n                              [column]=\"column\"\n                              [inputClass]=\"grid.getSetting('filter.inputClass')\"\n                              (filter)=\"filter.emit($event)\">\n      </ng2-smart-table-filter>\n    </th>\n    <th ng2-st-add-button *ngIf=\"grid.showActionColumn('right')\"\n                          [grid]=\"grid\"\n                          [source]=\"source\"\n                          (create)=\"create.emit($event)\">\n    </th>\n  ",
+    })
+], TheadFitlersRowComponent);
+
+//# sourceMappingURL=thead-filters-row.component.js.map
+
+/***/ }),
+
+/***/ 787:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__ = __webpack_require__(642);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadFormRowComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var TheadFormRowComponent = (function () {
+    function TheadFormRowComponent() {
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    TheadFormRowComponent.prototype.onCreate = function (event) {
+        event.stopPropagation();
+        this.grid.create(this.grid.getNewRow(), this.createConfirm);
+    };
+    return TheadFormRowComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], TheadFormRowComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2__lib_data_set_row__["a" /* Row */])
+], TheadFormRowComponent.prototype, "row", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], TheadFormRowComponent.prototype, "createConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TheadFormRowComponent.prototype, "create", void 0);
+TheadFormRowComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-thead-form-row]',
+        template: "\n      <td *ngIf=\"grid.isMultiSelectVisible()\"></td>\n      <td  *ngIf= \"grid.showActionColumn('left')\"  class=\"ng2-smart-actions\">\n        <ng2-st-actions [grid]=\"grid\" (create)=\"onCreate($event)\"></ng2-st-actions>\n      </td>\n      <td *ngFor=\"let cell of grid.getNewRow().getCells()\">\n        <ng2-smart-table-cell [cell]=\"cell\"\n                              [grid]=\"grid\"\n                              [isNew]=\"true\"\n                              [createConfirm]=\"createConfirm\"\n                              [inputClass]=\"grid.getSetting('add.inputClass')\"\n                              [isInEditing]=\"grid.getNewRow().isInEditing\"\n                              (edited)=\"onCreate($event)\">\n        </ng2-smart-table-cell>\n      </td>\n      <td  *ngIf= \"grid.showActionColumn('right')\"  class=\"ng2-smart-actions\">\n        <ng2-st-actions [grid]=\"grid\" (create)=\"onCreate($event)\"></ng2-st-actions>\n      </td>\n  ",
+    })
+], TheadFormRowComponent);
+
+//# sourceMappingURL=thead-form-row.component.js.map
+
+/***/ }),
+
+/***/ 788:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TheadTitlesRowComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TheadTitlesRowComponent = (function () {
+    function TheadTitlesRowComponent() {
+        this.sort = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.selectAllRows = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return TheadTitlesRowComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], TheadTitlesRowComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Boolean)
+], TheadTitlesRowComponent.prototype, "isAllSelected", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], TheadTitlesRowComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TheadTitlesRowComponent.prototype, "sort", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], TheadTitlesRowComponent.prototype, "selectAllRows", void 0);
+TheadTitlesRowComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-thead-titles-row]',
+        template: "\n    <th ng2-st-checkbox-select-all *ngIf=\"grid.isMultiSelectVisible()\"\n                                   [grid]=\"grid\"\n                                   [source]=\"source\"\n                                   [isAllSelected]=\"isAllSelected\"\n                                   (click)=\"selectAllRows.emit($event)\">\n    </th>\n    <th ng2-st-actions-title *ngIf=\"grid.showActionColumn('left')\" [grid]=\"grid\"></th>\n    <th *ngFor=\"let column of grid.getColumns()\" class=\"ng2-smart-th {{ column.id }}\" [ngClass]=\"column.class\">\n      <ng2-st-column-title [source]=\"source\" [column]=\"column\" (sort)=\"sort.emit($event)\"></ng2-st-column-title>\n    </th>\n    <th ng2-st-actions-title *ngIf=\"grid.showActionColumn('right')\" [grid]=\"grid\"></th>\n  ",
+    })
+], TheadTitlesRowComponent);
+
+//# sourceMappingURL=thead-titles-row.component.js.map
+
+/***/ }),
+
+/***/ 789:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableTheadComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Ng2SmartTableTheadComponent = (function () {
+    function Ng2SmartTableTheadComponent() {
+        this.sort = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.selectAllRows = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.filter = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+    }
+    return Ng2SmartTableTheadComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */])
+], Ng2SmartTableTheadComponent.prototype, "grid", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTheadComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Boolean)
+], Ng2SmartTableTheadComponent.prototype, "isAllSelected", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], Ng2SmartTableTheadComponent.prototype, "createConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTheadComponent.prototype, "sort", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTheadComponent.prototype, "selectAllRows", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTheadComponent.prototype, "create", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableTheadComponent.prototype, "filter", void 0);
+Ng2SmartTableTheadComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: '[ng2-st-thead]',
+        template: "<tr ng2-st-thead-titles-row *ngIf=\"!grid.getSetting('hideHeader')\" class=\"ng2-smart-titles\" [grid]=\"grid\" [isAllSelected]=\"isAllSelected\" [source]=\"source\" (sort)=\"sort.emit($event)\" (selectAllRows)=\"selectAllRows.emit($event)\"></tr><tr ng2-st-thead-filters-row *ngIf=\"!grid.getSetting('hideSubHeader')\" class=\"ng2-smart-filters\" [grid]=\"grid\" [source]=\"source\" (create)=\"create.emit($event)\" (filter)=\"filter.emit($event)\"></tr><tr ng2-st-thead-form-row *ngIf=\"grid.createFormShown\" [grid]=\"grid\" [createConfirm]=\"createConfirm\"></tr>",
+    })
+], Ng2SmartTableTheadComponent);
+
+//# sourceMappingURL=thead.component.js.map
+
+/***/ }),
+
+/***/ 790:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter_filter_module__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cell_cell_module__ = __webpack_require__(654);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__thead_component__ = __webpack_require__(789);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cells_actions_component__ = __webpack_require__(781);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__cells_actions_title_component__ = __webpack_require__(780);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__cells_add_button_component__ = __webpack_require__(782);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__cells_checkbox_select_all_component__ = __webpack_require__(783);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cells_column_title_component__ = __webpack_require__(784);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__cells_title_title_component__ = __webpack_require__(785);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__rows_thead_filters_row_component__ = __webpack_require__(786);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__rows_thead_form_row_component__ = __webpack_require__(787);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__rows_thead_titles_row_component__ = __webpack_require__(788);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return THeadModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var THEAD_COMPONENTS = [
+    __WEBPACK_IMPORTED_MODULE_6__cells_actions_component__["a" /* ActionsComponent */],
+    __WEBPACK_IMPORTED_MODULE_7__cells_actions_title_component__["a" /* ActionsTitleComponent */],
+    __WEBPACK_IMPORTED_MODULE_8__cells_add_button_component__["a" /* AddButtonComponent */],
+    __WEBPACK_IMPORTED_MODULE_9__cells_checkbox_select_all_component__["a" /* CheckboxSelectAllComponent */],
+    __WEBPACK_IMPORTED_MODULE_10__cells_column_title_component__["a" /* ColumnTitleComponent */],
+    __WEBPACK_IMPORTED_MODULE_11__cells_title_title_component__["a" /* TitleComponent */],
+    __WEBPACK_IMPORTED_MODULE_12__rows_thead_filters_row_component__["a" /* TheadFitlersRowComponent */],
+    __WEBPACK_IMPORTED_MODULE_13__rows_thead_form_row_component__["a" /* TheadFormRowComponent */],
+    __WEBPACK_IMPORTED_MODULE_14__rows_thead_titles_row_component__["a" /* TheadTitlesRowComponent */],
+    __WEBPACK_IMPORTED_MODULE_5__thead_component__["a" /* Ng2SmartTableTheadComponent */],
+];
+var THeadModule = (function () {
+    function THeadModule() {
+    }
+    return THeadModule;
+}());
+THeadModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__filter_filter_module__["a" /* FilterModule */],
+            __WEBPACK_IMPORTED_MODULE_4__cell_cell_module__["a" /* CellModule */],
+        ],
+        declarations: THEAD_COMPONENTS.slice(),
+        exports: THEAD_COMPONENTS.slice(),
+    })
+], THeadModule);
+
+//# sourceMappingURL=thead.module.js.map
+
+/***/ }),
+
+/***/ 791:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__row__ = __webpack_require__(642);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__column__ = __webpack_require__(641);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DataSet; });
+
+
+var DataSet = (function () {
+    function DataSet(data, columnSettings) {
+        if (data === void 0) { data = []; }
+        this.columnSettings = columnSettings;
+        this.data = [];
+        this.columns = [];
+        this.rows = [];
+        this.willSelect = 'first';
+        this.createColumns(columnSettings);
+        this.setData(data);
+        this.createNewRow();
+    }
+    DataSet.prototype.setData = function (data) {
+        this.data = data;
+        this.createRows();
+    };
+    DataSet.prototype.getColumns = function () {
+        return this.columns;
+    };
+    DataSet.prototype.getRows = function () {
+        return this.rows;
+    };
+    DataSet.prototype.getFirstRow = function () {
+        return this.rows[0];
+    };
+    DataSet.prototype.getLastRow = function () {
+        return this.rows[this.rows.length - 1];
+    };
+    DataSet.prototype.findRowByData = function (data) {
+        return this.rows.find(function (row) { return row.getData() === data; });
+    };
+    DataSet.prototype.deselectAll = function () {
+        this.rows.forEach(function (row) {
+            row.isSelected = false;
+        });
+    };
+    DataSet.prototype.selectRow = function (row) {
+        var previousIsSelected = row.isSelected;
+        this.deselectAll();
+        row.isSelected = !previousIsSelected;
+        this.selectedRow = row;
+        return this.selectedRow;
+    };
+    DataSet.prototype.multipleSelectRow = function (row) {
+        row.isSelected = !row.isSelected;
+        this.selectedRow = row;
+        return this.selectedRow;
+    };
+    DataSet.prototype.selectPreviousRow = function () {
+        if (this.rows.length > 0) {
+            var index = this.selectedRow ? this.selectedRow.index : 0;
+            if (index > this.rows.length - 1) {
+                index = this.rows.length - 1;
+            }
+            this.selectRow(this.rows[index]);
+            return this.selectedRow;
+        }
+    };
+    DataSet.prototype.selectFirstRow = function () {
+        if (this.rows.length > 0) {
+            this.selectRow(this.rows[0]);
+            return this.selectedRow;
+        }
+    };
+    DataSet.prototype.selectLastRow = function () {
+        if (this.rows.length > 0) {
+            this.selectRow(this.rows[this.rows.length - 1]);
+            return this.selectedRow;
+        }
+    };
+    DataSet.prototype.willSelectFirstRow = function () {
+        this.willSelect = 'first';
+    };
+    DataSet.prototype.willSelectLastRow = function () {
+        this.willSelect = 'last';
+    };
+    DataSet.prototype.select = function () {
+        if (this.getRows().length === 0) {
+            return;
+        }
+        if (this.willSelect) {
+            if (this.willSelect === 'first') {
+                this.selectFirstRow();
+            }
+            if (this.willSelect === 'last') {
+                this.selectLastRow();
+            }
+            this.willSelect = '';
+        }
+        else {
+            this.selectFirstRow();
+        }
+        return this.selectedRow;
+    };
+    DataSet.prototype.createNewRow = function () {
+        this.newRow = new __WEBPACK_IMPORTED_MODULE_0__row__["a" /* Row */](0, {}, this);
+        this.newRow.isInEditing = true;
+    };
+    /**
+     * Create columns by mapping from the settings
+     * @param settings
+     * @private
+     */
+    DataSet.prototype.createColumns = function (settings) {
+        for (var id in settings) {
+            if (settings.hasOwnProperty(id)) {
+                this.columns.push(new __WEBPACK_IMPORTED_MODULE_1__column__["a" /* Column */](id, settings[id], this));
+            }
+        }
+    };
+    /**
+     * Create rows based on current data prepared in data source
+     * @private
+     */
+    DataSet.prototype.createRows = function () {
+        var _this = this;
+        this.rows = [];
+        this.data.forEach(function (el, index) {
+            _this.rows.push(new __WEBPACK_IMPORTED_MODULE_0__row__["a" /* Row */](index, el, _this));
+        });
+    };
+    return DataSet;
+}());
+
+//# sourceMappingURL=data-set.js.map
+
+/***/ }),
+
+/***/ 792:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalFilter; });
+var LocalFilter = (function () {
+    function LocalFilter() {
+    }
+    LocalFilter.filter = function (data, field, search, customFilter) {
+        var filter = customFilter ? customFilter : this.FILTER;
+        return data.filter(function (el) {
+            var value = typeof el[field] === 'undefined' || el[field] === null ? '' : el[field];
+            return filter.call(null, value, search);
+        });
+    };
+    return LocalFilter;
+}());
+
+LocalFilter.FILTER = function (value, search) {
+    return value.toString().toLowerCase().includes(search.toString().toLowerCase());
+};
+//# sourceMappingURL=local.filter.js.map
+
+/***/ }),
+
+/***/ 793:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalPager; });
+var LocalPager = (function () {
+    function LocalPager() {
+    }
+    LocalPager.paginate = function (data, page, perPage) {
+        return data.slice(perPage * (page - 1), perPage * page);
+    };
+    return LocalPager;
+}());
+
+//# sourceMappingURL=local.pager.js.map
+
+/***/ }),
+
+/***/ 794:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalSorter; });
+var LocalSorter = (function () {
+    function LocalSorter() {
+    }
+    LocalSorter.sort = function (data, field, direction, customCompare) {
+        var dir = (direction === 'asc') ? 1 : -1;
+        var compare = customCompare ? customCompare : this.COMPARE;
+        return data.sort(function (a, b) {
+            return compare.call(null, dir, a[field], b[field]);
+        });
+    };
+    return LocalSorter;
+}());
+
+LocalSorter.COMPARE = function (direction, a, b) {
+    if (a < b) {
+        return -1 * direction;
+    }
+    if (a > b) {
+        return direction;
+    }
+    return 0;
+};
+//# sourceMappingURL=local.sorter.js.map
+
+/***/ }),
+
+/***/ 795:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServerSourceConf; });
+var ServerSourceConf = (function () {
+    function ServerSourceConf(_a) {
+        var _b = _a === void 0 ? {} : _a, _c = _b.endPoint, endPoint = _c === void 0 ? '' : _c, _d = _b.sortFieldKey, sortFieldKey = _d === void 0 ? '' : _d, _e = _b.sortDirKey, sortDirKey = _e === void 0 ? '' : _e, _f = _b.pagerPageKey, pagerPageKey = _f === void 0 ? '' : _f, _g = _b.pagerLimitKey, pagerLimitKey = _g === void 0 ? '' : _g, _h = _b.filterFieldKey, filterFieldKey = _h === void 0 ? '' : _h, _j = _b.totalKey, totalKey = _j === void 0 ? '' : _j, _k = _b.dataKey, dataKey = _k === void 0 ? '' : _k;
+        this.endPoint = endPoint ? endPoint : '';
+        this.sortFieldKey = sortFieldKey ? sortFieldKey : ServerSourceConf.SORT_FIELD_KEY;
+        this.sortDirKey = sortDirKey ? sortDirKey : ServerSourceConf.SORT_DIR_KEY;
+        this.pagerPageKey = pagerPageKey ? pagerPageKey : ServerSourceConf.PAGER_PAGE_KEY;
+        this.pagerLimitKey = pagerLimitKey ? pagerLimitKey : ServerSourceConf.PAGER_LIMIT_KEY;
+        this.filterFieldKey = filterFieldKey ? filterFieldKey : ServerSourceConf.FILTER_FIELD_KEY;
+        this.totalKey = totalKey ? totalKey : ServerSourceConf.TOTAL_KEY;
+        this.dataKey = dataKey ? dataKey : ServerSourceConf.DATA_KEY;
+    }
+    return ServerSourceConf;
+}());
+
+ServerSourceConf.SORT_FIELD_KEY = '_sort';
+ServerSourceConf.SORT_DIR_KEY = '_order';
+ServerSourceConf.PAGER_PAGE_KEY = '_page';
+ServerSourceConf.PAGER_LIMIT_KEY = '_limit';
+ServerSourceConf.FILTER_FIELD_KEY = '#field#_like';
+ServerSourceConf.TOTAL_KEY = 'x-total-count';
+ServerSourceConf.DATA_KEY = '';
+//# sourceMappingURL=server-source.conf.js.map
+
+/***/ }),
+
+/***/ 796:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__local_local_data_source__ = __webpack_require__(655);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__server_source_conf__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers__ = __webpack_require__(646);
+/* unused harmony export ServerDataSource */
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+var ServerDataSource = (function (_super) {
+    __extends(ServerDataSource, _super);
+    function ServerDataSource(http, conf) {
+        if (conf === void 0) { conf = {}; }
+        var _this = _super.call(this) || this;
+        _this.http = http;
+        _this.lastRequestCount = 0;
+        _this.conf = new __WEBPACK_IMPORTED_MODULE_2__server_source_conf__["a" /* ServerSourceConf */](conf);
+        if (!_this.conf.endPoint) {
+            throw new Error('At least endPoint must be specified as a configuration of the server data source.');
+        }
+        return _this;
+    }
+    ServerDataSource.prototype.count = function () {
+        return this.lastRequestCount;
+    };
+    ServerDataSource.prototype.getElements = function () {
+        var _this = this;
+        return this.requestElements().map(function (res) {
+            _this.lastRequestCount = _this.extractTotalFromResponse(res);
+            _this.data = _this.extractDataFromResponse(res);
+            return _this.data;
+        }).toPromise();
+    };
+    /**
+     * Extracts array of data from server response
+     * @param res
+     * @returns {any}
+     */
+    ServerDataSource.prototype.extractDataFromResponse = function (res) {
+        var rawData = res.json();
+        var data = !!this.conf.dataKey ? __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__helpers__["a" /* getDeepFromObject */])(rawData, this.conf.dataKey, []) : rawData;
+        if (data instanceof Array) {
+            return data;
+        }
+        throw new Error("Data must be an array.\n    Please check that data extracted from the server response by the key '" + this.conf.dataKey + "' exists and is array.");
+    };
+    /**
+     * Extracts total rows count from the server response
+     * Looks for the count in the heders first, then in the response body
+     * @param res
+     * @returns {any}
+     */
+    ServerDataSource.prototype.extractTotalFromResponse = function (res) {
+        if (res.headers.has(this.conf.totalKey)) {
+            return +res.headers.get(this.conf.totalKey);
+        }
+        else {
+            var rawData = res.json();
+            return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__helpers__["a" /* getDeepFromObject */])(rawData, this.conf.totalKey, 0);
+        }
+    };
+    ServerDataSource.prototype.requestElements = function () {
+        return this.http.get(this.conf.endPoint, this.createRequestOptions());
+    };
+    ServerDataSource.prototype.createRequestOptions = function () {
+        var requestOptions = {};
+        requestOptions.search = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* URLSearchParams */]();
+        requestOptions = this.addSortRequestOptions(requestOptions);
+        requestOptions = this.addFilterRequestOptions(requestOptions);
+        return this.addPagerRequestOptions(requestOptions);
+    };
+    ServerDataSource.prototype.addSortRequestOptions = function (requestOptions) {
+        var _this = this;
+        var searchParams = requestOptions.search;
+        if (this.sortConf) {
+            this.sortConf.forEach(function (fieldConf) {
+                searchParams.set(_this.conf.sortFieldKey, fieldConf.field);
+                searchParams.set(_this.conf.sortDirKey, fieldConf.direction.toUpperCase());
+            });
+        }
+        return requestOptions;
+    };
+    ServerDataSource.prototype.addFilterRequestOptions = function (requestOptions) {
+        var _this = this;
+        var searchParams = requestOptions.search;
+        if (this.filterConf.filters) {
+            this.filterConf.filters.forEach(function (fieldConf) {
+                if (fieldConf['search']) {
+                    searchParams.set(_this.conf.filterFieldKey.replace('#field#', fieldConf['field']), fieldConf['search']);
+                }
+            });
+        }
+        return requestOptions;
+    };
+    ServerDataSource.prototype.addPagerRequestOptions = function (requestOptions) {
+        var searchParams = requestOptions.search;
+        if (this.pagingConf && this.pagingConf['page'] && this.pagingConf['perPage']) {
+            searchParams.set(this.conf.pagerPageKey, this.pagingConf['page']);
+            searchParams.set(this.conf.pagerLimitKey, this.pagingConf['perPage']);
+        }
+        return requestOptions;
+    };
+    return ServerDataSource;
+}(__WEBPACK_IMPORTED_MODULE_0__local_local_data_source__["a" /* LocalDataSource */]));
+
+//# sourceMappingURL=server.data-source.js.map
+
+/***/ }),
+
+/***/ 797:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_grid__ = __webpack_require__(637);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__ = __webpack_require__(643);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_helpers__ = __webpack_require__(646);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__ = __webpack_require__(655);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var Ng2SmartTableComponent = (function () {
+    function Ng2SmartTableComponent() {
+        this.settings = {};
+        this.rowSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.userRowSelect = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.delete = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.edit = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.create = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.deleteConfirm = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.editConfirm = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.createConfirm = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.rowHover = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */]();
+        this.defaultSettings = {
+            mode: 'inline',
+            selectMode: 'single',
+            hideHeader: false,
+            hideSubHeader: false,
+            actions: {
+                columnTitle: 'Actions',
+                add: true,
+                edit: true,
+                delete: true,
+                position: 'left',
+            },
+            filter: {
+                inputClass: '',
+            },
+            edit: {
+                inputClass: '',
+                editButtonContent: 'Edit',
+                saveButtonContent: 'Update',
+                cancelButtonContent: 'Cancel',
+                confirmSave: false,
+            },
+            add: {
+                inputClass: '',
+                addButtonContent: 'Add New',
+                createButtonContent: 'Create',
+                cancelButtonContent: 'Cancel',
+                confirmCreate: false,
+            },
+            delete: {
+                deleteButtonContent: 'Delete',
+                confirmDelete: false,
+            },
+            attr: {
+                id: '',
+                class: '',
+            },
+            noDataMessage: 'No data found',
+            columns: {},
+            pager: {
+                display: true,
+                perPage: 10,
+            },
+        };
+        this.isAllSelected = false;
+    }
+    Ng2SmartTableComponent.prototype.ngOnChanges = function (changes) {
+        if (this.grid) {
+            if (changes['settings']) {
+                this.grid.setSettings(this.prepareSettings());
+            }
+            if (changes['source']) {
+                this.grid.setSource(this.source);
+            }
+        }
+        else {
+            this.initGrid();
+        }
+    };
+    Ng2SmartTableComponent.prototype.editRowSelect = function (row) {
+        if (this.grid.getSetting('selectMode') === 'multi') {
+            this.onMultipleSelectRow(row);
+        }
+        else {
+            this.onSelectRow(row);
+        }
+    };
+    Ng2SmartTableComponent.prototype.onUserSelectRow = function (row) {
+        if (this.grid.getSetting('selectMode') !== 'multi') {
+            this.grid.selectRow(row);
+            this.emitUserSelectRow(row);
+            this.emitSelectRow(row);
+        }
+    };
+    Ng2SmartTableComponent.prototype.onRowHover = function (row) {
+        this.rowHover.emit(row);
+    };
+    Ng2SmartTableComponent.prototype.multipleSelectRow = function (row) {
+        this.grid.multipleSelectRow(row);
+        this.emitUserSelectRow(row);
+        this.emitSelectRow(row);
+    };
+    Ng2SmartTableComponent.prototype.onSelectAllRows = function ($event) {
+        this.isAllSelected = !this.isAllSelected;
+        this.grid.selectAllRows(this.isAllSelected);
+        this.emitUserSelectRow(null);
+        this.emitSelectRow(null);
+    };
+    Ng2SmartTableComponent.prototype.onSelectRow = function (row) {
+        this.grid.selectRow(row);
+        this.emitSelectRow(row);
+    };
+    Ng2SmartTableComponent.prototype.onMultipleSelectRow = function (row) {
+        this.emitSelectRow(row);
+    };
+    Ng2SmartTableComponent.prototype.initGrid = function () {
+        var _this = this;
+        this.source = this.prepareSource();
+        this.grid = new __WEBPACK_IMPORTED_MODULE_1__lib_grid__["a" /* Grid */](this.source, this.prepareSettings());
+        this.grid.onSelectRow().subscribe(function (row) { return _this.emitSelectRow(row); });
+    };
+    Ng2SmartTableComponent.prototype.prepareSource = function () {
+        if (this.source instanceof __WEBPACK_IMPORTED_MODULE_2__lib_data_source_data_source__["a" /* DataSource */]) {
+            return this.source;
+        }
+        else if (this.source instanceof Array) {
+            return new __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__["a" /* LocalDataSource */](this.source);
+        }
+        return new __WEBPACK_IMPORTED_MODULE_4__lib_data_source_local_local_data_source__["a" /* LocalDataSource */]();
+    };
+    Ng2SmartTableComponent.prototype.prepareSettings = function () {
+        return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__lib_helpers__["b" /* deepExtend */])({}, this.defaultSettings, this.settings);
+    };
+    Ng2SmartTableComponent.prototype.changePage = function ($event) {
+        this.resetAllSelector();
+    };
+    Ng2SmartTableComponent.prototype.sort = function ($event) {
+        this.resetAllSelector();
+    };
+    Ng2SmartTableComponent.prototype.filter = function ($event) {
+        this.resetAllSelector();
+    };
+    Ng2SmartTableComponent.prototype.resetAllSelector = function () {
+        this.isAllSelected = false;
+    };
+    Ng2SmartTableComponent.prototype.emitUserSelectRow = function (row) {
+        var selectedRows = this.grid.getSelectedRows();
+        this.userRowSelect.emit({
+            data: row ? row.getData() : null,
+            isSelected: row ? row.getIsSelected() : null,
+            source: this.source,
+            selected: selectedRows && selectedRows.length ? selectedRows.map(function (r) { return r.getData(); }) : [],
+        });
+    };
+    Ng2SmartTableComponent.prototype.emitSelectRow = function (row) {
+        this.rowSelect.emit({
+            data: row ? row.getData() : null,
+            isSelected: row ? row.getIsSelected() : null,
+            source: this.source,
+        });
+    };
+    return Ng2SmartTableComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "source", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Input */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "settings", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "rowSelect", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "userRowSelect", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "delete", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "edit", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "create", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "deleteConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "editConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", Object)
+], Ng2SmartTableComponent.prototype, "createConfirm", void 0);
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["x" /* Output */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* EventEmitter */])
+], Ng2SmartTableComponent.prototype, "rowHover", void 0);
+Ng2SmartTableComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+        selector: 'ng2-smart-table',
+        styles: [":host /deep/ *{box-sizing:border-box;font-family:\"Open Sans\",\"Helvetica Neue\",Helvetica,Arial,sans-serif}:host /deep/ button,:host /deep/ input,:host /deep/ optgroup,:host /deep/ select,:host /deep/ textarea{color:inherit;font:inherit;margin:0}:host /deep/ table{font-size:16px;line-height:1.5;color:#606c71;border-collapse:collapse;border-spacing:0;display:table;width:100%;max-width:100%;overflow:auto;word-break:normal;word-break:keep-all}:host /deep/ table tr th{font-weight:700}:host /deep/ table tr section{font-size:.75rem;font-weight:700}:host /deep/ table tr td,:host /deep/ table tr th{font-size:.875rem;margin:0;padding:.5rem 1rem;border:1px solid #e9ebec}:host /deep/ a{color:#1e6bb8;text-decoration:none}:host /deep/ a:hover{text-decoration:underline} /*# sourceMappingURL=ng2-smart-table.component.css.map */ "],
+        template: "<table [id]=\"grid.getSetting('attr.id')\" [ngClass]=\"grid.getSetting('attr.class')\"><thead ng2-st-thead *ngIf=\"!grid.getSetting('hideHeader') || !grid.getSetting('hideSubHeader')\" [grid]=\"grid\" [isAllSelected]=\"isAllSelected\" [source]=\"source\" [createConfirm]=\"createConfirm\" (create)=\"create.emit($event)\" (selectAllRows)=\"onSelectAllRows($event)\" (sort)=\"sort($event)\" (filter)=\"filter($event)\"></thead><tbody ng2-st-tbody [grid]=\"grid\" [source]=\"source\" [deleteConfirm]=\"deleteConfirm\" [editConfirm]=\"editConfirm\" (edit)=\"edit.emit($event)\" (delete)=\"delete.emit($event)\" (userSelectRow)=\"onUserSelectRow($event)\" (editRowSelect)=\"editRowSelect($event)\" (multipleSelectRow)=\"multipleSelectRow($event)\" (rowHover)=\"onRowHover($event)\"></tbody></table><ng2-smart-table-pager *ngIf=\"grid.getSetting('pager.display')\" [source]=\"source\" (changePage)=\"changePage($event)\"></ng2-smart-table-pager>",
+    })
+], Ng2SmartTableComponent);
+
+//# sourceMappingURL=ng2-smart-table.component.js.map
+
+/***/ }),
+
+/***/ 798:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_cell_cell_module__ = __webpack_require__(654);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_filter_filter_module__ = __webpack_require__(684);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_pager_pager_module__ = __webpack_require__(775);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_tbody_tbody_module__ = __webpack_require__(779);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_thead_thead_module__ = __webpack_require__(790);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_component__ = __webpack_require__(797);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Ng2SmartTableModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+var Ng2SmartTableModule = (function () {
+    function Ng2SmartTableModule() {
+    }
+    return Ng2SmartTableModule;
+}());
+Ng2SmartTableModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* ReactiveFormsModule */],
+            __WEBPACK_IMPORTED_MODULE_3__components_cell_cell_module__["a" /* CellModule */],
+            __WEBPACK_IMPORTED_MODULE_4__components_filter_filter_module__["a" /* FilterModule */],
+            __WEBPACK_IMPORTED_MODULE_5__components_pager_pager_module__["a" /* PagerModule */],
+            __WEBPACK_IMPORTED_MODULE_6__components_tbody_tbody_module__["a" /* TBodyModule */],
+            __WEBPACK_IMPORTED_MODULE_7__components_thead_thead_module__["a" /* THeadModule */],
+        ],
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_component__["a" /* Ng2SmartTableComponent */],
+        ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_8__ng2_smart_table_component__["a" /* Ng2SmartTableComponent */],
+        ],
+    })
+], Ng2SmartTableModule);
+
+//# sourceMappingURL=ng2-smart-table.module.js.map
+
+/***/ }),
+
+/***/ 809:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\n  <div class=\"row\">\n    <div class=\"col-lg-12 col-md-12\">\n      <ba-card cardTitle=\"Event Logs\" cardRefreshButton=\"Refresh\" baCardClass=\"large-card with-scroll\">\n        <my-date-range-picker [options]=\"myDateRangePickerOptions\"\n                   (dateRangeChanged)=\"onDateRangeChanged($event)\"></my-date-range-picker>\n                   \n        <button type=\"button\" class=\"btn btn-secondary float-right\" style=\"margin-right:2%\" (click)=\"addLogLines()\" >Add Log Lines</button>\n        <button type=\"button\" class=\"btn btn-secondary float-right\" style=\"margin-right:2%\" (click)=\"refresh()\" >Refresh</button>\n    \n        <ng2-smart-table [settings]=\"settings\" [source]=\"source\" (userRowSelect)=\"onUserRowSelect($event)\"></ng2-smart-table>\n      <!--eventlog-table></eventlog-table-->\n      </ba-card>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ 810:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"widgets\">\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n\n      <ba-card cardTitle=\"Event Log\" baCardClass=\"with-scroll\">\n\n        <h4 class=\"grid-h\">Event Log View</h4>\n        <div class=\"table-responsive\">\n          <table class=\"table table-bordered table-striped\">\n            <tbody>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Timestamp</th>\n              <td>{{eventLog?.timestamp}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Task Group</th>\n              <td>{{eventLog?.playbook}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Task Id</th>\n              <td>{{eventLog?.taskid}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Task</th>\n              <td>{{eventLog?.task}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">User</th>\n              <td>{{eventLog?.user}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Host Name</th>\n              <td>{{eventLog?.host}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Message</th>\n              <td>{{eventLog?.msg}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Changed</th>\n              <td>{{eventLog?.changed}}</td>\n            </tr>\n            <tr>\n              <th class=\"text-nowrap\" scope=\"row\">Status</th>\n              <td>{{eventLog?.status}}</td>\n            </tr>\n            </tbody>\n          </table>\n        </div>\n      </ba-card>\n    </div>\n  </div>\n\n</div>\n"
+
+/***/ }),
+
+/***/ 821:
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**!
- * easy-pie-chart
- * Lightweight plugin to render simple, animated and retina optimized pie charts
- *
- * @license 
- * @author Robert Fleischmann <rendro87@gmail.com> (http://robert-fleischmann.de)
- * @version 2.1.7
- **/
-
-(function (root, factory) {
-  if (true) {
-    // AMD. Register as an anonymous module unless amdModuleId is set
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(167)], __WEBPACK_AMD_DEFINE_RESULT__ = function (a0) {
-      return (factory(a0));
-    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory(require("jquery"));
-  } else {
-    factory(jQuery);
-  }
-}(this, function ($) {
+"use strict";
 
 /**
- * Renderer to render the chart on a canvas object
- * @param {DOMElement} el      DOM element to host the canvas (root of the plugin)
- * @param {object}     options options object of the plugin
+ * An execution context and a data structure to order tasks and schedule their
+ * execution. Provides a notion of (potentially virtual) time, through the
+ * `now()` getter method.
+ *
+ * Each unit of work in a Scheduler is called an {@link Action}.
+ *
+ * ```ts
+ * class Scheduler {
+ *   now(): number;
+ *   schedule(work, delay?, state?): Subscription;
+ * }
+ * ```
+ *
+ * @class Scheduler
  */
-var CanvasRenderer = function(el, options) {
-	var cachedBackground;
-	var canvas = document.createElement('canvas');
+var Scheduler = (function () {
+    function Scheduler(SchedulerAction, now) {
+        if (now === void 0) { now = Scheduler.now; }
+        this.SchedulerAction = SchedulerAction;
+        this.now = now;
+    }
+    /**
+     * Schedules a function, `work`, for execution. May happen at some point in
+     * the future, according to the `delay` parameter, if specified. May be passed
+     * some context object, `state`, which will be passed to the `work` function.
+     *
+     * The given arguments will be processed an stored as an Action object in a
+     * queue of actions.
+     *
+     * @param {function(state: ?T): ?Subscription} work A function representing a
+     * task, or some unit of work to be executed by the Scheduler.
+     * @param {number} [delay] Time to wait before executing the work, where the
+     * time unit is implicit and defined by the Scheduler itself.
+     * @param {T} [state] Some contextual data that the `work` function uses when
+     * called by the Scheduler.
+     * @return {Subscription} A subscription in order to be able to unsubscribe
+     * the scheduled work.
+     */
+    Scheduler.prototype.schedule = function (work, delay, state) {
+        if (delay === void 0) { delay = 0; }
+        return new this.SchedulerAction(this, work).schedule(state, delay);
+    };
+    Scheduler.now = Date.now ? Date.now : function () { return +new Date(); };
+    return Scheduler;
+}());
+exports.Scheduler = Scheduler;
+//# sourceMappingURL=Scheduler.js.map
 
-	el.appendChild(canvas);
+/***/ }),
 
-	if (typeof(G_vmlCanvasManager) === 'object') {
-		G_vmlCanvasManager.initElement(canvas);
-	}
+/***/ 822:
+/***/ (function(module, exports, __webpack_require__) {
 
-	var ctx = canvas.getContext('2d');
+"use strict";
 
-	canvas.width = canvas.height = options.size;
+var Observable_1 = __webpack_require__(4);
+var timer_1 = __webpack_require__(824);
+Observable_1.Observable.timer = timer_1.timer;
+//# sourceMappingURL=timer.js.map
 
-	// canvas on retina devices
-	var scaleBy = 1;
-	if (window.devicePixelRatio > 1) {
-		scaleBy = window.devicePixelRatio;
-		canvas.style.width = canvas.style.height = [options.size, 'px'].join('');
-		canvas.width = canvas.height = options.size * scaleBy;
-		ctx.scale(scaleBy, scaleBy);
-	}
+/***/ }),
 
-	// move 0,0 coordinates to the center
-	ctx.translate(options.size / 2, options.size / 2);
+/***/ 823:
+/***/ (function(module, exports, __webpack_require__) {
 
-	// rotate canvas -90deg
-	ctx.rotate((-1 / 2 + options.rotate / 180) * Math.PI);
+"use strict";
 
-	var radius = (options.size - options.lineWidth) / 2;
-	if (options.scaleColor && options.scaleLength) {
-		radius -= options.scaleLength + 2; // 2 is the distance between scale and bar
-	}
-
-	// IE polyfill for Date
-	Date.now = Date.now || function() {
-		return +(new Date());
-	};
-
-	/**
-	 * Draw a circle around the center of the canvas
-	 * @param {strong} color     Valid CSS color string
-	 * @param {number} lineWidth Width of the line in px
-	 * @param {number} percent   Percentage to draw (float between -1 and 1)
-	 */
-	var drawCircle = function(color, lineWidth, percent) {
-		percent = Math.min(Math.max(-1, percent || 0), 1);
-		var isNegative = percent <= 0 ? true : false;
-
-		ctx.beginPath();
-		ctx.arc(0, 0, radius, 0, Math.PI * 2 * percent, isNegative);
-
-		ctx.strokeStyle = color;
-		ctx.lineWidth = lineWidth;
-
-		ctx.stroke();
-	};
-
-	/**
-	 * Draw the scale of the chart
-	 */
-	var drawScale = function() {
-		var offset;
-		var length;
-
-		ctx.lineWidth = 1;
-		ctx.fillStyle = options.scaleColor;
-
-		ctx.save();
-		for (var i = 24; i > 0; --i) {
-			if (i % 6 === 0) {
-				length = options.scaleLength;
-				offset = 0;
-			} else {
-				length = options.scaleLength * 0.6;
-				offset = options.scaleLength - length;
-			}
-			ctx.fillRect(-options.size/2 + offset, 0, length, 1);
-			ctx.rotate(Math.PI / 12);
-		}
-		ctx.restore();
-	};
-
-	/**
-	 * Request animation frame wrapper with polyfill
-	 * @return {function} Request animation frame method or timeout fallback
-	 */
-	var reqAnimationFrame = (function() {
-		return  window.requestAnimationFrame ||
-				window.webkitRequestAnimationFrame ||
-				window.mozRequestAnimationFrame ||
-				function(callback) {
-					window.setTimeout(callback, 1000 / 60);
-				};
-	}());
-
-	/**
-	 * Draw the background of the plugin including the scale and the track
-	 */
-	var drawBackground = function() {
-		if(options.scaleColor) drawScale();
-		if(options.trackColor) drawCircle(options.trackColor, options.trackWidth || options.lineWidth, 1);
-	};
-
-  /**
-    * Canvas accessor
-   */
-  this.getCanvas = function() {
-    return canvas;
-  };
-
-  /**
-    * Canvas 2D context 'ctx' accessor
-   */
-  this.getCtx = function() {
-    return ctx;
-  };
-
-	/**
-	 * Clear the complete canvas
-	 */
-	this.clear = function() {
-		ctx.clearRect(options.size / -2, options.size / -2, options.size, options.size);
-	};
-
-	/**
-	 * Draw the complete chart
-	 * @param {number} percent Percent shown by the chart between -100 and 100
-	 */
-	this.draw = function(percent) {
-		// do we need to render a background
-		if (!!options.scaleColor || !!options.trackColor) {
-			// getImageData and putImageData are supported
-			if (ctx.getImageData && ctx.putImageData) {
-				if (!cachedBackground) {
-					drawBackground();
-					cachedBackground = ctx.getImageData(0, 0, options.size * scaleBy, options.size * scaleBy);
-				} else {
-					ctx.putImageData(cachedBackground, 0, 0);
-				}
-			} else {
-				this.clear();
-				drawBackground();
-			}
-		} else {
-			this.clear();
-		}
-
-		ctx.lineCap = options.lineCap;
-
-		// if barcolor is a function execute it and pass the percent as a value
-		var color;
-		if (typeof(options.barColor) === 'function') {
-			color = options.barColor(percent);
-		} else {
-			color = options.barColor;
-		}
-
-		// draw bar
-		drawCircle(color, options.lineWidth, percent / 100);
-	}.bind(this);
-
-	/**
-	 * Animate from some percent to some other percentage
-	 * @param {number} from Starting percentage
-	 * @param {number} to   Final percentage
-	 */
-	this.animate = function(from, to) {
-		var startTime = Date.now();
-		options.onStart(from, to);
-		var animation = function() {
-			var process = Math.min(Date.now() - startTime, options.animate.duration);
-			var currentValue = options.easing(this, process, from, to - from, options.animate.duration);
-			this.draw(currentValue);
-			options.onStep(from, to, currentValue);
-			if (process >= options.animate.duration) {
-				options.onStop(from, to);
-			} else {
-				reqAnimationFrame(animation);
-			}
-		}.bind(this);
-
-		reqAnimationFrame(animation);
-	}.bind(this);
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var isNumeric_1 = __webpack_require__(831);
+var Observable_1 = __webpack_require__(4);
+var async_1 = __webpack_require__(686);
+var isScheduler_1 = __webpack_require__(170);
+var isDate_1 = __webpack_require__(830);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @extends {Ignored}
+ * @hide true
+ */
+var TimerObservable = (function (_super) {
+    __extends(TimerObservable, _super);
+    function TimerObservable(dueTime, period, scheduler) {
+        if (dueTime === void 0) { dueTime = 0; }
+        _super.call(this);
+        this.period = -1;
+        this.dueTime = 0;
+        if (isNumeric_1.isNumeric(period)) {
+            this.period = Number(period) < 1 && 1 || Number(period);
+        }
+        else if (isScheduler_1.isScheduler(period)) {
+            scheduler = period;
+        }
+        if (!isScheduler_1.isScheduler(scheduler)) {
+            scheduler = async_1.async;
+        }
+        this.scheduler = scheduler;
+        this.dueTime = isDate_1.isDate(dueTime) ?
+            (+dueTime - this.scheduler.now()) :
+            dueTime;
+    }
+    /**
+     * Creates an Observable that starts emitting after an `initialDelay` and
+     * emits ever increasing numbers after each `period` of time thereafter.
+     *
+     * <span class="informal">Its like {@link interval}, but you can specify when
+     * should the emissions start.</span>
+     *
+     * <img src="./img/timer.png" width="100%">
+     *
+     * `timer` returns an Observable that emits an infinite sequence of ascending
+     * integers, with a constant interval of time, `period` of your choosing
+     * between those emissions. The first emission happens after the specified
+     * `initialDelay`. The initial delay may be a {@link Date}. By default, this
+     * operator uses the `async` IScheduler to provide a notion of time, but you
+     * may pass any IScheduler to it. If `period` is not specified, the output
+     * Observable emits only one value, `0`. Otherwise, it emits an infinite
+     * sequence.
+     *
+     * @example <caption>Emits ascending numbers, one every second (1000ms), starting after 3 seconds</caption>
+     * var numbers = Rx.Observable.timer(3000, 1000);
+     * numbers.subscribe(x => console.log(x));
+     *
+     * @example <caption>Emits one number after five seconds</caption>
+     * var numbers = Rx.Observable.timer(5000);
+     * numbers.subscribe(x => console.log(x));
+     *
+     * @see {@link interval}
+     * @see {@link delay}
+     *
+     * @param {number|Date} initialDelay The initial delay time to wait before
+     * emitting the first value of `0`.
+     * @param {number} [period] The period of time between emissions of the
+     * subsequent numbers.
+     * @param {Scheduler} [scheduler=async] The IScheduler to use for scheduling
+     * the emission of values, and providing a notion of "time".
+     * @return {Observable} An Observable that emits a `0` after the
+     * `initialDelay` and ever increasing numbers after each `period` of time
+     * thereafter.
+     * @static true
+     * @name timer
+     * @owner Observable
+     */
+    TimerObservable.create = function (initialDelay, period, scheduler) {
+        if (initialDelay === void 0) { initialDelay = 0; }
+        return new TimerObservable(initialDelay, period, scheduler);
+    };
+    TimerObservable.dispatch = function (state) {
+        var index = state.index, period = state.period, subscriber = state.subscriber;
+        var action = this;
+        subscriber.next(index);
+        if (subscriber.closed) {
+            return;
+        }
+        else if (period === -1) {
+            return subscriber.complete();
+        }
+        state.index = index + 1;
+        action.schedule(state, period);
+    };
+    TimerObservable.prototype._subscribe = function (subscriber) {
+        var index = 0;
+        var _a = this, period = _a.period, dueTime = _a.dueTime, scheduler = _a.scheduler;
+        return scheduler.schedule(TimerObservable.dispatch, dueTime, {
+            index: index, period: period, subscriber: subscriber
+        });
+    };
+    return TimerObservable;
+}(Observable_1.Observable));
+exports.TimerObservable = TimerObservable;
+//# sourceMappingURL=TimerObservable.js.map
 
-var EasyPieChart = function(el, opts) {
-	var defaultOptions = {
-		barColor: '#ef1e25',
-		trackColor: '#f9f9f9',
-		scaleColor: '#dfe0e0',
-		scaleLength: 5,
-		lineCap: 'round',
-		lineWidth: 3,
-		trackWidth: undefined,
-		size: 110,
-		rotate: 0,
-		animate: {
-			duration: 1000,
-			enabled: true
-		},
-		easing: function (x, t, b, c, d) { // more can be found here: http://gsgd.co.uk/sandbox/jquery/easing/
-			t = t / (d/2);
-			if (t < 1) {
-				return c / 2 * t * t + b;
-			}
-			return -c/2 * ((--t)*(t-2) - 1) + b;
-		},
-		onStart: function(from, to) {
-			return;
-		},
-		onStep: function(from, to, currentValue) {
-			return;
-		},
-		onStop: function(from, to) {
-			return;
-		}
-	};
+/***/ }),
 
-	// detect present renderer
-	if (typeof(CanvasRenderer) !== 'undefined') {
-		defaultOptions.renderer = CanvasRenderer;
-	} else if (typeof(SVGRenderer) !== 'undefined') {
-		defaultOptions.renderer = SVGRenderer;
-	} else {
-		throw new Error('Please load either the SVG- or the CanvasRenderer');
-	}
+/***/ 824:
+/***/ (function(module, exports, __webpack_require__) {
 
-	var options = {};
-	var currentValue = 0;
+"use strict";
 
-	/**
-	 * Initialize the plugin by creating the options object and initialize rendering
-	 */
-	var init = function() {
-		this.el = el;
-		this.options = options;
+var TimerObservable_1 = __webpack_require__(823);
+exports.timer = TimerObservable_1.TimerObservable.create;
+//# sourceMappingURL=timer.js.map
 
-		// merge user options into default options
-		for (var i in defaultOptions) {
-			if (defaultOptions.hasOwnProperty(i)) {
-				options[i] = opts && typeof(opts[i]) !== 'undefined' ? opts[i] : defaultOptions[i];
-				if (typeof(options[i]) === 'function') {
-					options[i] = options[i].bind(this);
-				}
-			}
-		}
+/***/ }),
 
-		// check for jQuery easing
-		if (typeof(options.easing) === 'string' && typeof(jQuery) !== 'undefined' && jQuery.isFunction(jQuery.easing[options.easing])) {
-			options.easing = jQuery.easing[options.easing];
-		} else {
-			options.easing = defaultOptions.easing;
-		}
+/***/ 825:
+/***/ (function(module, exports, __webpack_require__) {
 
-		// process earlier animate option to avoid bc breaks
-		if (typeof(options.animate) === 'number') {
-			options.animate = {
-				duration: options.animate,
-				enabled: true
-			};
-		}
+"use strict";
 
-		if (typeof(options.animate) === 'boolean' && !options.animate) {
-			options.animate = {
-				duration: 1000,
-				enabled: options.animate
-			};
-		}
-
-		// create renderer
-		this.renderer = new options.renderer(el, options);
-
-		// initial draw
-		this.renderer.draw(currentValue);
-
-		// initial update
-		if (el.dataset && el.dataset.percent) {
-			this.update(parseFloat(el.dataset.percent));
-		} else if (el.getAttribute && el.getAttribute('data-percent')) {
-			this.update(parseFloat(el.getAttribute('data-percent')));
-		}
-	}.bind(this);
-
-	/**
-	 * Update the value of the chart
-	 * @param  {number} newValue Number between 0 and 100
-	 * @return {object}          Instance of the plugin for method chaining
-	 */
-	this.update = function(newValue) {
-		newValue = parseFloat(newValue);
-		if (options.animate.enabled) {
-			this.renderer.animate(currentValue, newValue);
-		} else {
-			this.renderer.draw(newValue);
-		}
-		currentValue = newValue;
-		return this;
-	}.bind(this);
-
-	/**
-	 * Disable animation
-	 * @return {object} Instance of the plugin for method chaining
-	 */
-	this.disableAnimation = function() {
-		options.animate.enabled = false;
-		return this;
-	};
-
-	/**
-	 * Enable animation
-	 * @return {object} Instance of the plugin for method chaining
-	 */
-	this.enableAnimation = function() {
-		options.animate.enabled = true;
-		return this;
-	};
-
-	init();
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+var Subscriber_1 = __webpack_require__(7);
+var async_1 = __webpack_require__(686);
+/**
+ * Emits a value from the source Observable only after a particular time span
+ * has passed without another source emission.
+ *
+ * <span class="informal">It's like {@link delay}, but passes only the most
+ * recent value from each burst of emissions.</span>
+ *
+ * <img src="./img/debounceTime.png" width="100%">
+ *
+ * `debounceTime` delays values emitted by the source Observable, but drops
+ * previous pending delayed emissions if a new value arrives on the source
+ * Observable. This operator keeps track of the most recent value from the
+ * source Observable, and emits that only when `dueTime` enough time has passed
+ * without any other value appearing on the source Observable. If a new value
+ * appears before `dueTime` silence occurs, the previous value will be dropped
+ * and will not be emitted on the output Observable.
+ *
+ * This is a rate-limiting operator, because it is impossible for more than one
+ * value to be emitted in any time window of duration `dueTime`, but it is also
+ * a delay-like operator since output emissions do not occur at the same time as
+ * they did on the source Observable. Optionally takes a {@link IScheduler} for
+ * managing timers.
+ *
+ * @example <caption>Emit the most recent click after a burst of clicks</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var result = clicks.debounceTime(1000);
+ * result.subscribe(x => console.log(x));
+ *
+ * @see {@link auditTime}
+ * @see {@link debounce}
+ * @see {@link delay}
+ * @see {@link sampleTime}
+ * @see {@link throttleTime}
+ *
+ * @param {number} dueTime The timeout duration in milliseconds (or the time
+ * unit determined internally by the optional `scheduler`) for the window of
+ * time required to wait for emission silence before emitting the most recent
+ * source value.
+ * @param {Scheduler} [scheduler=async] The {@link IScheduler} to use for
+ * managing the timers that handle the timeout for each value.
+ * @return {Observable} An Observable that delays the emissions of the source
+ * Observable by the specified `dueTime`, and may drop some values if they occur
+ * too frequently.
+ * @method debounceTime
+ * @owner Observable
+ */
+function debounceTime(dueTime, scheduler) {
+    if (scheduler === void 0) { scheduler = async_1.async; }
+    return this.lift(new DebounceTimeOperator(dueTime, scheduler));
+}
+exports.debounceTime = debounceTime;
+var DebounceTimeOperator = (function () {
+    function DebounceTimeOperator(dueTime, scheduler) {
+        this.dueTime = dueTime;
+        this.scheduler = scheduler;
+    }
+    DebounceTimeOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new DebounceTimeSubscriber(subscriber, this.dueTime, this.scheduler));
+    };
+    return DebounceTimeOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var DebounceTimeSubscriber = (function (_super) {
+    __extends(DebounceTimeSubscriber, _super);
+    function DebounceTimeSubscriber(destination, dueTime, scheduler) {
+        _super.call(this, destination);
+        this.dueTime = dueTime;
+        this.scheduler = scheduler;
+        this.debouncedSubscription = null;
+        this.lastValue = null;
+        this.hasValue = false;
+    }
+    DebounceTimeSubscriber.prototype._next = function (value) {
+        this.clearDebounce();
+        this.lastValue = value;
+        this.hasValue = true;
+        this.add(this.debouncedSubscription = this.scheduler.schedule(dispatchNext, this.dueTime, this));
+    };
+    DebounceTimeSubscriber.prototype._complete = function () {
+        this.debouncedNext();
+        this.destination.complete();
+    };
+    DebounceTimeSubscriber.prototype.debouncedNext = function () {
+        this.clearDebounce();
+        if (this.hasValue) {
+            this.destination.next(this.lastValue);
+            this.lastValue = null;
+            this.hasValue = false;
+        }
+    };
+    DebounceTimeSubscriber.prototype.clearDebounce = function () {
+        var debouncedSubscription = this.debouncedSubscription;
+        if (debouncedSubscription !== null) {
+            this.remove(debouncedSubscription);
+            debouncedSubscription.unsubscribe();
+            this.debouncedSubscription = null;
+        }
+    };
+    return DebounceTimeSubscriber;
+}(Subscriber_1.Subscriber));
+function dispatchNext(subscriber) {
+    subscriber.debouncedNext();
+}
+//# sourceMappingURL=debounceTime.js.map
 
-$.fn.easyPieChart = function(options) {
-	return this.each(function() {
-		var instanceOptions;
+/***/ }),
 
-		if (!$.data(this, 'easyPieChart')) {
-			instanceOptions = $.extend({}, options, $(this).data());
-			$.data(this, 'easyPieChart', new EasyPieChart(this, instanceOptions));
-		}
-	});
+/***/ 826:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-
-
-}));
-
+var Subscriber_1 = __webpack_require__(7);
+var tryCatch_1 = __webpack_require__(171);
+var errorObject_1 = __webpack_require__(111);
+/* tslint:enable:max-line-length */
+/**
+ * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item.
+ *
+ * If a comparator function is provided, then it will be called for each item to test for whether or not that value should be emitted.
+ *
+ * If a comparator function is not provided, an equality check is used by default.
+ *
+ * @example <caption>A simple example with numbers</caption>
+ * Observable.of(1, 1, 2, 2, 2, 1, 1, 2, 3, 3, 4)
+ *   .distinctUntilChanged()
+ *   .subscribe(x => console.log(x)); // 1, 2, 1, 2, 3, 4
+ *
+ * @example <caption>An example using a compare function</caption>
+ * interface Person {
+ *    age: number,
+ *    name: string
+ * }
+ *
+ * Observable.of<Person>(
+ *     { age: 4, name: 'Foo'},
+ *     { age: 7, name: 'Bar'},
+ *     { age: 5, name: 'Foo'})
+ *     { age: 6, name: 'Foo'})
+ *     .distinctUntilChanged((p: Person, q: Person) => p.name === q.name)
+ *     .subscribe(x => console.log(x));
+ *
+ * // displays:
+ * // { age: 4, name: 'Foo' }
+ * // { age: 7, name: 'Bar' }
+ * // { age: 5, name: 'Foo' }
+ *
+ * @see {@link distinct}
+ * @see {@link distinctUntilKeyChanged}
+ *
+ * @param {function} [compare] Optional comparison function called to test if an item is distinct from the previous item in the source.
+ * @return {Observable} An Observable that emits items from the source Observable with distinct values.
+ * @method distinctUntilChanged
+ * @owner Observable
+ */
+function distinctUntilChanged(compare, keySelector) {
+    return this.lift(new DistinctUntilChangedOperator(compare, keySelector));
+}
+exports.distinctUntilChanged = distinctUntilChanged;
+var DistinctUntilChangedOperator = (function () {
+    function DistinctUntilChangedOperator(compare, keySelector) {
+        this.compare = compare;
+        this.keySelector = keySelector;
+    }
+    DistinctUntilChangedOperator.prototype.call = function (subscriber, source) {
+        return source.subscribe(new DistinctUntilChangedSubscriber(subscriber, this.compare, this.keySelector));
+    };
+    return DistinctUntilChangedOperator;
+}());
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var DistinctUntilChangedSubscriber = (function (_super) {
+    __extends(DistinctUntilChangedSubscriber, _super);
+    function DistinctUntilChangedSubscriber(destination, compare, keySelector) {
+        _super.call(this, destination);
+        this.keySelector = keySelector;
+        this.hasKey = false;
+        if (typeof compare === 'function') {
+            this.compare = compare;
+        }
+    }
+    DistinctUntilChangedSubscriber.prototype.compare = function (x, y) {
+        return x === y;
+    };
+    DistinctUntilChangedSubscriber.prototype._next = function (value) {
+        var keySelector = this.keySelector;
+        var key = value;
+        if (keySelector) {
+            key = tryCatch_1.tryCatch(this.keySelector)(value);
+            if (key === errorObject_1.errorObject) {
+                return this.destination.error(errorObject_1.errorObject.e);
+            }
+        }
+        var result = false;
+        if (this.hasKey) {
+            result = tryCatch_1.tryCatch(this.compare)(this.key, key);
+            if (result === errorObject_1.errorObject) {
+                return this.destination.error(errorObject_1.errorObject.e);
+            }
+        }
+        else {
+            this.hasKey = true;
+        }
+        if (Boolean(result) === false) {
+            this.key = key;
+            this.destination.next(value);
+        }
+    };
+    return DistinctUntilChangedSubscriber;
+}(Subscriber_1.Subscriber));
+//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
 
-/***/ 693:
+/***/ 827:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
-// imports
+"use strict";
 
-
-// module
-exports.push([module.i, ":host /deep/ ba-full-calendar div.blurCalendar {\n  font-size: 12px; }\n\n:host /deep/ ba-full-calendar .fc {\n  direction: ltr;\n  text-align: left; }\n  :host /deep/ ba-full-calendar .fc button {\n    box-sizing: border-box;\n    margin: 0;\n    height: 2.1em;\n    padding: 0 .6em;\n    font-size: 1em;\n    white-space: nowrap;\n    cursor: pointer; }\n    :host /deep/ ba-full-calendar .fc button::-moz-focus-inner {\n      margin: 0;\n      padding: 0; }\n    :host /deep/ ba-full-calendar .fc button .fc-icon {\n      position: relative;\n      top: 0; }\n  :host /deep/ ba-full-calendar .fc .fc-button-group > * {\n    float: left;\n    margin: 0 0 0 -1px; }\n  :host /deep/ ba-full-calendar .fc .fc-button-group > :first-child {\n    margin-left: 0; }\n  :host /deep/ ba-full-calendar .fc hr {\n    height: 0;\n    margin: 0;\n    padding: 0 0 2px;\n    border-style: solid;\n    border-width: 1px 0; }\n  :host /deep/ ba-full-calendar .fc table {\n    width: 100%;\n    table-layout: fixed;\n    border-collapse: collapse;\n    border-spacing: 0;\n    font-size: 1em; }\n  :host /deep/ ba-full-calendar .fc th {\n    text-align: center; }\n  :host /deep/ ba-full-calendar .fc th, :host /deep/ ba-full-calendar .fc td {\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    padding: 0;\n    vertical-align: top; }\n  :host /deep/ ba-full-calendar .fc td.fc-today {\n    border-style: double; }\n  :host /deep/ ba-full-calendar .fc .fc-row {\n    border: 0 solid; }\n  :host /deep/ ba-full-calendar .fc .fc-toolbar > * > * {\n    float: left;\n    margin-left: .75em; }\n  :host /deep/ ba-full-calendar .fc .fc-toolbar > * > :first-child {\n    margin-left: 0; }\n  :host /deep/ ba-full-calendar .fc .fc-axis {\n    vertical-align: middle;\n    padding: 0 4px;\n    white-space: nowrap; }\n\n:host /deep/ ba-full-calendar .fc-rtl {\n  text-align: right; }\n\n:host /deep/ ba-full-calendar .fc-unthemed th, :host /deep/ ba-full-calendar .fc-unthemed td, :host /deep/ ba-full-calendar .fc-unthemed hr, :host /deep/ ba-full-calendar .fc-unthemed thead, :host /deep/ ba-full-calendar .fc-unthemed tbody, :host /deep/ ba-full-calendar .fc-unthemed .fc-row, :host /deep/ ba-full-calendar .fc-unthemed .fc-popover {\n  border-color: rgba(255, 255, 255, 0.3); }\n\n:host /deep/ ba-full-calendar .fc-unthemed .fc-popover {\n  background-color: rgba(0, 0, 0, 0.2);\n  border: 1px solid; }\n  :host /deep/ ba-full-calendar .fc-unthemed .fc-popover .fc-header {\n    background: #eee; }\n    :host /deep/ ba-full-calendar .fc-unthemed .fc-popover .fc-header .fc-close {\n      color: #666666;\n      font-size: 25px;\n      margin-top: 4px; }\n\n:host /deep/ ba-full-calendar .fc-unthemed hr {\n  background: #eee; }\n\n:host /deep/ ba-full-calendar .fc-unthemed .fc-today {\n  background: rgba(255, 255, 255, 0.15); }\n\n:host /deep/ ba-full-calendar .fc-highlight {\n  background: rgba(255, 255, 255, 0.25);\n  opacity: .3; }\n\n:host /deep/ ba-full-calendar .fc-icon {\n  display: inline-block;\n  font-size: 2em;\n  font-family: \"Courier New\", Courier, monospace; }\n\n:host /deep/ ba-full-calendar .fc-icon-left-single-arrow:after {\n  content: \"\\2039\";\n  font-weight: 700;\n  font-size: 100%; }\n\n:host /deep/ ba-full-calendar .fc-icon-right-single-arrow:after {\n  content: \"\\203A\";\n  font-weight: 700;\n  font-size: 100%; }\n\n:host /deep/ ba-full-calendar .fc-icon-left-double-arrow:after {\n  content: \"\\AB\"; }\n\n:host /deep/ ba-full-calendar .fc-icon-right-double-arrow:after {\n  content: \"\\BB\"; }\n\n:host /deep/ ba-full-calendar .fc-icon-x:after {\n  content: \"\\D7\"; }\n\n:host /deep/ ba-full-calendar .fc-state-default {\n  border: 1px solid;\n  outline: none;\n  background: #f5f5f5 repeat-x;\n  border-color: #e6e6e6 #e6e6e6 #bfbfbf;\n  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);\n  color: #333333; }\n  :host /deep/ ba-full-calendar .fc-state-default.fc-corner-left {\n    border-top-left-radius: 0px;\n    border-bottom-left-radius: 0px; }\n  :host /deep/ ba-full-calendar .fc-state-default.fc-corner-right {\n    border-top-right-radius: 0px;\n    border-bottom-right-radius: 0px; }\n\n:host /deep/ ba-full-calendar .fc-state-hover,\n:host /deep/ ba-full-calendar .fc-state-down,\n:host /deep/ ba-full-calendar .fc-state-active,\n:host /deep/ ba-full-calendar .fc-state-disabled {\n  color: #333333;\n  background-color: transparent; }\n\n:host /deep/ ba-full-calendar .fc-state-hover {\n  color: #333333;\n  text-decoration: none;\n  background-position: 0 -15px;\n  transition: background-position 0.1s linear; }\n\n:host /deep/ ba-full-calendar .fc-state-down,\n:host /deep/ ba-full-calendar .fc-state-active {\n  background: #cccccc none; }\n\n:host /deep/ ba-full-calendar .fc-state-disabled {\n  cursor: default;\n  background-image: none;\n  opacity: 0.65;\n  box-shadow: none; }\n\n:host /deep/ ba-full-calendar .fc-button-group {\n  display: inline-block; }\n\n:host /deep/ ba-full-calendar .fc-popover {\n  position: absolute; }\n  :host /deep/ ba-full-calendar .fc-popover .fc-header {\n    padding: 2px 4px; }\n  :host /deep/ ba-full-calendar .fc-popover .fc-header .fc-title {\n    margin: 0 2px; }\n  :host /deep/ ba-full-calendar .fc-popover .fc-header .fc-close {\n    cursor: pointer; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-popover .fc-header .fc-title,\n:host /deep/ ba-full-calendar .fc-rtl .fc-popover .fc-header .fc-close {\n  float: left; }\n\n:host /deep/ ba-full-calendar .fc-rtl .fc-popover .fc-header .fc-title,\n:host /deep/ ba-full-calendar .fc-ltr .fc-popover .fc-header .fc-close {\n  float: right; }\n\n:host /deep/ ba-full-calendar .fc-popover > .ui-widget-header + .ui-widget-content {\n  border-top: 0; }\n\n:host /deep/ ba-full-calendar .fc-clear {\n  clear: both; }\n\n:host /deep/ ba-full-calendar .fc-bg,\n:host /deep/ ba-full-calendar .fc-highlight-skeleton,\n:host /deep/ ba-full-calendar .fc-helper-skeleton {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n:host /deep/ ba-full-calendar .fc-bg {\n  bottom: 0; }\n\n:host /deep/ ba-full-calendar .fc-bg table {\n  height: 100%; }\n\n:host /deep/ ba-full-calendar .fc-row {\n  position: relative; }\n  :host /deep/ ba-full-calendar .fc-row table {\n    border-left: 0 hidden transparent;\n    border-right: 0 hidden transparent;\n    border-bottom: 0 hidden transparent; }\n  :host /deep/ ba-full-calendar .fc-row:first-child table {\n    border-top: 0 hidden transparent; }\n  :host /deep/ ba-full-calendar .fc-row .fc-bg {\n    z-index: 1; }\n  :host /deep/ ba-full-calendar .fc-row .fc-highlight-skeleton {\n    z-index: 2;\n    bottom: 0; }\n    :host /deep/ ba-full-calendar .fc-row .fc-highlight-skeleton table {\n      height: 100%; }\n    :host /deep/ ba-full-calendar .fc-row .fc-highlight-skeleton td {\n      border-color: transparent; }\n  :host /deep/ ba-full-calendar .fc-row .fc-content-skeleton {\n    position: relative;\n    z-index: 3;\n    padding-bottom: 2px; }\n  :host /deep/ ba-full-calendar .fc-row .fc-helper-skeleton {\n    z-index: 4; }\n  :host /deep/ ba-full-calendar .fc-row .fc-content-skeleton td,\n  :host /deep/ ba-full-calendar .fc-row .fc-helper-skeleton td {\n    background: none;\n    border-color: transparent;\n    border-bottom: 0; }\n  :host /deep/ ba-full-calendar .fc-row .fc-content-skeleton tbody td,\n  :host /deep/ ba-full-calendar .fc-row .fc-helper-skeleton tbody td {\n    border-top: 0; }\n\n:host /deep/ ba-full-calendar .fc-event {\n  position: relative;\n  display: block;\n  font-size: .85em;\n  line-height: 1.3;\n  border: 1px solid #ed1f24;\n  background-color: #ed1f24;\n  font-weight: 400; }\n\n:host /deep/ ba-full-calendar .fc-event,\n:host /deep/ ba-full-calendar .fc-event:hover,\n:host /deep/ ba-full-calendar .ui-widget .fc-event {\n  color: #ffffff;\n  text-decoration: none; }\n\n:host /deep/ ba-full-calendar .fc-event[href],\n:host /deep/ ba-full-calendar .fc-event.fc-draggable {\n  cursor: pointer; }\n\n:host /deep/ ba-full-calendar .fc-day-grid-event {\n  margin: 1px 2px 0;\n  padding: 0 1px; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-day-grid-event.fc-not-start,\n:host /deep/ ba-full-calendar .fc-rtl .fc-day-grid-event.fc-not-end {\n  margin-left: 0;\n  border-left-width: 0;\n  padding-left: 1px;\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-day-grid-event.fc-not-end,\n:host /deep/ ba-full-calendar .fc-rtl .fc-day-grid-event.fc-not-start {\n  margin-right: 0;\n  border-right-width: 0;\n  padding-right: 1px;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0; }\n\n:host /deep/ ba-full-calendar .fc-day-grid-event > .fc-content {\n  white-space: nowrap;\n  overflow: hidden; }\n\n:host /deep/ ba-full-calendar .fc-day-grid-event .fc-time {\n  font-weight: 700; }\n\n:host /deep/ ba-full-calendar .fc-day-grid-event .fc-resizer {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 7px; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-day-grid-event .fc-resizer {\n  right: -3px;\n  cursor: e-resize; }\n\n:host /deep/ ba-full-calendar .fc-rtl .fc-day-grid-event .fc-resizer {\n  left: -3px;\n  cursor: w-resize; }\n\n:host /deep/ ba-full-calendar a.fc-more {\n  margin: 1px 3px;\n  font-size: .85em;\n  cursor: pointer;\n  text-decoration: none; }\n  :host /deep/ ba-full-calendar a.fc-more:hover {\n    text-decoration: underline; }\n\n:host /deep/ ba-full-calendar .fc-limited {\n  display: none; }\n\n:host /deep/ ba-full-calendar .fc-day-grid .fc-row {\n  z-index: 1; }\n\n:host /deep/ ba-full-calendar .fc-more-popover {\n  z-index: 2;\n  width: 220px; }\n  :host /deep/ ba-full-calendar .fc-more-popover .fc-event-container {\n    padding: 10px; }\n\n:host /deep/ ba-full-calendar .fc-toolbar {\n  text-align: center;\n  margin-bottom: 1em; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-left {\n    float: left; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-right {\n    float: right; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-center {\n    display: inline-block; }\n  :host /deep/ ba-full-calendar .fc-toolbar h2 {\n    margin: 0;\n    font-size: 24px;\n    width: 100%;\n    line-height: 26px; }\n  :host /deep/ ba-full-calendar .fc-toolbar button {\n    position: relative; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-state-hover, :host /deep/ ba-full-calendar .fc-toolbar .ui-state-hover {\n    z-index: 2; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-state-down {\n    z-index: 3; }\n  :host /deep/ ba-full-calendar .fc-toolbar .fc-state-active,\n  :host /deep/ ba-full-calendar .fc-toolbar .ui-state-active {\n    z-index: 4; }\n  :host /deep/ ba-full-calendar .fc-toolbar button:focus {\n    z-index: 5; }\n\n:host /deep/ ba-full-calendar .fc-view-container *,\n:host /deep/ ba-full-calendar .fc-view-container *:before,\n:host /deep/ ba-full-calendar .fc-view-container *:after {\n  box-sizing: content-box; }\n\n:host /deep/ ba-full-calendar .fc-view,\n:host /deep/ ba-full-calendar .fc-view > table {\n  position: relative;\n  z-index: 1; }\n\n:host /deep/ ba-full-calendar .fc-basicWeek-view .fc-content-skeleton,\n:host /deep/ ba-full-calendar .fc-basicDay-view .fc-content-skeleton {\n  padding-top: 1px;\n  padding-bottom: 1em; }\n\n:host /deep/ ba-full-calendar .fc-basic-view tbody .fc-row {\n  min-height: 4em;\n  max-height: 70px; }\n\n:host /deep/ ba-full-calendar .fc-row.fc-rigid {\n  overflow: hidden; }\n\n:host /deep/ ba-full-calendar .fc-row.fc-rigid .fc-content-skeleton {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n:host /deep/ ba-full-calendar .fc-basic-view .fc-week-number,\n:host /deep/ ba-full-calendar .fc-basic-view .fc-day-number {\n  padding: 0 2px; }\n\n:host /deep/ ba-full-calendar .fc-basic-view td.fc-week-number span,\n:host /deep/ ba-full-calendar .fc-basic-view td.fc-day-number {\n  padding-top: 2px;\n  padding-bottom: 2px; }\n\n:host /deep/ ba-full-calendar .fc-basic-view .fc-week-number {\n  text-align: center; }\n\n:host /deep/ ba-full-calendar .fc-basic-view .fc-week-number span {\n  display: inline-block;\n  min-width: 1.25em; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-basic-view .fc-day-number {\n  text-align: right; }\n\n:host /deep/ ba-full-calendar .fc-rtl .fc-basic-view .fc-day-number {\n  text-align: left; }\n\n:host /deep/ ba-full-calendar .fc-day-number.fc-other-month {\n  opacity: 0.3; }\n\n:host /deep/ ba-full-calendar .fc-agenda-view .fc-day-grid {\n  position: relative;\n  z-index: 2; }\n\n:host /deep/ ba-full-calendar .fc-agenda-view .fc-day-grid .fc-row {\n  min-height: 3em; }\n\n:host /deep/ ba-full-calendar .fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {\n  padding-top: 1px;\n  padding-bottom: 1em; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-axis {\n  text-align: right; }\n\n:host /deep/ ba-full-calendar .fc-rtl .fc-axis {\n  text-align: left; }\n\n:host /deep/ ba-full-calendar .ui-widget td.fc-axis {\n  font-weight: 400; }\n\n:host /deep/ ba-full-calendar .fc-time-grid-container,\n:host /deep/ ba-full-calendar .fc-time-grid {\n  position: relative;\n  z-index: 1; }\n\n:host /deep/ ba-full-calendar .fc-time-grid {\n  min-height: 100%; }\n\n:host /deep/ ba-full-calendar .fc-time-grid table {\n  border: 0 hidden transparent; }\n\n:host /deep/ ba-full-calendar .fc-time-grid > .fc-bg {\n  z-index: 1; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-slats,\n:host /deep/ ba-full-calendar .fc-time-grid > hr {\n  position: relative;\n  z-index: 2; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-highlight-skeleton {\n  z-index: 3; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-content-skeleton {\n  position: absolute;\n  z-index: 4;\n  top: 0;\n  left: 0;\n  right: 0; }\n\n:host /deep/ ba-full-calendar .fc-time-grid > .fc-helper-skeleton {\n  z-index: 5; }\n\n:host /deep/ ba-full-calendar .fc-slats td {\n  height: 1.5em;\n  border-bottom: 0; }\n\n:host /deep/ ba-full-calendar .fc-slats .fc-minor td {\n  border-top-style: dotted; }\n\n:host /deep/ ba-full-calendar .fc-slats .ui-widget-content {\n  background: none; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-highlight-container {\n  position: relative; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-highlight {\n  position: absolute;\n  left: 0;\n  right: 0; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-event-container {\n  position: relative; }\n\n:host /deep/ ba-full-calendar .fc-ltr .fc-time-grid .fc-event-container {\n  margin: 0 2.5% 0 2px; }\n\n:host /deep/ ba-full-calendar .fc-rtl .fc-time-grid .fc-event-container {\n  margin: 0 2px 0 2.5%; }\n\n:host /deep/ ba-full-calendar .fc-time-grid .fc-event {\n  position: absolute;\n  z-index: 1; }\n\n:host /deep/ ba-full-calendar .fc-time-grid-event {\n  overflow: hidden; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event.fc-not-start {\n    border-top-width: 0;\n    padding-top: 1px;\n    border-top-left-radius: 0;\n    border-top-right-radius: 0; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event.fc-not-end {\n    border-bottom-width: 0;\n    padding-bottom: 1px;\n    border-bottom-left-radius: 0;\n    border-bottom-right-radius: 0; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event > .fc-content {\n    position: relative;\n    z-index: 2; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event .fc-title {\n    padding: 0 1px; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event .fc-time {\n    padding: 0 1px;\n    font-size: .85em;\n    white-space: nowrap; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event .fc-bg {\n    z-index: 1;\n    background: rgba(0, 0, 0, 0.2);\n    opacity: .25;\n    filter: alpha(opacity=25); }\n  :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-content {\n    white-space: nowrap; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-time {\n    display: inline-block;\n    vertical-align: top; }\n    :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-time span {\n      display: none; }\n    :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-time:before {\n      content: attr(data-start); }\n    :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-time:after {\n      content: \"\\A0-\\A0\"; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event.fc-short .fc-title {\n    display: inline-block;\n    vertical-align: top;\n    font-size: .85em;\n    padding: 0; }\n  :host /deep/ ba-full-calendar .fc-time-grid-event .fc-resizer {\n    position: absolute;\n    z-index: 3;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    height: 8px;\n    overflow: hidden;\n    line-height: 8px;\n    font-size: 11px;\n    font-family: monospace;\n    text-align: center;\n    cursor: s-resize; }\n    :host /deep/ ba-full-calendar .fc-time-grid-event .fc-resizer:after {\n      content: \"=\"; }\n\n:host /deep/ ba-full-calendar .fc-day-grid-container.fc-scroller {\n  height: auto !important; }\n\n:host /deep/ ba-full-calendar .fc-body > tr > .fc-widget-content {\n  border: none; }\n\n:host /deep/ ba-full-calendar .fc-head {\n  color: #ffffff;\n  background-color: #ed1f24; }\n  :host /deep/ ba-full-calendar .fc-head td, :host /deep/ ba-full-calendar .fc-head th {\n    border: none; }\n  :host /deep/ ba-full-calendar .fc-head div.fc-widget-header {\n    padding: 5px 0; }\n\n:host /deep/ ba-full-calendar .fc-today-button, :host /deep/ ba-full-calendar .fc-month-button, :host /deep/ ba-full-calendar .fc-agendaWeek-button, :host /deep/ ba-full-calendar .fc-agendaDay-button {\n  display: none; }\n\n:host /deep/ ba-full-calendar .blurCalendar {\n  margin-top: 15px; }\n\n:host /deep/ ba-full-calendar .fc-prev-button, :host /deep/ ba-full-calendar .fc-next-button {\n  position: absolute;\n  background: transparent;\n  box-shadow: none;\n  border: none;\n  color: #ffffff; }\n\n:host /deep/ ba-full-calendar .fc-next-button {\n  left: 30px; }\n\n:host /deep/ ba-full-calendar .fc-day-number {\n  color: #ffffff;\n  opacity: 0.9; }\n\n/deep/.calendar-panel.card .card-body {\n  padding: 0; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Subscription_1 = __webpack_require__(41);
+/**
+ * A unit of work to be executed in a {@link Scheduler}. An action is typically
+ * created from within a Scheduler and an RxJS user does not need to concern
+ * themselves about creating and manipulating an Action.
+ *
+ * ```ts
+ * class Action<T> extends Subscription {
+ *   new (scheduler: Scheduler, work: (state?: T) => void);
+ *   schedule(state?: T, delay: number = 0): Subscription;
+ * }
+ * ```
+ *
+ * @class Action<T>
+ */
+var Action = (function (_super) {
+    __extends(Action, _super);
+    function Action(scheduler, work) {
+        _super.call(this);
+    }
+    /**
+     * Schedules this action on its parent Scheduler for execution. May be passed
+     * some context object, `state`. May happen at some point in the future,
+     * according to the `delay` parameter, if specified.
+     * @param {T} [state] Some contextual data that the `work` function uses when
+     * called by the Scheduler.
+     * @param {number} [delay] Time to wait before executing the work, where the
+     * time unit is implicit and defined by the Scheduler.
+     * @return {void}
+     */
+    Action.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        return this;
+    };
+    return Action;
+}(Subscription_1.Subscription));
+exports.Action = Action;
+//# sourceMappingURL=Action.js.map
 
 /***/ }),
 
-/***/ 694:
+/***/ 828:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
-// imports
+"use strict";
 
-
-// module
-exports.push([module.i, "@media screen and (min-width: 1620px) {\n  .row.shift-up > * {\n    margin-top: -573px; } }\n\n@media screen and (max-width: 1620px) {\n  .card.feed-panel.large-card {\n    height: 824px; } }\n\n.user-stats-card .card-title {\n  padding: 0 0 15px; }\n\n.blurCalendar {\n  height: 475px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var root_1 = __webpack_require__(33);
+var Action_1 = __webpack_require__(827);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var AsyncAction = (function (_super) {
+    __extends(AsyncAction, _super);
+    function AsyncAction(scheduler, work) {
+        _super.call(this, scheduler, work);
+        this.scheduler = scheduler;
+        this.work = work;
+        this.pending = false;
+    }
+    AsyncAction.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        if (this.closed) {
+            return this;
+        }
+        // Always replace the current state with the new state.
+        this.state = state;
+        // Set the pending flag indicating that this action has been scheduled, or
+        // has recursively rescheduled itself.
+        this.pending = true;
+        var id = this.id;
+        var scheduler = this.scheduler;
+        //
+        // Important implementation note:
+        //
+        // Actions only execute once by default, unless rescheduled from within the
+        // scheduled callback. This allows us to implement single and repeat
+        // actions via the same code path, without adding API surface area, as well
+        // as mimic traditional recursion but across asynchronous boundaries.
+        //
+        // However, JS runtimes and timers distinguish between intervals achieved by
+        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of
+        // serial `setTimeout` calls can be individually delayed, which delays
+        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to
+        // guarantee the interval callback will be invoked more precisely to the
+        // interval period, regardless of load.
+        //
+        // Therefore, we use `setInterval` to schedule single and repeat actions.
+        // If the action reschedules itself with the same delay, the interval is not
+        // canceled. If the action doesn't reschedule, or reschedules with a
+        // different delay, the interval will be canceled after scheduled callback
+        // execution.
+        //
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, delay);
+        }
+        this.delay = delay;
+        // If this action has already an async Id, don't request a new one.
+        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);
+        return this;
+    };
+    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);
+    };
+    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        // If this action is rescheduled with the same delay time, don't clear the interval id.
+        if (delay !== null && this.delay === delay && this.pending === false) {
+            return id;
+        }
+        // Otherwise, if the action's delay time is different from the current delay,
+        // or the action has been rescheduled before it's executed, clear the interval id
+        return root_1.root.clearInterval(id) && undefined || undefined;
+    };
+    /**
+     * Immediately executes this action and the `work` it contains.
+     * @return {any}
+     */
+    AsyncAction.prototype.execute = function (state, delay) {
+        if (this.closed) {
+            return new Error('executing a cancelled action');
+        }
+        this.pending = false;
+        var error = this._execute(state, delay);
+        if (error) {
+            return error;
+        }
+        else if (this.pending === false && this.id != null) {
+            // Dequeue if the action didn't reschedule itself. Don't call
+            // unsubscribe(), because the action could reschedule later.
+            // For example:
+            // ```
+            // scheduler.schedule(function doWork(counter) {
+            //   /* ... I'm a busy worker bee ... */
+            //   var originalAction = this;
+            //   /* wait 100ms before rescheduling the action */
+            //   setTimeout(function () {
+            //     originalAction.schedule(counter + 1);
+            //   }, 100);
+            // }, 1000);
+            // ```
+            this.id = this.recycleAsyncId(this.scheduler, this.id, null);
+        }
+    };
+    AsyncAction.prototype._execute = function (state, delay) {
+        var errored = false;
+        var errorValue = undefined;
+        try {
+            this.work(state);
+        }
+        catch (e) {
+            errored = true;
+            errorValue = !!e && e || new Error(e);
+        }
+        if (errored) {
+            this.unsubscribe();
+            return errorValue;
+        }
+    };
+    AsyncAction.prototype._unsubscribe = function () {
+        var id = this.id;
+        var scheduler = this.scheduler;
+        var actions = scheduler.actions;
+        var index = actions.indexOf(this);
+        this.work = null;
+        this.delay = null;
+        this.state = null;
+        this.pending = false;
+        this.scheduler = null;
+        if (index !== -1) {
+            actions.splice(index, 1);
+        }
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, null);
+        }
+    };
+    return AsyncAction;
+}(Action_1.Action));
+exports.AsyncAction = AsyncAction;
+//# sourceMappingURL=AsyncAction.js.map
 
 /***/ }),
 
-/***/ 695:
+/***/ 829:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
-// imports
+"use strict";
 
-
-// module
-exports.push([module.i, ":host /deep/ .feed-messages-container .feed-message {\n  padding: 10px 0;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12);\n  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12); }\n  :host /deep/ .feed-messages-container .feed-message:first-child {\n    padding-top: 0; }\n  :host /deep/ .feed-messages-container .feed-message .hidden {\n    display: none !important; }\n  :host /deep/ .feed-messages-container .feed-message .message-icon {\n    cursor: pointer;\n    width: 60px;\n    height: 60px;\n    float: left;\n    position: relative;\n    margin-left: 20px; }\n    :host /deep/ .feed-messages-container .feed-message .message-icon > img, :host /deep/ .feed-messages-container .feed-message .message-icon .media-icon {\n      border-radius: 30px;\n      width: 100%;\n      height: 100%; }\n    :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon {\n      display: inline-block;\n      padding: 4px; }\n      :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon:after {\n        content: '';\n        display: inline-block;\n        width: 22px;\n        height: 22px;\n        background-size: contain; }\n      :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.video-message {\n        background: #e85656; }\n        :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.video-message:after {\n          background-image: url(\"https://xegea.github.io/ng-setup/assets/img/theme/icon/feed/feed-video.svg\"); }\n      :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.image-message {\n        background: #90b900; }\n        :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.image-message:after {\n          width: 21px;\n          height: 21px;\n          margin-top: 1px;\n          margin-left: 1px;\n          border-radius: 5px;\n          background-image: url(\"https://xegea.github.io/ng-setup/assets/img/theme/icon/feed/feed-image.svg\"); }\n      :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.geo-message {\n        background: #ed1f24; }\n        :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon.geo-message:after {\n          width: 22px;\n          height: 22px;\n          background-image: url(\"https://xegea.github.io/ng-setup/assets/img/theme/icon/feed/feed-location.svg\"); }\n    :host /deep/ .feed-messages-container .feed-message .message-icon .sub-photo-icon {\n      position: absolute;\n      width: 30px;\n      height: 30px;\n      right: -2px;\n      bottom: -4px;\n      border-radius: 15px; }\n  :host /deep/ .feed-messages-container .feed-message .text-block {\n    cursor: pointer;\n    position: relative;\n    border-radius: 5px;\n    margin: 0 0 0 80px;\n    padding: 5px 20px;\n    color: #ffffff;\n    width: 280px;\n    height: 70px; }\n    :host /deep/ .feed-messages-container .feed-message .text-block.text-message {\n      font-size: 12px;\n      width: inherit;\n      max-width: calc(100% - 80px);\n      height: inherit;\n      min-height: 60px; }\n      :host /deep/ .feed-messages-container .feed-message .text-block.text-message:before {\n        display: block; }\n      :host /deep/ .feed-messages-container .feed-message .text-block.text-message .message-content {\n        font-size: 12px;\n        line-height: 15px;\n        font-weight: 300; }\n    :host /deep/ .feed-messages-container .feed-message .text-block.small-message {\n      width: 155px;\n      height: 145px; }\n      :host /deep/ .feed-messages-container .feed-message .text-block.small-message .preview {\n        bottom: 0;\n        top: initial;\n        height: 87px; }\n        :host /deep/ .feed-messages-container .feed-message .text-block.small-message .preview img {\n          width: 155px;\n          height: 87px;\n          border-radius: 0 0 5px 5px; }\n  :host /deep/ .feed-messages-container .feed-message .message-header {\n    font-size: 12px;\n    padding-bottom: 5px; }\n    :host /deep/ .feed-messages-container .feed-message .message-header .author {\n      font-size: 13px;\n      padding-right: 5px; }\n  :host /deep/ .feed-messages-container .feed-message .message-content {\n    font-size: 18px;\n    line-height: 20px; }\n  :host /deep/ .feed-messages-container .feed-message .preview {\n    transition: 0s linear all;\n    display: inline-block; }\n    :host /deep/ .feed-messages-container .feed-message .preview img {\n      padding-top: 10px;\n      width: 100%;\n      height: auto;\n      float: none !important; }\n  :host /deep/ .feed-messages-container .feed-message .message-time {\n    width: 100%;\n    left: 0;\n    font-size: 11px;\n    padding-top: 10px;\n    color: #eeeeee;\n    margin-bottom: 5px; }\n    :host /deep/ .feed-messages-container .feed-message .message-time .post-time {\n      float: left; }\n    :host /deep/ .feed-messages-container .feed-message .message-time .ago-time {\n      float: right; }\n\n:host /deep/ .feed-messages-container .line-clamp {\n  display: block;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  position: relative;\n  line-height: 1.2;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  padding: 0 !important; }\n\n@media screen and (-webkit-min-device-pixel-ratio: 0) {\n  :host /deep/ .feed-messages-container .line-clamp:after {\n    content: '...';\n    text-align: right;\n    bottom: 0;\n    right: 0;\n    width: 25%;\n    display: block;\n    position: absolute;\n    height: calc(1em * 1.2); } }\n\n@supports (-webkit-line-clamp: 1) {\n  :host /deep/ .feed-messages-container .line-clamp:after {\n    display: none !important; } }\n\n:host /deep/ .feed-messages-container .line-clamp-1 {\n  -webkit-line-clamp: 1;\n  height: calc(1em * 1.2 * 1); }\n\n:host /deep/ .feed-messages-container .line-clamp-2 {\n  -webkit-line-clamp: 2;\n  height: calc(1em * 1.2 * 2); }\n\n:host /deep/ .feed-messages-container .line-clamp-3 {\n  -webkit-line-clamp: 3;\n  height: calc(1em * 1.2 * 3); }\n\n:host /deep/ .feed-messages-container .line-clamp-4 {\n  -webkit-line-clamp: 4;\n  height: calc(1em * 1.2 * 4); }\n\n:host /deep/ .feed-messages-container .line-clamp-5 {\n  -webkit-line-clamp: 5;\n  height: calc(1em * 1.2 * 5); }\n\n/deep/.feed-panel .card-body {\n  padding: 10px 0; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Scheduler_1 = __webpack_require__(821);
+var AsyncScheduler = (function (_super) {
+    __extends(AsyncScheduler, _super);
+    function AsyncScheduler() {
+        _super.apply(this, arguments);
+        this.actions = [];
+        /**
+         * A flag to indicate whether the Scheduler is currently executing a batch of
+         * queued actions.
+         * @type {boolean}
+         */
+        this.active = false;
+        /**
+         * An internal ID used to track the latest asynchronous task such as those
+         * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
+         * others.
+         * @type {any}
+         */
+        this.scheduled = undefined;
+    }
+    AsyncScheduler.prototype.flush = function (action) {
+        var actions = this.actions;
+        if (this.active) {
+            actions.push(action);
+            return;
+        }
+        var error;
+        this.active = true;
+        do {
+            if (error = action.execute(action.state, action.delay)) {
+                break;
+            }
+        } while (action = actions.shift()); // exhaust the scheduler queue
+        this.active = false;
+        if (error) {
+            while (action = actions.shift()) {
+                action.unsubscribe();
+            }
+            throw error;
+        }
+    };
+    return AsyncScheduler;
+}(Scheduler_1.Scheduler));
+exports.AsyncScheduler = AsyncScheduler;
+//# sourceMappingURL=AsyncScheduler.js.map
 
 /***/ }),
 
-/***/ 696:
+/***/ 830:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
-// imports
+"use strict";
 
-
-// module
-exports.push([module.i, ":host /deep/.dashboard-line-chart {\n  width: 100%;\n  height: 340px;\n  margin-top: -10px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+function isDate(value) {
+    return value instanceof Date && !isNaN(+value);
+}
+exports.isDate = isDate;
+//# sourceMappingURL=isDate.js.map
 
 /***/ }),
 
-/***/ 697:
+/***/ 831:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host /deep/ .pie-charts {\n  color: #ffffff; }\n  :host /deep/ .pie-charts .pie-chart-item-container {\n    position: relative;\n    padding: 0 15px;\n    float: left;\n    box-sizing: border-box; }\n    :host /deep/ .pie-charts .pie-chart-item-container .card {\n      height: 114px; }\n  @media screen and (min-width: 1325px) {\n    :host /deep/ .pie-charts .pie-chart-item-container {\n      max-width: 25%;\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 25%;\n              flex: 0 0 25%; } }\n  @media screen and (min-width: 700px) and (max-width: 1325px) {\n    :host /deep/ .pie-charts .pie-chart-item-container {\n      max-width: 50%;\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 50%;\n              flex: 0 0 50%; } }\n  @media screen and (max-width: 700px) {\n    :host /deep/ .pie-charts .pie-chart-item-container {\n      max-width: 100%;\n      -webkit-box-flex: 0;\n          -ms-flex: 0 0 100%;\n              flex: 0 0 100%; } }\n  :host /deep/ .pie-charts .pie-chart-item {\n    position: relative; }\n    :host /deep/ .pie-charts .pie-chart-item .chart-icon {\n      position: absolute;\n      right: 0;\n      top: 3px; }\n  @media screen and (min-width: 1325px) and (max-width: 1650px), (min-width: 700px) and (max-width: 830px), (max-width: 400px) {\n    :host /deep/ .pie-charts .chart-icon {\n      display: none; } }\n  :host /deep/ .pie-charts .chart {\n    position: relative;\n    display: inline-block;\n    width: 84px;\n    height: 84px;\n    text-align: center;\n    float: left; }\n  :host /deep/ .pie-charts .chart canvas {\n    position: absolute;\n    top: 0;\n    left: 0; }\n  :host /deep/ .pie-charts .percent {\n    display: inline-block;\n    line-height: 84px;\n    z-index: 2;\n    font-size: 16px; }\n  :host /deep/ .pie-charts .percent:after {\n    content: '%';\n    margin-left: 0.1em;\n    font-size: .8em; }\n  :host /deep/ .pie-charts .description {\n    display: inline-block;\n    padding: 20px 0 0 20px;\n    font-size: 18px;\n    opacity: 0.9; }\n    :host /deep/ .pie-charts .description .description-stats {\n      padding-top: 8px;\n      font-size: 24px; }\n  :host /deep/ .pie-charts .angular {\n    margin-top: 100px; }\n  :host /deep/ .pie-charts .angular .chart {\n    margin-top: 0; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 698:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/deep/.card.popular-app > .card-body {\n  padding: 0; }\n\n/deep/.card.popular-app .popular-app-img-container {\n  position: relative;\n  padding: 30px 0;\n  height: 260px;\n  border-top-right-radius: 5px;\n  border-top-left-radius: 5px; }\n  /deep/.card.popular-app .popular-app-img-container .popular-app-img {\n    width: 260px;\n    position: absolute;\n    -webkit-transform: translateY(-50%) translate(-50%);\n            transform: translateY(-50%) translate(-50%);\n    top: 50%;\n    left: 50%; }\n    /deep/.card.popular-app .popular-app-img-container .popular-app-img .logo-text {\n      display: inline-block;\n      margin: 10px;\n      font-size: 26px;\n      color: #ffffff; }\n\n/deep/.card.popular-app .popular-app-cost {\n  font-size: 20px;\n  padding: 20px 22px;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n  border-top: 1px solid rgba(255, 255, 255, 0.2); }\n\n/deep/.card.popular-app .popular-app-info {\n  padding: 20px 22px;\n  font-size: 20px;\n  text-align: center; }\n  /deep/.card.popular-app .popular-app-info .info-label {\n    font-size: 12px; }\n\n/deep/.card.popular-app .row {\n  margin: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between; }\n  /deep/.card.popular-app .row > div {\n    padding: 0; }\n\n/deep/.blur .card.popular-app .popular-app-img-container {\n  background: rgba(0, 0, 0, 0.5); }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 699:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host /deep/ .task-todo-container input.task-todo {\n  margin-bottom: 8px; }\n\n:host /deep/ .task-todo-container ul.todo-list {\n  margin: 0;\n  padding: 0; }\n  :host /deep/ .task-todo-container ul.todo-list li {\n    margin: 0 0 -1px 0;\n    padding: 12px;\n    list-style: none;\n    position: relative;\n    border: 1px solid transparent;\n    cursor: -webkit-grab;\n    cursor: grab;\n    height: 42px; }\n    :host /deep/ .task-todo-container ul.todo-list li i.remove-todo {\n      position: absolute;\n      cursor: pointer;\n      top: 0px;\n      right: 12px;\n      font-size: 32px;\n      transition: color 0.2s;\n      color: rgba(0, 0, 0, 0.5);\n      visibility: hidden;\n      line-height: 42px; }\n      :host /deep/ .task-todo-container ul.todo-list li i.remove-todo:hover {\n        color: transparent; }\n    :host /deep/ .task-todo-container ul.todo-list li:hover i.remove-todo {\n      visibility: visible; }\n    :host /deep/ .task-todo-container ul.todo-list li.checked .todo-text {\n      color: #ffffff; }\n    :host /deep/ .task-todo-container ul.todo-list li.checked:before {\n      background: transparent !important; }\n    :host /deep/ .task-todo-container ul.todo-list li i.mark {\n      display: block;\n      position: absolute;\n      top: -1px;\n      left: -1px;\n      height: 42px;\n      min-width: 4px;\n      background: transparent;\n      cursor: pointer;\n      transition: min-width 0.3s ease-out; }\n    :host /deep/ .task-todo-container ul.todo-list li.active i.mark {\n      min-width: 40px; }\n    :host /deep/ .task-todo-container ul.todo-list li.active label.todo-checkbox > span:before {\n      color: white;\n      content: '\\F10C';\n      margin-right: 20px;\n      transition: margin-right 0.1s ease-out;\n      transition-delay: 0.2s;\n      float: none; }\n    :host /deep/ .task-todo-container ul.todo-list li.active label.todo-checkbox > input:checked + span:before {\n      content: '\\F00C'; }\n\n:host /deep/ .task-todo-container label.todo-checkbox {\n  width: 100%;\n  padding-right: 25px;\n  min-height: 16px;\n  cursor: pointer; }\n  :host /deep/ .task-todo-container label.todo-checkbox > span {\n    white-space: nowrap;\n    height: 16px; }\n    :host /deep/ .task-todo-container label.todo-checkbox > span:before {\n      border: none;\n      color: #eeeeee;\n      transition: all 0.15s ease-out; }\n\n:host /deep/ .task-todo-container .add-item-icon {\n  display: none; }\n\n/deep/.ng2 .task-todo-container .todo-panel.panel, .blur .task-todo-container .todo-panel.panel {\n  color: white;\n  opacity: 0.9; }\n\n/deep/.ng2 .task-todo-container input.task-todo, .blur .task-todo-container input.task-todo {\n  color: white;\n  width: calc(100% - 25px);\n  border-radius: 0;\n  border: none;\n  background: transparent; }\n  /deep/.ng2 .task-todo-container input.task-todo:focus, .blur .task-todo-container input.task-todo:focus {\n    outline: none;\n    background-color: transparent;\n    border-bottom: 1px solid rgba(0, 0, 0, 0.12);\n    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12); }\n\n/deep/.ng2 .task-todo-container .add-item-icon, .blur .task-todo-container .add-item-icon {\n  display: block;\n  float: right;\n  margin-top: -45px;\n  margin-right: 5px;\n  font-size: 25px;\n  cursor: pointer; }\n\n/deep/.ng2 .task-todo-container ul.todo-list li, .blur .task-todo-container ul.todo-list li {\n  margin: 0;\n  border: none;\n  font-weight: 300; }\n  /deep/.ng2 .task-todo-container ul.todo-list li .blur-container, .blur .task-todo-container ul.todo-list li .blur-container {\n    height: 40px;\n    position: absolute;\n    width: calc(100% + 40px);\n    top: 0;\n    left: -25px;\n    overflow-y: hidden; }\n  /deep/.ng2 .task-todo-container ul.todo-list li:hover .blur-container, .blur .task-todo-container ul.todo-list li:hover .blur-container {\n    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12); }\n  /deep/.ng2 .task-todo-container ul.todo-list li:hover .blur-box, .blur .task-todo-container ul.todo-list li:hover .blur-box {\n    height: 100%;\n    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);\n    -webkit-filter: blur(3px); }\n  /deep/.ng2 .task-todo-container ul.todo-list li i.remove-todo, .blur .task-todo-container ul.todo-list li i.remove-todo {\n    color: white;\n    opacity: 0.4; }\n    /deep/.ng2 .task-todo-container ul.todo-list li i.remove-todo:hover, .blur .task-todo-container ul.todo-list li i.remove-todo:hover {\n      color: white;\n      opacity: 0.95; }\n  /deep/.ng2 .task-todo-container ul.todo-list li i.mark, .blur .task-todo-container ul.todo-list li i.mark {\n    min-width: 40px;\n    display: none; }\n  /deep/.ng2 .task-todo-container ul.todo-list li label.todo-checkbox > span:before, .blur .task-todo-container ul.todo-list li label.todo-checkbox > span:before {\n    position: absolute;\n    color: #ffffff;\n    content: '\\F10C';\n    float: none;\n    margin-right: 6px;\n    transition: none; }\n  /deep/.ng2 .task-todo-container ul.todo-list li.checked label.todo-checkbox > span:before, .blur .task-todo-container ul.todo-list li.checked label.todo-checkbox > span:before {\n    content: '\\F00C'; }\n\n/deep/.ng2 .task-todo-container .box-shadow-border, .blur .task-todo-container .box-shadow-border {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.12);\n  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12);\n  width: calc(100% + 44px);\n  margin-left: -22px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 700:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, "/deep/ .ng2 .traffic-chart .canvas-holder, /deep/ .blur .traffic-chart .canvas-holder {\n  border: 15px solid rgba(0, 0, 0, 0.2);\n  border-radius: 150px; }\n\n/deep/ .ng2 .chart-bg, /deep/ .blur .chart-bg {\n  background-color: rgba(0, 0, 0, 0.2); }\n\n:host /deep/ .channels-block {\n  width: 100%;\n  position: relative; }\n  :host /deep/ .channels-block .chart-bg {\n    position: absolute;\n    width: 180px;\n    height: 180px;\n    left: 60px;\n    top: 60px;\n    border-radius: 100px; }\n  :host /deep/ .channels-block .channels-info {\n    display: inline-block;\n    width: calc(100% - 370px);\n    margin-left: 70px;\n    margin-top: -20px; }\n  :host /deep/ .channels-block .small-container .channels-info {\n    display: none; }\n  :host /deep/ .channels-block .channels-info-item p {\n    margin-bottom: 9px;\n    font-size: 18px;\n    opacity: 0.9; }\n  :host /deep/ .channels-block .channels-info-item .channel-number {\n    display: inline-block;\n    float: right; }\n  :host /deep/ .channels-block .traffic-chart {\n    width: 300px;\n    position: relative;\n    min-height: 300px;\n    float: left; }\n  :host /deep/ .channels-block .traffic-legend {\n    display: inline-block;\n    padding: 70px 0 0 0;\n    width: 160px; }\n  :host /deep/ .channels-block .traffic-legend ul.doughnut-legend li {\n    list-style: none;\n    font-size: 12px;\n    margin-bottom: 12px;\n    line-height: 16px;\n    position: relative;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 120px; }\n    :host /deep/ .channels-block .traffic-legend ul.doughnut-legend li span {\n      float: left;\n      display: inline-block;\n      width: 16px;\n      height: 16px;\n      margin-right: 10px; }\n  :host /deep/ .channels-block .canvas-holder {\n    display: inline-block;\n    width: 300px;\n    height: 300px;\n    position: relative;\n    float: left; }\n  :host /deep/ .channels-block .traffic-text {\n    width: 100%;\n    height: 40px;\n    position: absolute;\n    top: 50%;\n    left: 0;\n    margin-top: -24px;\n    line-height: 24px;\n    text-align: center;\n    font-size: 18px; }\n    :host /deep/ .channels-block .traffic-text span {\n      display: block;\n      font-size: 18px;\n      color: #ffffff; }\n  :host /deep/ .channels-block .channel-change {\n    display: block;\n    margin-bottom: 12px; }\n  :host /deep/ .channels-block .channel-progress {\n    height: 4px;\n    border-radius: 0;\n    width: 100%;\n    margin-bottom: 0;\n    background-color: rgba(0, 0, 0, 0.15);\n    box-shadow: none; }\n    :host /deep/ .channels-block .channel-progress .progress-bar {\n      height: 4px;\n      background-color: #ffffff;\n      box-shadow: none; }\n  :host /deep/ .channels-block .legend-color {\n    width: 30px;\n    height: 30px;\n    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);\n    position: relative;\n    top: 27px;\n    border-radius: 15px;\n    left: -45px; }\n  @media (max-width: 768px) {\n    :host /deep/ .channels-block .card.medium-card.traffic-panel {\n      height: auto; }\n    :host /deep/ .channels-block div.channels-info {\n      display: block;\n      width: calc(100% - 88px);\n      margin-top: -65px;\n      margin-bottom: 10px; }\n    :host /deep/ .channels-block .traffic-chart {\n      position: inherit;\n      float: none;\n      margin: 0 auto; }\n    :host /deep/ .channels-block .chart-bg {\n      left: calc(50% - 90px); } }\n  @media (max-width: 1465px) and (min-width: 1199px) {\n    :host /deep/ .channels-block .channels-info {\n      display: none; }\n    :host /deep/ .channels-block .traffic-chart {\n      position: inherit;\n      float: none;\n      margin: 0 auto; }\n    :host /deep/ .channels-block .chart-bg {\n      left: calc(50% - 90px); } }\n  @media (max-width: 380px) {\n    :host /deep/ .channels-block .traffic-chart {\n      width: 240px; }\n    :host /deep/ .channels-block .canvas-holder {\n      width: 240px;\n      height: 240px; }\n    :host /deep/ .channels-block .chart-bg {\n      top: 30px; } }\n  @media (max-width: 320px) {\n    :host /deep/ .channels-block .chart-bg {\n      left: 50px;\n      top: 50px;\n      width: 142px;\n      height: 142px; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 701:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(false);
-// imports
-
-
-// module
-exports.push([module.i, ":host /deep/ .dashboard-users-map {\n  width: 100%;\n  height: 315px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ 707:
-/***/ (function(module, exports) {
-
-module.exports = "<ba-full-calendar [baFullCalendarConfiguration]=\"calendarConfiguration\" baFullCalendarClass=\"blurCalendar\" (onCalendarReady)=\"onCalendarReady($event)\"></ba-full-calendar>\n"
-
-/***/ }),
-
-/***/ 708:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row\">\n  <div class=\"col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12\">\n    <pie-chart></pie-chart>\n  </div>\n</div>\n\n<div class=\"row\">\n  <ba-card class=\"col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12\"\n                     cardTitle=\"dashboard.acquisition_channels\" baCardClass=\"traffic-panel medium-card\">\n    <traffic-chart></traffic-chart>\n  </ba-card>\n\n  <ba-card class=\"col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12\"\n           cardTitle=\"dashboard.users_by_country\" baCardClass=\"medium-card\">\n    <users-map></users-map>\n  </ba-card>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12\">\n    <div class=\"row\">\n      <ba-card class=\"col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12\"\n               cardTitle=\"dashboard.revenue\" baCardClass=\"medium-card\">\n        <line-chart></line-chart>\n      </ba-card>\n      <ba-card class=\"col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12\"\n               baCardClass=\"popular-app medium-card\">\n        <popular-app></popular-app>\n      </ba-card>\n    </div>\n  </div>\n\n  <div class=\"col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12\">\n    <ba-card cardTitle=\"dashboard.feed\"\n             baCardClass=\"large-card with-scroll feed-panel\">\n      <feed></feed>\n    </ba-card>\n  </div>\n\n</div>\n\n<div class=\"row shift-up\">\n  <ba-card class=\"col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-12\" cardTitle=\"dashboard.todo_list\"\n           baCardClass=\"xmedium-card feed-comply-panel with-scroll todo-panel\">\n    <todo></todo>\n  </ba-card>\n  <ba-card class=\"col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-12\" cardTitle=\"dashboard.calendar\"\n           baCardClass=\"xmedium-card feed-comply-panel with-scroll calendar-panel\">\n    <calendar></calendar>\n  </ba-card>\n</div>\n"
-
-/***/ }),
-
-/***/ 709:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"feed-messages-container\">\n  <div class=\"feed-message\" *ngFor=\"let message of feed\" (click)=\"expandMessage(message)\">\n    <div class=\"message-icon\" *ngIf=\"message.type == 'text-message'\">\n      <img class=\"photo-icon\" src=\"{{ ( message.author | baProfilePicture ) }}\">\n    </div>\n    <div class=\"message-icon\" *ngIf=\"message.type != 'text-message'\">\n      <img class=\"photo-icon\" src=\"{{ ( message.author | baProfilePicture ) }}\">\n      <span class=\"sub-photo-icon\" [ngClass]=\"message.type\"></span>\n    </div>\n    <div class=\"text-block text-message\">\n      <div class=\"message-header\">\n        <span class=\"author\">{{ message.author }} {{ message.surname}}</span>\n      </div>\n      <div class=\"message-content line-clamp\" [ngClass]=\"{'line-clamp-2' : !message.expanded}\">\n        <span *ngIf=\"message.preview\">{{ message.header }} </span>{{ message.text }}\n      </div>\n      <div class=\"preview\" [ngClass]=\"{'hidden': !message.expanded}\" *ngIf=\"message.preview\">\n        <a href=\"{{ message.link }}\" target=\"_blank\">\n          <img src=\"{{ ( message.preview | baAppPicture )}}\">\n        </a>\n      </div>\n      <div [ngClass]=\"{'hidden': !message.expanded}\" class=\"message-time\">\n        <div class=\"post-time\">\n          {{ message.time }}\n        </div>\n        <div class=\"ago-time\">\n          {{ message.ago }}\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 710:
-/***/ (function(module, exports) {
-
-module.exports = "<ba-am-chart baAmChartClass=\"dashboard-line-chart\" [baAmChartConfiguration]=\"chartData\" (onChartReady)=\"initChart($event)\"></ba-am-chart>\n"
-
-/***/ }),
-
-/***/ 711:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"row pie-charts\">\n\n  <ba-card *ngFor=\"let chart of charts\" class=\"pie-chart-item-container col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-12\">\n\n    <div class=\"pie-chart-item\">\n      <div class=\"chart\" [attr.data-rel]=\"chart.color\" data-percent=\"60\">\n        <span class=\"percent\"></span>\n      </div>\n      <div class=\"description\">\n        <div translate>{{ chart.description }}</div>\n        <div class=\"description-stats\">{{ chart.stats }}</div>\n      </div>\n      <i class=\"chart-icon i-{{ chart.icon }}\"></i>\n    </div>\n\n  </ba-card>\n</div>\n"
-
-/***/ }),
-
-/***/ 712:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"popular-app-img-container\">\n  <div class=\"popular-app-img\">\n    <img src=\"{{ ( 'app/my-app-logo.png' | baAppPicture ) }}\"/>\n    <span class=\"logo-text\" translate>{{'dashboard.popular_app.super_app'}}</span>\n  </div>\n</div>\n<div class=\"popular-app-cost row\">\n  <div class=\"col-9\" translate>{{'dashboard.popular_app.most_popular_app'}}</div>\n  <div class=\"col-3 text-right\">\n    175$\n  </div>\n</div>\n<div class=\"popular-app-info row\">\n  <div class=\"col-4 text-left\">\n    <div class=\"info-label\" translate>{{'dashboard.popular_app.total_visits'}}</div>\n    <div>47,512</div>\n  </div>\n  <div class=\"col-4 text-center\">\n    <div class=\"info-label\" translate>{{'dashboard.popular_app.new_visits'}}</div>\n    <div>9,217</div>\n  </div>\n  <div class=\"col-4 text-right\">\n    <div class=\"info-label\" translate>{{'dashboard.popular_app.sales'}}</div>\n    <div>2,928</div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 713:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"task-todo-container\">\n  <input type=\"text\" value=\"\" class=\"form-control task-todo\" placeholder=\"{{'dashboard.todo.task_todo' | translate}}\" (keyup)=\"addToDoItem($event)\" [(ngModel)]=\"newTodoText\"/>\n  <i (click)=\"addToDoItem($event)\" class=\"add-item-icon ion-plus-round\"></i>\n  <div class=\"box-shadow-border\"></div>\n\n  <ul class=\"todo-list\">\n    <li *ngFor=\"let item of getNotDeleted()\" [ngClass]=\"{checked: item.isChecked, active: item.isActive}\"\n        (mouseenter)=\"item.isActive=true\" (mouseleave)=\"item.isActive=false\">\n\n      <div class=\"blur-container\"><div class=\"blur-box\"></div></div>\n      <i class=\"mark\" [ngStyle]=\"{ 'background-color': item.color }\"></i>\n      <label class=\"todo-checkbox custom-checkbox custom-input-success\">\n        <input type=\"checkbox\" [(ngModel)]=\"item.isChecked\">\n        <span class=\"cut-with-dots\">{{ item.text }}</span>\n      </label>\n      <i class=\"remove-todo ion-ios-close-empty\" (click)=\"item.deleted = true\"></i>\n    </li>\n  </ul>\n</div>\n"
-
-/***/ }),
-
-/***/ 714:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"channels-block\">\n\n  <div class=\"chart-bg\"></div>\n  <div class=\"traffic-chart\" id=\"trafficChart\">\n    <div class=\"canvas-holder\">\n      <canvas class=\"chart-area\" width=\"300px\" height=\"300px\"></canvas>\n      <div class=\"traffic-text\">\n        1,900,128\n        <span translate>{{'dashboard.traffic_chart.view_total'}}</span>\n      </div>\n    </div>\n    <div class=\"traffic-legend\"></div>\n  </div>\n\n  <div class=\"channels-info\">\n    <div>\n      <div class=\"channels-info-item\" *ngFor=\"let item of doughnutData\">\n        <div class=\"legend-color\" [ngStyle]=\"{'background-color': item.color }\"></div>\n        <p>{{ item.label }}<span class=\"channel-number\">+{{ item.percentage }}%</span></p>\n        <div class=\"progress progress-sm channel-progress\">\n          <div class=\"progress-bar\" role=\"progressbar\"\n               [attr.aria-valuenow]=\"item.percentage\" aria-valuemin=\"0\" aria-valuemax=\"100\" [ngStyle]=\"{width: item.percentage + '%' }\">\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ 715:
-/***/ (function(module, exports) {
-
-module.exports = "<ba-am-chart baAmChartClass=\"dashboard-users-map\" [baAmChartConfiguration]=\"mapData\"></ba-am-chart>\n"
-
-/***/ }),
-
-/***/ 731:
-/***/ (function(module, exports) {
-
-/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
-module.exports = __webpack_amd_options__;
-
-/* WEBPACK VAR INJECTION */}.call(exports, {}))
+"use strict";
+
+var isArray_1 = __webpack_require__(112);
+function isNumeric(val) {
+    // parseFloat NaNs numeric-cast false positives (null|true|false|"")
+    // ...but misinterprets leading-number strings, particularly hex literals ("0x...")
+    // subtraction forces infinities to NaN
+    // adding 1 corrects loss of precision from parseFloat (#15100)
+    return !isArray_1.isArray(val) && (val - parseFloat(val) + 1) >= 0;
+}
+exports.isNumeric = isNumeric;
+;
+//# sourceMappingURL=isNumeric.js.map
 
 /***/ })
 
