@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_translation_module__ = __webpack_require__(166);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__theme_nga_module__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dashboard_component__ = __webpack_require__(661);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dashboard_component__ = __webpack_require__(662);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_routing__ = __webpack_require__(690);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__popularApp__ = __webpack_require__(697);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pieChart__ = __webpack_require__(695);
@@ -20,13 +20,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__feed__ = __webpack_require__(692);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__todo__ = __webpack_require__(699);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__calendar__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__calendar_calendar_service__ = __webpack_require__(660);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__feed_feed_service__ = __webpack_require__(662);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lineChart_lineChart_service__ = __webpack_require__(663);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pieChart_pieChart_service__ = __webpack_require__(664);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__todo_todo_service__ = __webpack_require__(665);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trafficChart_trafficChart_service__ = __webpack_require__(666);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__usersMap_usersMap_service__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__calendar_calendar_service__ = __webpack_require__(661);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__feed_feed_service__ = __webpack_require__(663);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lineChart_lineChart_service__ = __webpack_require__(664);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pieChart_pieChart_service__ = __webpack_require__(665);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__todo_todo_service__ = __webpack_require__(666);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__trafficChart_trafficChart_service__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__usersMap_usersMap_service__ = __webpack_require__(668);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardModule", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -97,7 +97,7 @@ DashboardModule = __decorate([
 
 /***/ }),
 
-/***/ 660:
+/***/ 661:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -169,7 +169,7 @@ var _a;
 
 /***/ }),
 
-/***/ 661:
+/***/ 662:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -203,7 +203,7 @@ Dashboard = __decorate([
 
 /***/ }),
 
-/***/ 662:
+/***/ 663:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -343,7 +343,7 @@ FeedService = __decorate([
 
 /***/ }),
 
-/***/ 663:
+/***/ 664:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -480,7 +480,7 @@ var _a;
 
 /***/ }),
 
-/***/ 664:
+/***/ 665:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -540,7 +540,7 @@ var _a;
 
 /***/ }),
 
-/***/ 665:
+/***/ 666:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -581,7 +581,7 @@ TodoService = __decorate([
 
 /***/ }),
 
-/***/ 666:
+/***/ 667:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -656,7 +656,7 @@ var _a;
 
 /***/ }),
 
-/***/ 667:
+/***/ 668:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -785,7 +785,7 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(167);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_service__ = __webpack_require__(660);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__calendar_service__ = __webpack_require__(661);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Calendar; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -856,7 +856,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_component__ = __webpack_require__(661);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_component__ = __webpack_require__(662);
 /* unused harmony export routes */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
@@ -879,7 +879,7 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule 
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__feed_service__ = __webpack_require__(662);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__feed_service__ = __webpack_require__(663);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Feed; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -948,7 +948,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lineChart_service__ = __webpack_require__(663);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lineChart_service__ = __webpack_require__(664);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LineChart; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1008,7 +1008,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pieChart_service__ = __webpack_require__(664);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pieChart_service__ = __webpack_require__(665);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js__ = __webpack_require__(725);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_easy_pie_chart_dist_jquery_easypiechart_js__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PieChart; });
@@ -1139,7 +1139,7 @@ PopularApp = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__theme__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__(665);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__todo_service__ = __webpack_require__(666);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Todo; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1217,7 +1217,7 @@ var _a, _b;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trafficChart_service__ = __webpack_require__(666);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trafficChart_service__ = __webpack_require__(667);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js__ = __webpack_require__(724);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_chart_js__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TrafficChart; });
@@ -1283,7 +1283,7 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__usersMap_service__ = __webpack_require__(667);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__usersMap_service__ = __webpack_require__(668);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsersMap; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
