@@ -2140,7 +2140,7 @@ var EventLogListComponent = (function () {
             columns: {
                 timestamp: {
                     title: 'Timestamp',
-                    width: '5%'
+                    width: '5%',
                 },
                 playbook: {
                     title: 'Task Group',
@@ -2219,9 +2219,7 @@ var EventLogListComponent = (function () {
         this.getEventLogLines();
     };
     EventLogListComponent.prototype.onUserRowSelect = function (event) {
-        console.log(event.data.taskid);
-        console.log(event.data.host);
-        this.router.navigate(['../view'], { relativeTo: this.route });
+        this.router.navigate(['../view', { 'taskid': event.data.taskid, 'host': event.data.host }], { relativeTo: this.route });
     };
     return EventLogListComponent;
 }());
@@ -2309,6 +2307,7 @@ var EventLogService = (function () {
     }
     //eventLogLines = [{"linenumber":0,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"localhost","changed":false,"status":"Ok"},{"linenumber":1,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"loro","msg":"Failed to connect to the host via ssh: ssh: Could not resolve hostname loro: Name or service not known\r\n","changed":false,"status":"Unreachable"},{"linenumber":2,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"task1: get ip address from config file","taskid":"000c2946-219f-4919-67f6-00000000000a","host":"periquito","msg":"Failed to connect to the host via ssh: ssh: Could not resolve hostname periquito: Name or service not known\r\n","changed":false,"status":"Unreachable"},{"linenumber":3,"timestamp":"2018/03/03 23:53:26","playbook":"get_ipaddr_from_config","task":"vdicube-task: get ip address from configuration file-2","taskid":"000c2946-219f-4919-67f6-00000000000c","host":"localhost","msg":"non-zero return code","changed":false,"status":"Failed"}];
     EventLogService.prototype.getEventLog = function (taskid, host) {
+        console.log('getEventLog - taskid:' + taskid + ' - host: ' + host);
         //return this.http.get('/api/eventlog?taskid=' + taskid + '&host=' + host)
         return this.http.get('https://3359961d-46c9-417a-a384-66e68b949459.mock.pstmn.io/api/eventlog')
             .toPromise()
@@ -4021,7 +4020,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, ":host /deep/ .widgets .smart-table-container {\n  width: 100%; }\n\n:host /deep/ ng2-smart-table {\n  color: #ffffff; }\n  :host /deep/ ng2-smart-table th, :host /deep/ ng2-smart-table td {\n    border: 1px solid rgba(255, 255, 255, 0.2) !important;\n    line-height: 25px;\n    vertical-align: middle;\n    font-size: 13px !important; }\n  :host /deep/ ng2-smart-table table tr td {\n    padding: 0 8px; }\n  :host /deep/ ng2-smart-table input {\n    line-height: 1.5 !important; }\n  :host /deep/ ng2-smart-table ng2-smart-table-cell {\n    color: #ffffff;\n    line-height: 25px; }\n  :host /deep/ ng2-smart-table tbody tr {\n    color: #ffffff; }\n  :host /deep/ ng2-smart-table tbody tr:hover {\n    background: rgba(0, 0, 0, 0.6);\n    cursor: pointer; }\n  :host /deep/ ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #ffffff;\n    font-weight: 500; }\n    :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 500 !important; }\n      :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #ffffff !important; }\n  :host /deep/ ng2-smart-table nav.ng2-smart-pagination-nav {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n", ""]);
+exports.push([module.i, ":host /deep/ .widgets .smart-table-container {\n  width: 100%; }\n\n:host /deep/ ng2-smart-table {\n  color: #ffffff; }\n  :host /deep/ ng2-smart-table th, :host /deep/ ng2-smart-table td {\n    border: 1px solid rgba(255, 255, 255, 0.2) !important;\n    line-height: 25px;\n    vertical-align: middle;\n    font-size: 13px !important;\n    font-weight: normal; }\n  :host /deep/ ng2-smart-table table tr td {\n    padding: 0 8px; }\n  :host /deep/ ng2-smart-table input {\n    line-height: 1.5 !important; }\n  :host /deep/ ng2-smart-table ng2-smart-table-cell {\n    color: #d2d2d2;\n    line-height: 25px; }\n  :host /deep/ ng2-smart-table tbody tr {\n    color: #ffffff; }\n  :host /deep/ ng2-smart-table tbody tr:hover {\n    cursor: pointer;\n    border-left: 4px solid #ED1F24 !important; }\n  :host /deep/ ng2-smart-table a.ng2-smart-sort-link {\n    font-size: 14px !important;\n    color: #ffffff;\n    font-weight: 500; }\n    :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort {\n      font-weight: 500 !important; }\n      :host /deep/ ng2-smart-table a.ng2-smart-sort-link.sort::after {\n        border-bottom-color: #ffffff !important; }\n  :host /deep/ ng2-smart-table nav.ng2-smart-pagination-nav {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-pack: center;\n        -ms-flex-pack: center;\n            justify-content: center; }\n", ""]);
 
 // exports
 
